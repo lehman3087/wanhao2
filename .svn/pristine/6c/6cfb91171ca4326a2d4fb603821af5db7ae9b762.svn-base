@@ -1,0 +1,72 @@
+[2015-09-30 13:46:51] /33hao/mobile/index.php?act=designer_work&op=designer_work_list ( act=designer_work&op=designer_work_list ) 
+ERR: Db Error: Column 'sn_if_show' in where clause is ambiguous
+SELECT COUNT(*) AS nc_count FROM `33hao_designer_work` AS `designer_work` LEFT JOIN `33hao_designer` AS `designer` ON designer_work.sn_designer_id = designer.id WHERE ( sn_if_show = '1' ) LIMIT 1  
+[2015-09-30 13:46:51] /33hao/mobile/index.php?act=designer_work&op=designer_work_list ( act=designer_work&op=designer_work_list ) 
+ERR: Db Error: Column 'sn_if_show' in where clause is ambiguous
+SELECT * FROM `33hao_designer_work` AS `designer_work` LEFT JOIN `33hao_designer` AS `designer` ON designer_work.sn_designer_id = designer.id WHERE ( sn_if_show = '1' ) LIMIT 0,10  
+[2015-09-30 13:47:07] /33hao/mobile/index.php?act=designer_work&op=designer_work_list ( act=designer_work&op=designer_work_list ) 
+ERR: Db Error: Column 'sn_if_show' in where clause is ambiguous
+SELECT COUNT(*) AS nc_count FROM `33hao_designer_work` AS `designer_work` LEFT JOIN `33hao_designer` AS `designer` ON designer_work.sn_designer_id = designer.id WHERE ( sn_if_show = '0' ) LIMIT 1  
+[2015-09-30 13:47:07] /33hao/mobile/index.php?act=designer_work&op=designer_work_list ( act=designer_work&op=designer_work_list ) 
+ERR: Db Error: Column 'sn_if_show' in where clause is ambiguous
+SELECT * FROM `33hao_designer_work` AS `designer_work` LEFT JOIN `33hao_designer` AS `designer` ON designer_work.sn_designer_id = designer.id WHERE ( sn_if_show = '0' ) LIMIT 0,10  
+[2015-09-30 13:47:56] /33hao/mobile/index.php?act=designer_work&op=designer_work_list ( act=designer_work&op=designer_work_list ) 
+ERR: Db Error: Column 'sn_if_show' in where clause is ambiguous
+SELECT COUNT(*) AS nc_count FROM `33hao_designer_work` AS `designer_work` LEFT JOIN `33hao_designer` AS `designer` ON designer_work.sn_designer_id = designer.id WHERE ( sn_if_show = '1' ) LIMIT 1  
+[2015-09-30 13:47:56] /33hao/mobile/index.php?act=designer_work&op=designer_work_list ( act=designer_work&op=designer_work_list ) 
+ERR: Db Error: Column 'sn_if_show' in where clause is ambiguous
+SELECT * FROM `33hao_designer_work` AS `designer_work` LEFT JOIN `33hao_designer` AS `designer` ON designer_work.sn_designer_id = designer.id WHERE ( sn_if_show = '1' ) LIMIT 0,10  
+[2015-09-30 13:48:57] /33hao/mobile/index.php?act=designer_work&op=designer_work_list ( act=designer_work&op=designer_work_list ) 
+ERR: Db Error: Column 'sn_if_show' in where clause is ambiguous
+SELECT COUNT(*) AS nc_count FROM `33hao_designer_work` AS `designer_work` LEFT JOIN `33hao_designer` AS `designer` ON designer_work.sn_designer_id = designer.id WHERE ( sn_if_show = '1' ) LIMIT 1  
+[2015-09-30 13:48:57] /33hao/mobile/index.php?act=designer_work&op=designer_work_list ( act=designer_work&op=designer_work_list ) 
+ERR: Db Error: Column 'sn_if_show' in where clause is ambiguous
+SELECT * FROM `33hao_designer_work` AS `designer_work` LEFT JOIN `33hao_designer` AS `designer` ON designer_work.sn_designer_id = designer.id WHERE ( sn_if_show = '1' ) LIMIT 0,10  
+[2015-09-30 13:50:50] /33hao/mobile/index.php?act=designer_work&op=designer_work_list ( act=designer_work&op=designer_work_list ) 
+ERR: Db Error: Column 'sn_if_show' in where clause is ambiguous
+SELECT COUNT(*) AS nc_count FROM `33hao_designer_work` AS `designer_work` LEFT JOIN `33hao_designer` AS `designer` ON designer_work.sn_designer_id = designer.id WHERE ( sn_if_show = '1' ) LIMIT 1  
+[2015-09-30 13:50:50] /33hao/mobile/index.php?act=designer_work&op=designer_work_list ( act=designer_work&op=designer_work_list ) 
+ERR: Db Error: Column 'sn_if_show' in where clause is ambiguous
+SELECT * FROM `33hao_designer_work` AS `designer_work` LEFT JOIN `33hao_designer` AS `designer` ON designer_work.sn_designer_id = designer.id WHERE ( sn_if_show = '1' ) LIMIT 0,10  
+[2015-09-30 14:54:53] /33hao/mobile/index.php?act=designer_work&op=designer_work_list ( act=designer_work&op=designer_work_list ) 
+ERR: Db Error: Column 'id' in where clause is ambiguous
+SELECT COUNT(*) AS nc_count FROM `33hao_designer_work` AS `designer_work` LEFT JOIN `33hao_designer` AS `designer` ON designer_work.sn_designer_id = designer.id WHERE ( id = '2' ) LIMIT 1  
+[2015-09-30 14:54:53] /33hao/mobile/index.php?act=designer_work&op=designer_work_list ( act=designer_work&op=designer_work_list ) 
+ERR: Db Error: Column 'id' in where clause is ambiguous
+SELECT * FROM `33hao_designer_work` AS `designer_work` LEFT JOIN `33hao_designer` AS `designer` ON designer_work.sn_designer_id = designer.id WHERE ( id = '2' ) LIMIT 0,10  
+[2015-09-30 15:00:01] /33hao/mobile/index.php?act=designer_work&op=designer_work_list ( act=designer_work&op=designer_work_list ) 
+ERR: Db Error: Column 'id' in where clause is ambiguous
+SELECT COUNT(*) AS nc_count FROM `33hao_designer_work` AS `designer_work` LEFT JOIN `33hao_designer` AS `designer` ON designer_work.sn_designer_id = designer.id WHERE ( id = '1' ) LIMIT 1  
+[2015-09-30 15:00:01] /33hao/mobile/index.php?act=designer_work&op=designer_work_list ( act=designer_work&op=designer_work_list ) 
+ERR: Db Error: Column 'id' in where clause is ambiguous
+SELECT * FROM `33hao_designer_work` AS `designer_work` LEFT JOIN `33hao_designer` AS `designer` ON designer_work.sn_designer_id = designer.id WHERE ( id = '1' ) LIMIT 0,10  
+[2015-09-30 15:00:31] /33hao/mobile/index.php?act=designer_work&op=designer_work_list ( act=designer_work&op=designer_work_list ) 
+ERR: Db Error: Column 'id' in where clause is ambiguous
+SELECT COUNT(*) AS nc_count FROM `33hao_designer_work` AS `designer_work` LEFT JOIN `33hao_designer` AS `designer` ON designer_work.sn_designer_id = designer.id WHERE ( id = '1' ) LIMIT 1  
+[2015-09-30 15:00:31] /33hao/mobile/index.php?act=designer_work&op=designer_work_list ( act=designer_work&op=designer_work_list ) 
+ERR: Db Error: Column 'id' in where clause is ambiguous
+SELECT * FROM `33hao_designer_work` AS `designer_work` LEFT JOIN `33hao_designer` AS `designer` ON designer_work.sn_designer_id = designer.id WHERE ( id = '1' ) LIMIT 0,10  
+[2015-09-30 15:00:48] /33hao/mobile/index.php?act=designer_work&op=designer_work_list ( act=designer_work&op=designer_work_list ) 
+ERR: Db Error: Column 'id' in where clause is ambiguous
+SELECT COUNT(*) AS nc_count FROM `33hao_designer_work` AS `designer_work` LEFT JOIN `33hao_designer` AS `designer` ON designer_work.sn_designer_id = designer.id WHERE ( id = '1' ) LIMIT 1  
+[2015-09-30 15:00:48] /33hao/mobile/index.php?act=designer_work&op=designer_work_list ( act=designer_work&op=designer_work_list ) 
+ERR: Db Error: Column 'id' in where clause is ambiguous
+SELECT * FROM `33hao_designer_work` AS `designer_work` LEFT JOIN `33hao_designer` AS `designer` ON designer_work.sn_designer_id = designer.id WHERE ( id = '1' ) LIMIT 0,10  
+[2015-09-30 15:01:00] /33hao/mobile/index.php?act=designer_work&op=designer_work_list ( act=designer_work&op=designer_work_list ) 
+ERR: Db Error: Column 'id' in where clause is ambiguous
+SELECT COUNT(*) AS nc_count FROM `33hao_designer_work` AS `designer_work` LEFT JOIN `33hao_designer` AS `designer` ON designer_work.sn_designer_id = designer.id WHERE ( id = '1' ) LIMIT 1  
+[2015-09-30 15:01:00] /33hao/mobile/index.php?act=designer_work&op=designer_work_list ( act=designer_work&op=designer_work_list ) 
+ERR: Db Error: Column 'id' in where clause is ambiguous
+SELECT * FROM `33hao_designer_work` AS `designer_work` LEFT JOIN `33hao_designer` AS `designer` ON designer_work.sn_designer_id = designer.id WHERE ( id = '1' ) LIMIT 0,10  
+[2015-09-30 15:01:43] /33hao/mobile/index.php?act=designer_work&op=designer_work_list ( act=designer_work&op=designer_work_list ) 
+ERR: Db Error: Column 'sn_content' in where clause is ambiguous
+SELECT COUNT(*) AS nc_count FROM `33hao_designer_work` AS `designer_work` LEFT JOIN `33hao_designer` AS `designer` ON designer_work.sn_designer_id = designer.id WHERE ( (sn_name LIKE '%abc%') OR (sn_content LIKE '%abc%') ) LIMIT 1  
+[2015-09-30 15:01:43] /33hao/mobile/index.php?act=designer_work&op=designer_work_list ( act=designer_work&op=designer_work_list ) 
+ERR: Db Error: Column 'sn_content' in where clause is ambiguous
+SELECT * FROM `33hao_designer_work` AS `designer_work` LEFT JOIN `33hao_designer` AS `designer` ON designer_work.sn_designer_id = designer.id WHERE ( (sn_name LIKE '%abc%') OR (sn_content LIKE '%abc%') ) LIMIT 0,10  
+[2015-09-30 15:01:56] /33hao/mobile/index.php?act=designer_work&op=designer_work_list ( act=designer_work&op=designer_work_list ) 
+ERR: Db Error: Column 'sn_if_show' in where clause is ambiguous
+SELECT COUNT(*) AS nc_count FROM `33hao_designer_work` AS `designer_work` LEFT JOIN `33hao_designer` AS `designer` ON designer_work.sn_designer_id = designer.id WHERE ( sn_if_show = '1' ) LIMIT 1  
+[2015-09-30 15:01:56] /33hao/mobile/index.php?act=designer_work&op=designer_work_list ( act=designer_work&op=designer_work_list ) 
+ERR: Db Error: Column 'sn_if_show' in where clause is ambiguous
+SELECT * FROM `33hao_designer_work` AS `designer_work` LEFT JOIN `33hao_designer` AS `designer` ON designer_work.sn_designer_id = designer.id WHERE ( sn_if_show = '1' ) LIMIT 0,10  

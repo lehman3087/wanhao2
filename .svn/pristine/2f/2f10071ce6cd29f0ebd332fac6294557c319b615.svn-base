@@ -1,0 +1,6 @@
+[2015-09-21 19:10:59] /33hao/admin/index.php?act=party_barcode&op=del&del_id=2 ( act=party_barcode&op=del ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where id=2' at line 1
+DELETE  FROM `33hao_party_barcode` WHERE where id=2
+[2015-09-21 19:12:25] /33hao/admin/index.php?act=party_barcode&op=del&del_id=6 ( act=party_barcode&op=del ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where id=6' at line 1
+DELETE  FROM `33hao_party_barcode` WHERE where id=6

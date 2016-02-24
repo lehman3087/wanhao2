@@ -1,0 +1,12 @@
+[2015-12-09 12:32:10] /33hao/mobile/index.php?act=member_applys&op=applyinfo&act_m_apply_act_id=12&key=87ab986dc48b041f4d75ff0398eea786 ( act=member_applys&op=applyinfo ) 
+ERR: Db Error: Table '33hao.33hao_activity_member1' doesn't exist
+SELECT * FROM `33hao_activity_member1` WHERE ( act_m_apply_act_id = NULL ) AND ( act_m_user_id = '16' ) LIMIT 1  
+[2015-12-09 12:33:15] /33hao/mobile/index.php?act=member_applys&op=applyinfo&act_m_apply_act_id=6&key=87ab986dc48b041f4d75ff0398eea786 ( act=member_applys&op=applyinfo ) 
+ERR: Db Error: Table '33hao.33hao_activity_member1' doesn't exist
+SELECT * FROM `33hao_activity_member1` WHERE ( act_m_apply_act_id = NULL ) AND ( act_m_user_id = '16' ) LIMIT 1  
+[2015-12-09 12:33:36] /33hao/mobile/index.php?act=member_applys&op=applyinfo&act_id=6&key=87ab986dc48b041f4d75ff0398eea786 ( act=member_applys&op=applyinfo ) 
+ERR: Db Error: Table '33hao.33hao_activity_member1' doesn't exist
+SELECT * FROM `33hao_activity_member1` WHERE ( act_m_apply_act_id = '6' ) AND ( act_m_user_id = '16' ) LIMIT 1  
+[2015-12-09 12:36:45] /33hao/mobile/index.php?act=member_applys&op=apply_list&act_id=6&key=87ab986dc48b041f4d75ff0398eea786 ( act=member_applys&op=apply_list ) 
+ERR: Db Error: Unknown column 'act_m_id1' in 'order clause'
+SELECT * FROM `33hao_activity_member` AS `activity_member` LEFT JOIN `33hao_activity` AS `activity` ON activity_member.act_m_apply_act_id=activity.activity_id WHERE ( act_m_user_id = '16' ) ORDER BY act_m_id1 desc LIMIT 1000  

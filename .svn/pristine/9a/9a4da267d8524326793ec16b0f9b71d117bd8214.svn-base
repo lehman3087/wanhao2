@@ -1,0 +1,6 @@
+[2015-10-28 10:08:29] /33hao/mobile/index.php?act=decoration_pub&op=getDcList&page=1 ( act=decoration_pub&op=getdclist ) 
+ERR: Db Error: Unknown column 'bid_store_id1' in 'field list'
+SELECT bid_store_id1,count(*) as deal_count FROM `33hao_bid` WHERE ( bid_state = '10' ) AND ( bid_store_id IN ('2') ) AND ( bid_addtime > '1438222109' ) GROUP BY bid_store_id LIMIT 1000  
+[2015-10-28 10:56:14] /33hao/shop/index.php?act=decoration&op=work_list ( act=decoration&op=work_list ) 
+ERR: Db Error: Unknown column 'sn_state' in 'where clause'
+SELECT * FROM `33hao_decoration_work` WHERE ( sn_state = '1' ) AND ( sn_verify = '1' ) ORDER BY id desc LIMIT 1000  

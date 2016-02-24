@@ -1,0 +1,30 @@
+[2015-09-23 12:37:39] /33hao/shop/index.php?act=designer_work&op=designer_work_list ( act=designer_work&op=designer_work_list ) 
+ERR: Db Error: Column 'sn_store_id' in where clause is ambiguous
+SELECT * FROM `33hao_designer_work` AS `designer_work` INNER JOIN `33hao_designer` AS `designer` ON designer_work.sn_designer_id = designer.sn_id WHERE ( sn_store_id = '1' ) LIMIT 1000  
+[2015-09-23 12:38:13] /33hao/shop/index.php?act=designer_work&op=designer_work_list ( act=designer_work&op=designer_work_list ) 
+ERR: Db Error: Column 'sn_store_id' in where clause is ambiguous
+SELECT * FROM `33hao_designer_work` AS `designer_work` INNER JOIN `33hao_designer` AS `designer` ON designer_work.sn_designer_id = designer.sn_id WHERE ( sn_store_id = '1' ) LIMIT 1000  
+[2015-09-23 12:39:42] /33hao/shop/index.php?act=designer_work&op=designer_work_list ( act=designer_work&op=designer_work_list ) 
+ERR: Db Error: Column 'sn_store_id' in where clause is ambiguous
+SELECT * FROM `33hao_designer_work` AS `designer_work` INNER JOIN `33hao_designer` AS `designer` ON designer_work.sn_designer_id = designer.id WHERE ( sn_store_id = '1' ) LIMIT 1000  
+[2015-09-23 12:39:44] /33hao/shop/index.php?act=designer_work&op=designer_work_list ( act=designer_work&op=designer_work_list ) 
+ERR: Db Error: Column 'sn_store_id' in where clause is ambiguous
+SELECT * FROM `33hao_designer_work` AS `designer_work` INNER JOIN `33hao_designer` AS `designer` ON designer_work.sn_designer_id = designer.id WHERE ( sn_store_id = '1' ) LIMIT 1000  
+[2015-09-23 12:40:37] /33hao/shop/index.php?act=designer_work&op=designer_work_list ( act=designer_work&op=designer_work_list ) 
+ERR: Db Error: Column 'sn_store_id' in where clause is ambiguous
+SELECT * FROM `33hao_designer_work` AS `designer_work` INNER JOIN `33hao_designer` AS `designer` ON designer_work.sn_designer_id = designer.id WHERE ( sn_store_id = '1' ) LIMIT 1000  
+[2015-09-23 12:43:48] /33hao/shop/index.php?act=designer_work&op=designer_work_list ( act=designer_work&op=designer_work_list ) 
+ERR: Db Error: Column 'sn_store_id' in where clause is ambiguous
+SELECT * FROM `33hao_designer_work` AS `designer_work` LEFT JOIN `33hao_designer` AS `designer` ON designer_work.sn_designer_id = designer.id WHERE ( sn_store_id = '1' ) LIMIT 1000  
+[2015-09-23 12:45:10] /33hao/shop/index.php?act=designer_work&op=designer_work_list ( act=designer_work&op=designer_work_list ) 
+ERR: Db Error: Column 'sn_store_id' in where clause is ambiguous
+SELECT * FROM `33hao_designer_work` AS `designer_work` LEFT JOIN `33hao_designer` AS `designer` ON designer_work.sn_designer_id = designer.id WHERE ( sn_store_id = '1' ) LIMIT 1000  
+[2015-09-23 12:45:56] /33hao/shop/index.php?act=designer_work&op=designer_work_list ( act=designer_work&op=designer_work_list ) 
+ERR: Db Error: Column 'sn_store_id' in where clause is ambiguous
+SELECT * FROM `33hao_designer_work` AS `designer_work` LEFT JOIN `33hao_designer` AS `designer` ON designer_work.sn_designer_id = designer.id WHERE ( sn_store_id = '1' ) LIMIT 1000  
+[2015-09-23 14:37:56] /33hao/shop/index.php?act=designer_work&op=designer_work_list ( act=designer_work&op=designer_work_list ) 
+ERR: Db Error: Column 'sn_store_id' in field list is ambiguous
+SELECT designer_work.id as fid,sn_name,sn_title,sn_store_id,sn_designer_id,sn_work_pic FROM `33hao_designer_work` AS `designer_work` LEFT JOIN `33hao_designer` AS `designer` ON designer_work.sn_designer_id = designer.id WHERE ( designer_work.sn_store_id = '1' ) LIMIT 1000  
+[2015-09-23 14:38:12] /33hao/shop/index.php?act=designer_work&op=designer_work_list ( act=designer_work&op=designer_work_list ) 
+ERR: Db Error: Column 'sn_store_id' in field list is ambiguous
+SELECT  designer_work.id as fid,sn_name,sn_title,sn_store_id,sn_designer_id,sn_work_pic  FROM `33hao_designer_work` AS `designer_work` LEFT JOIN `33hao_designer` AS `designer` ON designer_work.sn_designer_id = designer.id WHERE ( designer_work.sn_store_id = '1' ) LIMIT 1000  

@@ -1,0 +1,165 @@
+[2015-12-04 09:27:12] /33hao/shop/index.php?act=store_promotion_booth&op=adposition_apply&adp_id=12 ( act=store_promotion_booth&op=adposition_apply ) 
+ERR: Db Error: Unknown column 'activity_detail.store_id' in 'where clause'
+SELECT rec_applys.* FROM `33hao_rec_applys` as `rec_applys`  WHERE  adp_apply_state in ('0','1','3') and activity_detail.store_id='12'
+[2015-12-04 09:27:14] /33hao/shop/index.php?act=store_promotion_booth&op=adposition_apply&adp_id=12&name=1 ( act=store_promotion_booth&op=adposition_apply ) 
+ERR: Db Error: Unknown column 'activity_detail.store_id' in 'where clause'
+SELECT rec_applys.* FROM `33hao_rec_applys` as `rec_applys`  WHERE  adp_apply_state in ('0','1','3') and activity_detail.store_id='12'
+[2015-12-04 09:30:35] /33hao/shop/index.php?act=store_promotion_booth&op=adposition_apply&adp_id=12&name=1 ( act=store_promotion_booth&op=adposition_apply ) 
+ERR: Db Error: Unknown column 'activity_detail.store_id' in 'where clause'
+SELECT rec_applys.* FROM `33hao_rec_applys` as `rec_applys`  WHERE  adp_apply_state in ('0','1','3') and activity_detail.store_id='12'
+[2015-12-04 09:31:32] /33hao/shop/index.php?act=store_promotion_booth&op=adposition_apply&adp_id=12&name=1 ( act=store_promotion_booth&op=adposition_apply ) 
+ERR: Db Error: Unknown column 'rc_applys.store_id' in 'where clause'
+SELECT rec_applys.* FROM `33hao_rec_applys` as `rec_applys`  WHERE  adp_apply_state in ('0','1','3') and rc_applys.store_id='12'
+[2015-12-04 09:32:11] /33hao/shop/index.php?act=store_promotion_booth&op=adposition_apply&adp_id=12&name=1 ( act=store_promotion_booth&op=adposition_apply ) 
+ERR: Db Error: Unknown column 'rc_applys.store_id' in 'where clause'
+SELECT rec_applys.* FROM `33hao_rec_applys` as `rec_applys`  WHERE  adp_apply_state in ('0','1','3') and rc_applys.store_id='12'
+[2015-12-04 09:32:37] /33hao/shop/index.php?act=store_promotion_booth&op=adposition_apply&adp_id=12&name=1 ( act=store_promotion_booth&op=adposition_apply ) 
+ERR: Db Error: Unknown column 'rc_applys.store_id' in 'where clause'
+SELECT rec_applys.* FROM `33hao_rec_applys` as `rec_applys`  WHERE  adp_apply_state in ('0','1','3') and rc_applys.store_id='12'
+[2015-12-04 09:33:28] /33hao/shop/index.php?act=store_promotion_booth&op=adposition_apply&adp_id=12&name=1 ( act=store_promotion_booth&op=adposition_apply ) 
+ERR: Db Error: Unknown column 'rc_applys.store_id' in 'where clause'
+SELECT rec_applys.* FROM `33hao_rec_applys` as `rec_applys`  WHERE 1=1 and adp_apply_state in ('0','1','3') and rc_applys.store_id='12'
+[2015-12-04 09:33:43] /33hao/shop/index.php?act=store_promotion_booth&op=adposition_apply&adp_id=12&name=1 ( act=store_promotion_booth&op=adposition_apply ) 
+ERR: Db Error: Unknown column 'rc_applys.store_id' in 'where clause'
+SELECT rec_applys.* FROM `33hao_rec_applys` as `rec_applys`  WHERE  adp_apply_state in ('0','1','3') and rc_applys.store_id='12'
+[2015-12-04 09:34:41] /33hao/shop/index.php?act=store_promotion_booth&op=adposition_apply&adp_id=12&name=1 ( act=store_promotion_booth&op=adposition_apply ) 
+ERR: Db Error: Unknown column 'rc_applys.store_id' in 'where clause'
+SELECT rec_applys.* FROM `33hao_rec_applys` as `rec_applys`  WHERE  adp_apply_state in ('0','1','3') and rc_applys.store_id='12'
+[2015-12-04 09:35:18] /33hao/shop/index.php?act=store_promotion_booth&op=adposition_apply&adp_id=12&name=1 ( act=store_promotion_booth&op=adposition_apply ) 
+ERR: Db Error: Unknown column 'rc_applys.store_id' in 'where clause'
+SELECT rec_applys.* FROM `33hao_rec_applys` as `rec_applys`  WHERE  adp_apply_state in ('0','1','3') and rc_applys.store_id='12'
+[2015-12-04 09:36:46] /33hao/shop/index.php?act=store_promotion_booth&op=adposition_apply&adp_id=12&name=1 ( act=store_promotion_booth&op=adposition_apply ) 
+ERR: Db Error: Unknown column 'rc_applys.store_id' in 'where clause'
+SELECT rec_applys.* FROM `33hao_rec_applys` as `rec_applys`  WHERE  adp_apply_state in ('0','1','3') and rc_applys.store_id='12'
+[2015-12-04 09:38:33] /33hao/shop/index.php?act=store_promotion_booth&op=adposition_apply&adp_id=12&name=1 ( act=store_promotion_booth&op=adposition_apply ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '=5' at line 1
+SELECT * FROM `33hao_5` as `5`  WHERE  =5
+[2015-12-04 09:38:33] /33hao/shop/index.php?act=store_promotion_booth&op=adposition_apply&adp_id=12&name=1 ( act=store_promotion_booth&op=adposition_apply ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '=1' at line 1
+SELECT * FROM `33hao_1` as `1`  WHERE  =1
+[2015-12-04 09:38:33] /33hao/shop/index.php?act=store_promotion_booth&op=adposition_apply&adp_id=12&name=1 ( act=store_promotion_booth&op=adposition_apply ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '=3' at line 1
+SELECT * FROM `33hao_3` as `3`  WHERE  =3
+[2015-12-04 09:38:33] /33hao/shop/index.php?act=store_promotion_booth&op=adposition_apply&adp_id=12&name=1 ( act=store_promotion_booth&op=adposition_apply ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '=1' at line 1
+SELECT * FROM `33hao_1` as `1`  WHERE  =1
+[2015-12-04 09:38:33] /33hao/shop/index.php?act=store_promotion_booth&op=adposition_apply&adp_id=12&name=1 ( act=store_promotion_booth&op=adposition_apply ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '=1' at line 1
+SELECT * FROM `33hao_1` as `1`  WHERE  =1
+[2015-12-04 09:38:33] /33hao/shop/index.php?act=store_promotion_booth&op=adposition_apply&adp_id=12&name=1 ( act=store_promotion_booth&op=adposition_apply ) 
+ERR: Db Error: Invalid utf8 character string: '33hao_\xE5'
+SELECT * FROM `33hao_å` as `å`  WHERE  =å
+[2015-12-04 09:38:33] /33hao/shop/index.php?act=store_promotion_booth&op=adposition_apply&adp_id=12&name=1 ( act=store_promotion_booth&op=adposition_apply ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '=0' at line 1
+SELECT * FROM `33hao_0` as `0`  WHERE  =0
+[2015-12-04 09:38:33] /33hao/shop/index.php?act=store_promotion_booth&op=adposition_apply&adp_id=12&name=1 ( act=store_promotion_booth&op=adposition_apply ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '=2' at line 1
+SELECT * FROM `33hao_2` as `2`  WHERE  =2
+[2015-12-04 09:38:33] /33hao/shop/index.php?act=store_promotion_booth&op=adposition_apply&adp_id=12&name=1 ( act=store_promotion_booth&op=adposition_apply ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '=1' at line 1
+SELECT * FROM `33hao_1` as `1`  WHERE  =1
+[2015-12-04 09:38:33] /33hao/shop/index.php?act=store_promotion_booth&op=adposition_apply&adp_id=12&name=1 ( act=store_promotion_booth&op=adposition_apply ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '=p' at line 1
+SELECT * FROM `33hao_p` as `p`  WHERE  =p
+[2015-12-04 09:38:48] /33hao/shop/index.php?act=store_promotion_booth&op=adposition_apply&adp_id=12&name=1 ( act=store_promotion_booth&op=adposition_apply ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '=5' at line 1
+SELECT * FROM `33hao_5` as `5`  WHERE  =5
+[2015-12-04 09:38:48] /33hao/shop/index.php?act=store_promotion_booth&op=adposition_apply&adp_id=12&name=1 ( act=store_promotion_booth&op=adposition_apply ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '=1' at line 1
+SELECT * FROM `33hao_1` as `1`  WHERE  =1
+[2015-12-04 09:38:48] /33hao/shop/index.php?act=store_promotion_booth&op=adposition_apply&adp_id=12&name=1 ( act=store_promotion_booth&op=adposition_apply ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '=3' at line 1
+SELECT * FROM `33hao_3` as `3`  WHERE  =3
+[2015-12-04 09:38:48] /33hao/shop/index.php?act=store_promotion_booth&op=adposition_apply&adp_id=12&name=1 ( act=store_promotion_booth&op=adposition_apply ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '=1' at line 1
+SELECT * FROM `33hao_1` as `1`  WHERE  =1
+[2015-12-04 09:38:48] /33hao/shop/index.php?act=store_promotion_booth&op=adposition_apply&adp_id=12&name=1 ( act=store_promotion_booth&op=adposition_apply ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '=1' at line 1
+SELECT * FROM `33hao_1` as `1`  WHERE  =1
+[2015-12-04 09:38:48] /33hao/shop/index.php?act=store_promotion_booth&op=adposition_apply&adp_id=12&name=1 ( act=store_promotion_booth&op=adposition_apply ) 
+ERR: Db Error: Invalid utf8 character string: '33hao_\xE5'
+SELECT * FROM `33hao_å` as `å`  WHERE  =å
+[2015-12-04 09:38:48] /33hao/shop/index.php?act=store_promotion_booth&op=adposition_apply&adp_id=12&name=1 ( act=store_promotion_booth&op=adposition_apply ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '=0' at line 1
+SELECT * FROM `33hao_0` as `0`  WHERE  =0
+[2015-12-04 09:38:48] /33hao/shop/index.php?act=store_promotion_booth&op=adposition_apply&adp_id=12&name=1 ( act=store_promotion_booth&op=adposition_apply ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '=2' at line 1
+SELECT * FROM `33hao_2` as `2`  WHERE  =2
+[2015-12-04 09:38:48] /33hao/shop/index.php?act=store_promotion_booth&op=adposition_apply&adp_id=12&name=1 ( act=store_promotion_booth&op=adposition_apply ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '=1' at line 1
+SELECT * FROM `33hao_1` as `1`  WHERE  =1
+[2015-12-04 09:38:48] /33hao/shop/index.php?act=store_promotion_booth&op=adposition_apply&adp_id=12&name=1 ( act=store_promotion_booth&op=adposition_apply ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '=p' at line 1
+SELECT * FROM `33hao_p` as `p`  WHERE  =p
+[2015-12-04 09:39:20] /33hao/shop/index.php?act=store_promotion_booth&op=adposition_apply&adp_id=12&name=1 ( act=store_promotion_booth&op=adposition_apply ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '=5' at line 1
+SELECT * FROM `33hao_5` as `5`  WHERE  =5
+[2015-12-04 09:39:20] /33hao/shop/index.php?act=store_promotion_booth&op=adposition_apply&adp_id=12&name=1 ( act=store_promotion_booth&op=adposition_apply ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '=1' at line 1
+SELECT * FROM `33hao_1` as `1`  WHERE  =1
+[2015-12-04 09:39:20] /33hao/shop/index.php?act=store_promotion_booth&op=adposition_apply&adp_id=12&name=1 ( act=store_promotion_booth&op=adposition_apply ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '=3' at line 1
+SELECT * FROM `33hao_3` as `3`  WHERE  =3
+[2015-12-04 09:39:20] /33hao/shop/index.php?act=store_promotion_booth&op=adposition_apply&adp_id=12&name=1 ( act=store_promotion_booth&op=adposition_apply ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '=1' at line 1
+SELECT * FROM `33hao_1` as `1`  WHERE  =1
+[2015-12-04 09:39:20] /33hao/shop/index.php?act=store_promotion_booth&op=adposition_apply&adp_id=12&name=1 ( act=store_promotion_booth&op=adposition_apply ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '=1' at line 1
+SELECT * FROM `33hao_1` as `1`  WHERE  =1
+[2015-12-04 09:39:20] /33hao/shop/index.php?act=store_promotion_booth&op=adposition_apply&adp_id=12&name=1 ( act=store_promotion_booth&op=adposition_apply ) 
+ERR: Db Error: Invalid utf8 character string: '33hao_\xE5'
+SELECT * FROM `33hao_å` as `å`  WHERE  =å
+[2015-12-04 09:39:20] /33hao/shop/index.php?act=store_promotion_booth&op=adposition_apply&adp_id=12&name=1 ( act=store_promotion_booth&op=adposition_apply ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '=0' at line 1
+SELECT * FROM `33hao_0` as `0`  WHERE  =0
+[2015-12-04 09:39:20] /33hao/shop/index.php?act=store_promotion_booth&op=adposition_apply&adp_id=12&name=1 ( act=store_promotion_booth&op=adposition_apply ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '=2' at line 1
+SELECT * FROM `33hao_2` as `2`  WHERE  =2
+[2015-12-04 09:39:20] /33hao/shop/index.php?act=store_promotion_booth&op=adposition_apply&adp_id=12&name=1 ( act=store_promotion_booth&op=adposition_apply ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '=1' at line 1
+SELECT * FROM `33hao_1` as `1`  WHERE  =1
+[2015-12-04 09:39:20] /33hao/shop/index.php?act=store_promotion_booth&op=adposition_apply&adp_id=12&name=1 ( act=store_promotion_booth&op=adposition_apply ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '=p' at line 1
+SELECT * FROM `33hao_p` as `p`  WHERE  =p
+[2015-12-04 10:08:22] /33hao/admin/index.php?act=rec_position&op=detail&rec_id=12 ( act=rec_position&op=detail ) 
+ERR: Db Error: Unknown column 'rec_applys.adp_apply_state_sort' in 'order clause'
+SELECT * FROM `33hao_rec_applys` as `rec_applys`   order by rec_applys.adp_apply_state asc,rec_applys.adp_apply_state_sort asc limit 0,10
+[2015-12-04 10:09:03] /33hao/admin/index.php?act=rec_position&op=detail&rec_id=12 ( act=rec_position&op=detail ) 
+ERR: Db Error: Unknown column 'rec_applys.adp_apply_state_sort' in 'order clause'
+SELECT * FROM `33hao_rec_applys` as `rec_applys`   order by rec_applys.adp_apply_state asc,rec_applys.adp_apply_state_sort asc limit 0,10
+[2015-12-04 14:58:57] /33hao/admin/index.php?act=rec_position&op=detail&rec_id=12 ( act=rec_position&op=detail ) 
+ERR: Db Error: Unknown column 'rec_applys.rec_id' in 'where clause'
+SELECT count(*) as count FROM `33hao_rec_applys` as `rec_applys`  WHERE  rec_applys.rec_id = '12'
+[2015-12-04 14:58:57] /33hao/admin/index.php?act=rec_position&op=detail&rec_id=12 ( act=rec_position&op=detail ) 
+ERR: Db Error: Unknown column 'rec_applys.rec_id' in 'where clause'
+SELECT * FROM `33hao_rec_applys` as `rec_applys`  WHERE  rec_applys.rec_id = '12' order by rec_applys.adp_apply_state asc,rec_applys.adp_apply_sort asc limit 0,10
+[2015-12-04 14:59:23] /33hao/admin/index.php?act=rec_position&op=detail&rec_id=12 ( act=rec_position&op=detail ) 
+ERR: Db Error: Unknown column 'rec_applys.rec_id' in 'where clause'
+SELECT count(*) as count FROM `33hao_rec_applys` as `rec_applys`  WHERE  rec_applys.rec_id = '12'
+[2015-12-04 14:59:23] /33hao/admin/index.php?act=rec_position&op=detail&rec_id=12 ( act=rec_position&op=detail ) 
+ERR: Db Error: Unknown column 'rec_applys.rec_id' in 'where clause'
+SELECT * FROM `33hao_rec_applys` as `rec_applys`  WHERE  rec_applys.rec_id = '12' order by rec_applys.adp_apply_state asc,rec_applys.adp_apply_sort asc limit 0,10
+[2015-12-04 15:12:46] /33hao/admin/index.php?act=rec_position&op=ajax&branch=rec_detail_sort&id=5&column=rec_detail_sort&value=12 ( act=rec_position&op=ajax ) 
+ERR: Db Error: Unknown column 'activity_detail_id' in 'where clause'
+UPDATE `33hao_rec_applys` AS `rec_applys` SET rec_detail_sort = '12'  WHERE activity_detail_id in(5)
+[2015-12-04 15:13:08] /33hao/admin/index.php?act=rec_position&op=ajax&branch=rec_detail_sort&id=5&column=adp_apply_sort&value=251 ( act=rec_position&op=ajax ) 
+ERR: Db Error: Unknown column 'activity_detail_id' in 'where clause'
+UPDATE `33hao_rec_applys` AS `rec_applys` SET adp_apply_sort = '251'  WHERE activity_detail_id in(5)
+[2015-12-04 18:37:26] /33hao/mobile/index.php?act=decoration_pub&op=selctBid&user_id=18&dc_id=1&bid_id=4&dw_id=13 ( act=decoration_pub&op=selctbid ) 
+ERR: Db Error: Duplicate entry '13' for key 'bt_rid'
+INSERT  INTO `33hao_bid_target` (bt_user_id,bt_dc_id,bt_rid,bt_evaluation) VALUES ('18','1','13',NULL)
+[2015-12-04 19:51:50] /33hao/mobile/index.php?act=decoration_pub&op=selctBid&user_id=18&dc_id=1&bid_id=4&dw_id=13 ( act=decoration_pub&op=selctbid ) 
+ERR: Db Error: Duplicate entry '13' for key 'bt_rid'
+INSERT  INTO `33hao_bid_target` (bt_user_id,bt_dc_id,bt_rid,bt_evaluation) VALUES ('18','1','13',NULL)
+[2015-12-04 19:52:33] /33hao/mobile/index.php?act=decoration_pub&op=selctBid&user_id=18&dc_id=1&bid_id=4&dw_id=13 ( act=decoration_pub&op=selctbid ) 
+ERR: Db Error: Duplicate entry '13' for key 'bt_rid'
+INSERT  INTO `33hao_bid_target` (bt_user_id,bt_dc_id,bt_rid,bt_evaluation) VALUES ('18','1','13',NULL)
+[2015-12-04 19:52:47] /33hao/mobile/index.php?act=decoration_pub&op=selctBid&user_id=18&dc_id=1&bid_id=4&dw_id=13 ( act=decoration_pub&op=selctbid ) 
+ERR: Db Error: Duplicate entry '13' for key 'bt_rid'
+INSERT  INTO `33hao_bid_target` (bt_user_id,bt_dc_id,bt_rid,bt_evaluation) VALUES ('18','1','13',NULL)
+[2015-12-04 19:56:15] /33hao/mobile/index.php?act=decoration_pub&op=selctBid&user_id=18&dc_id=1&bid_id=4&dw_id=13 ( act=decoration_pub&op=selctbid ) 
+ERR: Db Error: Duplicate entry '13' for key 'bt_rid'
+INSERT  INTO `33hao_bid_target` (bt_user_id,bt_dc_id,bt_rid,bt_evaluation) VALUES ('18','1','13',NULL)
+[2015-12-04 19:56:49] /33hao/mobile/index.php?act=decoration_pub&op=selctBid&user_id=18&dc_id=1&bid_id=4&dw_id=13 ( act=decoration_pub&op=selctbid ) 
+ERR: Db Error: Duplicate entry '13' for key 'bt_rid'
+INSERT  INTO `33hao_bid_target` (bt_user_id,bt_dc_id,bt_rid,bt_evaluation) VALUES ('18','1','13',NULL)

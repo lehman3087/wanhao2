@@ -1,0 +1,36 @@
+[2015-12-07 16:56:26] /33hao/mobile/index.php?act=decoration&op=selctBid&bid_id=13&dc_id=6&dw_id=35&key=f150ec6b85c0c032b30aaf2d62a8e6d9&user_id=17 ( act=decoration&op=selctbid ) 
+ERR: Db Error: Duplicate entry '35' for key 'bt_rid'
+INSERT  INTO `33hao_bid_target` (bt_user_id,bt_dc_id,bt_rid,bt_evaluation,bt_bid) VALUES ('17','6','35',NULL,'13')
+[2015-12-07 16:59:59] /33hao/mobile/index.php?act=decoration&op=selctBid&bid_id=13&dc_id=6&dw_id=35&key=f150ec6b85c0c032b30aaf2d62a8e6d9&user_id=17 ( act=decoration&op=selctbid ) 
+ERR: Db Error: Duplicate entry '35' for key 'bt_rid'
+INSERT  INTO `33hao_bid_target` (bt_user_id,bt_dc_id,bt_rid,bt_evaluation,bt_bid) VALUES ('17','6','35',NULL,'13')
+[2015-12-07 17:00:07] /33hao/mobile/index.php?act=decoration&op=selctBid&bid_id=13&dc_id=6&dw_id=35&key=f150ec6b85c0c032b30aaf2d62a8e6d9&user_id=17 ( act=decoration&op=selctbid ) 
+ERR: Db Error: Duplicate entry '35' for key 'bt_rid'
+INSERT  INTO `33hao_bid_target` (bt_user_id,bt_dc_id,bt_rid,bt_evaluation,bt_bid) VALUES ('17','6','35',NULL,'13')
+[2015-12-07 17:00:14] /33hao/mobile/index.php?act=decoration&op=selctBid&bid_id=13&dc_id=6&dw_id=35&key=f150ec6b85c0c032b30aaf2d62a8e6d9&user_id=17 ( act=decoration&op=selctbid ) 
+ERR: Db Error: Duplicate entry '35' for key 'bt_rid'
+INSERT  INTO `33hao_bid_target` (bt_user_id,bt_dc_id,bt_rid,bt_evaluation,bt_bid) VALUES ('17','6','35',NULL,'13')
+[2015-12-07 18:44:56] /33hao/admin/index.php?act=activity&op=member&search_field_name=member_name&search_field_value=admin&search_sort=&search_grade=-1 ( act=activity&op=member ) 
+ERR: Db Error: Unknown column 'member_name1' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `33hao_activity_member` AS `activity_member` LEFT JOIN `33hao_member` AS `member` ON activity_member.act_m_user_id=member.member_id WHERE ( activity_member.act_m_apply_act_id = NULL ) AND ( member_name1 LIKE '%admin%' ) LIMIT 1  
+[2015-12-07 18:44:57] /33hao/admin/index.php?act=activity&op=member&search_field_name=member_name&search_field_value=admin&search_sort=&search_grade=-1 ( act=activity&op=member ) 
+ERR: Db Error: Unknown column 'member_name1' in 'where clause'
+SELECT * FROM `33hao_activity_member` AS `activity_member` LEFT JOIN `33hao_member` AS `member` ON activity_member.act_m_user_id=member.member_id WHERE ( activity_member.act_m_apply_act_id = NULL ) AND ( member_name1 LIKE '%admin%' ) ORDER BY member_id desc LIMIT 0,10  
+[2015-12-07 18:46:06] /33hao/admin/index.php?act=activity&op=member&act_m_apply_act_id=6&search_field_name=member_name&search_field_value=admin&search_sort=&search_grade=-1 ( act=activity&op=member ) 
+ERR: Db Error: Unknown column 'member_name1' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `33hao_activity_member` AS `activity_member` LEFT JOIN `33hao_member` AS `member` ON activity_member.act_m_user_id=member.member_id WHERE ( activity_member.act_m_apply_act_id = NULL ) AND ( member_name1 LIKE '%admin%' ) LIMIT 1  
+[2015-12-07 18:46:06] /33hao/admin/index.php?act=activity&op=member&act_m_apply_act_id=6&search_field_name=member_name&search_field_value=admin&search_sort=&search_grade=-1 ( act=activity&op=member ) 
+ERR: Db Error: Unknown column 'member_name1' in 'where clause'
+SELECT * FROM `33hao_activity_member` AS `activity_member` LEFT JOIN `33hao_member` AS `member` ON activity_member.act_m_user_id=member.member_id WHERE ( activity_member.act_m_apply_act_id = NULL ) AND ( member_name1 LIKE '%admin%' ) ORDER BY member_id desc LIMIT 0,10  
+[2015-12-07 18:47:39] /33hao/admin/index.php?act=activity&op=member&act_m_apply_act_id=6&search_field_name=member_name&search_field_value=admin&search_sort=&search_grade=-1 ( act=activity&op=member ) 
+ERR: Db Error: Unknown column 'member_name1' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `33hao_activity_member` AS `activity_member` LEFT JOIN `33hao_member` AS `member` ON activity_member.act_m_user_id=member.member_id WHERE ( activity_member.act_m_apply_act_id = '6' ) AND ( member_name1 LIKE '%admin%' ) LIMIT 1  
+[2015-12-07 18:47:39] /33hao/admin/index.php?act=activity&op=member&act_m_apply_act_id=6&search_field_name=member_name&search_field_value=admin&search_sort=&search_grade=-1 ( act=activity&op=member ) 
+ERR: Db Error: Unknown column 'member_name1' in 'where clause'
+SELECT * FROM `33hao_activity_member` AS `activity_member` LEFT JOIN `33hao_member` AS `member` ON activity_member.act_m_user_id=member.member_id WHERE ( activity_member.act_m_apply_act_id = '6' ) AND ( member_name1 LIKE '%admin%' ) ORDER BY member_id desc LIMIT 0,10  
+[2015-12-07 18:49:17] /33hao/admin/index.php?act=activity&op=member&act_m_apply_act_id=&search_field_name=member_name&search_field_value=&search_sort=&search_grade=0 ( act=activity&op=member ) 
+ERR: Db Error: Unknown column 'member_exppoints1' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `33hao_activity_member` AS `activity_member` LEFT JOIN `33hao_member` AS `member` ON activity_member.act_m_user_id=member.member_id WHERE ( activity_member.act_m_apply_act_id = '' ) AND ( (member_exppoints1 >= '0') AND (member_exppoints1 < '1000')  ) LIMIT 1  
+[2015-12-07 18:49:17] /33hao/admin/index.php?act=activity&op=member&act_m_apply_act_id=&search_field_name=member_name&search_field_value=&search_sort=&search_grade=0 ( act=activity&op=member ) 
+ERR: Db Error: Unknown column 'member_exppoints1' in 'where clause'
+SELECT * FROM `33hao_activity_member` AS `activity_member` LEFT JOIN `33hao_member` AS `member` ON activity_member.act_m_user_id=member.member_id WHERE ( activity_member.act_m_apply_act_id = '' ) AND ( (member_exppoints1 >= '0') AND (member_exppoints1 < '1000')  ) ORDER BY member_id desc LIMIT 0,10  

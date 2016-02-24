@@ -1,0 +1,135 @@
+[2015-10-29 11:04:56] /33hao/mobile/index.php?act=designer&op=designer_list ( act=designer&op=designer_list ) 
+ERR: Db Error: Unknown column '3' in 'order clause'
+SELECT COUNT(*) AS nc_count FROM `33hao_designer_work` WHERE ( sn_designer_id = '3' ) ORDER BY 3 LIMIT 1  
+[2015-10-29 11:06:13] /33hao/mobile/index.php?act=designer&op=designer_list ( act=designer&op=designer_list ) 
+ERR: Db Error: Unknown column '3' in 'order clause'
+SELECT COUNT(*) AS nc_count FROM `33hao_designer_work` WHERE ( sn_designer_id = '4' ) ORDER BY 3 LIMIT 1  
+[2015-10-29 11:07:26] /33hao/mobile/index.php?act=designer&op=designer_list ( act=designer&op=designer_list ) 
+ERR: Db Error: Unknown column 'sn_designer_collect' in 'order clause'
+SELECT COUNT(*) AS nc_count FROM `33hao_designer_work` WHERE ( sn_designer_id = '20' ) ORDER BY sn_designer_collect desc LIMIT 1  
+[2015-10-29 11:08:42] /33hao/mobile/index.php?act=designer&op=designer_list ( act=designer&op=designer_list ) 
+ERR: Db Error: Unknown column 'sn_designer_collect' in 'order clause'
+SELECT COUNT(*) AS nc_count FROM `33hao_designer_work` WHERE ( sn_designer_id = '20' ) ORDER BY sn_designer_collect desc LIMIT 1  
+[2015-10-29 11:10:55] /33hao/mobile/index.php?act=designer&op=designer_list ( act=designer&op=designer_list ) 
+ERR: Db Error: Unknown column '3' in 'order clause'
+SELECT COUNT(*) AS nc_count FROM `33hao_designer_work` WHERE ( sn_designer_id = '4' ) ORDER BY 3 LIMIT 1  
+[2015-10-29 11:13:09] /33hao/mobile/index.php?act=designer&op=designer_list ( act=designer&op=designer_list ) 
+ERR: Db Error: FUNCTION 33hao.sort does not exist
+SELECT * FROM `33hao_designer` ORDER BY sort() LIMIT 0,3  
+[2015-10-29 11:13:09] /33hao/mobile/index.php?act=designer&op=designer_list ( act=designer&op=designer_list ) 
+ERR: Db Error: FUNCTION 33hao.sort does not exist
+SELECT count(*) AS nc_count FROM `33hao_designer` ORDER BY sort() LIMIT 1  
+[2015-10-29 11:14:43] /33hao/mobile/index.php?act=designer&op=designer_list ( act=designer&op=designer_list ) 
+ERR: Db Error: Unknown column '3' in 'order clause'
+SELECT COUNT(*) AS nc_count FROM `33hao_designer_work` WHERE ( sn_designer_id = '4' ) ORDER BY 3 LIMIT 1  
+[2015-10-29 11:14:46] /33hao/mobile/index.php?act=designer&op=designer_list ( act=designer&op=designer_list ) 
+ERR: Db Error: Unknown column '3' in 'order clause'
+SELECT COUNT(*) AS nc_count FROM `33hao_designer_work` WHERE ( sn_designer_id = '4' ) ORDER BY 3 LIMIT 1  
+[2015-10-29 11:15:39] /33hao/mobile/index.php?act=designer&op=designer_list ( act=designer&op=designer_list ) 
+ERR: Db Error: Unknown column '3' in 'order clause'
+SELECT COUNT(*) AS nc_count FROM `33hao_designer_work` WHERE ( sn_designer_id = '4' ) ORDER BY 3 LIMIT 1  
+[2015-10-29 11:17:08] /33hao/mobile/index.php?act=designer&op=designer_list ( act=designer&op=designer_list ) 
+ERR: Db Error: Unknown column '3' in 'order clause'
+SELECT COUNT(*) AS nc_count FROM `33hao_designer_work` WHERE ( sn_designer_id = '4' ) ORDER BY 3 LIMIT 1  
+[2015-10-29 11:21:50] /33hao/mobile/index.php?act=designer&op=designer_list ( act=designer&op=designer_list ) 
+ERR: Db Error: Unknown column '3' in 'order clause'
+SELECT COUNT(*) AS nc_count FROM `33hao_designer_work` WHERE ( sn_designer_id = '4' ) ORDER BY 3 LIMIT 1  
+[2015-10-29 11:21:53] /33hao/mobile/index.php?act=designer&op=designer_list ( act=designer&op=designer_list ) 
+ERR: Db Error: Unknown column '3' in 'order clause'
+SELECT COUNT(*) AS nc_count FROM `33hao_designer_work` WHERE ( sn_designer_id = '4' ) ORDER BY 3 LIMIT 1  
+[2015-10-29 11:22:13] /33hao/mobile/index.php?act=designer&op=designer_list ( act=designer&op=designer_list ) 
+ERR: Db Error: Unknown column '3' in 'order clause'
+SELECT COUNT(*) AS nc_count FROM `33hao_designer_work` WHERE ( sn_designer_id = '4' ) ORDER BY 3 LIMIT 1  
+[2015-10-29 11:22:15] /33hao/mobile/index.php?act=designer&op=designer_list ( act=designer&op=designer_list ) 
+ERR: Db Error: Unknown column '3' in 'order clause'
+SELECT COUNT(*) AS nc_count FROM `33hao_designer_work` WHERE ( sn_designer_id = '4' ) ORDER BY 3 LIMIT 1  
+[2015-10-29 11:22:17] /33hao/mobile/index.php?act=designer&op=designer_list ( act=designer&op=designer_list ) 
+ERR: Db Error: Unknown column '3' in 'order clause'
+SELECT COUNT(*) AS nc_count FROM `33hao_designer_work` WHERE ( sn_designer_id = '4' ) ORDER BY 3 LIMIT 1  
+[2015-10-29 11:23:35] /33hao/mobile/index.php?act=designer&op=designer_list ( act=designer&op=designer_list ) 
+ERR: Db Error: Unknown column '3' in 'order clause'
+SELECT COUNT(*) AS nc_count FROM `33hao_designer_work` WHERE ( sn_designer_id = '4' ) ORDER BY 3 LIMIT 1  
+[2015-10-29 11:23:37] /33hao/mobile/index.php?act=designer&op=designer_list ( act=designer&op=designer_list ) 
+ERR: Db Error: Unknown column '3' in 'order clause'
+SELECT COUNT(*) AS nc_count FROM `33hao_designer_work` WHERE ( sn_designer_id = '4' ) ORDER BY 3 LIMIT 1  
+[2015-10-29 11:25:41] /33hao/mobile/index.php?act=designer&op=designer_list ( act=designer&op=designer_list ) 
+ERR: Db Error: Unknown column '3' in 'order clause'
+SELECT COUNT(*) AS nc_count FROM `33hao_designer_work` WHERE ( sn_designer_id = '4' ) ORDER BY 3 LIMIT 1  
+[2015-10-29 11:26:29] /33hao/mobile/index.php?act=designer&op=designer_list ( act=designer&op=designer_list ) 
+ERR: Db Error: Unknown column '3' in 'order clause'
+SELECT COUNT(*) AS nc_count FROM `33hao_designer_work` WHERE ( sn_designer_id = '4' ) ORDER BY 3 LIMIT 1  
+[2015-10-29 11:26:31] /33hao/mobile/index.php?act=designer&op=designer_list ( act=designer&op=designer_list ) 
+ERR: Db Error: Unknown column '3' in 'order clause'
+SELECT COUNT(*) AS nc_count FROM `33hao_designer_work` WHERE ( sn_designer_id = '4' ) ORDER BY 3 LIMIT 1  
+[2015-10-29 11:27:08] /33hao/mobile/index.php?act=designer&op=designer_list ( act=designer&op=designer_list ) 
+ERR: Db Error: Unknown column '3' in 'order clause'
+SELECT COUNT(*) AS nc_count FROM `33hao_designer_work` WHERE ( sn_designer_id = '4' ) ORDER BY 3 LIMIT 1  
+[2015-10-29 11:27:13] /33hao/mobile/index.php?act=designer&op=designer_list ( act=designer&op=designer_list ) 
+ERR: Db Error: Unknown column '3' in 'order clause'
+SELECT COUNT(*) AS nc_count FROM `33hao_designer_work` WHERE ( sn_designer_id = '4' ) ORDER BY 3 LIMIT 1  
+[2015-10-29 11:27:39] /33hao/mobile/index.php?act=designer&op=designer_list ( act=designer&op=designer_list ) 
+ERR: Db Error: Unknown column '3' in 'order clause'
+SELECT COUNT(*) AS nc_count FROM `33hao_designer_work` WHERE ( sn_designer_id = '4' ) ORDER BY 3 LIMIT 1  
+[2015-10-29 11:27:41] /33hao/mobile/index.php?act=designer&op=designer_list ( act=designer&op=designer_list ) 
+ERR: Db Error: Unknown column '3' in 'order clause'
+SELECT COUNT(*) AS nc_count FROM `33hao_designer_work` WHERE ( sn_designer_id = '4' ) ORDER BY 3 LIMIT 1  
+[2015-10-29 11:27:43] /33hao/mobile/index.php?act=designer&op=designer_list ( act=designer&op=designer_list ) 
+ERR: Db Error: Unknown column '3' in 'order clause'
+SELECT COUNT(*) AS nc_count FROM `33hao_designer_work` WHERE ( sn_designer_id = '4' ) ORDER BY 3 LIMIT 1  
+[2015-10-29 11:27:45] /33hao/mobile/index.php?act=designer&op=designer_list ( act=designer&op=designer_list ) 
+ERR: Db Error: Unknown column '3' in 'order clause'
+SELECT COUNT(*) AS nc_count FROM `33hao_designer_work` WHERE ( sn_designer_id = '4' ) ORDER BY 3 LIMIT 1  
+[2015-10-29 11:28:42] /33hao/mobile/index.php?act=designer&op=designer_list ( act=designer&op=designer_list ) 
+ERR: Db Error: Unknown column '3' in 'order clause'
+SELECT COUNT(*) AS nc_count FROM `33hao_designer_work` WHERE ( sn_designer_id = '4' ) ORDER BY 3 LIMIT 1  
+[2015-10-29 11:28:44] /33hao/mobile/index.php?act=designer&op=designer_list ( act=designer&op=designer_list ) 
+ERR: Db Error: Unknown column '3' in 'order clause'
+SELECT COUNT(*) AS nc_count FROM `33hao_designer_work` WHERE ( sn_designer_id = '4' ) ORDER BY 3 LIMIT 1  
+[2015-10-29 11:28:46] /33hao/mobile/index.php?act=designer&op=designer_list ( act=designer&op=designer_list ) 
+ERR: Db Error: Unknown column '3' in 'order clause'
+SELECT COUNT(*) AS nc_count FROM `33hao_designer_work` WHERE ( sn_designer_id = '4' ) ORDER BY 3 LIMIT 1  
+[2015-10-29 11:28:49] /33hao/mobile/index.php?act=designer&op=designer_list ( act=designer&op=designer_list ) 
+ERR: Db Error: Unknown column '3' in 'order clause'
+SELECT COUNT(*) AS nc_count FROM `33hao_designer_work` WHERE ( sn_designer_id = '4' ) ORDER BY 3 LIMIT 1  
+[2015-10-29 11:29:03] /33hao/mobile/index.php?act=designer&op=designer_list ( act=designer&op=designer_list ) 
+ERR: Db Error: Unknown column '3' in 'order clause'
+SELECT COUNT(*) AS nc_count FROM `33hao_designer_work` WHERE ( sn_designer_id = '4' ) ORDER BY 3 LIMIT 1  
+[2015-10-29 11:29:08] /33hao/mobile/index.php?act=designer&op=designer_list ( act=designer&op=designer_list ) 
+ERR: Db Error: Unknown column '3' in 'order clause'
+SELECT COUNT(*) AS nc_count FROM `33hao_designer_work` WHERE ( sn_designer_id = '4' ) ORDER BY 3 LIMIT 1  
+[2015-10-29 11:33:59] /33hao/mobile/index.php?act=designer&op=designer_list ( act=designer&op=designer_list ) 
+ERR: Db Error: Unknown column '3' in 'order clause'
+SELECT COUNT(*) AS nc_count FROM `33hao_designer_work` WHERE ( sn_designer_id = '4' ) ORDER BY 3 LIMIT 1  
+[2015-10-29 11:34:01] /33hao/mobile/index.php?act=designer&op=designer_list ( act=designer&op=designer_list ) 
+ERR: Db Error: Unknown column '3' in 'order clause'
+SELECT COUNT(*) AS nc_count FROM `33hao_designer_work` WHERE ( sn_designer_id = '4' ) ORDER BY 3 LIMIT 1  
+[2015-10-29 11:34:03] /33hao/mobile/index.php?act=designer&op=designer_list ( act=designer&op=designer_list ) 
+ERR: Db Error: Unknown column '3' in 'order clause'
+SELECT COUNT(*) AS nc_count FROM `33hao_designer_work` WHERE ( sn_designer_id = '4' ) ORDER BY 3 LIMIT 1  
+[2015-10-29 11:34:12] /33hao/mobile/index.php?act=designer&op=designer_list ( act=designer&op=designer_list ) 
+ERR: Db Error: Unknown column '3' in 'order clause'
+SELECT COUNT(*) AS nc_count FROM `33hao_designer_work` WHERE ( sn_designer_id = '4' ) ORDER BY 3 LIMIT 1  
+[2015-10-29 11:34:38] /33hao/mobile/index.php?act=designer&op=designer_list ( act=designer&op=designer_list ) 
+ERR: Db Error: Unknown column '3' in 'order clause'
+SELECT COUNT(*) AS nc_count FROM `33hao_designer_work` WHERE ( sn_designer_id = '4' ) ORDER BY 3 LIMIT 1  
+[2015-10-29 11:35:04] /33hao/mobile/index.php?act=designer&op=designer_list ( act=designer&op=designer_list ) 
+ERR: Db Error: Unknown column '3' in 'order clause'
+SELECT COUNT(*) AS nc_count FROM `33hao_designer_work` WHERE ( sn_designer_id = '4' ) ORDER BY 3 LIMIT 1  
+[2015-10-29 11:37:49] /33hao/mobile/index.php?act=designer&op=designer_list ( act=designer&op=designer_list ) 
+ERR: Db Error: Unknown column '3' in 'order clause'
+SELECT COUNT(*) AS nc_count FROM `33hao_designer_work` WHERE ( sn_designer_id = '4' ) ORDER BY 3 LIMIT 1  
+[2015-10-29 11:38:01] /33hao/mobile/index.php?act=designer&op=designer_list ( act=designer&op=designer_list ) 
+ERR: Db Error: Unknown column '3' in 'order clause'
+SELECT COUNT(*) AS nc_count FROM `33hao_designer_work` WHERE ( sn_designer_id = '4' ) ORDER BY 3 LIMIT 1  
+[2015-10-29 12:01:40] /33hao/mobile/index.php?act=designer&op=designer_list ( act=designer&op=designer_list ) 
+ERR: Db Error: Unknown column 'sn_designer_collect' in 'order clause'
+SELECT COUNT(*) AS nc_count FROM `33hao_designer_work` WHERE ( sn_designer_id = '20' ) ORDER BY sn_designer_collect desc LIMIT 1  
+[2015-10-29 12:02:27] /33hao/mobile/index.php?act=designer&op=designer_list ( act=designer&op=designer_list ) 
+ERR: Db Error: Unknown column 'sn_designer_collect' in 'order clause'
+SELECT COUNT(*) AS nc_count FROM `33hao_designer_work` WHERE ( sn_designer_id = '20' ) ORDER BY sn_designer_collect desc LIMIT 1  
+[2015-10-29 12:03:45] /33hao/mobile/index.php?act=designer&op=designer_list ( act=designer&op=designer_list ) 
+ERR: Db Error: Unknown column 'sn_designer_collect' in 'order clause'
+SELECT COUNT(*) AS nc_count FROM `33hao_designer_work` WHERE ( sn_designer_id = '20' ) ORDER BY sn_designer_collect desc LIMIT 1  
+[2015-10-29 12:04:01] /33hao/mobile/index.php?act=designer&op=designer_list ( act=designer&op=designer_list ) 
+ERR: Db Error: Unknown column 'sn_designer_collect' in 'order clause'
+SELECT COUNT(*) AS nc_count FROM `33hao_designer_work` WHERE ( sn_designer_id = '21' ) ORDER BY sn_designer_collect desc LIMIT 1  

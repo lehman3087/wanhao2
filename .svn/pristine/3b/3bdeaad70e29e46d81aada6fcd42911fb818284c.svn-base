@@ -1,0 +1,39 @@
+[2015-11-18 12:01:24] /33hao/shop/index.php?act=decoration&op=work_list ( act=decoration&op=work_list ) 
+ERR: Db Error: Unknown column 'sn_state' in 'where clause'
+SELECT * FROM `33hao_decoration_work` WHERE ( sn_state = '1' ) AND ( sn_verify = '1' ) ORDER BY id desc LIMIT 1000  
+[2015-11-18 19:11:43] /33hao/mobile/index.php?act=decoration_pub&op=dbindex ( act=decoration_pub&op=dbindex ) 
+ERR: Db Error: Unknown column 'id' in 'order clause'
+SELECT COUNT(*) AS nc_count FROM `33hao_decoration_work` WHERE ( dw_user_id = NULL ) ORDER BY id desc LIMIT 1  
+[2015-11-18 19:11:43] /33hao/mobile/index.php?act=decoration_pub&op=dbindex ( act=decoration_pub&op=dbindex ) 
+ERR: Db Error: Unknown column 'id' in 'order clause'
+SELECT * FROM `33hao_decoration_work` WHERE ( dw_user_id = NULL ) ORDER BY id desc LIMIT 0,10  
+[2015-11-18 19:11:50] /33hao/mobile/index.php?act=decoration_pub&op=dbindex ( act=decoration_pub&op=dbindex ) 
+ERR: Db Error: Unknown column 'id' in 'order clause'
+SELECT COUNT(*) AS nc_count FROM `33hao_decoration_work` WHERE ( dw_user_id = NULL ) ORDER BY id desc LIMIT 1  
+[2015-11-18 19:11:50] /33hao/mobile/index.php?act=decoration_pub&op=dbindex ( act=decoration_pub&op=dbindex ) 
+ERR: Db Error: Unknown column 'id' in 'order clause'
+SELECT * FROM `33hao_decoration_work` WHERE ( dw_user_id = NULL ) ORDER BY id desc LIMIT 0,10  
+[2015-11-18 19:12:10] /33hao/mobile/index.php?act=decoration_pub&op=dbindex ( act=decoration_pub&op=dbindex ) 
+ERR: Db Error: Unknown column 'id' in 'order clause'
+SELECT COUNT(*) AS nc_count FROM `33hao_decoration_work` WHERE ( dw_user_id = NULL ) ORDER BY id desc LIMIT 1  
+[2015-11-18 19:12:10] /33hao/mobile/index.php?act=decoration_pub&op=dbindex ( act=decoration_pub&op=dbindex ) 
+ERR: Db Error: Unknown column 'id' in 'order clause'
+SELECT * FROM `33hao_decoration_work` WHERE ( dw_user_id = NULL ) ORDER BY id desc LIMIT 0,10  
+[2015-11-18 19:12:21] /33hao/mobile/index.php?act=decoration_pub&op=dbindex ( act=decoration_pub&op=dbindex ) 
+ERR: Db Error: Unknown column 'id' in 'order clause'
+SELECT COUNT(*) AS nc_count FROM `33hao_decoration_work` WHERE ( dw_user_id = NULL ) ORDER BY id desc LIMIT 1  
+[2015-11-18 19:12:21] /33hao/mobile/index.php?act=decoration_pub&op=dbindex ( act=decoration_pub&op=dbindex ) 
+ERR: Db Error: Unknown column 'id' in 'order clause'
+SELECT * FROM `33hao_decoration_work` WHERE ( dw_user_id = NULL ) ORDER BY id desc LIMIT 0,10  
+[2015-11-18 19:12:44] /33hao/mobile/index.php?act=decoration_pub&op=dbindex&userid=1 ( act=decoration_pub&op=dbindex ) 
+ERR: Db Error: Unknown column 'id' in 'order clause'
+SELECT COUNT(*) AS nc_count FROM `33hao_decoration_work` WHERE ( dw_user_id = '1' ) ORDER BY id desc LIMIT 1  
+[2015-11-18 19:12:44] /33hao/mobile/index.php?act=decoration_pub&op=dbindex&userid=1 ( act=decoration_pub&op=dbindex ) 
+ERR: Db Error: Unknown column 'id' in 'order clause'
+SELECT * FROM `33hao_decoration_work` WHERE ( dw_user_id = '1' ) ORDER BY id desc LIMIT 0,10  
+[2015-11-18 19:13:42] /33hao/mobile/index.php?act=decoration_pub&op=dbindex&userid=1 ( act=decoration_pub&op=dbindex ) 
+ERR: Db Error: Unknown column 'id' in 'order clause'
+SELECT COUNT(*) AS nc_count FROM `33hao_decoration_work` WHERE ( dw_user_id = '1' ) ORDER BY id desc LIMIT 1  
+[2015-11-18 19:13:42] /33hao/mobile/index.php?act=decoration_pub&op=dbindex&userid=1 ( act=decoration_pub&op=dbindex ) 
+ERR: Db Error: Unknown column 'id' in 'order clause'
+SELECT * FROM `33hao_decoration_work` WHERE ( dw_user_id = '1' ) ORDER BY id desc LIMIT 0,10  

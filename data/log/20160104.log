@@ -1,0 +1,6 @@
+[2016-01-04 16:01:26] /33hao/mobile/index.php?act=designer_work&op=designer_work_list ( act=designer_work&op=designer_work_list ) 
+ERR: Db Error: Table '33hao.33hao_designer1' doesn't exist
+SELECT COUNT(*) AS nc_count FROM `33hao_designer_work` AS `designer_work` LEFT JOIN `33hao_designer1` AS `designer1` ON designer_work.sn_designer_id = designer.id WHERE ( sn_designer_id IN ('37') ) ORDER BY sn_collect desc LIMIT 1  
+[2016-01-04 16:01:26] /33hao/mobile/index.php?act=designer_work&op=designer_work_list ( act=designer_work&op=designer_work_list ) 
+ERR: Db Error: Table '33hao.33hao_designer1' doesn't exist
+SELECT designer_work.id,designer_work.sn_collect,designer_work.sn_category,designer_work.sn_style,designer_work.sn_m_pic,designer_work.sn_work_pic,designer_work.sn_area,designer_work.sn_cost,designer_work.sn_content,designer_work.sn_add_time,designer_work.sn_house_type,designer_work.sn_collection_count,designer_work.sn_share_count,designer_work.sn_designer_id,designer.sn_title,designer_work.sn_name,designer.sn_head,designer.sn_designer_style,designer.sn_designer_enter_time,designer.sn_designer_collect,designer.sn_store_id,designer.sn_store_name FROM `33hao_designer_work` AS `designer_work` LEFT JOIN `33hao_designer1` AS `designer1` ON designer_work.sn_designer_id = designer.id WHERE ( sn_designer_id IN ('37') ) ORDER BY sn_collect desc LIMIT 0,2  

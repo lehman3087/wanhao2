@@ -1,0 +1,33 @@
+[2015-10-09 18:36:02] /33hao/mobile/index.php?act=store&op=storeBasiclist ( act=store&op=storebasiclist ) 
+ERR: Db Error: Unknown column 'id' in 'field list'
+SELECT id FROM `33hao_store` WHERE ( store_state = '1' ) LIMIT 1000  
+[2015-10-09 18:36:07] /33hao/mobile/index.php?act=store&op=storeBasiclist ( act=store&op=storebasiclist ) 
+ERR: Db Error: Unknown column 'id' in 'field list'
+SELECT id FROM `33hao_store` WHERE ( store_state = '1' ) LIMIT 1000  
+[2015-10-09 18:36:51] /33hao/mobile/index.php?act=store&op=storeBasiclist ( act=store&op=storebasiclist ) 
+ERR: Db Error: Unknown column 'id' in 'field list'
+SELECT id FROM `33hao_store` WHERE ( store_state = '1' ) LIMIT 1000  
+[2015-10-09 18:37:14] /33hao/mobile/index.php?act=store&op=storeBasiclist ( act=store&op=storebasiclist ) 
+ERR: Db Error: Unknown column 'id' in 'field list'
+SELECT id FROM `33hao_store` WHERE ( store_state = '1' ) LIMIT 1000  
+[2015-10-09 18:37:37] /33hao/mobile/index.php?act=store&op=storeBasiclist&page=1 ( act=store&op=storebasiclist ) 
+ERR: Db Error: Unknown column 'id' in 'field list'
+SELECT id FROM `33hao_store` WHERE ( store_state = '1' ) LIMIT 0,1  
+[2015-10-09 18:39:02] /33hao/mobile/index.php?act=store&op=storeBasiclist&page=1 ( act=store&op=storebasiclist ) 
+ERR: Db Error: Unknown column 'id' in 'field list'
+SELECT id FROM `33hao_store` WHERE ( store_state = '1' ) LIMIT 0,1  
+[2015-10-09 18:44:41] /33hao/mobile/index.php?act=store&op=storeBasiclist&page=1 ( act=store&op=storebasiclist ) 
+ERR: Db Error: Unknown column 'id' in 'field list'
+SELECT id FROM `33hao_store` WHERE ( store_state = '1' ) LIMIT 0,1  
+[2015-10-09 18:49:00] /33hao/mobile/index.php?act=store&op=storeBasiclist&page=1 ( act=store&op=storebasiclist ) 
+ERR: Db Error: Unknown column 'goods_show' in 'where clause'
+SELECT store_id,count(*) as goods_count FROM `33hao_goods` WHERE ( goods_show = '1' ) AND ( store_id IN ('1') ) AND ( goods_add_time > '1444301340' ) GROUP BY store_id LIMIT 1000  
+[2015-10-09 18:49:02] /33hao/mobile/index.php?act=store&op=storeBasiclist&page=1 ( act=store&op=storebasiclist ) 
+ERR: Db Error: Unknown column 'goods_show' in 'where clause'
+SELECT store_id,count(*) as goods_count FROM `33hao_goods` WHERE ( goods_show = '1' ) AND ( store_id IN ('1') ) AND ( goods_add_time > '1444301342' ) GROUP BY store_id LIMIT 1000  
+[2015-10-09 18:50:50] /33hao/mobile/index.php?act=store&op=storeBasiclist&page=1 ( act=store&op=storebasiclist ) 
+ERR: Db Error: Unknown column 'goods_add_time' in 'where clause'
+SELECT store_id,count(*) as goods_count FROM `33hao_goods` WHERE ( goods_state = '1' ) AND ( store_id IN ('1') ) AND ( goods_add_time > '1444301450' ) GROUP BY store_id LIMIT 1000  
+[2015-10-09 18:56:16] /33hao/mobile/index.php?act=store&op=storeBasiclist&page=1 ( act=store&op=storebasiclist ) 
+ERR: Db Error: Unknown column 'goods_add_ttime' in 'where clause'
+SELECT store_id,count(*) as goods_count FROM `33hao_goods` WHERE ( goods_state = '1' ) AND ( store_id IN ('1') ) AND ( goods_add_ttime > '1444301776' ) GROUP BY store_id LIMIT 1000  

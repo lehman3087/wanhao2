@@ -1,0 +1,12 @@
+[2015-12-31 17:25:56] /33hao/mobile/index.php?act=store&op=store_detail&store_id=18 ( act=store&op=store_detail ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+SELECT COUNT(*) as `count` FROM `33hao_activity` as `activity`  WHERE 
+[2015-12-31 17:43:18] /33hao/mobile/index.php?act=store&op=store_detail&store_id=13 ( act=store&op=store_detail ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+SELECT COUNT(*) as `count` FROM `33hao_activity` as `activity`  WHERE 
+[2015-12-31 17:45:34] /33hao/mobile/index.php?act=store&op=store_detail&store_id=13 ( act=store&op=store_detail ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+SELECT COUNT(*) as `count` FROM `33hao_activity` as `activity`  WHERE 
+[2015-12-31 17:46:15] /33hao/mobile/index.php?act=store&op=store_detail&store_id=13 ( act=store&op=store_detail ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+SELECT COUNT(*) as `count` FROM `33hao_activity` as `activity`  WHERE 

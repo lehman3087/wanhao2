@@ -1,0 +1,9 @@
+[2015-10-24 13:23:28] /33hao/admin/index.php?act=decoration&op=settings_index ( act=decoration&op=settings_index ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '0='5a626KOF',1='5bel6KOF',2='NDQ=' WHERE ( name = 'decoration_category' )' at line 1
+UPDATE `33hao_member` SET 0='5a626KOF',1='5bel6KOF',2='NDQ=' WHERE ( name = 'decoration_category' )
+[2015-10-24 13:25:30] /33hao/admin/index.php?act=decoration&op=settings_index ( act=decoration&op=settings_index ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '0='5a626KOF',1='5bel6KOF',2='Mw==' WHERE name=decoration_category' at line 1
+UPDATE `33hao_member` SET 0='5a626KOF',1='5bel6KOF',2='Mw==' WHERE name=decoration_category
+[2015-10-24 13:25:50] /33hao/admin/index.php?act=decoration&op=settings_index ( act=decoration&op=settings_index ) 
+ERR: Db Error: Unknown column 'decoration_category' in 'where clause'
+UPDATE `33hao_setting` SET value='a:3:{i:0;s:8:\"5a626KOF\";i:1;s:8:\"5bel6KOF\";i:2;s:4:\"NQ==\";}' WHERE name=decoration_category

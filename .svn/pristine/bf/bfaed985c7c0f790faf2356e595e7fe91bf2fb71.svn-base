@@ -1,0 +1,24 @@
+[2015-12-08 14:10:23] /33hao/mobile/index.php?act=index&op=getGlobal ( act=index&op=getglobal ) 
+ERR: Db Error: Table '33hao.33hao_rec_apply' doesn't exist
+SELECT rec_applys.* FROM `33hao_rec_apply` as `rec_apply`  WHERE  adp_apply_state in (1)
+[2015-12-08 14:11:22] /33hao/mobile/index.php?act=index&op=getGlobal ( act=index&op=getglobal ) 
+ERR: Db Error: Table '33hao.33hao_rec_applys1' doesn't exist
+SELECT rec_applys.* FROM `33hao_rec_applys1` as `rec_applys1`  WHERE  adp_apply_state in (1)
+[2015-12-08 14:11:59] /33hao/mobile/index.php?act=index&op=getGlobal ( act=index&op=getglobal ) 
+ERR: Db Error: Table '33hao.33hao_rec_applys1' doesn't exist
+SELECT rec_applys.* FROM `33hao_rec_applys1` as `rec_applys1`  WHERE  rec_applys.adp_id = '12' and adp_apply_state in (1)
+[2015-12-08 14:14:38] /33hao/mobile/index.php?act=index&op=getGlobal ( act=index&op=getglobal ) 
+ERR: Db Error: Table '33hao.33hao_rec_applys1' doesn't exist
+SELECT rec_applys.* FROM `33hao_rec_applys1` as `rec_applys1`  WHERE  rec_applys.adp_id = '12' and adp_apply_state in (1)
+[2015-12-08 14:34:51] /33hao/mobile/index.php?act=index&op=getGlobal ( act=index&op=getglobal ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '＝' at line 1
+SELECT rec_applys.* FROM `33hao_rec_applys` as `rec_applys`  WHERE  rec_applys.adp_id = '12' and adp_apply_state ＝
+[2015-12-08 14:34:59] /33hao/mobile/index.php?act=index&op=getGlobal ( act=index&op=getglobal ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '＝' at line 1
+SELECT rec_applys.* FROM `33hao_rec_applys1` as `rec_applys1`  WHERE  rec_applys.adp_id = '12' and adp_apply_state ＝
+[2015-12-08 14:36:08] /33hao/mobile/index.php?act=index&op=getGlobal ( act=index&op=getglobal ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '＝ 1' at line 1
+SELECT rec_applys.* FROM `33hao_rec_applys1` as `rec_applys1`  WHERE  rec_applys.adp_id = '12' and adp_apply_state ＝ 1
+[2015-12-08 14:36:41] /33hao/mobile/index.php?act=index&op=getGlobal ( act=index&op=getglobal ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '＝ '1'' at line 1
+SELECT rec_applys.* FROM `33hao_rec_applys1` as `rec_applys1`  WHERE  rec_applys.adp_id = '12' and adp_apply_state ＝ '1'

@@ -1,0 +1,84 @@
+[2015-12-02 16:08:48] /33hao/mobile/index.php?act=decoration_pub&op=db&dw_id=15 ( act=decoration_pub&op=db ) 
+ERR: Db Error: Table '33hao.33hao_store1' doesn't exist
+SELECT * FROM `33hao_bid` AS `bid` LEFT JOIN `33hao_store1` AS `store1` ON bid.bid_dc_id=store.store_id WHERE ( bid_work_id = '15' ) AND ( bid_state > '0' ) LIMIT 1000  
+[2015-12-02 16:09:05] /33hao/mobile/index.php?act=decoration_pub&op=db&dw_id=15 ( act=decoration_pub&op=db ) 
+ERR: Db Error: Unknown column 'bid_work_id' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `33hao_designer_work` AS `designer_work` INNER JOIN `33hao_designer` AS `designer` ON designer_work.sn_designer_id = designer.id WHERE ( bid_work_id = '15' ) AND ( bid_state > '0' ) AND ( sn_store_id = '12' ) ORDER BY sn_collect desc LIMIT 1  
+[2015-12-02 16:09:05] /33hao/mobile/index.php?act=decoration_pub&op=db&dw_id=15 ( act=decoration_pub&op=db ) 
+ERR: Db Error: Unknown column 'bid_work_id' in 'where clause'
+SELECT * FROM `33hao_designer_work` AS `designer_work` INNER JOIN `33hao_designer` AS `designer` ON designer_work.sn_designer_id = designer.id WHERE ( bid_work_id = '15' ) AND ( bid_state > '0' ) AND ( sn_store_id = '12' ) ORDER BY sn_collect desc LIMIT 0,4  
+[2015-12-02 16:09:05] /33hao/mobile/index.php?act=decoration_pub&op=db&dw_id=15 ( act=decoration_pub&op=db ) 
+ERR: Db Error: Unknown column 'sn_style' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `33hao_decoration_work` WHERE ( sn_style = '复古' ) AND ( sn_lock = '1' ) LIMIT 1  
+[2015-12-02 16:11:57] /33hao/mobile/index.php?act=decoration_pub&op=db&dw_id=15 ( act=decoration_pub&op=db ) 
+ERR: Db Error: Unknown column 'bid_work_id' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `33hao_designer_work` AS `designer_work` INNER JOIN `33hao_designer` AS `designer` ON designer_work.sn_designer_id = designer.id WHERE ( bid_work_id = '15' ) AND ( bid_state > '0' ) AND ( sn_store_id = '12' ) ORDER BY sn_collect desc LIMIT 1  
+[2015-12-02 16:11:57] /33hao/mobile/index.php?act=decoration_pub&op=db&dw_id=15 ( act=decoration_pub&op=db ) 
+ERR: Db Error: Unknown column 'bid_work_id' in 'where clause'
+SELECT * FROM `33hao_designer_work` AS `designer_work` INNER JOIN `33hao_designer` AS `designer` ON designer_work.sn_designer_id = designer.id WHERE ( bid_work_id = '15' ) AND ( bid_state > '0' ) AND ( sn_store_id = '12' ) ORDER BY sn_collect desc LIMIT 0,4  
+[2015-12-02 16:11:57] /33hao/mobile/index.php?act=decoration_pub&op=db&dw_id=15 ( act=decoration_pub&op=db ) 
+ERR: Db Error: Unknown column 'sn_style' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `33hao_decoration_work` WHERE ( sn_style = '复古' ) AND ( sn_lock = '1' ) LIMIT 1  
+[2015-12-02 16:15:29] /33hao/mobile/index.php?act=decoration_pub&op=db&dw_id=15 ( act=decoration_pub&op=db ) 
+ERR: Db Error: Unknown column 'bid_work_id' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `33hao_designer_work` AS `designer_work` INNER JOIN `33hao_designer` AS `designer` ON designer_work.sn_designer_id = designer.id WHERE ( bid_work_id = '15' ) AND ( bid_state > '0' ) AND ( sn_store_id = '12' ) ORDER BY sn_collect desc LIMIT 1  
+[2015-12-02 16:15:29] /33hao/mobile/index.php?act=decoration_pub&op=db&dw_id=15 ( act=decoration_pub&op=db ) 
+ERR: Db Error: Unknown column 'bid_work_id' in 'where clause'
+SELECT * FROM `33hao_designer_work` AS `designer_work` INNER JOIN `33hao_designer` AS `designer` ON designer_work.sn_designer_id = designer.id WHERE ( bid_work_id = '15' ) AND ( bid_state > '0' ) AND ( sn_store_id = '12' ) ORDER BY sn_collect desc LIMIT 0,4  
+[2015-12-02 16:15:29] /33hao/mobile/index.php?act=decoration_pub&op=db&dw_id=15 ( act=decoration_pub&op=db ) 
+ERR: Db Error: Unknown column 'sn_style' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `33hao_decoration_work` WHERE ( sn_style = '复古' ) AND ( sn_store_id = '12' ) AND ( sn_lock = '1' ) LIMIT 1  
+[2015-12-02 16:16:56] /33hao/mobile/index.php?act=decoration_pub&op=db&dw_id=15 ( act=decoration_pub&op=db ) 
+ERR: Db Error: Column 'sn_store_id' in where clause is ambiguous
+SELECT COUNT(*) AS nc_count FROM `33hao_designer_work` AS `designer_work` INNER JOIN `33hao_designer` AS `designer` ON designer_work.sn_designer_id = designer.id WHERE ( sn_store_id = '12' ) AND ( sn_style = '复古' ) ORDER BY sn_collect desc LIMIT 1  
+[2015-12-02 16:16:56] /33hao/mobile/index.php?act=decoration_pub&op=db&dw_id=15 ( act=decoration_pub&op=db ) 
+ERR: Db Error: Column 'sn_store_id' in where clause is ambiguous
+SELECT * FROM `33hao_designer_work` AS `designer_work` INNER JOIN `33hao_designer` AS `designer` ON designer_work.sn_designer_id = designer.id WHERE ( sn_store_id = '12' ) AND ( sn_style = '复古' ) ORDER BY sn_collect desc LIMIT 0,4  
+[2015-12-02 16:16:56] /33hao/mobile/index.php?act=decoration_pub&op=db&dw_id=15 ( act=decoration_pub&op=db ) 
+ERR: Db Error: Unknown column 'sn_store_id' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `33hao_decoration_work` WHERE ( sn_store_id = '12' ) AND ( sn_style = '复古' ) AND ( sn_lock = '1' ) LIMIT 1  
+[2015-12-02 16:17:55] /33hao/mobile/index.php?act=decoration_pub&op=db&dw_id=15 ( act=decoration_pub&op=db ) 
+ERR: Db Error: Column 'sn_store_id' in where clause is ambiguous
+SELECT COUNT(*) AS nc_count FROM `33hao_designer_work` AS `designer_work` INNER JOIN `33hao_designer` AS `designer` ON designer_work.sn_designer_id = designer.id WHERE ( sn_store_id = '12' ) ORDER BY sn_collect desc LIMIT 1  
+[2015-12-02 16:17:55] /33hao/mobile/index.php?act=decoration_pub&op=db&dw_id=15 ( act=decoration_pub&op=db ) 
+ERR: Db Error: Column 'sn_store_id' in where clause is ambiguous
+SELECT * FROM `33hao_designer_work` AS `designer_work` INNER JOIN `33hao_designer` AS `designer` ON designer_work.sn_designer_id = designer.id WHERE ( sn_store_id = '12' ) ORDER BY sn_collect desc LIMIT 0,4  
+[2015-12-02 16:17:55] /33hao/mobile/index.php?act=decoration_pub&op=db&dw_id=15 ( act=decoration_pub&op=db ) 
+ERR: Db Error: Unknown column 'sn_style' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `33hao_decoration_work` WHERE ( sn_style = '复古' ) AND ( sn_store_id = '12' ) AND ( sn_lock = '1' ) LIMIT 1  
+[2015-12-02 16:18:49] /33hao/mobile/index.php?act=decoration_pub&op=db&dw_id=15 ( act=decoration_pub&op=db ) 
+ERR: Db Error: Column 'sn_store_id' in where clause is ambiguous
+SELECT COUNT(*) AS nc_count FROM `33hao_designer_work` AS `designer_work` INNER JOIN `33hao_designer` AS `designer` ON designer_work.sn_designer_id = designer.id WHERE ( sn_store_id = '12' ) ORDER BY sn_collect desc LIMIT 1  
+[2015-12-02 16:18:49] /33hao/mobile/index.php?act=decoration_pub&op=db&dw_id=15 ( act=decoration_pub&op=db ) 
+ERR: Db Error: Column 'sn_store_id' in where clause is ambiguous
+SELECT * FROM `33hao_designer_work` AS `designer_work` INNER JOIN `33hao_designer` AS `designer` ON designer_work.sn_designer_id = designer.id WHERE ( sn_store_id = '12' ) ORDER BY sn_collect desc LIMIT 0,4  
+[2015-12-02 19:28:22] /33hao/shop/index.php?act=store_promotion_booth&op=adposition_apply&activity_id=10&name=%E5%A5%97%E9%A4%90 ( act=store_promotion_booth&op=adposition_apply ) 
+ERR: Db Error: Unknown column 'goods_name' in 'where clause'
+SELECT * FROM `33hao_p_bundling` WHERE ( goods_name LIKE '%套餐%' ) AND ( bl_name LIKE '%套餐%' ) AND ( bl_state = '1' ) ORDER BY bl_id desc LIMIT 1000  
+[2015-12-02 19:28:22] /33hao/shop/index.php?act=store_promotion_booth&op=adposition_apply&activity_id=10&name=%E5%A5%97%E9%A4%90 ( act=store_promotion_booth&op=adposition_apply ) 
+ERR: Db Error: Unknown column 'bl_name' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `33hao_goods` WHERE ( goods_name LIKE '%套餐%' ) AND ( bl_name LIKE '%套餐%' ) AND ( store_id = '1' ) AND ( goods_state = '1' ) AND ( goods_verify = '1' ) ORDER BY goods_id desc LIMIT 1  
+[2015-12-02 19:28:22] /33hao/shop/index.php?act=store_promotion_booth&op=adposition_apply&activity_id=10&name=%E5%A5%97%E9%A4%90 ( act=store_promotion_booth&op=adposition_apply ) 
+ERR: Db Error: Unknown column 'bl_name' in 'where clause'
+SELECT * FROM `33hao_goods` WHERE ( goods_name LIKE '%套餐%' ) AND ( bl_name LIKE '%套餐%' ) AND ( store_id = '1' ) AND ( goods_state = '1' ) AND ( goods_verify = '1' ) ORDER BY goods_id desc LIMIT 0,10  
+[2015-12-02 19:30:11] /33hao/shop/index.php?act=store_promotion_booth&op=adposition_apply&activity_id=&name=%E5%A5%97%E9%A4%90 ( act=store_promotion_booth&op=adposition_apply ) 
+ERR: Db Error: Unknown column 'bl_name' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `33hao_goods` WHERE ( bl_name LIKE '%套餐%' ) AND ( store_id = '1' ) AND ( goods_state = '1' ) AND ( goods_verify = '1' ) ORDER BY goods_id desc LIMIT 1  
+[2015-12-02 19:30:11] /33hao/shop/index.php?act=store_promotion_booth&op=adposition_apply&activity_id=&name=%E5%A5%97%E9%A4%90 ( act=store_promotion_booth&op=adposition_apply ) 
+ERR: Db Error: Unknown column 'bl_name' in 'where clause'
+SELECT * FROM `33hao_goods` WHERE ( bl_name LIKE '%套餐%' ) AND ( store_id = '1' ) AND ( goods_state = '1' ) AND ( goods_verify = '1' ) ORDER BY goods_id desc LIMIT 0,10  
+[2015-12-02 19:32:47] /33hao/shop/index.php?act=store_promotion_booth&op=adposition_apply&activity_id=&name=%E5%A5%97%E9%A4%90 ( act=store_promotion_booth&op=adposition_apply ) 
+ERR: Db Error: Unknown column 'store_id1' in 'where clause'
+SELECT * FROM `33hao_p_bundling` WHERE ( bl_name LIKE '%套餐%' ) AND ( store_id1 = '1' ) AND ( bl_state = '1' ) ORDER BY bl_id desc LIMIT 1000  
+[2015-12-02 19:34:48] /33hao/shop/index.php?act=store_promotion_booth&op=adposition_apply&activity_id=10&name=%E5%A5%97%E9%A4%90 ( act=store_promotion_booth&op=adposition_apply ) 
+ERR: Db Error: Unknown column 'store_id1' in 'where clause'
+SELECT * FROM `33hao_p_bundling` WHERE ( bl_name LIKE '%套餐%' ) AND ( store_id1 = '12' ) AND ( bl_state = '1' ) ORDER BY bl_id desc LIMIT 1000  
+[2015-12-02 19:35:08] /33hao/shop/index.php?act=store_promotion_booth&op=adposition_apply&activity_id=&name=123 ( act=store_promotion_booth&op=adposition_apply ) 
+ERR: Db Error: Unknown column 'store_id1' in 'where clause'
+SELECT * FROM `33hao_p_bundling` WHERE ( bl_name LIKE '%123%' ) AND ( store_id1 = '12' ) AND ( bl_state = '1' ) ORDER BY bl_id desc LIMIT 1000  
+[2015-12-02 19:35:13] /33hao/shop/index.php?act=store_promotion_booth&op=adposition_apply&activity_id=&name=123 ( act=store_promotion_booth&op=adposition_apply ) 
+ERR: Db Error: Unknown column 'store_id1' in 'where clause'
+SELECT * FROM `33hao_p_bundling` WHERE ( bl_name LIKE '%123%' ) AND ( store_id1 = '12' ) AND ( bl_state = '1' ) ORDER BY bl_id desc LIMIT 1000  
+[2015-12-02 19:39:19] /33hao/shop/index.php?act=store_promotion_booth&op=adposition_apply&activity_id=10&name=123 ( act=store_promotion_booth&op=adposition_apply ) 
+ERR: Db Error: Unknown column 'store_id1' in 'where clause'
+SELECT * FROM `33hao_p_mansong` WHERE ( mansong_name LIKE '%123%' ) AND ( store_id1 = '12' ) LIMIT 1000  

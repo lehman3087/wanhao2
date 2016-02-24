@@ -1,0 +1,117 @@
+[2015-11-25 10:36:20] /33hao/mobile/index.php?act=decoration_pub&op=cancelRequest&dw_id=11 ( act=decoration_pub&op=cancelrequest ) 
+ERR: Db Error: Unknown column 'dw_result' in 'field list'
+UPDATE `33hao_decoration_work` SET dw_result='个人原因',dw_state='0' WHERE ( dw_id = '11' )
+[2015-11-25 19:16:50] /33hao/mobile/index.php?act=decoration_pub&op=dbindex&user_id=2 ( act=decoration_pub&op=dbindex ) 
+ERR: Db Error: Unknown column 'dw_id' in 'where clause'
+SELECT * FROM `33hao_bid` AS `bid` INNER JOIN `33hao_store` AS `store` ON bid.bid_dc_id=store.store_id WHERE ( dw_id = '8' ) LIMIT 1  
+[2015-11-25 19:16:50] /33hao/mobile/index.php?act=decoration_pub&op=dbindex&user_id=2 ( act=decoration_pub&op=dbindex ) 
+ERR: Db Error: Unknown column 'dw_id' in 'where clause'
+SELECT * FROM `33hao_bid` AS `bid` INNER JOIN `33hao_store` AS `store` ON bid.bid_dc_id=store.store_id WHERE ( dw_id = '6' ) LIMIT 1  
+[2015-11-25 19:16:50] /33hao/mobile/index.php?act=decoration_pub&op=dbindex&user_id=2 ( act=decoration_pub&op=dbindex ) 
+ERR: Db Error: Unknown column 'dw_id' in 'where clause'
+SELECT * FROM `33hao_bid` AS `bid` INNER JOIN `33hao_store` AS `store` ON bid.bid_dc_id=store.store_id WHERE ( dw_id = '4' ) LIMIT 1  
+[2015-11-25 19:16:50] /33hao/mobile/index.php?act=decoration_pub&op=dbindex&user_id=2 ( act=decoration_pub&op=dbindex ) 
+ERR: Db Error: Unknown column 'dw_id' in 'where clause'
+SELECT * FROM `33hao_bid` AS `bid` INNER JOIN `33hao_store` AS `store` ON bid.bid_dc_id=store.store_id WHERE ( dw_id = '3' ) LIMIT 1  
+[2015-11-25 19:16:50] /33hao/mobile/index.php?act=decoration_pub&op=dbindex&user_id=2 ( act=decoration_pub&op=dbindex ) 
+ERR: Db Error: Unknown column 'dw_id' in 'where clause'
+SELECT * FROM `33hao_bid` AS `bid` INNER JOIN `33hao_store` AS `store` ON bid.bid_dc_id=store.store_id WHERE ( dw_id = '2' ) LIMIT 1  
+[2015-11-25 21:46:10] /33hao/shop/index.php?act=bid_document&op=bd_list ( act=bid_document&op=bd_list ) 
+ERR: Db Error: Unknown column 'sn_state' in 'where clause'
+SELECT * FROM `33hao_decoration_work` WHERE ( sn_state = '1' ) AND ( sn_verify = '1' ) ORDER BY id desc LIMIT 1000  
+[2015-11-25 21:46:13] /33hao/shop/index.php?act=decoration&op=work_list ( act=decoration&op=work_list ) 
+ERR: Db Error: Unknown column 'lastuptime' in 'order clause'
+SELECT * FROM `33hao_bid` WHERE ( bid_dc_id = '1' ) AND ( bid_work_id = '10' ) ORDER BY lastuptime desc LIMIT 1000  
+[2015-11-25 21:46:13] /33hao/shop/index.php?act=decoration&op=work_list ( act=decoration&op=work_list ) 
+ERR: Db Error: Unknown column 'lastuptime' in 'order clause'
+SELECT * FROM `33hao_bid` WHERE ( bid_dc_id = '1' ) AND ( bid_work_id = '7' ) ORDER BY lastuptime desc LIMIT 1000  
+[2015-11-25 21:46:13] /33hao/shop/index.php?act=decoration&op=work_list ( act=decoration&op=work_list ) 
+ERR: Db Error: Unknown column 'lastuptime' in 'order clause'
+SELECT * FROM `33hao_bid` WHERE ( bid_dc_id = '1' ) AND ( bid_work_id = '5' ) ORDER BY lastuptime desc LIMIT 1000  
+[2015-11-25 21:46:13] /33hao/shop/index.php?act=decoration&op=work_list ( act=decoration&op=work_list ) 
+ERR: Db Error: Unknown column 'lastuptime' in 'order clause'
+SELECT * FROM `33hao_bid` WHERE ( bid_dc_id = '1' ) AND ( bid_work_id = '3' ) ORDER BY lastuptime desc LIMIT 1000  
+[2015-11-25 21:51:30] /33hao/shop/index.php?act=decoration&op=work_list ( act=decoration&op=work_list ) 
+ERR: Db Error: Unknown column 'lastuptime' in 'order clause'
+SELECT * FROM `33hao_bid` WHERE ( bid_dc_id = '1' ) AND ( bid_work_id = '10' ) ORDER BY lastuptime desc LIMIT 1000  
+[2015-11-25 21:51:30] /33hao/shop/index.php?act=decoration&op=work_list ( act=decoration&op=work_list ) 
+ERR: Db Error: Unknown column 'lastuptime' in 'order clause'
+SELECT * FROM `33hao_bid` WHERE ( bid_dc_id = '1' ) AND ( bid_work_id = '7' ) ORDER BY lastuptime desc LIMIT 1000  
+[2015-11-25 21:51:30] /33hao/shop/index.php?act=decoration&op=work_list ( act=decoration&op=work_list ) 
+ERR: Db Error: Unknown column 'lastuptime' in 'order clause'
+SELECT * FROM `33hao_bid` WHERE ( bid_dc_id = '1' ) AND ( bid_work_id = '5' ) ORDER BY lastuptime desc LIMIT 1000  
+[2015-11-25 21:51:30] /33hao/shop/index.php?act=decoration&op=work_list ( act=decoration&op=work_list ) 
+ERR: Db Error: Unknown column 'lastuptime' in 'order clause'
+SELECT * FROM `33hao_bid` WHERE ( bid_dc_id = '1' ) AND ( bid_work_id = '3' ) ORDER BY lastuptime desc LIMIT 1000  
+[2015-11-25 21:51:42] /33hao/shop/index.php?act=decoration&op=work_list ( act=decoration&op=work_list ) 
+ERR: Db Error: Unknown column 'lastuptime' in 'order clause'
+SELECT * FROM `33hao_bid` WHERE ( bid_dc_id = '1' ) AND ( bid_work_id = '10' ) ORDER BY lastuptime desc LIMIT 1000  
+[2015-11-25 21:51:42] /33hao/shop/index.php?act=decoration&op=work_list ( act=decoration&op=work_list ) 
+ERR: Db Error: Unknown column 'lastuptime' in 'order clause'
+SELECT * FROM `33hao_bid` WHERE ( bid_dc_id = '1' ) AND ( bid_work_id = '7' ) ORDER BY lastuptime desc LIMIT 1000  
+[2015-11-25 21:51:42] /33hao/shop/index.php?act=decoration&op=work_list ( act=decoration&op=work_list ) 
+ERR: Db Error: Unknown column 'lastuptime' in 'order clause'
+SELECT * FROM `33hao_bid` WHERE ( bid_dc_id = '1' ) AND ( bid_work_id = '5' ) ORDER BY lastuptime desc LIMIT 1000  
+[2015-11-25 21:51:42] /33hao/shop/index.php?act=decoration&op=work_list ( act=decoration&op=work_list ) 
+ERR: Db Error: Unknown column 'lastuptime' in 'order clause'
+SELECT * FROM `33hao_bid` WHERE ( bid_dc_id = '1' ) AND ( bid_work_id = '3' ) ORDER BY lastuptime desc LIMIT 1000  
+[2015-11-25 21:54:43] /33hao/shop/index.php?act=decoration&op=work_list ( act=decoration&op=work_list ) 
+ERR: Db Error: Unknown column 'lastuptime' in 'order clause'
+SELECT * FROM `33hao_bid` WHERE ( bid_dc_id = '1' ) AND ( bid_work_id = '10' ) ORDER BY lastuptime desc LIMIT 1000  
+[2015-11-25 21:54:43] /33hao/shop/index.php?act=decoration&op=work_list ( act=decoration&op=work_list ) 
+ERR: Db Error: Unknown column 'lastuptime' in 'order clause'
+SELECT * FROM `33hao_bid` WHERE ( bid_dc_id = '1' ) AND ( bid_work_id = '7' ) ORDER BY lastuptime desc LIMIT 1000  
+[2015-11-25 21:54:43] /33hao/shop/index.php?act=decoration&op=work_list ( act=decoration&op=work_list ) 
+ERR: Db Error: Unknown column 'lastuptime' in 'order clause'
+SELECT * FROM `33hao_bid` WHERE ( bid_dc_id = '1' ) AND ( bid_work_id = '5' ) ORDER BY lastuptime desc LIMIT 1000  
+[2015-11-25 21:54:43] /33hao/shop/index.php?act=decoration&op=work_list ( act=decoration&op=work_list ) 
+ERR: Db Error: Unknown column 'lastuptime' in 'order clause'
+SELECT * FROM `33hao_bid` WHERE ( bid_dc_id = '1' ) AND ( bid_work_id = '3' ) ORDER BY lastuptime desc LIMIT 1000  
+[2015-11-25 22:54:51] /33hao/shop/index.php?act=decoration&op=work_list ( act=decoration&op=work_list ) 
+ERR: Db Error: Unknown column 'lastuptime' in 'order clause'
+SELECT * FROM `33hao_bid` WHERE ( bid_dc_id = '1' ) AND ( bid_work_id = '10' ) ORDER BY lastuptime desc LIMIT 1000  
+[2015-11-25 22:54:51] /33hao/shop/index.php?act=decoration&op=work_list ( act=decoration&op=work_list ) 
+ERR: Db Error: Unknown column 'lastuptime' in 'order clause'
+SELECT * FROM `33hao_bid` WHERE ( bid_dc_id = '1' ) AND ( bid_work_id = '7' ) ORDER BY lastuptime desc LIMIT 1000  
+[2015-11-25 22:54:51] /33hao/shop/index.php?act=decoration&op=work_list ( act=decoration&op=work_list ) 
+ERR: Db Error: Unknown column 'lastuptime' in 'order clause'
+SELECT * FROM `33hao_bid` WHERE ( bid_dc_id = '1' ) AND ( bid_work_id = '5' ) ORDER BY lastuptime desc LIMIT 1000  
+[2015-11-25 22:54:51] /33hao/shop/index.php?act=decoration&op=work_list ( act=decoration&op=work_list ) 
+ERR: Db Error: Unknown column 'lastuptime' in 'order clause'
+SELECT * FROM `33hao_bid` WHERE ( bid_dc_id = '1' ) AND ( bid_work_id = '3' ) ORDER BY lastuptime desc LIMIT 1000  
+[2015-11-25 22:55:00] /33hao/shop/index.php?act=decoration&op=work_list ( act=decoration&op=work_list ) 
+ERR: Db Error: Unknown column 'lastuptime' in 'order clause'
+SELECT * FROM `33hao_bid` WHERE ( bid_dc_id = '1' ) AND ( bid_work_id = '10' ) ORDER BY lastuptime desc LIMIT 1000  
+[2015-11-25 22:55:00] /33hao/shop/index.php?act=decoration&op=work_list ( act=decoration&op=work_list ) 
+ERR: Db Error: Unknown column 'lastuptime' in 'order clause'
+SELECT * FROM `33hao_bid` WHERE ( bid_dc_id = '1' ) AND ( bid_work_id = '7' ) ORDER BY lastuptime desc LIMIT 1000  
+[2015-11-25 22:55:00] /33hao/shop/index.php?act=decoration&op=work_list ( act=decoration&op=work_list ) 
+ERR: Db Error: Unknown column 'lastuptime' in 'order clause'
+SELECT * FROM `33hao_bid` WHERE ( bid_dc_id = '1' ) AND ( bid_work_id = '5' ) ORDER BY lastuptime desc LIMIT 1000  
+[2015-11-25 22:55:00] /33hao/shop/index.php?act=decoration&op=work_list ( act=decoration&op=work_list ) 
+ERR: Db Error: Unknown column 'lastuptime' in 'order clause'
+SELECT * FROM `33hao_bid` WHERE ( bid_dc_id = '1' ) AND ( bid_work_id = '3' ) ORDER BY lastuptime desc LIMIT 1000  
+[2015-11-25 22:55:15] /33hao/shop/index.php?act=decoration&op=work_list ( act=decoration&op=work_list ) 
+ERR: Db Error: Unknown column 'lastuptime' in 'order clause'
+SELECT * FROM `33hao_bid` WHERE ( bid_dc_id = '1' ) AND ( bid_work_id = '10' ) ORDER BY lastuptime desc LIMIT 1000  
+[2015-11-25 22:55:15] /33hao/shop/index.php?act=decoration&op=work_list ( act=decoration&op=work_list ) 
+ERR: Db Error: Unknown column 'lastuptime' in 'order clause'
+SELECT * FROM `33hao_bid` WHERE ( bid_dc_id = '1' ) AND ( bid_work_id = '7' ) ORDER BY lastuptime desc LIMIT 1000  
+[2015-11-25 22:55:15] /33hao/shop/index.php?act=decoration&op=work_list ( act=decoration&op=work_list ) 
+ERR: Db Error: Unknown column 'lastuptime' in 'order clause'
+SELECT * FROM `33hao_bid` WHERE ( bid_dc_id = '1' ) AND ( bid_work_id = '5' ) ORDER BY lastuptime desc LIMIT 1000  
+[2015-11-25 22:55:15] /33hao/shop/index.php?act=decoration&op=work_list ( act=decoration&op=work_list ) 
+ERR: Db Error: Unknown column 'lastuptime' in 'order clause'
+SELECT * FROM `33hao_bid` WHERE ( bid_dc_id = '1' ) AND ( bid_work_id = '3' ) ORDER BY lastuptime desc LIMIT 1000  
+[2015-11-25 22:57:09] /33hao/shop/index.php?act=decoration&op=work_list ( act=decoration&op=work_list ) 
+ERR: Db Error: Unknown column 'lastuptime' in 'order clause'
+SELECT * FROM `33hao_bid` WHERE ( bid_dc_id = '1' ) AND ( bid_work_id = '10' ) ORDER BY lastuptime desc LIMIT 1000  
+[2015-11-25 22:57:09] /33hao/shop/index.php?act=decoration&op=work_list ( act=decoration&op=work_list ) 
+ERR: Db Error: Unknown column 'lastuptime' in 'order clause'
+SELECT * FROM `33hao_bid` WHERE ( bid_dc_id = '1' ) AND ( bid_work_id = '7' ) ORDER BY lastuptime desc LIMIT 1000  
+[2015-11-25 22:57:09] /33hao/shop/index.php?act=decoration&op=work_list ( act=decoration&op=work_list ) 
+ERR: Db Error: Unknown column 'lastuptime' in 'order clause'
+SELECT * FROM `33hao_bid` WHERE ( bid_dc_id = '1' ) AND ( bid_work_id = '5' ) ORDER BY lastuptime desc LIMIT 1000  
+[2015-11-25 22:57:09] /33hao/shop/index.php?act=decoration&op=work_list ( act=decoration&op=work_list ) 
+ERR: Db Error: Unknown column 'lastuptime' in 'order clause'
+SELECT * FROM `33hao_bid` WHERE ( bid_dc_id = '1' ) AND ( bid_work_id = '3' ) ORDER BY lastuptime desc LIMIT 1000  

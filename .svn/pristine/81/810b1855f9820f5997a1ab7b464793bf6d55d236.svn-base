@@ -1,0 +1,108 @@
+[2015-11-17 15:37:38] /33hao/admin/index.php?act=decoration&op=works ( act=decoration&op=works ) 
+ERR: Db Error: Unknown column 'id' in 'order clause'
+SELECT COUNT(*) AS nc_count FROM `33hao_decoration_work` ORDER BY id desc LIMIT 1  
+[2015-11-17 15:37:38] /33hao/admin/index.php?act=decoration&op=works ( act=decoration&op=works ) 
+ERR: Db Error: Unknown column 'id' in 'order clause'
+SELECT * FROM `33hao_decoration_work` ORDER BY id desc LIMIT 0,10  
+[2015-11-17 15:37:39] /33hao/admin/index.php?act=decoration&op=works ( act=decoration&op=works ) 
+ERR: Db Error: Unknown column 'id' in 'order clause'
+SELECT COUNT(*) AS nc_count FROM `33hao_decoration_work` ORDER BY id desc LIMIT 1  
+[2015-11-17 15:37:39] /33hao/admin/index.php?act=decoration&op=works ( act=decoration&op=works ) 
+ERR: Db Error: Unknown column 'id' in 'order clause'
+SELECT * FROM `33hao_decoration_work` ORDER BY id desc LIMIT 0,10  
+[2015-11-17 15:37:46] /33hao/admin/index.php?act=decoration&op=works ( act=decoration&op=works ) 
+ERR: Db Error: Unknown column 'id' in 'order clause'
+SELECT COUNT(*) AS nc_count FROM `33hao_decoration_work` ORDER BY id desc LIMIT 1  
+[2015-11-17 15:37:46] /33hao/admin/index.php?act=decoration&op=works ( act=decoration&op=works ) 
+ERR: Db Error: Unknown column 'id' in 'order clause'
+SELECT * FROM `33hao_decoration_work` ORDER BY id desc LIMIT 0,10  
+[2015-11-17 16:30:18] /33hao/mobile/index.php?act=designer_work&op=designer_work_list ( act=designer_work&op=designer_work_list ) 
+ERR: Db Error: Unknown column 'goods_name' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `33hao_designer_work` AS `designer_work` LEFT JOIN `33hao_designer` AS `designer` ON designer_work.sn_designer_id = designer.id WHERE ( goods_name LIKE '%a%' ) ORDER BY sn_collect desc LIMIT 1  
+[2015-11-17 16:30:18] /33hao/mobile/index.php?act=designer_work&op=designer_work_list ( act=designer_work&op=designer_work_list ) 
+ERR: Db Error: Unknown column 'goods_name' in 'where clause'
+SELECT * FROM `33hao_designer_work` AS `designer_work` LEFT JOIN `33hao_designer` AS `designer` ON designer_work.sn_designer_id = designer.id WHERE ( goods_name LIKE '%a%' ) ORDER BY sn_collect desc LIMIT 0,2  
+[2015-11-17 16:30:18] /33hao/mobile/index.php?act=designer_work&op=designer_work_list ( act=designer_work&op=designer_work_list ) 
+ERR: Db Error: Unknown column 'goods_name' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `33hao_designer_work` WHERE ( goods_name LIKE '%a%' ) LIMIT 1  
+[2015-11-17 16:34:19] /33hao/mobile/index.php?act=designer_work&op=designer_work_list ( act=designer_work&op=designer_work_list ) 
+ERR: Db Error: Table '33hao.33hao_designer_work1' doesn't exist
+SELECT COUNT(*) AS nc_count FROM `33hao_designer_work1` AS `designer_work1` LEFT JOIN `33hao_designer` AS `designer` ON designer_work.sn_designer_id = designer.id ORDER BY sn_collect desc LIMIT 1  
+[2015-11-17 16:34:19] /33hao/mobile/index.php?act=designer_work&op=designer_work_list ( act=designer_work&op=designer_work_list ) 
+ERR: Db Error: Table '33hao.33hao_designer_work1' doesn't exist
+SELECT * FROM `33hao_designer_work1` AS `designer_work1` LEFT JOIN `33hao_designer` AS `designer` ON designer_work.sn_designer_id = designer.id ORDER BY sn_collect desc LIMIT 0,2  
+[2015-11-17 16:40:00] /33hao/mobile/index.php?act=designer_work&op=designer_work_list ( act=designer_work&op=designer_work_list ) 
+ERR: Db Error: Unknown column 'designer_work.sn_title' in 'field list'
+SELECT designer_work.id,designer_work.sn_title,designer_work.sn_collect,designer_work.sn_m_pic,designer_work.sn_cost FROM `33hao_designer_work` AS `designer_work` LEFT JOIN `33hao_designer` AS `designer` ON designer_work.sn_designer_id = designer.id ORDER BY sn_collect desc LIMIT 0,2  
+[2015-11-17 17:34:09] /33hao/shop/index.php?act=designer_work&op=designer_del&inajax=1 ( act=designer_work&op=designer_del ) 
+ERR: Db Error: Unknown column 'sn_store_1id' in 'where clause'
+DELETE  FROM `33hao_designer` WHERE ( id = '16' ) AND ( sn_store_1id = '1' )
+[2015-11-17 17:35:06] /33hao/shop/index.php?act=designer_work&op=designer_del&inajax=1 ( act=designer_work&op=designer_del ) 
+ERR: Db Error: Unknown column 'sn_store_1id' in 'where clause'
+DELETE  FROM `33hao_designer` WHERE ( id = '16' ) AND ( sn_store_1id = '1' )
+[2015-11-17 17:35:31] /33hao/shop/index.php?act=designer_work&op=designer_del&inajax=1 ( act=designer_work&op=designer_del ) 
+ERR: Db Error: Unknown column 'sn_store_1id' in 'where clause'
+DELETE  FROM `33hao_designer` WHERE ( id = '16' ) AND ( sn_store_1id = '1' )
+[2015-11-17 17:43:47] /33hao/shop/index.php?act=designer_work&op=designer_del&inajax=1 ( act=designer_work&op=designer_del ) 
+ERR: Db Error: Unknown column 'sn_store_1id' in 'where clause'
+DELETE  FROM `33hao_designer_work` WHERE ( id = '16' ) AND ( sn_store_1id = '1' )
+[2015-11-17 17:44:23] /33hao/shop/index.php?act=designer_work&op=designer_del&inajax=1 ( act=designer_work&op=designer_del ) 
+ERR: Db Error: Unknown column 'sn_store_1id' in 'where clause'
+DELETE  FROM `33hao_designer_work` WHERE ( id = '16' ) AND ( sn_store_1id = '1' )
+[2015-11-17 17:55:13] /33hao/mobile/index.php?act=designer_work&op=designer_work_list ( act=designer_work&op=designer_work_list ) 
+ERR: Db Error: Unknown column 'designer.sn_name' in 'field list'
+SELECT designer_work.id,designer_work.sn_collect,designer_work.sn_category,designer_work.sn_style,designer_work.sn_m_pic,designer_work.sn_work_pic,designer_work.sn_area,designer_work.sn_cost,designer_work.sn_content,designer_work.sn_add_time,designer_work.sn_house_type,designer_work.sn_collection_count,designer_work.sn_share_count,designer_work.sn_designer_id,designer.sn_name,designer.sn_head,designer.sn_designer_style,designer.sn_designer_enter_time,designer.sn_designer_collect,designer.sn_store_id,designer.sn_store_name FROM `33hao_designer_work` AS `designer_work` LEFT JOIN `33hao_designer` AS `designer` ON designer_work.sn_designer_id = designer.id ORDER BY sn_collect desc LIMIT 0,2  
+[2015-11-17 17:56:10] /33hao/mobile/index.php?act=designer_work&op=designer_work_list ( act=designer_work&op=designer_work_list ) 
+ERR: Db Error: Unknown column 'designer.sn_name' in 'field list'
+SELECT designer_work.id,designer_work.sn_collect,designer_work.sn_category,designer_work.sn_style,designer_work.sn_m_pic,designer_work.sn_work_pic,designer_work.sn_area,designer_work.sn_cost,designer_work.sn_content,designer_work.sn_add_time,designer_work.sn_house_type,designer_work.sn_collection_count,designer_work.sn_share_count,designer_work.sn_designer_id,designer.sn_name,designer.sn_head,designer.sn_designer_style,designer.sn_designer_enter_time,designer.sn_designer_collect,designer.sn_store_id,designer.sn_store_name FROM `33hao_designer_work` AS `designer_work` LEFT JOIN `33hao_designer` AS `designer` ON designer_work.sn_designer_id = designer.id ORDER BY sn_collect desc LIMIT 0,2  
+[2015-11-17 18:26:43] /33hao/mobile/index.php?act=decoration_pub&op=getDcList ( act=decoration_pub&op=getdclist ) 
+ERR: Db Error: Unknown column 'sn_store_id1' in 'where clause'
+SELECT * FROM `33hao_designer` WHERE ( sn_store_id1 = '2' ) AND ( sn_if_show = '1' ) ORDER BY sn_designer_collect desc LIMIT 8  
+[2015-11-17 18:26:43] /33hao/mobile/index.php?act=decoration_pub&op=getDcList ( act=decoration_pub&op=getdclist ) 
+ERR: Db Error: Unknown column 'sn_store_id1' in 'where clause'
+SELECT * FROM `33hao_designer` WHERE ( sn_store_id1 = '3' ) AND ( sn_if_show = '1' ) ORDER BY sn_designer_collect desc LIMIT 8  
+[2015-11-17 18:27:04] /33hao/mobile/index.php?act=decoration_pub&op=getDcList ( act=decoration_pub&op=getdclist ) 
+ERR: Db Error: Unknown column 'sn_store_id1' in 'where clause'
+SELECT * FROM `33hao_designer` WHERE ( sn_store_id1 = '2' ) AND ( sn_if_show = '1' ) ORDER BY sn_designer_collect desc LIMIT 8  
+[2015-11-17 18:27:04] /33hao/mobile/index.php?act=decoration_pub&op=getDcList ( act=decoration_pub&op=getdclist ) 
+ERR: Db Error: Unknown column 'sn_store_id1' in 'where clause'
+SELECT * FROM `33hao_designer` WHERE ( sn_store_id1 = '3' ) AND ( sn_if_show = '1' ) ORDER BY sn_designer_collect desc LIMIT 8  
+[2015-11-17 18:38:11] /33hao/mobile/index.php?act=decoration_pub&op=getDcList ( act=decoration_pub&op=getdclist ) 
+ERR: Db Error: Unknown column 'sn_store_id1' in 'where clause'
+SELECT * FROM `33hao_designer_work` WHERE ( sn_store_id1 = '1' ) AND ( sn_if_show = '1' ) ORDER BY sn_collection_count desc LIMIT 8  
+[2015-11-17 18:38:11] /33hao/mobile/index.php?act=decoration_pub&op=getDcList ( act=decoration_pub&op=getdclist ) 
+ERR: Db Error: Unknown column 'sn_store_id1' in 'where clause'
+SELECT * FROM `33hao_designer_work` WHERE ( sn_store_id1 = '2' ) AND ( sn_if_show = '1' ) ORDER BY sn_collection_count desc LIMIT 8  
+[2015-11-17 18:41:24] /33hao/mobile/index.php?act=decoration_pub&op=getDcList ( act=decoration_pub&op=getdclist ) 
+ERR: Db Error: Unknown column 'store_apply_typeq' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `33hao_store` WHERE ( store_state = '1' ) AND ( store_apply_typeq = '2' ) ORDER BY store_sales desc LIMIT 1  
+[2015-11-17 18:41:24] /33hao/mobile/index.php?act=decoration_pub&op=getDcList ( act=decoration_pub&op=getdclist ) 
+ERR: Db Error: Unknown column 'store_apply_typeq' in 'where clause'
+SELECT * FROM `33hao_store` WHERE ( store_state = '1' ) AND ( store_apply_typeq = '2' ) ORDER BY store_sales desc LIMIT 0,2  
+[2015-11-17 18:43:45] /33hao/mobile/index.php?act=decoration_pub&op=getDcList ( act=decoration_pub&op=getdclist ) 
+ERR: Db Error: Unknown column 'sn_store_id1' in 'where clause'
+SELECT * FROM `33hao_designer_work` WHERE ( sn_store_id1 = '1' ) AND ( sn_if_show = '1' ) ORDER BY sn_collection_count desc LIMIT 8  
+[2015-11-17 19:19:34] /33hao/mobile/index.php?act=login&op=register&username=18934488948&code=1654&client=android&password=123456&password_confirm=123456 ( act=login&op=register ) 
+ERR: Db Error: Column 'member_email' cannot be null
+INSERT  INTO `33hao_member` (member_id,member_name,member_passwd,member_email,member_time,member_login_time,member_old_login_time,member_login_ip,member_old_login_ip,member_truename,member_qq,member_sex,member_avatar,member_qqopenid,member_qqinfo,member_sinaopenid,member_sinainfo,inviter_id) VALUES (NULL,'18934488948','e10adc3949ba59abbe56e057f20f883e',NULL,'1447759174','1447759174','1447759174','','',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
+[2015-11-17 19:23:38] /33hao/mobile/index.php?act=login&op=register&username=18934488948&code=1654&client=android&password=123456&password_confirm=123456 ( act=login&op=register ) 
+ERR: Db Error: Column 'member_email' cannot be null
+INSERT  INTO `33hao_member` (member_id,member_name,member_passwd,member_email,member_time,member_login_time,member_old_login_time,member_login_ip,member_old_login_ip,member_truename,member_qq,member_sex,member_avatar,member_qqopenid,member_qqinfo,member_sinaopenid,member_sinainfo,inviter_id) VALUES (NULL,'18934488948','e10adc3949ba59abbe56e057f20f883e',NULL,'1447759418','1447759418','1447759418','','',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
+[2015-11-17 19:25:24] /33hao/mobile/index.php?act=login&op=register&username=18934488948&code=1654&client=android&password=123456&password_confirm=123456 ( act=login&op=register ) 
+ERR: Db Error: Column 'member_email' cannot be null
+INSERT  INTO `33hao_member` (member_id,member_name,member_passwd,member_email,member_time,member_login_time,member_old_login_time,member_login_ip,member_old_login_ip,member_truename,member_qq,member_sex,member_avatar,member_qqopenid,member_qqinfo,member_sinaopenid,member_sinainfo,inviter_id) VALUES (NULL,'18934488948','e10adc3949ba59abbe56e057f20f883e',NULL,'1447759524','1447759524','1447759524','','',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
+[2015-11-17 19:25:42] /33hao/mobile/index.php?act=login&op=register&username=18934488948&code=1654&client=android&password=123456&password_confirm=123456 ( act=login&op=register ) 
+ERR: Db Error: Column 'member_email' cannot be null
+INSERT  INTO `33hao_member` (member_id,member_name,member_passwd,member_email,member_time,member_login_time,member_old_login_time,member_login_ip,member_old_login_ip,member_truename,member_qq,member_sex,member_avatar,member_qqopenid,member_qqinfo,member_sinaopenid,member_sinainfo,inviter_id) VALUES (NULL,'18934488948','e10adc3949ba59abbe56e057f20f883e',NULL,'1447759542','1447759542','1447759542','','',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
+[2015-11-17 19:25:54] /33hao/mobile/index.php?act=login&op=register&username=18934488948&code=1654&client=android&password=123456&password_confirm=123456 ( act=login&op=register ) 
+ERR: Db Error: Column 'member_email' cannot be null
+INSERT  INTO `33hao_member` (member_id,member_name,member_passwd,member_email,member_time,member_login_time,member_old_login_time,member_login_ip,member_old_login_ip,member_truename,member_qq,member_sex,member_avatar,member_qqopenid,member_qqinfo,member_sinaopenid,member_sinainfo,inviter_id) VALUES (NULL,'18934488948','e10adc3949ba59abbe56e057f20f883e',NULL,'1447759554','1447759554','1447759554','','',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
+[2015-11-17 20:13:08] /33hao/mobile/index.php?act=decoration&op=addRequest&key=7a637fdff15590b10101b688ba602da3&dw_name=123 ( act=decoration&op=addrequest ) 
+ERR: Db Error: Unknown column 'dw_file_id' in 'field list'
+INSERT  INTO `33hao_decoration_work` (dw_con_name,dw_con_mobile,dw_category,dw_budget,dw_area,dw_style,dw_address,dw_house_type,dw_file_id) VALUES (NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
+[2015-11-17 20:13:24] /33hao/mobile/index.php?act=decoration&op=addRequest&key=7a637fdff15590b10101b688ba602da3&dw_con_name=123 ( act=decoration&op=addrequest ) 
+ERR: Db Error: Unknown column 'dw_file_id' in 'field list'
+INSERT  INTO `33hao_decoration_work` (dw_con_name,dw_con_mobile,dw_category,dw_budget,dw_area,dw_style,dw_address,dw_house_type,dw_file_id) VALUES (NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
+[2015-11-17 20:18:37] /33hao/mobile/index.php?act=decoration&op=addRequest&key=7a637fdff15590b10101b688ba602da3&dw_con_name=123 ( act=decoration&op=addrequest ) 
+ERR: Db Error: Unknown column 'dw_file_ids' in 'field list'
+INSERT  INTO `33hao_decoration_work` (dw_con_name,dw_con_mobile,dw_category,dw_budget,dw_area,dw_style,dw_address,dw_house_type,dw_file_ids) VALUES (NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)

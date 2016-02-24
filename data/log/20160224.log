@@ -1,0 +1,111 @@
+[2016-02-24 14:40:10] /33hao/ ( act=index&op=index ) 
+ERR: Db Error: Lost connection to MySQL server during query
+SELECT * FROM `33hao_article_class` as `article_class`  WHERE  ac_id <= 7 order by ac_sort asc
+[2016-02-24 14:40:10] /33hao/ ( act=index&op=index ) 
+ERR: Db Error: MySQL server has gone away
+SELECT article.article_id,article.ac_id,article.article_url,article.article_title,article.article_time,article_class.ac_name,article_class.ac_parent_id FROM `33hao_article` as `article` left join `33hao_article_class` as `article_class` ON article.ac_id=article_class.ac_id  WHERE  article.article_show = '1' and (article_class.ac_id <= 7 or (article_class.ac_parent_id > 0 and article_class.ac_parent_id <= 7)) order by article_sort asc,article_time desc limit 300
+[2016-02-24 14:40:10] /33hao/ ( act=index&op=index ) 
+ERR: Db Error: MySQL server has gone away
+SHOW TABLES
+[2016-02-24 14:40:10] /33hao/ ( act=index&op=index ) 
+ERR: Db Error: MySQL server has gone away
+SHOW TABLES
+[2016-02-24 14:40:10] /33hao/ ( act=index&op=index ) 
+ERR: Db Error: MySQL server has gone away
+SHOW TABLES
+[2016-02-24 14:40:10] /33hao/ ( act=index&op=index ) 
+ERR: Db Error: MySQL server has gone away
+SELECT * FROM `33hao_goods_class` ORDER BY gc_parent_id asc,gc_sort asc,gc_id asc 
+[2016-02-24 14:40:10] /33hao/ ( act=index&op=index ) 
+ERR: Db Error: MySQL server has gone away
+SHOW TABLES
+[2016-02-24 14:40:10] /33hao/ ( act=index&op=index ) 
+ERR: Db Error: MySQL server has gone away
+SELECT * FROM `33hao_navigation` ORDER BY nav_sort 
+[2016-02-24 14:40:10] /33hao/ ( act=index&op=index ) 
+ERR: Db Error: MySQL server has gone away
+SHOW TABLES
+[2016-02-24 14:40:10] /33hao/ ( act=index&op=index ) 
+ERR: Db Error: MySQL server has gone away
+SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( start_time < '1456295662' ) AND ( end_time > '1456295662' ) ORDER BY recommended desc LIMIT 4  
+[2016-02-24 14:40:10] /33hao/ ( act=index&op=index ) 
+ERR: Db Error: MySQL server has gone away
+SELECT * FROM `33hao_link` as `link`   order by link_id
+[2016-02-24 14:40:10] /33hao/ ( act=index&op=index ) 
+ERR: Db Error: MySQL server has gone away
+SHOW TABLES
+[2016-02-24 14:40:10] /33hao/ ( act=index&op=index ) 
+ERR: Db Error: MySQL server has gone away
+SELECT * FROM `33hao_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time < '1456295662' ) AND ( end_time > '1456295662' ) ORDER BY xianshi_recommend desc LIMIT 4  
+[2016-02-24 14:40:10] /33hao/ ( act=index&op=index ) 
+ERR: Db Error: MySQL server has gone away
+SHOW TABLES
+[2016-02-24 14:40:10] /33hao/ ( act=index&op=index ) 
+ERR: Db Error: MySQL server has gone away
+SELECT * FROM `33hao_web` WHERE ( web_show = '1' ) AND ( web_page LIKE 'index%' ) ORDER BY web_sort LIMIT 1000  
+[2016-02-24 14:40:10] /33hao/ ( act=index&op=index ) 
+ERR: Db Error: MySQL server has gone away
+SHOW TABLES
+[2016-02-24 14:40:10] /33hao/ ( act=index&op=index ) 
+ERR: Db Error: MySQL server has gone away
+SHOW TABLES
+[2016-02-24 14:40:10] /33hao/ ( act=index&op=index ) 
+ERR: Db Error: MySQL server has gone away
+SELECT * FROM `33hao_seo` 
+[2016-02-24 14:40:10] /33hao/ ( act=index&op=index ) 
+ERR: Db Error: MySQL server has gone away
+SHOW TABLES
+[2016-02-24 14:40:10] /33hao/ ( act=index&op=index ) 
+ERR: Db Error: MySQL server has gone away
+SELECT * FROM `33hao_adv_position` WHERE ( id = '1047' ) LIMIT 1  
+[2016-02-24 14:40:10] /33hao/ ( act=index&op=index ) 
+ERR: Db Error: MySQL server has gone away
+SHOW TABLES
+[2016-02-24 14:40:10] /33hao/ ( act=index&op=index ) 
+ERR: Db Error: MySQL server has gone away
+SELECT * FROM `33hao_adv` WHERE ( ap_id = '1047' ) AND ( adv_end_date > '1456296010' ) ORDER BY slide_sort, adv_id desc LIMIT 1000  
+[2016-02-24 14:40:10] /33hao/ ( act=index&op=index ) 
+ERR: Db Error: MySQL server has gone away
+SHOW TABLES
+[2016-02-24 14:40:10] /33hao/ ( act=index&op=index ) 
+ERR: Db Error: MySQL server has gone away
+SELECT * FROM `33hao_adv_position` WHERE ( id = '11' ) LIMIT 1  
+[2016-02-24 14:40:10] /33hao/ ( act=index&op=index ) 
+ERR: Db Error: MySQL server has gone away
+SHOW TABLES
+[2016-02-24 14:40:10] /33hao/ ( act=index&op=index ) 
+ERR: Db Error: MySQL server has gone away
+SELECT * FROM `33hao_adv` WHERE ( ap_id = '11' ) AND ( adv_end_date > '1456296010' ) ORDER BY slide_sort, adv_id desc LIMIT 1000  
+[2016-02-24 14:40:10] /33hao/ ( act=index&op=index ) 
+ERR: Db Error: MySQL server has gone away
+SHOW TABLES
+[2016-02-24 14:40:10] /33hao/ ( act=index&op=index ) 
+ERR: Db Error: MySQL server has gone away
+SELECT * FROM `33hao_adv_position` WHERE ( id = '9' ) LIMIT 1  
+[2016-02-24 14:40:10] /33hao/ ( act=index&op=index ) 
+ERR: Db Error: MySQL server has gone away
+SHOW TABLES
+[2016-02-24 14:40:10] /33hao/ ( act=index&op=index ) 
+ERR: Db Error: MySQL server has gone away
+SELECT * FROM `33hao_adv` WHERE ( ap_id = '9' ) AND ( adv_end_date > '1456296010' ) ORDER BY slide_sort, adv_id desc LIMIT 1000  
+[2016-02-24 14:40:10] /33hao/ ( act=index&op=index ) 
+ERR: Db Error: MySQL server has gone away
+SHOW TABLES
+[2016-02-24 14:40:10] /33hao/ ( act=index&op=index ) 
+ERR: Db Error: MySQL server has gone away
+SELECT * FROM `33hao_rec_position` WHERE ( id = '1' ) LIMIT 1  
+[2016-02-24 14:40:10] /33hao/ ( act=index&op=index ) 
+ERR: Db Error: MySQL server has gone away
+SELECT * FROM `33hao_rec_position` WHERE ( id = '2' ) LIMIT 1  
+[2016-02-24 14:40:10] /33hao/ ( act=index&op=index ) 
+ERR: Db Error: MySQL server has gone away
+SELECT * FROM `33hao_rec_position` WHERE ( id = '3' ) LIMIT 1  
+[2016-02-24 14:40:10] /33hao/ ( act=index&op=index ) 
+ERR: Db Error: MySQL server has gone away
+SELECT * FROM `33hao_rec_position` WHERE ( id = '4' ) LIMIT 1  
+[2016-02-24 14:40:10] /33hao/ ( act=index&op=index ) 
+ERR: Db Error: MySQL server has gone away
+SELECT * FROM `33hao_rec_position` WHERE ( id = '5' ) LIMIT 1  
+[2016-02-24 14:40:10] /33hao/ ( act=index&op=index ) 
+ERR: Db Error: MySQL server has gone away
+SELECT * FROM `33hao_rec_position` WHERE ( id = '6' ) LIMIT 1  

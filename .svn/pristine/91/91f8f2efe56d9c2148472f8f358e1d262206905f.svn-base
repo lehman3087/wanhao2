@@ -1,0 +1,6 @@
+[2015-11-13 15:40:24] /33hao/mobile/index.php?act=login&op=getCode&username=18934488948 ( act=login&op=getcode ) 
+ERR: Db Error: Table '33hao.33hao_sms' doesn't exist
+INSERT  INTO `33hao_sms` (create_time,content,type,username) VALUES ('1447400424','1233','SMS_GET_REG_CODE','18934488948')
+[2015-11-13 15:44:35] /33hao/mobile/index.php?act=login&op=getCode&username=18934488948 ( act=login&op=getcode ) 
+ERR: Db Error: Table '33hao.33hao_sms' doesn't exist
+INSERT  INTO `33hao_sms` (create_time,content,type,username) VALUES ('1447400675','1148','SMS_GET_REG_CODE','18934488948')

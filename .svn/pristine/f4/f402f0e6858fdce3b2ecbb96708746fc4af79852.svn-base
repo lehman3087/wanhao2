@@ -1,0 +1,102 @@
+[2015-10-30 11:31:46] /33hao/mobile/index.php?act=designer&op=designer_list ( act=designer&op=designer_list ) 
+ERR: Db Error: Unknown column 'sn_designer_collect' in 'order clause'
+SELECT COUNT(*) AS nc_count FROM `33hao_designer_work` WHERE ( sn_designer_id = '21' ) ORDER BY sn_designer_collect desc LIMIT 1  
+[2015-10-30 11:53:51] /33hao/mobile/index.php?act=designer&op=designer_list ( act=designer&op=designer_list ) 
+ERR: Db Error: Unknown column 'sn_designer_collect' in 'order clause'
+SELECT COUNT(*) AS nc_count FROM `33hao_designer_work` WHERE ( sn_designer_id = '21' ) ORDER BY sn_designer_collect desc LIMIT 1  
+[2015-10-30 13:56:58] /33hao/admin/index.php?act=decoration&op=works ( act=decoration&op=works ) 
+ERR: Db Error: Unknown column 'id' in 'order clause'
+SELECT COUNT(*) AS nc_count FROM `33hao_decoration_work` ORDER BY id desc LIMIT 1  
+[2015-10-30 13:56:58] /33hao/admin/index.php?act=decoration&op=works ( act=decoration&op=works ) 
+ERR: Db Error: Unknown column 'id' in 'order clause'
+SELECT * FROM `33hao_decoration_work` ORDER BY id desc LIMIT 0,10  
+[2015-10-30 13:57:03] /33hao/admin/index.php?act=decoration&op=works ( act=decoration&op=works ) 
+ERR: Db Error: Unknown column 'id' in 'order clause'
+SELECT COUNT(*) AS nc_count FROM `33hao_decoration_work` ORDER BY id desc LIMIT 1  
+[2015-10-30 13:57:03] /33hao/admin/index.php?act=decoration&op=works ( act=decoration&op=works ) 
+ERR: Db Error: Unknown column 'id' in 'order clause'
+SELECT * FROM `33hao_decoration_work` ORDER BY id desc LIMIT 0,10  
+[2015-10-30 13:57:17] /33hao/admin/index.php?act=decoration&op=works ( act=decoration&op=works ) 
+ERR: Db Error: Unknown column 'id' in 'order clause'
+SELECT COUNT(*) AS nc_count FROM `33hao_decoration_work` ORDER BY id desc LIMIT 1  
+[2015-10-30 13:57:17] /33hao/admin/index.php?act=decoration&op=works ( act=decoration&op=works ) 
+ERR: Db Error: Unknown column 'id' in 'order clause'
+SELECT * FROM `33hao_decoration_work` ORDER BY id desc LIMIT 0,10  
+[2015-10-30 14:09:09] /33hao/admin/index.php?act=decoration&op=works ( act=decoration&op=works ) 
+ERR: Db Error: Unknown column 'id' in 'order clause'
+SELECT COUNT(*) AS nc_count FROM `33hao_decoration_work` ORDER BY id desc LIMIT 1  
+[2015-10-30 14:09:09] /33hao/admin/index.php?act=decoration&op=works ( act=decoration&op=works ) 
+ERR: Db Error: Unknown column 'id' in 'order clause'
+SELECT * FROM `33hao_decoration_work` ORDER BY id desc LIMIT 0,10  
+[2015-10-30 14:32:59] /33hao/admin/index.php?act=decoration&op=works ( act=decoration&op=works ) 
+ERR: Db Error: Unknown column 'id' in 'order clause'
+SELECT COUNT(*) AS nc_count FROM `33hao_decoration_work` ORDER BY id desc LIMIT 1  
+[2015-10-30 14:32:59] /33hao/admin/index.php?act=decoration&op=works ( act=decoration&op=works ) 
+ERR: Db Error: Unknown column 'id' in 'order clause'
+SELECT * FROM `33hao_decoration_work` ORDER BY id desc LIMIT 0,10  
+[2015-10-30 14:44:28] /33hao/admin/index.php?act=decoration&op=works ( act=decoration&op=works ) 
+ERR: Db Error: Unknown column 'id' in 'order clause'
+SELECT COUNT(*) AS nc_count FROM `33hao_decoration_work` ORDER BY id desc LIMIT 1  
+[2015-10-30 14:44:28] /33hao/admin/index.php?act=decoration&op=works ( act=decoration&op=works ) 
+ERR: Db Error: Unknown column 'id' in 'order clause'
+SELECT * FROM `33hao_decoration_work` ORDER BY id desc LIMIT 0,10  
+[2015-10-30 17:03:49] /33hao/mobile/index.php?act=designer_work&op=designer_work_list ( act=designer_work&op=designer_work_list ) 
+ERR: Db Error: Table '33hao.33hao_designer1' doesn't exist
+SELECT COUNT(*) AS nc_count FROM `33hao_designer_work` AS `designer_work` LEFT JOIN `33hao_designer1` AS `designer1` ON designer_work.sn_designer_id = designer.id WHERE ( sn_name LIKE '%a%' ) LIMIT 1  
+[2015-10-30 17:03:49] /33hao/mobile/index.php?act=designer_work&op=designer_work_list ( act=designer_work&op=designer_work_list ) 
+ERR: Db Error: Table '33hao.33hao_designer1' doesn't exist
+SELECT * FROM `33hao_designer_work` AS `designer_work` LEFT JOIN `33hao_designer1` AS `designer1` ON designer_work.sn_designer_id = designer.id WHERE ( sn_name LIKE '%a%' ) LIMIT 0,10  
+[2015-10-30 17:03:59] /33hao/mobile/index.php?act=designer_work&op=designer_work_list ( act=designer_work&op=designer_work_list ) 
+ERR: Db Error: Table '33hao.33hao_designer1' doesn't exist
+SELECT COUNT(*) AS nc_count FROM `33hao_designer_work` AS `designer_work` LEFT JOIN `33hao_designer1` AS `designer1` ON designer_work.sn_designer_id = designer.id WHERE ( sn_name LIKE '%a%' ) LIMIT 1  
+[2015-10-30 17:03:59] /33hao/mobile/index.php?act=designer_work&op=designer_work_list ( act=designer_work&op=designer_work_list ) 
+ERR: Db Error: Table '33hao.33hao_designer1' doesn't exist
+SELECT * FROM `33hao_designer_work` AS `designer_work` LEFT JOIN `33hao_designer1` AS `designer1` ON designer_work.sn_designer_id = designer.id WHERE ( sn_name LIKE '%a%' ) LIMIT 0,10  
+[2015-10-30 17:03:59] /33hao/mobile/index.php?act=designer_work&op=designer_work_list ( act=designer_work&op=designer_work_list ) 
+ERR: Db Error: Table '33hao.33hao_' doesn't exist
+SELECT COUNT(*) AS nc_count FROM `33hao_` WHERE ( sn_name LIKE '%a%' ) LIMIT 1  
+[2015-10-30 17:04:23] /33hao/mobile/index.php?act=designer_work&op=designer_work_list ( act=designer_work&op=designer_work_list ) 
+ERR: Db Error: Table '33hao.33hao_designer1' doesn't exist
+SELECT COUNT(*) AS nc_count FROM `33hao_designer_work` AS `designer_work` LEFT JOIN `33hao_designer1` AS `designer1` ON designer_work.sn_designer_id = designer.id WHERE ( sn_name LIKE '%1%' ) LIMIT 1  
+[2015-10-30 17:04:23] /33hao/mobile/index.php?act=designer_work&op=designer_work_list ( act=designer_work&op=designer_work_list ) 
+ERR: Db Error: Table '33hao.33hao_designer1' doesn't exist
+SELECT * FROM `33hao_designer_work` AS `designer_work` LEFT JOIN `33hao_designer1` AS `designer1` ON designer_work.sn_designer_id = designer.id WHERE ( sn_name LIKE '%1%' ) LIMIT 0,10  
+[2015-10-30 17:04:23] /33hao/mobile/index.php?act=designer_work&op=designer_work_list ( act=designer_work&op=designer_work_list ) 
+ERR: Db Error: Table '33hao.33hao_' doesn't exist
+SELECT COUNT(*) AS nc_count FROM `33hao_` WHERE ( sn_name LIKE '%1%' ) LIMIT 1  
+[2015-10-30 17:04:36] /33hao/mobile/index.php?act=designer_work&op=designer_work_list ( act=designer_work&op=designer_work_list ) 
+ERR: Db Error: Table '33hao.33hao_' doesn't exist
+SELECT COUNT(*) AS nc_count FROM `33hao_` WHERE ( sn_name LIKE '%1%' ) LIMIT 1  
+[2015-10-30 17:05:08] /33hao/mobile/index.php?act=designer_work&op=designer_work_list ( act=designer_work&op=designer_work_list ) 
+ERR: Db Error: Table '33hao.33hao_' doesn't exist
+SELECT COUNT(*) AS nc_count FROM `33hao_` WHERE ( sn_name LIKE '%1%' ) LIMIT 1  
+[2015-10-30 18:22:09] /33hao/admin/index.php?act=decoration&op=works ( act=decoration&op=works ) 
+ERR: Db Error: Unknown column 'id' in 'order clause'
+SELECT COUNT(*) AS nc_count FROM `33hao_decoration_work` ORDER BY id desc LIMIT 1  
+[2015-10-30 18:22:09] /33hao/admin/index.php?act=decoration&op=works ( act=decoration&op=works ) 
+ERR: Db Error: Unknown column 'id' in 'order clause'
+SELECT * FROM `33hao_decoration_work` ORDER BY id desc LIMIT 0,10  
+[2015-10-30 18:22:12] /33hao/admin/index.php?act=decoration&op=works ( act=decoration&op=works ) 
+ERR: Db Error: Unknown column 'id' in 'order clause'
+SELECT COUNT(*) AS nc_count FROM `33hao_decoration_work` ORDER BY id desc LIMIT 1  
+[2015-10-30 18:22:12] /33hao/admin/index.php?act=decoration&op=works ( act=decoration&op=works ) 
+ERR: Db Error: Unknown column 'id' in 'order clause'
+SELECT * FROM `33hao_decoration_work` ORDER BY id desc LIMIT 0,10  
+[2015-10-30 18:22:14] /33hao/admin/index.php?act=decoration&op=works ( act=decoration&op=works ) 
+ERR: Db Error: Unknown column 'id' in 'order clause'
+SELECT COUNT(*) AS nc_count FROM `33hao_decoration_work` ORDER BY id desc LIMIT 1  
+[2015-10-30 18:22:14] /33hao/admin/index.php?act=decoration&op=works ( act=decoration&op=works ) 
+ERR: Db Error: Unknown column 'id' in 'order clause'
+SELECT * FROM `33hao_decoration_work` ORDER BY id desc LIMIT 0,10  
+[2015-10-30 18:22:26] /33hao/admin/index.php?act=decoration&op=works ( act=decoration&op=works ) 
+ERR: Db Error: Unknown column 'id' in 'order clause'
+SELECT COUNT(*) AS nc_count FROM `33hao_decoration_work` ORDER BY id desc LIMIT 1  
+[2015-10-30 18:22:26] /33hao/admin/index.php?act=decoration&op=works ( act=decoration&op=works ) 
+ERR: Db Error: Unknown column 'id' in 'order clause'
+SELECT * FROM `33hao_decoration_work` ORDER BY id desc LIMIT 0,10  
+[2015-10-30 18:22:27] /33hao/admin/index.php?act=decoration&op=works ( act=decoration&op=works ) 
+ERR: Db Error: Unknown column 'id' in 'order clause'
+SELECT COUNT(*) AS nc_count FROM `33hao_decoration_work` ORDER BY id desc LIMIT 1  
+[2015-10-30 18:22:27] /33hao/admin/index.php?act=decoration&op=works ( act=decoration&op=works ) 
+ERR: Db Error: Unknown column 'id' in 'order clause'
+SELECT * FROM `33hao_decoration_work` ORDER BY id desc LIMIT 0,10  

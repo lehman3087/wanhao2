@@ -1,0 +1,15 @@
+[2015-12-03 16:09:14] /33hao/shop/index.php?act=store_promotion_booth&op=adposition_apply_save&inajax=1 ( act=store_promotion_booth&op=adposition_apply_save ) 
+ERR: Db Error: Unknown column 'activity_detail.store_id' in 'where clause'
+SELECT * FROM `33hao_rec_applys` as `rec_applys`  WHERE  activity_detail.store_id='12'
+[2015-12-03 16:12:02] /33hao/shop/index.php?act=store_promotion_booth&op=adposition_apply_save&inajax=1 ( act=store_promotion_booth&op=adposition_apply_save ) 
+ERR: Db Error: Unknown column 'activity_detail.store_id' in 'where clause'
+SELECT * FROM `33hao_rec_applys` as `rec_applys`  WHERE  activity_detail.store_id='12'
+[2015-12-03 16:14:56] /33hao/shop/index.php?act=store_promotion_booth&op=adposition_apply_save&inajax=1 ( act=store_promotion_booth&op=adposition_apply_save ) 
+ERR: Db Error: Unknown column 'activity_detail.store_id' in 'where clause'
+SELECT * FROM `33hao_rec_applys` as `rec_applys`  WHERE  activity_detail.store_id='12'
+[2015-12-03 16:15:31] /33hao/shop/index.php?act=store_promotion_booth&op=adposition_apply_save&inajax=1 ( act=store_promotion_booth&op=adposition_apply_save ) 
+ERR: Db Error: Unknown column 'activity_detail.store_id' in 'where clause'
+SELECT * FROM `33hao_rec_applys` as `rec_applys`  WHERE  activity_detail.store_id='12'
+[2015-12-03 16:16:36] /33hao/shop/index.php?act=store_promotion_booth&op=adposition_apply_save&inajax=1 ( act=store_promotion_booth&op=adposition_apply_save ) 
+ERR: Db Error: Unknown column 'activity_detail.store_id' in 'where clause'
+SELECT * FROM `33hao_rec_applys` as `rec_applys`  WHERE  activity_detail.store_id='12'

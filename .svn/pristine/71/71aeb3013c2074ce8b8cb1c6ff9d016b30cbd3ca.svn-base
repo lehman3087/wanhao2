@@ -1,0 +1,24 @@
+[2015-11-16 17:37:01] /33hao/shop/index.php?act=designer_work&op=designer_work_list ( act=designer_work&op=designer_work_list ) 
+ERR: Db Error: Unknown column 'is_show' in 'where clause'
+SELECT * FROM `33hao_designer` WHERE ( is_show = '1' ) LIMIT 1000  
+[2015-11-16 17:37:03] /33hao/shop/index.php?act=designer_work&op=designer_work_list ( act=designer_work&op=designer_work_list ) 
+ERR: Db Error: Unknown column 'is_show' in 'where clause'
+SELECT * FROM `33hao_designer` WHERE ( is_show = '1' ) LIMIT 1000  
+[2015-11-16 17:37:11] /33hao/shop/index.php?act=designer_work&op=designer_work_list ( act=designer_work&op=designer_work_list ) 
+ERR: Db Error: Unknown column 'is_show' in 'where clause'
+SELECT * FROM `33hao_designer` WHERE ( is_show = '1' ) LIMIT 1000  
+[2015-11-16 17:37:21] /33hao/shop/index.php?act=designer_work&op=designer_work_list ( act=designer_work&op=designer_work_list ) 
+ERR: Db Error: Unknown column 'is_show' in 'where clause'
+SELECT * FROM `33hao_designer` WHERE ( is_show = '1' ) LIMIT 1000  
+[2015-11-16 18:18:28] /33hao/shop/index.php?act=designer_work&op=designer_work_list&d_id=1 ( act=designer_work&op=designer_work_list ) 
+ERR: Db Error: Unknown column '1designer.id' in 'on clause'
+SELECT COUNT(*) AS nc_count FROM `33hao_designer_work` AS `designer_work` INNER JOIN `33hao_designer` AS `designer` ON designer_work.sn_designer_id = 1designer.id WHERE ( designer_work.sn_store_id = '1' ) AND ( designer_work.sn_designer_id = '1' ) ORDER BY sn_collect desc LIMIT 1  
+[2015-11-16 18:18:28] /33hao/shop/index.php?act=designer_work&op=designer_work_list&d_id=1 ( act=designer_work&op=designer_work_list ) 
+ERR: Db Error: Unknown column '1designer.id' in 'on clause'
+SELECT  designer_work.sn_if_show,designer_work.id as id,designer_work.sn_name,designer.sn_title,designer_work.sn_store_id,designer_work.sn_designer_id,designer_work.sn_work_pic  FROM `33hao_designer_work` AS `designer_work` INNER JOIN `33hao_designer` AS `designer` ON designer_work.sn_designer_id = 1designer.id WHERE ( designer_work.sn_store_id = '1' ) AND ( designer_work.sn_designer_id = '1' ) ORDER BY sn_collect desc LIMIT 0,10  
+[2015-11-16 18:22:09] /33hao/shop/index.php?act=designer_work&op=designer_work_list ( act=designer_work&op=designer_work_list ) 
+ERR: Db Error: Unknown column '1designer.id' in 'on clause'
+SELECT COUNT(*) AS nc_count FROM `33hao_designer_work` AS `designer_work` INNER JOIN `33hao_designer` AS `designer` ON designer_work.sn_designer_id = 1designer.id WHERE ( designer_work.sn_store_id = '1' ) ORDER BY sn_collect desc LIMIT 1  
+[2015-11-16 18:22:09] /33hao/shop/index.php?act=designer_work&op=designer_work_list ( act=designer_work&op=designer_work_list ) 
+ERR: Db Error: Unknown column '1designer.id' in 'on clause'
+SELECT  designer_work.sn_if_show,designer_work.id as id,designer_work.sn_name,designer.sn_title,designer_work.sn_store_id,designer_work.sn_designer_id,designer_work.sn_work_pic  FROM `33hao_designer_work` AS `designer_work` INNER JOIN `33hao_designer` AS `designer` ON designer_work.sn_designer_id = 1designer.id WHERE ( designer_work.sn_store_id = '1' ) ORDER BY sn_collect desc LIMIT 0,10  

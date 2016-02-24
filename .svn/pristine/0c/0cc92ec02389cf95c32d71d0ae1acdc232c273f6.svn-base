@@ -1,0 +1,48 @@
+[2015-11-27 10:34:00] /33hao/admin/index.php?act=decoration&op=dw_verify&inajax=1 ( act=decoration&op=dw_verify ) 
+ERR: Db Error: Unknown column 'dw_result' in 'field list'
+UPDATE `33hao_decoration_work` SET dw_result='',dw_verify='1' WHERE ( dw_id IN ('2') )
+[2015-11-27 10:34:20] /33hao/admin/index.php?act=decoration&op=dw_verify&inajax=1 ( act=decoration&op=dw_verify ) 
+ERR: Db Error: Unknown column 'dw_result' in 'field list'
+UPDATE `33hao_decoration_work` SET dw_result='',dw_verify='1' WHERE ( dw_id IN ('2') )
+[2015-11-27 10:41:30] /33hao/admin/index.php?act=decoration&op=works&type=waitverify ( act=decoration&op=works ) 
+ERR: Db Error: Table '33hao.33hao_decoration_work1' doesn't exist
+SELECT * FROM `33hao_decoration_work1` WHERE ( dw_verify = '10' ) GROUP BY 10 ORDER BY dw_verify desc, dw_id desc LIMIT 1000  
+[2015-11-27 10:43:14] /33hao/admin/index.php?act=decoration&op=works&type=waitverify ( act=decoration&op=works ) 
+ERR: Db Error: Table '33hao.33hao_decoration_work1' doesn't exist
+SELECT * FROM `33hao_decoration_work1` WHERE ( dw_verify = '10' ) GROUP BY 10 ORDER BY dw_verify desc, dw_id desc LIMIT 1000  
+[2015-11-27 10:43:24] /33hao/admin/index.php?act=decoration&op=works&type=waitverify ( act=decoration&op=works ) 
+ERR: Db Error: Table '33hao.33hao_decoration_work1' doesn't exist
+SELECT * FROM `33hao_decoration_work1` WHERE ( dw_verify = '10' ) GROUP BY 10 ORDER BY dw_verify desc, dw_id desc LIMIT 1000  
+[2015-11-27 10:43:53] /33hao/admin/index.php?act=decoration&op=works&type=waitverify ( act=decoration&op=works ) 
+ERR: Db Error: Table '33hao.33hao_decoration_work1' doesn't exist
+SELECT COUNT(*) AS nc_count FROM `33hao_decoration_work1` WHERE ( dw_verify = '10' ) ORDER BY dw_verify desc, dw_id desc LIMIT 1  
+[2015-11-27 10:43:53] /33hao/admin/index.php?act=decoration&op=works&type=waitverify ( act=decoration&op=works ) 
+ERR: Db Error: Table '33hao.33hao_decoration_work1' doesn't exist
+SELECT * FROM `33hao_decoration_work1` WHERE ( dw_verify = '10' ) ORDER BY dw_verify desc, dw_id desc LIMIT 0,10  
+[2015-11-27 10:43:54] /33hao/admin/index.php?act=decoration&op=works&type=waitverify ( act=decoration&op=works ) 
+ERR: Db Error: Table '33hao.33hao_decoration_work1' doesn't exist
+SELECT COUNT(*) AS nc_count FROM `33hao_decoration_work1` WHERE ( dw_verify = '10' ) ORDER BY dw_verify desc, dw_id desc LIMIT 1  
+[2015-11-27 10:43:54] /33hao/admin/index.php?act=decoration&op=works&type=waitverify ( act=decoration&op=works ) 
+ERR: Db Error: Table '33hao.33hao_decoration_work1' doesn't exist
+SELECT * FROM `33hao_decoration_work1` WHERE ( dw_verify = '10' ) ORDER BY dw_verify desc, dw_id desc LIMIT 0,10  
+[2015-11-27 10:45:49] /33hao/admin/index.php?act=decoration&op=dw_verify&inajax=1 ( act=decoration&op=dw_verify ) 
+ERR: Db Error: Unknown column 'dw_result' in 'field list'
+UPDATE `33hao_decoration_work` SET dw_result='',dw_verify='1' WHERE ( dw_id IN ('7') )
+[2015-11-27 17:02:55] /33hao/shop/index.php?act=decoration&op=work_list&stc_id=0&search_type=dw_content&calculate_type=%E8%BF%90%E7%AE%97%E7%AC%A6&search_stime=&search_etime=&keyword=abc ( act=decoration&op=work_list ) 
+ERR: Db Error: Unknown column 'dw_content1' in 'where clause'
+SELECT * FROM `33hao_decoration_work` WHERE ( dw_name LIKE '%abc%' ) AND ( dw_content1 LIKE '%abc%' ) AND ( dw_verify = '1' ) ORDER BY dw_id desc LIMIT 1000  
+[2015-11-27 17:05:58] /33hao/shop/index.php?act=decoration&op=work_list&stc_id=0&search_type=dw_content&calculate_type=%E8%BF%90%E7%AE%97%E7%AC%A6&search_stime=&search_etime=&keyword=abc ( act=decoration&op=work_list ) 
+ERR: Db Error: Unknown column 'dw_content1' in 'where clause'
+SELECT * FROM `33hao_decoration_work` WHERE ( dw_name LIKE '%abc%' ) AND ( dw_content1 LIKE '%abc%' ) AND ( dw_verify = '1' ) ORDER BY dw_id desc LIMIT 1000  
+[2015-11-27 17:16:48] /33hao/shop/index.php?act=decoration&op=work_list&stc_id=0&search_type=dw_content&calculate_type=%E8%BF%90%E7%AE%97%E7%AC%A6&search_stime=&search_etime=&keyword=abc ( act=decoration&op=work_list ) 
+ERR: Db Error: Unknown column 'dw_content1' in 'where clause'
+SELECT * FROM `33hao_decoration_work` WHERE ( dw_content1 LIKE '%abc%' ) AND ( dw_verify = '1' ) ORDER BY dw_id desc LIMIT 1000  
+[2015-11-27 17:16:55] /33hao/shop/index.php?act=decoration&op=work_list&stc_id=0&search_type=dw_content&calculate_type=%E8%BF%90%E7%AE%97%E7%AC%A6&search_stime=&search_etime=&keyword=abc ( act=decoration&op=work_list ) 
+ERR: Db Error: Unknown column 'dw_content1' in 'where clause'
+SELECT * FROM `33hao_decoration_work` WHERE ( dw_content1 LIKE '%abc%' ) AND ( dw_verify = '1' ) ORDER BY dw_id desc LIMIT 1000  
+[2015-11-27 17:17:08] /33hao/shop/index.php?act=decoration&op=work_list&stc_id=0&search_type=dw_content&calculate_type=%E8%BF%90%E7%AE%97%E7%AC%A6&search_stime=&search_etime=&keyword=abc ( act=decoration&op=work_list ) 
+ERR: Db Error: Unknown column 'dw_content1' in 'where clause'
+SELECT * FROM `33hao_decoration_work` WHERE ( dw_content1 LIKE '%abc%' ) AND ( dw_verify = '1' ) ORDER BY dw_id desc LIMIT 1000  
+[2015-11-27 18:03:32] /33hao/shop/index.php?act=bid_document&op=bd_list&stc_id=&search_type=bid_work_id&calculate_type=%E8%BF%90%E7%AE%97%E7%AC%A6&search_stime=&search_etime=&keyword=10 ( act=bid_document&op=bd_list ) 
+ERR: Db Error: Unknown column 'bid_work_id1' in 'where clause'
+SELECT * FROM `33hao_bid` WHERE ( bid_work_id1 = NULL ) ORDER BY bid_lastuptime desc LIMIT 1000  

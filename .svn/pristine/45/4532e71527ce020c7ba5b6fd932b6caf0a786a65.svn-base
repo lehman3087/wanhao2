@@ -1,0 +1,36 @@
+[2015-10-12 10:01:54] /33hao/mobile/index.php?act=store&op=storeBasiclist ( act=store&op=storebasiclist ) 
+ERR: Db Error: Unknown column 'addtime' in 'where clause'
+SELECT store_id,count(*) as order_count FROM `33hao_order` WHERE ( store_id IN ('1') ) AND ( addtime > '1436839314' ) GROUP BY store_id LIMIT 1000  
+[2015-10-12 10:03:11] /33hao/mobile/index.php?act=store&op=storeBasiclist ( act=store&op=storebasiclist ) 
+ERR: Db Error: Unknown column 'add__time' in 'where clause'
+SELECT store_id,count(*) as order_count FROM `33hao_order` WHERE ( store_id IN ('1') ) AND ( add__time > '1436839391' ) GROUP BY store_id LIMIT 1000  
+[2015-10-12 10:03:26] /33hao/mobile/index.php?act=store&op=storeBasiclist ( act=store&op=storebasiclist ) 
+ERR: Db Error: Unknown column 'addtime' in 'where clause'
+SELECT store_id,count(*) as order_count FROM `33hao_order` WHERE ( store_id IN ('1') ) AND ( addtime > '1436839406' ) GROUP BY store_id LIMIT 1000  
+[2015-10-12 10:05:14] /33hao/mobile/index.php?act=store&op=storeBasiclist ( act=store&op=storebasiclist ) 
+ERR: Db Error: Unknown column 'addtime' in 'where clause'
+SELECT store_id,count(*) as order_count FROM `33hao_order` WHERE ( store_id IN ('1') ) AND ( addtime > '1436839514' ) GROUP BY store_id LIMIT 1000  
+[2015-10-12 10:06:55] /33hao/mobile/index.php?act=store&op=storeBasiclist ( act=store&op=storebasiclist ) 
+ERR: Db Error: Unknown column 'addtim_e' in 'where clause'
+SELECT store_id,count(*) as order_count FROM `33hao_order` WHERE ( store_id IN ('1') ) AND ( addtim_e > '1436839615' ) GROUP BY store_id LIMIT 1000  
+[2015-10-12 10:08:25] /33hao/mobile/index.php?act=store&op=storeBasiclist ( act=store&op=storebasiclist ) 
+ERR: Db Error: Unknown column 'addtime' in 'where clause'
+SELECT store_id,count(*) as order_count FROM `33hao_order` WHERE ( store_id IN ('1') ) AND ( addtime > '1436839705' ) GROUP BY store_id LIMIT 1000  
+[2015-10-12 10:08:40] /33hao/mobile/index.php?act=store&op=storeBasiclist ( act=store&op=storebasiclist ) 
+ERR: Db Error: Unknown column 'addtime' in 'where clause'
+SELECT store_id,count(*) as order_count FROM `33hao_order` WHERE ( store_id IN ('1') ) AND ( addtime > '1436839720' ) GROUP BY store_id LIMIT 1000  
+[2015-10-12 17:58:57] /33hao/shop/index.php?act=decoration_join&op=step2 ( act=decoration_join&op=step2 ) 
+ERR: Db Error: Unknown column 'apply_type' in 'field list'
+INSERT  INTO `33hao_store_joinin` (member_name,company_name,company_province_id,company_address,company_address_detail,company_phone,company_employee_count,company_registered_capital,contacts_name,contacts_phone,contacts_email,business_licence_number,business_licence_address,business_licence_start,business_licence_end,business_sphere,business_licence_number_electronic,organization_code,organization_code_electronic,general_taxpayer,apply_type,member_id) VALUES ('store_001','asdf','2','天津 天津市 河东区','asdf',NULL,'0','33','sdaf','18934488948','2323@qq.com','234123412','北京 北京市 西城区','2015-10-05','2015-11-20','sadfasd','04979879373201880.jpg','','','','2','2')
+[2015-10-12 19:29:15] /33hao/admin/index.php?act=store&op=store_joinin_verify ( act=store&op=store_joinin_verify ) 
+ERR: Db Error: Column 'grade_id' cannot be null
+INSERT  INTO `33hao_store` (member_id,member_name,seller_name,grade_id,store_name,sc_id,store_company_name,province_id,area_info,store_address,store_zip,store_zy,store_state,store_time,store_end_time) VALUES ('3','store_002','decoration_2',NULL,'decoration_2',NULL,'aewfawf','1','北京 北京市 东城区','asdfasdf','','','1','1444649355','1476374399')
+[2015-10-12 20:05:04] /33hao/admin/index.php?act=store&op=store_joinin_verify ( act=store&op=store_joinin_verify ) 
+ERR: Db Error: Column 'grade_id' cannot be null
+INSERT  INTO `33hao_store` (member_id,member_name,seller_name,grade_id,store_name,sc_id,store_company_name,province_id,area_info,store_address,store_zip,store_zy,store_state,store_time,store_end_time) VALUES ('5','decoration_003','decoration_003',NULL,'decoration_003',NULL,'eqwrqwer','1','北京 北京市 西城区','asdfasdf','','','1','1444651504','1476374399')
+[2015-10-12 20:31:58] /33hao/admin/index.php?act=store&op=store_joinin_verify ( act=store&op=store_joinin_verify ) 
+ERR: Db Error: Column 'grade_id' cannot be null
+INSERT  INTO `33hao_store` (member_id,member_name,seller_name,grade_id,store_name,sc_id,store_company_name,province_id,area_info,store_address,store_zip,store_zy,store_state,store_time,store_end_time) VALUES ('6','decoration_004','decoration_004',NULL,'decoration_004',NULL,'asdf','2','天津 天津市 和平区','asdfasdf','','','1','1444653118','1476374399')
+[2015-10-12 20:35:03] /33hao/admin/index.php?act=store&op=store_joinin_verify ( act=store&op=store_joinin_verify ) 
+ERR: Db Error: Column 'grade_id' cannot be null
+INSERT  INTO `33hao_store` (member_id,member_name,seller_name,grade_id,store_name,sc_id,store_company_name,province_id,area_info,store_address,store_zip,store_zy,store_state,store_time,store_end_time) VALUES ('7','decoration_005','decoration_005',NULL,'decoration_005',NULL,'sadfasd','1','北京 北京市 东城区','asdfasdf','','','1','1444653303','1476374399')
