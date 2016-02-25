@@ -116,7 +116,6 @@ class loginControl extends mobileHomeControl {
           
           $ret=array('code'=>$code);
           //exit($code);
-          
           output_data($ret);
           exit();
         }

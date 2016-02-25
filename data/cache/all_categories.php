@@ -4,6 +4,7 @@
     'gc_id' => '1057',
     'gc_name' => '建材',
     'gc_parent_id' => '0',
+    'pic' => 'http://192.168.31.225/33hao/data/upload/shop/common/category-pic-1057.jpg',
     'children' => 
     array (
       0 => 
@@ -11,6 +12,7 @@
         'gc_id' => '1061',
         'gc_name' => '墙地面',
         'gc_parent_id' => '1057',
+        'pic' => 'http://192.168.31.225/33hao/data/upload/shop/common/category-pic-1061.jpg',
         'children' => 
         array (
           0 => 
@@ -18,6 +20,7 @@
             'gc_id' => '1094',
             'gc_name' => '地砖',
             'gc_parent_id' => '1061',
+            'pic' => 'http://192.168.31.225/33hao/data/upload/shop/common/category-pic-1094.jpg',
           ),
           1 => 
           array (
@@ -68,6 +71,7 @@
         'gc_id' => '1062',
         'gc_name' => '厨房卫浴',
         'gc_parent_id' => '1057',
+        'pic' => 'http://192.168.31.225/33hao/data/upload/shop/common/category-pic-1062.jpg',
         'children' => 
         array (
           0 => 
@@ -89,6 +93,7 @@
         'gc_id' => '1063',
         'gc_name' => '基础建材',
         'gc_parent_id' => '1057',
+        'pic' => 'http://192.168.31.225/33hao/data/upload/shop/common/category-pic-1063.jpg',
         'children' => 
         array (
           0 => 
@@ -125,6 +130,7 @@
         'gc_id' => '1066',
         'gc_name' => '床',
         'gc_parent_id' => '1058',
+        'pic' => 'http://192.168.31.225/33hao/data/upload/shop/common/category-pic-1066.jpg',
         'children' => 
         array (
           0 => 
@@ -146,6 +152,7 @@
         'gc_id' => '1109',
         'gc_name' => '客厅架类',
         'gc_parent_id' => '1058',
+        'pic' => 'http://192.168.31.225/33hao/data/upload/shop/common/category-pic-1109.jpg',
         'children' => 
         array (
           0 => 
@@ -173,6 +180,7 @@
         'gc_id' => '1123',
         'gc_name' => '茶几',
         'gc_parent_id' => '1058',
+        'pic' => 'http://192.168.31.225/33hao/data/upload/shop/common/category-pic-1123.jpg',
         'children' => 
         array (
           0 => 
@@ -188,6 +196,7 @@
         'gc_id' => '1067',
         'gc_name' => '床垫',
         'gc_parent_id' => '1058',
+        'pic' => 'http://192.168.31.225/33hao/data/upload/shop/common/category-pic-1067.jpg',
         'children' => NULL,
       ),
       4 => 
@@ -195,6 +204,7 @@
         'gc_id' => '1068',
         'gc_name' => '沙发',
         'gc_parent_id' => '1058',
+        'pic' => 'http://192.168.31.225/33hao/data/upload/shop/common/category-pic-1068.jpg',
         'children' => NULL,
       ),
       5 => 
@@ -202,6 +212,7 @@
         'gc_id' => '1069',
         'gc_name' => '柜体',
         'gc_parent_id' => '1058',
+        'pic' => 'http://192.168.31.225/33hao/data/upload/shop/common/category-pic-1069.jpg',
         'children' => 
         array (
           0 => 

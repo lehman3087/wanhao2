@@ -128,6 +128,7 @@ class member_indexControl extends mobileMemberControl {
             $member_array['member_areaid']	= $_REQUEST['member_areaid'];
             $member_array['member_cityid']	= $_REQUEST['member_cityid'];
             $member_array['member_provinceid']	= $_REQUEST['member_provinceid'];
+            $member_array['member_areainfo']	= $_REQUEST['member_areainfo'];
             
             $update = $model_member->editMember(array('member_id'=>$this->member_info['member_id']),$member_array);
             if($update){

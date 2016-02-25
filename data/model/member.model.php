@@ -23,6 +23,9 @@ class memberModel extends Model {
     public function getMemberInfo($condition, $field = '*', $master = false) {
         return $this->table('member')->field($field)->where($condition)->master($master)->find();
     }
+    
+
+    
 
     /**
      * 取得会员详细信息（优先查询缓存）

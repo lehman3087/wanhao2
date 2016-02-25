@@ -76,7 +76,6 @@ class flea_areaModel{
 	
 	/**
 	 * 取单个地区的内容
-	 *
 	 * @param int $area_id 地区ID
 	 * @return array 数组类型的返回结果
 	 */

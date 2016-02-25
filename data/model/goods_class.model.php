@@ -439,6 +439,13 @@ class goods_classModel extends Model
                 foreach ($class_list as $key => $value) {
                     $p_id = $value['gc_parent_id'];//父级ID
                     $gc_id = $value['gc_id'];
+                    
+                    $gc_id = $value['gc_id'];
+                    $pic_name = BASE_UPLOAD_PATH.'/'.ATTACH_COMMON.'/category-pic-'.$gc_id.'.jpg';
+                    if (file_exists($pic_name)) {
+                        $value['pic'] = UPLOAD_SITE_URL.'/'.ATTACH_COMMON.'/category-pic-'.$gc_id.'.jpg';
+                    }
+                    
                     $sort = $value['gc_sort'];
                     if ($p_id == 0) {//第1级分类
                         $gc_list[$gc_id] = $value;
