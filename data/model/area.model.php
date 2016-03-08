@@ -18,8 +18,23 @@ class areaModel extends Model {
      * @return mixed
      */
     public function getAreaList($condition = array(), $fields = '*', $group = '') {
+       // $data = $this->getCache();
+        
         return $this->where($condition)->field($fields)->limit(false)->group($group)->select();
+        
     }
+    
+    /**
+     * 获取地址列表
+     *
+     * @return mixed
+     */
+    public function getAreaList2($condition = array(), $fields = '*', $group = '') {
+        $data = $this->getCache2($condition, $fields, $group);
+       // $data = $this->getCache();
+        return $data;
+    }
+    
 
     /**
      * 获取地址详情
@@ -161,6 +176,31 @@ class areaModel extends Model {
 
         return $data;
     }
+    
+    protected function getCache2($condition = array(), $fields = '*', $group = '') {
+        // 对象属性中有数据则返回
+        if ($this->cachedData2 !== null)
+            return $this->cachedData2;
+
+        // 缓存中有数据则返回
+        if ($data = rkcache('area2',true)) {
+           // $this->cachedData2 = $data;
+           //var_dump('1');
+            return $data;
+        }
+
+        // 查库
+        $data = array();
+        $area_all_array = $this->limit(false)->select();
+
+
+        wkcache('area2', $area_all_array);
+        $this->cachedData2 = $area_all_array;
+
+        return $area_all_array;
+    }
+    
 
     protected $cachedData;
+    protected $cachedData2;
 }

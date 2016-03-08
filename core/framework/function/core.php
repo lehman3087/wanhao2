@@ -1599,15 +1599,18 @@ function rkcache($key, $callback = false)
     if (C('cache_open')) {
         $cacher = Cache::getInstance('cacheredis');
     } else {
+        
         $cacher = Cache::getInstance('file', null);
     }
     if (!$cacher) {
+        
         throw new Exception('Cannot fetch cache object!');
     }
-
+    
     $value = $cacher->get($key);
-
+   
     if ($value === false && $callback !== false) {
+        
         if ($callback === true) {
             $callback = array(Model('cache'), 'call');
         }
@@ -1619,7 +1622,7 @@ function rkcache($key, $callback = false)
         $value = call_user_func($callback, $key);
         wkcache($key, $value);
     }
-
+   // var_dump($value);
     return $value;
 }
 

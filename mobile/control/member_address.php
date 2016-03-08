@@ -149,31 +149,7 @@ class member_addressControl extends mobileMemberControl {
         /**
      * 所有地区列表
      */
-    public function all_area_listOp() {
-        $area_id = intval($_REQUEST['area_id']);
-
-        $model_area = Model('area');
-
-        $condition = array();
-
-        $condition['area_deep'] = 1;
-        
-        $area_list = $model_area->getAreaList($condition, 'area_id,area_name');
-        foreach ($area_list as $key => $value) {
-            $condition2['area_deep'] = 2;
-            $condition2['area_parent_id'] = $value['area_id'];
-            $area_list2 = $model_area->getAreaList($condition2, 'area_id,area_name');
-            $area_list[$key]['chindren_list']=$area_list2;
-            foreach ($area_list[$key]['chindren_list'] as $key2 => $value2) {
-                $condition3['area_deep'] = 3;
-                $condition3['area_parent_id'] = $value2['area_id'];
-                $area_list3 = $model_area->getAreaList($condition3, 'area_id,area_name');
-                $area_list[$key]['chindren_list'][$key2]['chindren_list']=$area_list3;
-            }
-        }
-        //var_dump($area_list);
-        output_data(array('area_list' => $area_list));
-    }
+ 
     
 
 }

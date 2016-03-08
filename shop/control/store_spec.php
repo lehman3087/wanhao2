@@ -124,16 +124,19 @@ class store_specControl extends BaseSellerControl {
      * AJAX获取商品分类
      */
     public function ajax_classOp() {
+        
         $id = intval($_GET['id']);
         $deep = intval($_GET['deep']);
         if ($id <= 0 || $deep <=0 || $deep >= 4) {
             echo 'false'; exit();
         }
+        
         $deep += 1;
         $model_goodsclass = Model('goods_class');
 
         // 验证分类是否存在
         $gc_info = $model_goodsclass->getGoodsClassInfoById($id);
+      //  var_dump($gc_info);
         if (empty($gc_info)) {
             echo 'false'; exit();
         }
@@ -147,9 +150,10 @@ class store_specControl extends BaseSellerControl {
             $data = array('type' => 'class', 'data' => $gc_list, 'deep' => $deep);
         } else {
             // 查询类型
+           
             $model_type = Model('type');
             $spec_list = $model_type->getSpecByType(array('type_id' => $gc_info['type_id']), 'type_id, spec.*');
-
+                
             $data = array('type' => 'spec', 'data' => $spec_list, 'gcid' => $id, 'deep' => $deep);
         }
 

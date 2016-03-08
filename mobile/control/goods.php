@@ -151,13 +151,13 @@ class goodsControl extends mobileHomeControl{
     }
 
     public function goods_detailOp() {
-        
+       // var_dump($goods_id);
         $post=$this->read_json();  
         $arr=objectToArray($post);
         $_REQUEST=array_merge($_REQUEST,$arr);
         $goods_id = intval($_REQUEST ['goods_id']);
         
-
+        
         // 商品详细信息
         $model_goods = Model('goods');
         $goods_detail = $model_goods->getGoodsDetail($goods_id);
@@ -213,6 +213,23 @@ class goodsControl extends mobileHomeControl{
             $goods_detail['goods_info']['spec_value'][]['id']=$key;
             $goods_detail['goods_info']['spec_value'][]['value']=$value;
         }	
+        
+        // 优惠套装
+        $array = Model('p_bundling')->getBundlingCacheByGoodsId($goods_id);
+        if (!empty($array)) {
+            $bundling_arra=unserialize($array['bundling_array']);
+            $b_goods_array=unserialize($array['b_goods_array']);
+            foreach ($bundling_arra as $key => $value) {
+                $bundling_arra[$key]['b_goods_array']=  array_values($b_goods_array[$key]);
+            }
+            $goods_detail['goods_info']['bundling_array']=array_values($bundling_arra);
+           // output_data(array_values($bundling_arra));
+            //$bundling_arranew=array_values($array['bundling_array']);
+          //  output_data(array('bundling_array'=> unserialize($array['bundling_array']),'b_goods_array', unserialize($array['b_goods_array'])));
+           // Tpl::output('bundling_array', unserialize($array['bundling_array']));
+           //Tpl::output('b_goods_array', unserialize($array['b_goods_array']));
+        }
+
 	
 
         
@@ -261,13 +278,62 @@ class goodsControl extends mobileHomeControl{
 	
                 //var_dump($goods_detail);
 		
+        //评价信息
+     //   $goods_evaluate_info = Model('evaluate_goods')->getEvaluateGoodsInfoByGoodsID($goods_id);
+      //  Tpl::output('goods_evaluate_info', $goods_evaluate_info);
+        
 	//$goods_id = intval($_GET['goods_id']);
-        $goods_detail['goods_comments']=$this->_get_comments($goods_id, $_REQUEST['type'], 5);
+        $goods_detail['goods_comments']=$this->_get_comments($goods_id, $_REQUEST['type'], 3);
         output_data($goods_detail);
         
     }
     
-    private function commentsOp() {
+    
+      /**
+     * 异步显示优惠套装/推荐组合
+     */
+    public function get_bundlingOp() {
+        $goods_id = intval($_GET['goods_id']);
+        if ($goods_id <= 0) {
+            exit();
+        }
+        $model_goods = Model('goods');
+        $goods_info = $model_goods->getGoodsOnlineInfoByID($goods_id);
+        if (empty($goods_info)) {
+            exit();
+        }
+
+        // 优惠套装
+        $array = Model('p_bundling')->getBundlingCacheByGoodsId($goods_id);
+        if (!empty($array)) {
+            $bundling_arra=unserialize($array['bundling_array']);
+            $b_goods_array=unserialize($array['b_goods_array']);
+            foreach ($bundling_arra as $key => $value) {
+                $bundling_arra[$key]['b_goods_array']=  array_values($b_goods_array[$key]);
+            }
+           // output_data(array_values($bundling_arra));
+            //$bundling_arranew=array_values($array['bundling_array']);
+          //  output_data(array('bundling_array'=> unserialize($array['bundling_array']),'b_goods_array', unserialize($array['b_goods_array'])));
+           // Tpl::output('bundling_array', unserialize($array['bundling_array']));
+           //Tpl::output('b_goods_array', unserialize($array['b_goods_array']));
+        }
+
+        // 推荐组合
+        if (!empty($goods_info) && $model_goods->checkIsGeneral($goods_info)) {
+            $array = Model('goods_combo')->getGoodsComboCacheByGoodsId($goods_id);
+            $gcombo_list=unserialize($array['gcombo_list']);
+           // Tpl::output('goods_info', $goods_info);
+           // Tpl::output('gcombo_list', unserialize($array['gcombo_list']));
+        }
+        
+
+         output_data(array('bundling_array'=> array_values($bundling_arra),'goods_combo'=>$gcombo_list));
+        
+
+      //  Tpl::showpage('goods_bundling', 'null_layout');
+    }
+    
+    private function goods_all_commentsOp() {
         $goods_id=$_REQUEST['goods_id'];
         $comments=$this->_get_comments($goods_id, $_REQUEST['type'], 5);
         if(!empty($comments)){
@@ -328,15 +394,15 @@ class goodsControl extends mobileHomeControl{
         switch ($type) {
             case '1':
                 $condition['geval_scores'] = array('in', '5,4');
-                Tpl::output('type', '1');
+                //Tpl::output('type', '1');
                 break;
             case '2':
                 $condition['geval_scores'] = array('in', '3,2');
-                Tpl::output('type', '2');
+               // Tpl::output('type', '2');
                 break;
             case '3':
                 $condition['geval_scores'] = array('in', '1');
-                Tpl::output('type', '3');
+              //  Tpl::output('type', '3');
                 break;
         }
         
@@ -346,6 +412,17 @@ class goodsControl extends mobileHomeControl{
         return $goodsevallist;
 //        Tpl::output('goodsevallist',$goodsevallist);
 //        Tpl::output('show_page',$model_evaluate_goods->showpage('5'));
+    }
+    
+    public function get_all_commentsOp() {
+
+        if(empty($_REQUEST['goods_id'])){
+            output_error('商品为空');
+        }
+        $type=$_REQUEST['type'];
+        $comments=$this->_get_comments($_REQUEST['goods_id'], $type, $this->page);
+        $page_count=Model("evaluate_goods")->gettotalnum();
+        output_data(array('goods_comments'=>$comments),  mobile_page($page_count));
     }
     
     /**

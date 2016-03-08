@@ -65,6 +65,22 @@ class decoration_pubControl extends mobileHomeControl{
             }
         }
         
+               public function dw_suc_rec_listOp() {
+           // var_dump('1');
+            
+            $model_db = Model('decoration');
+            
+            $condition['dw_commend']=1;
+            
+            $result=$model_db->getExtWorksCommonList($condition, $field = '*', $page = 6);
+            if($result){
+                 output_data(array('dwsuccessList'=>$result));
+            }else{
+                 output_error('10500');
+            }
+        }
+        
+        
         public function dwindexOp() {
             $model_db = Model('decoration');
             $condition['dw_id']=intval($_REQUEST['dw_id']);

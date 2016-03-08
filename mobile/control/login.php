@@ -41,7 +41,7 @@ class loginControl extends mobileHomeControl {
 //			}
                         
        // var_dump($array);
-        $member_info = $model_member->getMemberInfo($array);
+        $member_info = $this->getMemberAndGradeInfo($array);
         //var_dump($member_info);
         if(!empty($member_info)) {
             $token = $this->_get_token($member_info['member_id'], $member_info['member_name'], $_REQUEST['client']);
@@ -55,6 +55,25 @@ class loginControl extends mobileHomeControl {
         }
     }
 
+    /*
+     * 输入会员等级
+     */
+        protected function getMemberAndGradeInfo($array){
+        $member_info = array();
+        //会员详情及会员级别处理
+        if($array) {
+            $model_member = Model('member');
+            $member_info = $model_member->getMemberInfo($array);
+            if ($member_info){
+                $member_gradeinfo = $model_member->getOneMemberGrade(intval($member_info['member_exppoints']));
+                $member_info = array_merge($member_info,$member_gradeinfo);
+            }
+        }
+        
+            return $member_info;
+        
+    }
+    
     /**
      * 登陆生成token
      */

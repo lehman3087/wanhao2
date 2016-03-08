@@ -46,6 +46,8 @@ class addressModel extends Model {
                 . '，电话：'.trim($dlyp_info['dlyp_mobile'].'，'.$dlyp_info['dlyp_telephony'],'，');
             }
         }
+       // print $addr_info;
+       // var_dump($addr_info);
         return $addr_info;
     }
 
@@ -94,7 +96,17 @@ class addressModel extends Model {
 	public function getAddressCount($condition = array()) {
 	    return $this->where($condition)->count();
 	}
-
+        
+        
+        /*
+         * 
+         */
+        public function editDefaultNo($condition) {
+            
+            $conditionNew['member_id']=$condition['member_id'];
+            $data['is_default']=0;
+            return $this->where($conditionNew)->update($data);
+        }
 	/**
 	 * 构造检索条件
 	 *
@@ -118,7 +130,11 @@ class addressModel extends Model {
 	 * @return bool 布尔类型的返回结果
 	 */
 	public function addAddress($param){
-        return $this->insert($param);
+            if($param['is_default']==1){
+                    $this->editDefaultNo($param);
+            }
+            $this->editDefaultNo($param);
+            return $this->insert($param);
 	}
 	
 	/**
@@ -147,7 +163,10 @@ class addressModel extends Model {
 	 * @return bool 布尔类型的返回结果
 	 */
 	public function editAddress($update, $condition){
-        return $this->where($condition)->update($update);
+                if($update['is_default']==1){
+                    $this->editDefaultNo($condition);
+                }
+             return $this->where($condition)->update($update);
 	}
 	/**
 	 * 验证地址是否属于当前用户

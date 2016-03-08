@@ -12,13 +12,47 @@
     </editor-bookmarks>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/Applications/MAMP/htdocs/33hao/mobile/control/login.php</file>
-            <file>file:/Applications/MAMP/htdocs/33hao/mobile/control/index.php</file>
+            <file>file:/Applications/MAMP/htdocs/33hao/mobile/control/member_address.php</file>
+            <file>file:/Applications/MAMP/htdocs/33hao/shop/control/store_goods_add.php</file>
+            <file>file:/Applications/MAMP/htdocs/33hao/data/model/goods_class.model.php</file>
             <file>file:/Applications/MAMP/htdocs/33hao/mobile/control/member_index.php</file>
+            <file>file:/Applications/MAMP/htdocs/33hao/wap/special.html</file>
             <file>file:/Applications/MAMP/htdocs/33hao/admin/control/notice.php</file>
+            <file>file:/Applications/MAMP/htdocs/33hao/shop/templates/default/seller/store_spec.index.php</file>
+            <file>file:/Applications/MAMP/htdocs/33hao/data/crontab/index.php</file>
+            <file>file:/Applications/MAMP/htdocs/33hao/mobile/control/member_buy.php</file>
+            <file>file:/Applications/MAMP/htdocs/33hao/global.php</file>
+            <file>file:/Applications/MAMP/htdocs/33hao/shop/templates/default/store/goods_bundling.php</file>
+            <file>file:/Applications/MAMP/htdocs/33hao/data/model/member.model.php</file>
+            <file>file:/Applications/MAMP/htdocs/33hao/mobile/control/tool.php</file>
+            <file>file:/Applications/MAMP/htdocs/33hao/mobile/control/control.php</file>
+            <file>file:/Applications/MAMP/htdocs/33hao/shop/templates/default/store/goods.php</file>
+            <file>file:/Applications/MAMP/htdocs/33hao/mobile/control/goods.php</file>
+            <file>file:/Applications/MAMP/htdocs/33hao/core/framework/function/core.php</file>
+            <file>file:/Applications/MAMP/htdocs/33hao/33hao.php</file>
+            <file>file:/Applications/MAMP/htdocs/33hao/shop/templates/default/layout/layout_top.php</file>
+            <file>file:/Applications/MAMP/htdocs/33hao/shop/control/control.php</file>
+            <file>file:/Applications/MAMP/htdocs/33hao/data/cache/area2.php</file>
+            <file>file:/Applications/MAMP/htdocs/33hao/shop/control/goods.php</file>
+            <file>file:/Applications/MAMP/htdocs/33hao/shop/control/store_spec.php</file>
+            <file>file:/Applications/MAMP/htdocs/33hao/admin/control/offpay_area.php</file>
+            <file>file:/Applications/MAMP/htdocs/33hao/shop/templates/default/seller/store_goods_add.step2.php</file>
             <file>file:/Applications/MAMP/htdocs/33hao/core/framework/libraries/sendmembermsg.php</file>
-            <file>file:/Applications/MAMP/htdocs/33hao/admin/control/account.php</file>
-            <file>file:/Applications/MAMP/htdocs/33hao/admin/templates/default/notice.add.php</file>
+            <file>file:/Applications/MAMP/htdocs/33hao/data/model/goods.model.php</file>
+            <file>file:/Applications/MAMP/htdocs/33hao/shop/control/member.php</file>
+            <file>file:/Applications/MAMP/htdocs/33hao/mobile/control/article.php</file>
+            <file>file:/Applications/MAMP/htdocs/33hao/core/framework/libraries/PushSDK.php</file>
+            <file>file:/Applications/MAMP/htdocs/33hao/data/model/mb_user_token.model.php</file>
+            <file>file:/Applications/MAMP/htdocs/33hao/data/model/area.model.php</file>
+            <file>file:/Applications/MAMP/htdocs/33hao/mobile/control/index.php</file>
+            <file>file:/Applications/MAMP/htdocs/33hao/mobile/control/login.php</file>
+            <file>file:/Applications/MAMP/htdocs/33hao/mobile/control/member_cart.php</file>
+            <file>file:/Applications/MAMP/htdocs/33hao/shop/templates/default/seller/store_spec.add.php</file>
+            <file>file:/Applications/MAMP/htdocs/33hao/mobile/control/store.php</file>
+            <file>file:/Applications/MAMP/htdocs/33hao/data/model/address.model.php</file>
+            <file>file:/Applications/MAMP/htdocs/33hao/mobile/control/decoration_pub.php</file>
+            <file>file:/Applications/MAMP/htdocs/33hao/mobile/control/sns.php</file>
+            <file>file:/Applications/MAMP/htdocs/33hao/mobile/control/goods_class.php</file>
             <file>file:/Applications/MAMP/htdocs/33hao/admin/templates/default/rec_position.add.php</file>
         </group>
     </open-files>

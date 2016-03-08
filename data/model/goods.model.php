@@ -1234,6 +1234,8 @@ class goodsModel extends Model{
             $goods_info['title'] = '抢购';
             $goods_info['remark'] = $goods_info['groupbuy_info']['remark'];
             $goods_info['promotion_price'] = $goods_info['groupbuy_info']['groupbuy_price'];
+            $goods_info['promotion_start_time'] = $goods_info['groupbuy_info']['start_time'];
+            $goods_info['promotion_end_time'] = $goods_info['groupbuy_info']['end_time'];
             $goods_info['down_price'] = ncPriceFormat($goods_info['goods_price'] - $goods_info['groupbuy_info']['groupbuy_price']);
             $goods_info['upper_limit'] = $goods_info['groupbuy_info']['upper_limit'];
             unset($goods_info['groupbuy_info']);
@@ -1245,6 +1247,8 @@ class goodsModel extends Model{
             $goods_info['title'] = $goods_info['xianshi_info']['xianshi_title'];
             $goods_info['remark'] = $goods_info['xianshi_info']['xianshi_title'];
             $goods_info['promotion_price'] = $goods_info['xianshi_info']['xianshi_price'];
+            $goods_info['promotion_start_time'] = $goods_info['xianshi_info']['start_time'];
+            $goods_info['promotion_end_time'] = $goods_info['xianshi_info']['end_time'];
             $goods_info['down_price'] = ncPriceFormat($goods_info['goods_price'] - $goods_info['xianshi_info']['xianshi_price']);
             $goods_info['lower_limit'] = $goods_info['xianshi_info']['lower_limit'];
             $goods_info['explain'] = $goods_info['xianshi_info']['xianshi_explain'];

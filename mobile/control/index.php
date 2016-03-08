@@ -79,6 +79,8 @@ class indexControl extends mobileHomeControl{
         
         
         public function getGlobalOp() {
+            $city=$_REQUEST['prefer_cityid'];
+            $city=$_REQUEST['bd_city_code_type'];
             $model_decoration_style=  Model('decoration');
             $styles=$model_decoration_style->get_style();
             $model_decoration = Model('decoration');
@@ -88,21 +90,6 @@ class indexControl extends mobileHomeControl{
              $hot_search=@explode(',',C('hot_search'));
              
 //             //广告位
-//           
-//            
-//            foreach ($rec_list as $key => $value) {
-//                $appplys_model = model('rec_applys');
-//                $condition_arr['adp_id'] = $value['rec_id'];
-//                $condition_arr['adp_apply_state_in'] = "1";
-//                $applys=$appplys_model->getActivitiesJoinList($condition_arr);
-//                $rec_list[$key]['adp']=$applys;
-//            }
-//            
-//             //平台活动  
-//             $activity	= Model('activity');
-//             $act_condition['opening']=true;
-//             $act_list= $activity->getJoinList($act_condition,$page);
-             //
             $global=array(
                 'snsTracePath'=>'/shop/index.php?act=store_snshome&op=mobileStraceinfo&st_id=',
                 'decoration_style'=>$styles,
@@ -111,6 +98,8 @@ class indexControl extends mobileHomeControl{
                 'category'=>$category,
                 'style'=>$style,
                 'decoration_work_path'=>'/data/upload/shop/store/work/',//案例图片地址
+                'decoration_work_rec_path'=>'/data/upload/shop/store/work/rec/',//推荐案例图片地址
+                //
                 //'decoration_head'=>'/shop/store/work/',//案例图片地址
                 'decoration_request_path'=>'/data/upload//shop/member/request/',//后跟会员ID
                 'rec_list'=>$rec_list,//广告位
@@ -197,4 +186,40 @@ class indexControl extends mobileHomeControl{
 
         output_data(array('version' => $version, 'url' => $url));
     }
+    
+       public function all_area_listOp() {
+        
+         if ($data = rkcache('areaarea',true)) {
+           // $this->cachedData2 = $data;
+           //var_dump('1');
+             output_data(array('area_list' => $data));
+           // return $data;
+        }
+        
+        $area_id = intval($_REQUEST['area_id']);
+        
+        $model_area = Model('area');
+
+        $condition = array();
+
+        $condition['area_deep'] = 1;
+        
+        $area_list = $model_area->getAreaList($condition, 'area_id,area_name');
+        foreach ($area_list as $key => $value) {
+            $condition2['area_deep'] = 2;
+            $condition2['area_parent_id'] = $value['area_id'];
+            $area_list2 = $model_area->getAreaList($condition2, 'area_id,area_name');
+            $area_list[$key]['chindren_list']=$area_list2;
+            foreach ($area_list[$key]['chindren_list'] as $key2 => $value2) {
+                $condition3['area_deep'] = 3;
+                $condition3['area_parent_id'] = $value2['area_id'];
+                $area_list3 = $model_area->getAreaList($condition3, 'area_id,area_name');
+                $area_list[$key]['chindren_list'][$key2]['chindren_list']=$area_list3;
+            }
+        }
+        wkcache('areaarea', $area_list);
+        //var_dump($area_list);
+        output_data(array('area_list' => $area_list));
+    }
+    
 }
