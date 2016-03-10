@@ -114,7 +114,8 @@ final class Base{
                                
                 
 			}else{
-				$split_url = explode('.',$_SERVER['HTTP_HOST']);
+                                $subdomain_suffix = $_SERVER['SERVER_ADDR'];
+//				$split_url = explode('.',$_SERVER['HTTP_HOST']);
 //				if($split_url[2] != '') unset($split_url[0]);
 //				$subdomain_suffix = implode('.',$split_url);
 			}
