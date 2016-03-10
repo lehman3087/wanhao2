@@ -930,7 +930,7 @@ class BaseSellerControl extends Control {
         if ($_GET['act'] !== 'seller_login') {
             
             if(empty($_SESSION['seller_id'])) {
-                exit('1');
+                
                 @header('location: index.php?act=seller_login&op=show_login');die;
             }
             
