@@ -114,9 +114,9 @@ final class Base{
                                
                 
 			}else{
-				$split_url = explode('.',$_SERVER['SERVER_NAME']);
-				if($split_url[2] != '') unset($split_url[0]);
-				$subdomain_suffix = implode('.',$split_url);
+				$split_url = explode('.',$_SERVER['HTTP_HOST']);
+//				if($split_url[2] != '') unset($split_url[0]);
+//				$subdomain_suffix = implode('.',$split_url);
 			}
 		}
                 var_dump($_SERVER);
