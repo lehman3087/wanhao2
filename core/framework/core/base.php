@@ -114,19 +114,19 @@ final class Base{
                                
                 
 			}else{
-                                $subdomain_suffix = $_SERVER['HTTP_HOST'];
+                                $subdomain_suffix = 'whao.a-caggie.cn';
 //				$split_url = explode('.',$_SERVER['HTTP_HOST']);
 //				if($split_url[2] != '') unset($split_url[0]);
 //				$subdomain_suffix = implode('.',$split_url);
 			}
 		}
-                var_dump($_SERVER);
+              //  var_dump($_SERVER);
                
 		//session.name强制定制成PHPSESSID,不请允许更改
 		@ini_set('session.name','PHPSESSID');
 		$subdomain_suffix = str_replace('http://','',$subdomain_suffix);
-                var_dump($subdomain_suffix);
-                exit();
+               // var_dump($subdomain_suffix);
+              //  exit();
 		if ($subdomain_suffix !== 'localhost') {
 		    @ini_set('session.cookie_domain', $subdomain_suffix);
 		}
