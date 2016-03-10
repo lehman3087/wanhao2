@@ -114,13 +114,13 @@ final class Base{
                                
                 
 			}else{
-				$split_url = explode('.',$_SERVER['HOST_NAME']);
+				$split_url = explode('.',$_SERVER['SERVER_NAME']);
 				if($split_url[2] != '') unset($split_url[0]);
 				$subdomain_suffix = implode('.',$split_url);
 			}
 		}
-                var_dump($_SERVER);
-                exit();
+//                var_dump($_SERVER);
+//                exit();
 		//session.name强制定制成PHPSESSID,不请允许更改
 		@ini_set('session.name','PHPSESSID');
 		$subdomain_suffix = str_replace('http://','',$subdomain_suffix);
