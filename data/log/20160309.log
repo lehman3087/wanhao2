@@ -1,0 +1,15 @@
+[2016-03-09 18:38:49] /33hao/mobile/index.php?act=member_address&op=address_add&key=ef0de7a7d5e1542d244e4283dc00d138&true_name=123&area_info=123&address=123&tel_phone=123 ( act=member_address&op=address_add ) 
+ERR: Db Error: Column 'is_default' cannot be null
+INSERT  INTO `33hao_address` (member_id,true_name,area_id,city_id,area_info,address,tel_phone,is_default,mob_phone) VALUES ('16','123','0','0','123','123','123',NULL,NULL)
+[2016-03-09 18:40:27] /33hao/mobile/index.php?act=member_address&op=address_add&key=ef0de7a7d5e1542d244e4283dc00d138&true_name=123&area_info=123&address=123&tel_phone=123 ( act=member_address&op=address_add ) 
+ERR: Db Error: Column 'is_default' cannot be null
+INSERT  INTO `33hao_address` (member_id,true_name,area_id,city_id,area_info,address,tel_phone,is_default,mob_phone) VALUES ('16','123','0','0','123','123','123',NULL,NULL)
+[2016-03-09 18:40:46] /33hao/mobile/index.php?act=member_address&op=address_add&key=ef0de7a7d5e1542d244e4283dc00d138&true_name=123&area_info=123&address=123&tel_phone=123 ( act=member_address&op=address_add ) 
+ERR: Db Error: Column 'is_default' cannot be null
+INSERT  INTO `33hao_address` (member_id,true_name,area_id,city_id,area_info,address,tel_phone,is_default,mob_phone) VALUES ('16','123','0','0','123','123','123',NULL,NULL)
+[2016-03-09 18:45:13] /33hao/mobile/index.php?act=member_address&op=address_add&key=ef0de7a7d5e1542d244e4283dc00d138&true_name=123&area_info=123&address=123&tel_phone=123 ( act=member_address&op=address_add ) 
+ERR: Db Error: Column 'is_default' cannot be null
+INSERT  INTO `33hao_address` (member_id,true_name,area_id,city_id,area_info,address,tel_phone,is_default,mob_phone) VALUES ('16','123','0','0','123','123','123',NULL,NULL)
+[2016-03-09 18:45:56] /33hao/mobile/index.php?act=member_address&op=address_add&key=ef0de7a7d5e1542d244e4283dc00d138&true_name=123&area_info=123&address=123&tel_phone=123 ( act=member_address&op=address_add ) 
+ERR: Db Error: Column 'is_default' cannot be null
+INSERT  INTO `33hao_address` (member_id,true_name,area_id,city_id,area_info,address,tel_phone,is_default,mob_phone) VALUES ('16','123','0','0','123','123','123',NULL,NULL)

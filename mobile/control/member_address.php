@@ -65,7 +65,7 @@ class member_addressControl extends mobileMemberControl {
     public function address_addOp() {
         $model_address = Model('address');
         $address_info = $this->_address_valid();
-
+        
         $result = $model_address->addAddress($address_info);
         if($result) {
             output_data(array('address_id' => $result));

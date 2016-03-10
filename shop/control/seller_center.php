@@ -14,6 +14,7 @@ class seller_centerControl extends BaseSellerControl {
      *
      */
     public function __construct() {
+        
         parent::__construct();
     }
 
@@ -23,6 +24,7 @@ class seller_centerControl extends BaseSellerControl {
      */
     public function indexOp() {
         
+       
 	Language::read('member_home_index');
         // 店铺信息
         $store_info = $this->store_info;

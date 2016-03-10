@@ -917,20 +917,23 @@ class BaseSellerControl extends Control {
     public function __construct(){
         Language::read('common,store_layout,member_layout');
         if(!C('site_status')) halt(C('closed_reason'));
+         
         Tpl::setDir('seller');
         Tpl::setLayout('seller_layout');
 
-            
+           
         //输出会员信息
         $this->getMemberAndGradeInfo(false);
-
+         
         Tpl::output('nav_list', rkcache('nav',true));
+        
         if ($_GET['act'] !== 'seller_login') {
-
+            
             if(empty($_SESSION['seller_id'])) {
+                exit('1');
                 @header('location: index.php?act=seller_login&op=show_login');die;
             }
-
+            
             // 验证店铺是否存在
             $model_store = Model('store');
             $this->store_info = $model_store->getStoreInfoByID($_SESSION['store_id']);
@@ -992,6 +995,7 @@ class BaseSellerControl extends Control {
 
             $this->checkStoreMsg();
         }
+       
     }
 
     /**

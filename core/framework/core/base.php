@@ -117,9 +117,12 @@ final class Base{
 				$subdomain_suffix = implode('.',$split_url);
 			}
 		}
+                var_dump($_SERVER);
+                exit();
 		//session.name强制定制成PHPSESSID,不请允许更改
 		@ini_set('session.name','PHPSESSID');
 		$subdomain_suffix = str_replace('http://','',$subdomain_suffix);
+                
 		if ($subdomain_suffix !== 'localhost') {
 		    @ini_set('session.cookie_domain', $subdomain_suffix);
 		}

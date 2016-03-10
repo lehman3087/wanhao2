@@ -130,10 +130,14 @@ class addressModel extends Model {
 	 * @return bool 布尔类型的返回结果
 	 */
 	public function addAddress($param){
+            
             if($param['is_default']==1){
                     $this->editDefaultNo($param);
+            }else{
+                //var_dump($param['is_default']);
+                $param['is_default']=0;
             }
-            $this->editDefaultNo($param);
+            //$this->editDefaultNo($param);
             return $this->insert($param);
 	}
 	

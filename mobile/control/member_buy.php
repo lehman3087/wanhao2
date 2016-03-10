@@ -56,6 +56,7 @@ class member_buyControl extends mobileMemberControl {
                 $store_cart_list[$key]['freight'] = '1';
             }
             $store_cart_list[$key]['store_name'] = $value[0]['store_name'];
+            $store_cart_list[$key]['store_id'] = $value[0]['store_id'];
              
         }
         
