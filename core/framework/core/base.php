@@ -124,7 +124,8 @@ final class Base{
 		//session.name强制定制成PHPSESSID,不请允许更改
 		@ini_set('session.name','PHPSESSID');
 		$subdomain_suffix = str_replace('http://','',$subdomain_suffix);
-                
+                var_dump($subdomain_suffix);
+                exit();
 		if ($subdomain_suffix !== 'localhost') {
 		    @ini_set('session.cookie_domain', $subdomain_suffix);
 		}
