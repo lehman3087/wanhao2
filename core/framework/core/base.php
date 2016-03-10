@@ -109,16 +109,17 @@ final class Base{
 		if (SUBDOMAIN_SUFFIX){
 			$subdomain_suffix = SUBDOMAIN_SUFFIX;
 		}else{
-			if (preg_match("/^[0-9.]+$/",$_SERVER['HTTP_HOST'])){
-				$subdomain_suffix = $_SERVER['HTTP_HOST'];
+			if (preg_match("/^[0-9.]+$/",$_SERVER['SERVER_ADDR'])){
+				$subdomain_suffix = $_SERVER['SERVER_ADDR'];
+                               
+                
 			}else{
-				$split_url = explode('.',$_SERVER['HTTP_HOST']);
+				$split_url = explode('.',$_SERVER['SERVER_ADDR']);
 				if($split_url[2] != '') unset($split_url[0]);
 				$subdomain_suffix = implode('.',$split_url);
 			}
 		}
-                var_dump($_SERVER);
-                exit();
+                
 		//session.name强制定制成PHPSESSID,不请允许更改
 		@ini_set('session.name','PHPSESSID');
 		$subdomain_suffix = str_replace('http://','',$subdomain_suffix);
