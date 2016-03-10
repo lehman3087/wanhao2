@@ -119,7 +119,7 @@ final class Base{
 				$subdomain_suffix = implode('.',$split_url);
 			}
 		}
-                var_dump($subdomain_suffix);
+                var_dump($_SERVER);
                 exit();
 		//session.name强制定制成PHPSESSID,不请允许更改
 		@ini_set('session.name','PHPSESSID');
