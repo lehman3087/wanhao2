@@ -26,6 +26,10 @@ class member_orderControl extends mobileMemberControl {
 
         $condition = array();
         $condition['buyer_id'] = $this->member_info['member_id'];
+        if(!empty($_REQUEST['order_state'])){
+             $condition['order_state']=$_REQUEST['order_state'];
+        }
+       
 
         $order_list_array = $model_order->getNormalOrderList($condition, $_REQUEST['pageCount'], '*', 'order_id desc','', array('order_goods'));
 

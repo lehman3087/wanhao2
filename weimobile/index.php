@@ -6,7 +6,7 @@
  * by 33hao.com 万豪购 运营版
  */
 
-define('APP_ID','mobile');
+define('APP_ID','weimobile');
 define('IGNORE_EXCEPTION', true);
 define('BASE_PATH',str_replace('\\','/',dirname(__FILE__)));
 

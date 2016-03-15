@@ -19,17 +19,18 @@ class member_indexControl extends mobileMemberControl {
 	}
 
     /**
-     * 我的商城
+     * 我的
      */
 	public function indexOp() {
+        $model_order = Model('order');
         $member_info = array();
         $member_info['user_name'] = $this->member_info['member_name'];
         $member_info['avator'] = getMemberAvatarForID($this->member_info['member_id']);
         $member_info['point'] = $this->member_info['member_points'];
         $member_info['predepoit'] = $this->member_info['available_predeposit'];
 	//v3-b11 显示充值卡
-		$member_info['available_rc_balance'] = $this->member_info['available_rc_balance'];
-
+	$member_info['available_rc_balance'] = $this->member_info['available_rc_balance'];
+        $order_list_array = $model_order->getNormalOrderList($condition, $_REQUEST['pageCount'], '*', 'order_id desc','', array('order_goods'));
         output_data(array('member_info' => $member_info));
 	}
         /*
@@ -38,7 +39,7 @@ class member_indexControl extends mobileMemberControl {
        public function guessLikeOp() {       
         $page=  !empty($_REQUEST['num'])?$_REQUEST['num']:20;
         $goodlist=Model('goods_browse')->getGuessLikeGoods($this->member_info['member_id'],20);
-        output_data($goodlist);
+        output_data(array('goods_list'=>$goodlist));
     }
     
     	/**
@@ -96,6 +97,22 @@ class member_indexControl extends mobileMemberControl {
             }
         }
         
+        
+        public function viewed_goodsOp() {
+            
+            $goods_list = Model('goods_browse')->getViewedGoodsList($this->member_info['member_id'],$this->page);
+            $viewed_goods = array();
+            if(is_array($goods_list) && !empty($goods_list)) {
+            foreach ($goods_list as $key => $val) {
+                $goods_id = $val['goods_id'];
+                $val['url'] = urlShop('goods', 'index', array('goods_id' => $goods_id));
+                $val['goods_image'] = thumb($val, 240);
+                $viewed_goods[$goods_id] = $val;
+                }
+            }
+            output_data(array('goods_list'=>  array_values($viewed_goods)));
+            //Tpl::output('viewed_goods',$viewed_goods);
+        }
         
         public function upNickNameOp() {
             $model_member	=       Model('member');

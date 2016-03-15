@@ -83,8 +83,6 @@ class goodsControl extends BaseGoodsControl {
             }
         }
         Tpl::output('goods', $goods_info);
-		
-		
 		//v3-b11 抢购商品是否开始
 		$IsHaveBuy=0;
 		if(!empty($_SESSION['member_id']))
@@ -173,6 +171,7 @@ class goodsControl extends BaseGoodsControl {
     public function addbrowseOp(){
         $goods_id = intval($_GET['gid']);
         Model('goods_browse')->addViewedGoods($goods_id,$_SESSION['member_id'],$_SESSION['store_id']);
+       
         exit();
     }
 

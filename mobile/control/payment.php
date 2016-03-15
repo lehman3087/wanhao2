@@ -139,7 +139,7 @@ class paymentControl extends mobileHomeControl{
         if($_GET['payment_code'] == 'alipay'){
                     $this->ali_notice();
                 }else{
-                   // echo 'success';die;
+                    echo 'success';die;
                 }
                 
                 

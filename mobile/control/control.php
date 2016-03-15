@@ -125,13 +125,16 @@ class mobileMemberControl extends mobileControl{
         }
 
         $model_member = Model('member');
+       
         $this->member_info = $model_member->getMemberInfoByID($mb_user_token_info['member_id']);
+         
         $this->member_info['client_type'] = $mb_user_token_info['client_type'];
         if(empty($this->member_info)) {
             output_error('10404', array('login' => '0'));
         } else {
             //读取卖家信息
             $seller_info = Model('seller')->getSellerInfo(array('member_id'=>$this->member_info['member_id']));
+           
             $this->member_info['store_id'] = $seller_info['store_id'];
         }
     }

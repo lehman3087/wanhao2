@@ -237,10 +237,10 @@ class goodsControl extends mobileHomeControl{
 		$goods_info=$goods_detail['goods_info'];
 		//print_r($goods_info);
 		$IsHaveBuy=0;
-		if(!empty($_COOKIE['username']))
+		if(!empty($this->member_info['member_name']))
 		{
 		   $model_member = Model('member');
-		   $member_info= $model_member->getMemberInfo(array('member_name'=>$_COOKIE['username']));
+		   $member_info= $model_member->getMemberInfo(array('member_name'=>$this->member_info['member_name']));
 		   $buyer_id=$member_info['member_id'];
 		   
 		   $promotion_type=$goods_info["promotion_type"];
@@ -284,6 +284,11 @@ class goodsControl extends mobileHomeControl{
         
 	//$goods_id = intval($_GET['goods_id']);
         $goods_detail['goods_comments']=$this->_get_comments($goods_id, $_REQUEST['type'], 3);
+        if(!empty($this->member_info['member_id'])){
+          Model('goods_browse')->addViewedGoods($goods_id,$this->member_info['member_id'],$goods_detail['goods_info']['store_id']);
+        }
+         
+         
         output_data($goods_detail);
         
     }

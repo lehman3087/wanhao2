@@ -103,10 +103,7 @@ class wxpay{
             die;
         }else{
             $this->dowxpay($openid, $order_sn);
-        }
-        
-        
-        
+        } 
     }
 
     private function dowxpay($openid, $order_sn){
@@ -226,7 +223,6 @@ eot;
         $jsApiObj["signType"] = "MD5";
         $jsApiObj["paySign"] = $this->getSign($jsApiObj);
         $this->parameters = json_encode($jsApiObj);
-
         return $this->parameters;
     }
 
