@@ -22,6 +22,8 @@ function output_data($datas, $extend_data = array()) {
     }
 
     $data['datas'] = $datas;
+    $data['datas'] = $datas;
+    $data['datas'] = $datas;
 
     if(!empty($_GET['callback'])) {
         echo $_GET['callback'].'('.json_encode($data).')';die;

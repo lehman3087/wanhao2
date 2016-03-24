@@ -32,7 +32,8 @@ class seller_loginControl extends BaseSellerControl {
         $result = chksubmit(true,true,'num');
         if ($result){
             if ($result === -11){
-                showDialog('用户名或密码错误','','error');
+              
+                showDialog('用户名或密码错误1','','error');
             } elseif ($result === -12){
                 showDialog('验证码错误','','error');
             }
@@ -102,10 +103,10 @@ class seller_loginControl extends BaseSellerControl {
                 $this->recordSellerLog('登录成功');
                 redirect('index.php?act=seller_center');
             } else {
-                showMessage('用户名密码错误', '', '', 'error');
+                showMessage('用户名密码错误2', '', '', 'error');
             }
         } else {
-            showMessage('用户名密码错误', '', '', 'error');
+            showMessage('用户名密码错误3', '', '', 'error');
         }
     }
 }

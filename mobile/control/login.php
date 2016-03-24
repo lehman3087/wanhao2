@@ -53,7 +53,7 @@ class loginControl extends mobileHomeControl {
         if(!empty($member_info)) {
             $token = $this->_get_token($member_info['member_id'], $member_info['member_name'], $_REQUEST['client']);
             if($token) {
-                output_data($member_info,array('statuCode' => '10200', 'key' => $token));
+                output_data($member_info,array('statuCode' => '10200', 'token' => $token));
             } else {
                 output_error('104041');
             }

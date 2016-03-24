@@ -101,7 +101,47 @@ final class Base{
 		}
 	}
 
-	/**
+//	/**
+//	 * 开启session
+//	 *
+//	 */
+//	private static function start_session(){
+//		if (SUBDOMAIN_SUFFIX){
+//			$subdomain_suffix = SUBDOMAIN_SUFFIX;
+//		}else{
+//			if (preg_match("/^[0-9.]+$/",$_SERVER['SERVER_ADDR'])){
+//				$subdomain_suffix = $_SERVER['SERVER_ADDR'];
+//                               
+//                
+//			}else{
+//                                $subdomain_suffix = 'whao.a-caggie.cn';
+////				$split_url = explode('.',$_SERVER['HTTP_HOST']);
+////				if($split_url[2] != '') unset($split_url[0]);
+////				$subdomain_suffix = implode('.',$split_url);
+//			}
+//		}
+//              //  var_dump($_SERVER);
+//               
+//		//session.name强制定制成PHPSESSID,不请允许更改
+//		@ini_set('session.name','PHPSESSID');
+//		$subdomain_suffix = str_replace('http://','',$subdomain_suffix);
+//               // var_dump($subdomain_suffix);
+//              //  exit();
+//		if ($subdomain_suffix !== 'localhost') {
+//		    @ini_set('session.cookie_domain', $subdomain_suffix);
+//		}
+//
+//		//开启以下配置支持session信息存信memcache
+//		//@ini_set("session.save_handler", "memcache");
+//		//@ini_set("session.save_path", C('memcache.1.host').':'.C('memcache.1.port'));
+//
+//		//默认以文件形式存储session信息
+//		session_save_path(BASE_DATA_PATH.'/session');
+//		session_start();
+//	}
+
+        
+        /**
 	 * 开启session
 	 *
 	 */
@@ -109,24 +149,17 @@ final class Base{
 		if (SUBDOMAIN_SUFFIX){
 			$subdomain_suffix = SUBDOMAIN_SUFFIX;
 		}else{
-			if (preg_match("/^[0-9.]+$/",$_SERVER['SERVER_ADDR'])){
-				$subdomain_suffix = $_SERVER['SERVER_ADDR'];
-                               
-                
+			if (preg_match("/^[0-9.]+$/",$_SERVER['HTTP_HOST'])){
+				$subdomain_suffix = $_SERVER['HTTP_HOST'];
 			}else{
-                                $subdomain_suffix = 'whao.a-caggie.cn';
-//				$split_url = explode('.',$_SERVER['HTTP_HOST']);
-//				if($split_url[2] != '') unset($split_url[0]);
-//				$subdomain_suffix = implode('.',$split_url);
+				$split_url = explode('.',$_SERVER['HTTP_HOST']);
+				if($split_url[2] != '') unset($split_url[0]);
+				$subdomain_suffix = implode('.',$split_url);
 			}
 		}
-              //  var_dump($_SERVER);
-               
 		//session.name强制定制成PHPSESSID,不请允许更改
 		@ini_set('session.name','PHPSESSID');
 		$subdomain_suffix = str_replace('http://','',$subdomain_suffix);
-               // var_dump($subdomain_suffix);
-              //  exit();
 		if ($subdomain_suffix !== 'localhost') {
 		    @ini_set('session.cookie_domain', $subdomain_suffix);
 		}
@@ -139,7 +172,7 @@ final class Base{
 		session_save_path(BASE_DATA_PATH.'/session');
 		session_start();
 	}
-
+        
 	public static function autoload($class){
 		$class = strtolower($class);
 		if (ucwords(substr($class,-5)) == 'Class' ){

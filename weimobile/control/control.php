@@ -45,9 +45,9 @@ class mobileMemberControl extends mobileControl{
         
         parent::__construct();
         $model_mb_user_token = Model('mb_user_token');
-        $key = $_POST['key'];
+        $key = $_REQUEST['key'];
         if(empty($key)) {
-            $key = $_GET['key'];
+            $key = $_REQUEST['key'];
         }
         $mb_user_token_info = $model_mb_user_token->getMbUserTokenInfoByToken($key);
         if(empty($mb_user_token_info)) {

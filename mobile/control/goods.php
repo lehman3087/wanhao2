@@ -151,7 +151,7 @@ class goodsControl extends mobileHomeControl{
     }
 
     public function goods_detailOp() {
-       // var_dump($goods_id);
+        //var_dump('1');
         $post=$this->read_json();  
         $arr=objectToArray($post);
         $_REQUEST=array_merge($_REQUEST,$arr);
@@ -235,55 +235,9 @@ class goodsControl extends mobileHomeControl{
         
 		//v3-b11 抢购商品是否开始
 		$goods_info=$goods_detail['goods_info'];
-		//print_r($goods_info);
-		$IsHaveBuy=0;
-		if(!empty($this->member_info['member_name']))
-		{
-		   $model_member = Model('member');
-		   $member_info= $model_member->getMemberInfo(array('member_name'=>$this->member_info['member_name']));
-		   $buyer_id=$member_info['member_id'];
-		   
-		   $promotion_type=$goods_info["promotion_type"];
-		   
-		   if($promotion_type=='groupbuy')
-		   {   
-		    //检测是否限购数量
-			$upper_limit=$goods_info["upper_limit"];
-			if($upper_limit>0)
-			{
-				//查询些会员的订单中，是否已买过了
-				$model_order= Model('order');
-				 //取商品列表
-                $order_goods_list = $model_order->getOrderGoodsList(array('goods_id'=>$goods_id,'buyer_id'=>$buyer_id,'goods_type'=>2));
-				if($order_goods_list)
-				{   
-				    //取得上次购买的活动编号(防一个商品参加多次团购活动的问题)
-				    $promotions_id=$order_goods_list[0]["promotions_id"];
-					//用此编号取数据，检测是否这次活动的订单商品。
-					 $model_groupbuy = Model('groupbuy');
-					 $groupbuy_info = $model_groupbuy->getGroupbuyInfo(array('groupbuy_id' => $promotions_id));
-					 if($groupbuy_info)
-					 {
-						$IsHaveBuy=1;
-					 }
-					 else
-					 {
-						$IsHaveBuy=0;
-					 }
-				}
-			}
-		  }
-		}
-		$goods_detail['IsHaveBuy']=$IsHaveBuy;
-	
-                //var_dump($goods_detail);
-		
-        //评价信息
-     //   $goods_evaluate_info = Model('evaluate_goods')->getEvaluateGoodsInfoByGoodsID($goods_id);
-      //  Tpl::output('goods_evaluate_info', $goods_evaluate_info);
-        
-	//$goods_id = intval($_GET['goods_id']);
+
         $goods_detail['goods_comments']=$this->_get_comments($goods_id, $_REQUEST['type'], 3);
+        
         if(!empty($this->member_info['member_id'])){
           Model('goods_browse')->addViewedGoods($goods_id,$this->member_info['member_id'],$goods_detail['goods_info']['store_id']);
         }

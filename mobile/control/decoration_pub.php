@@ -12,7 +12,7 @@ class decoration_pubControl extends mobileHomeControl{
 		parent::__construct();
 	}
         
-    
+        
         public function getDcListOp($param) {
             error_reporting(0);
             $post=$this->read_json();
@@ -65,7 +65,7 @@ class decoration_pubControl extends mobileHomeControl{
             }
         }
         
-               public function dw_suc_rec_listOp() {
+          public function dw_suc_rec_listOp() {
            // var_dump('1');
             
             $model_db = Model('decoration');

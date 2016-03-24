@@ -18,17 +18,20 @@
             <file>file:/Applications/MAMP/htdocs/33hao/wap/special.html</file>
             <file>file:/Applications/MAMP/htdocs/33hao/shop/templates/default/seller/store_spec.index.php</file>
             <file>file:/Applications/MAMP/htdocs/33hao/data/crontab/index.php</file>
+            <file>file:/Applications/MAMP/htdocs/33hao/shop/control/member_order.php</file>
             <file>file:/Applications/MAMP/htdocs/33hao/mobile/api/payment/alipay/notify_url.php</file>
+            <file>file:/Applications/MAMP/htdocs/33hao/mobile/control/member_goods.php</file>
             <file>file:/Applications/MAMP/htdocs/33hao/mobile/control/control.php</file>
             <file>file:/Applications/MAMP/htdocs/33hao/mobile/control/tool.php</file>
             <file>file:/Applications/MAMP/htdocs/33hao/mobile/control/goods.php</file>
             <file>file:/Applications/MAMP/htdocs/33hao/mobile/control/member_payment.php</file>
+            <file>file:/Applications/MAMP/htdocs/33hao/admin/templates/default/goods_class.edit.php</file>
             <file>file:/Applications/MAMP/htdocs/33hao/weimobile/control/index.php</file>
+            <file>file:/Applications/MAMP/htdocs/33hao/admin/control/goods_class.php</file>
             <file>file:/Applications/MAMP/htdocs/33hao/shop/templates/default/layout/layout_top.php</file>
-            <file>file:/Applications/MAMP/htdocs/33hao/mobile/control/payment.php</file>
-            <file>file:/Applications/MAMP/htdocs/33hao/shop/control/control.php</file>
             <file>file:/Applications/MAMP/htdocs/33hao/microshop/config/config.ini.php</file>
             <file>file:/Applications/MAMP/htdocs/33hao/admin/control/offpay_area.php</file>
+            <file>file:/Applications/MAMP/htdocs/33hao/data/model/order.model.php</file>
             <file>file:/Applications/MAMP/htdocs/33hao/mobile/control/article.php</file>
             <file>file:/Applications/MAMP/htdocs/33hao/core/framework/libraries/PushSDK.php</file>
             <file>file:/Applications/MAMP/htdocs/33hao/mobile/control/login.php</file>
@@ -44,9 +47,8 @@
             <file>file:/Applications/MAMP/htdocs/33hao/shop/control/store_goods_add.php</file>
             <file>file:/Applications/MAMP/htdocs/33hao/mobile/control/member_index.php</file>
             <file>file:/Applications/MAMP/htdocs/33hao/data/model/goods_class.model.php</file>
-            <file>file:/Applications/MAMP/htdocs/33hao/weimobile/control/control.php</file>
             <file>file:/Applications/MAMP/htdocs/33hao/mobile/control/member_buy.php</file>
-            <file>file:/Applications/MAMP/htdocs/33hao/global.php</file>
+            <file>file:/Applications/MAMP/htdocs/33hao/data/model/store.model.php</file>
             <file>file:/Applications/MAMP/htdocs/33hao/microshop/control/index.php</file>
             <file>file:/Applications/MAMP/htdocs/33hao/shop/templates/default/store/goods_bundling.php</file>
             <file>file:/Applications/MAMP/htdocs/33hao/mobile/api/payment/wxpay/notify_url.php</file>
@@ -60,8 +62,9 @@
             <file>file:/Applications/MAMP/htdocs/33hao/data/config/config.ini.php</file>
             <file>file:/Applications/MAMP/htdocs/33hao/shop/control/goods.php</file>
             <file>file:/Applications/MAMP/htdocs/33hao/shop/control/store_spec.php</file>
-            <file>file:/Applications/MAMP/htdocs/33hao/core/framework/libraries/sendmembermsg.php</file>
             <file>file:/Applications/MAMP/htdocs/33hao/shop/templates/default/seller/store_goods_add.step2.php</file>
+            <file>file:/Applications/MAMP/htdocs/33hao/core/framework/libraries/sendmembermsg.php</file>
+            <file>file:/Applications/MAMP/htdocs/33hao/mobile/framework/function/function.php</file>
             <file>file:/Applications/MAMP/htdocs/33hao/data/model/goods.model.php</file>
             <file>file:/Applications/MAMP/htdocs/33hao/shop/control/member.php</file>
             <file>file:/Applications/MAMP/htdocs/33hao/data/model/mb_user_token.model.php</file>
@@ -69,8 +72,8 @@
             <file>file:/Applications/MAMP/htdocs/33hao/mobile/api/payment/wxpay/redirect_uri.php</file>
             <file>file:/Applications/MAMP/htdocs/33hao/weimobile/index.php</file>
             <file>file:/Applications/MAMP/htdocs/33hao/mobile/control/index.php</file>
-            <file>file:/Applications/MAMP/htdocs/33hao/mobile/api/payment/alipay/alipay.config.php</file>
             <file>file:/Applications/MAMP/htdocs/33hao/mobile/control/store.php</file>
+            <file>file:/Applications/MAMP/htdocs/33hao/mobile/api/payment/alipay/alipay.config.php</file>
             <file>file:/Applications/MAMP/htdocs/33hao/mobile/control/decoration_pub.php</file>
             <file>file:/Applications/MAMP/htdocs/33hao/data/model/address.model.php</file>
         </group>

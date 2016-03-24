@@ -1,0 +1,6 @@
+[2016-03-16 15:01:42] /33hao/mobile/index.php?act=member_order&op=search_deliver&order_id=291&key=ff3d0e9306e1f2a79d2826ee803f60f6 ( act=member_order&op=search_deliver ) 
+ERR: Db Error: Unknown column 'buyer_id1' in 'where clause'
+SELECT * FROM `33hao_order` WHERE ( order_id = '291' ) AND ( buyer_id1 = '1' ) LIMIT 1  
+[2016-03-16 15:01:53] /33hao/mobile/index.php?act=member_order&op=search_deliver&order_id=291&key=ff3d0e9306e1f2a79d2826ee803f60f6 ( act=member_order&op=search_deliver ) 
+ERR: Db Error: Unknown column 'buyer_id1' in 'where clause'
+SELECT * FROM `33hao_order` WHERE ( order_id = '291' ) AND ( buyer_id1 = '1' ) LIMIT 1  

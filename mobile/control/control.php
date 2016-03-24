@@ -19,7 +19,9 @@ class mobileControl{
     protected $client_type_array = array('android', 'wap', 'wechat', 'ios');
     //列表默认分页数
     protected $page = 5;
-    
+    protected $clientType="android";
+
+
     protected function read_json() {
         ob_start();
         $postdata = file_get_contents("php://input");
@@ -79,8 +81,14 @@ class mobileControl{
         $this->request_json();
         //分页数处理
         $page = intval($_REQUEST['pageCount']);
+        
+        $type = intval($_REQUEST['_terminal-type']);
+        
         if($page > 0) {
             $this->page = $page;
+        }
+        if(!empty($type)){
+            $this->clientType=$type;
         }
         
         error_reporting(0);
@@ -111,14 +119,15 @@ class mobileMemberControl extends mobileControl{
     protected $member_info = array();
 
 	public function __construct() {
-            
+       // var_dump($_REQUEST);
         parent::__construct();
 
         $model_mb_user_token = Model('mb_user_token');
-        $key = $_REQUEST['key'];
+        $key = $_REQUEST['token'];
         if(empty($key)) {
-            $key = $_REQUEST['key'];
+            $key = $_REQUEST['token'];
         }
+        
         $mb_user_token_info = $model_mb_user_token->getMbUserTokenInfoByToken($key);
         if(empty($mb_user_token_info)) {
             output_error('10404', array('login' => '0'));
@@ -127,6 +136,7 @@ class mobileMemberControl extends mobileControl{
         $model_member = Model('member');
        
         $this->member_info = $model_member->getMemberInfoByID($mb_user_token_info['member_id']);
+       // var_dump($mb_user_token_info['member_id']);
          
         $this->member_info['client_type'] = $mb_user_token_info['client_type'];
         if(empty($this->member_info)) {
