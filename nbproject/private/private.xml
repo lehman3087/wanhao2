@@ -31,6 +31,7 @@
             <file>file:/Applications/MAMP/htdocs/33hao/shop/templates/default/layout/layout_top.php</file>
             <file>file:/Applications/MAMP/htdocs/33hao/microshop/config/config.ini.php</file>
             <file>file:/Applications/MAMP/htdocs/33hao/admin/control/offpay_area.php</file>
+            <file>file:/Applications/MAMP/htdocs/33hao/mobile/control/member_evaluate.php</file>
             <file>file:/Applications/MAMP/htdocs/33hao/data/model/order.model.php</file>
             <file>file:/Applications/MAMP/htdocs/33hao/mobile/control/article.php</file>
             <file>file:/Applications/MAMP/htdocs/33hao/core/framework/libraries/PushSDK.php</file>
@@ -45,10 +46,12 @@
             <file>file:/Applications/MAMP/htdocs/33hao/shop/control/seller_login.php</file>
             <file>file:/Applications/MAMP/htdocs/33hao/weimobile/api/payment/wxpay/wxpay.php</file>
             <file>file:/Applications/MAMP/htdocs/33hao/shop/control/store_goods_add.php</file>
+            <file>file:/Applications/MAMP/htdocs/33hao/shop/control/member_evaluate.php</file>
             <file>file:/Applications/MAMP/htdocs/33hao/mobile/control/member_index.php</file>
             <file>file:/Applications/MAMP/htdocs/33hao/data/model/goods_class.model.php</file>
             <file>file:/Applications/MAMP/htdocs/33hao/mobile/control/member_buy.php</file>
             <file>file:/Applications/MAMP/htdocs/33hao/data/model/store.model.php</file>
+            <file>file:/Applications/MAMP/htdocs/33hao/mobile/control/member_voucher.php</file>
             <file>file:/Applications/MAMP/htdocs/33hao/microshop/control/index.php</file>
             <file>file:/Applications/MAMP/htdocs/33hao/shop/templates/default/store/goods_bundling.php</file>
             <file>file:/Applications/MAMP/htdocs/33hao/mobile/api/payment/wxpay/notify_url.php</file>
@@ -72,6 +75,7 @@
             <file>file:/Applications/MAMP/htdocs/33hao/mobile/api/payment/wxpay/redirect_uri.php</file>
             <file>file:/Applications/MAMP/htdocs/33hao/weimobile/index.php</file>
             <file>file:/Applications/MAMP/htdocs/33hao/mobile/control/index.php</file>
+            <file>file:/Applications/MAMP/htdocs/33hao/mobile/control/member_chat.php</file>
             <file>file:/Applications/MAMP/htdocs/33hao/mobile/control/store.php</file>
             <file>file:/Applications/MAMP/htdocs/33hao/mobile/api/payment/alipay/alipay.config.php</file>
             <file>file:/Applications/MAMP/htdocs/33hao/mobile/control/decoration_pub.php</file>

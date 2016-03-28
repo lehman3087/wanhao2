@@ -53,12 +53,13 @@ class mb_adControl extends SystemControl{
 		//最多发布6条
 		$count = $model_mb_ad->getMbAdCount();
 		if ($count > 5){
-			showMessage(L('link_add_count_limit'));
+			showMessage(L('123444'));
 		}
 		if ($_POST['form_submit'] == 'ok'){
 			/**
 			 * 验证
 			 */
+                 
 			$obj_validate = new Validate();
 			$obj_validate->validateparam = array(
 				array("input"=>$_POST["link_title"], "require"=>"true", "message"=>L('link_add_title_null')),
@@ -67,7 +68,7 @@ class mb_adControl extends SystemControl{
 			);
 			$error = $obj_validate->validate();
 			if ($error != ''){
-				showMessage($error);
+				showMessage("111222");
 			}else {
 				/**
 				 * 上传图片
@@ -80,7 +81,7 @@ class mb_adControl extends SystemControl{
 					if ($result){
 						$_POST['link_pic'] = $upload->file_name;
 					}else {
-						showMessage($upload->error);
+						showMessage('aaa');
 					}
 				}
 
@@ -100,7 +101,7 @@ class mb_adControl extends SystemControl{
 					);
 					showMessage(L('link_add_succ'),$url);
 				}else {
-					showMessage(L('link_add_fail'));
+					showMessage('11');
 				}
 			}
 		}

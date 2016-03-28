@@ -38,14 +38,41 @@ class member_orderControl extends mobileMemberControl {
         $order_group_list = array();
         $order_pay_sn_array = array();
         foreach ($order_list_array as $value) {
-            //显示取消订单
-            $value['if_cancel'] = $model_order->getOrderOperateState('buyer_cancel',$value);
-            //显示收货
-            $value['if_receive'] = $model_order->getOrderOperateState('receive',$value);
-            //显示锁定中
-            $value['if_lock'] = $model_order->getOrderOperateState('lock',$value);
-            //显示物流跟踪
-            $value['if_deliver'] = $model_order->getOrderOperateState('deliver',$value);
+//            //显示取消订单
+//            $value['if_cancel'] = $model_order->getOrderOperateState('buyer_cancel',$value);
+//            //显示收货
+//            $value['if_receive'] = $model_order->getOrderOperateState('receive',$value);
+//            //显示锁定中
+//            $value['if_lock'] = $model_order->getOrderOperateState('lock',$value);
+//            //显示物流跟踪
+//            $value['if_deliver'] = $model_order->getOrderOperateState('deliver',$value);
+//            
+            
+             //显示锁定中
+        $value['if_lock'] = $model_order->getOrderOperateState('lock',$value);
+
+        //显示取消订单
+        $value['if_cancel'] = $model_order->getOrderOperateState('buyer_cancel',$value);
+
+        //显示退款取消订单
+        $value['if_refund_cancel'] = $model_order->getOrderOperateState('refund_cancel',$value);
+
+        //显示投诉
+        $value['if_complain'] = $model_order->getOrderOperateState('complain',$value);
+
+        //显示收货
+        $value['if_receive'] = $model_order->getOrderOperateState('receive',$value);
+
+        //显示物流跟踪
+        $value['if_deliver'] = $model_order->getOrderOperateState('deliver',$value);
+
+        //显示评价
+        $value['if_evaluation'] = $model_order->getOrderOperateState('evaluation',$value);
+
+        //显示分享
+        $value['if_share'] = $model_order->getOrderOperateState('share',$value);
+        
+        
 
             //商品图
             foreach ($value['extend_order_goods'] as $k => $goods_info) {
