@@ -65,9 +65,42 @@ class activity_pubControl extends mobileHomeControl {
                             $count =  Model('groupbuy')->getGroupbuyCount($conditionall);
                         }
                         
+                        if(($activity_type=='groupbuys')||empty($activity_type)){
+                            $gb=Model('groupbuy')->getGroupbuyAvailableList($conditionall,$_REQUEST['pageCount']); 
+                            $activities['groupbuys']=$gb;
+                            $count =  Model('groupbuy')->getGroupbuyCount($conditionall);
+                        }
+                        
+                        if(($activity_type=='signups')||empty($activity_type)){
+                           $gd = Model('activity')->getList($conditionall,$this->page);
+//                            $gb=Model('groupbuy')->getGroupbuyAvailableList($conditionall,$_REQUEST['pageCount']); 
+//                            $activities['groupbuys']=$gb;
+                           $activities['signup_list']=$gb;
+                          //  $count =  Model('activity')->gettotalpage();
+                        }
+                        
+                        
+                        
+                        
+                     //   condition_arr['store_id'] = $_SESSION['store_id'];
+		//活动列表
+//		$page	= new Page();
+//		$page->setEachNum(5);
+//		$page->setStyle('admin');
+		//$store['signup_list']= Model('activity')->getList($conditionall,$this->page);
+                        
+                        
+                        
                         output_data($activities, mobile_page($count));
                 
 	}
+        
+        
+        
+        
+        
+
+        
         
          /**
 	 * 单个报名活动信息页
@@ -245,7 +278,7 @@ class activity_pubControl extends mobileHomeControl {
     }
 
     
-       /**
+     /**
      * 处理商品列表(抢购、限时折扣、商品图片)
      */
     private function _goods_list_extend($goods_list) {

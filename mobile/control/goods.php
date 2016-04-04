@@ -45,12 +45,34 @@ class goodsControl extends mobileHomeControl{
             $condition['goods_name|goods_jingle'] = array('like', '%' . $_REQUEST['keyword'] . '%');
         }
         
+        
+        
+                $start_price = !empty($_REQUEST['min_price']) && intval($_REQUEST['min_price']) > 0 ? $_REQUEST['min_price'] : null;
+		$end_price = !empty($_REQUEST['max_price']) && intval($_REQUEST['max_price']) > 0 ? $_REQUEST['max_price'] : null;
+		//$end_unixtime = $if_end_date ? $end_unixtime+86400-1 : null;
+                
+        
+        if ($start_price || $end_price) {
+		    $condition['goods_price'] = array('between',"{$start_price},{$end_price}");
+	} 
+                
+        
+//        if((!empty($_REQUEST['min_price']) && intval($_REQUEST['min_price']) > 0)&&(!empty($_REQUEST['max_price']) && intval($_REQUEST['max_price']) > 0)) {
+//            $condition['goods_price'] = array('between', $_REQUEST['min_price']);
+//        
+//        if(!empty($_REQUEST['min_price']) && intval($_REQUEST['min_price']) > 0) {
+//            $condition['goods_price'] = array('gt', $_REQUEST['min_price']);
+//        } elseif (!empty($_REQUEST['max_price']) && intval($_REQUEST['max_price']) > 0) {
+//            $condition['goods_price'] = array('lt',$_REQUEST['max_price']);
+//        }
+        
+        
         //所需字段
-        $fieldstr = "goods_id,goods_freight,goods_commonid,store_id,goods_name,goods_price,goods_marketprice,goods_image,goods_salenum,evaluation_good_star,evaluation_count";
-
+        $fieldstr = "gc_id_1,gc_id_2,brand_id,goods_id,gc_id,goods_freight,goods_commonid,store_id,goods_name,goods_price,goods_marketprice,goods_image,goods_salenum,evaluation_good_star,evaluation_count";
+        
         // 添加3个状态字段
         $fieldstr .= ',is_virtual,is_presell,is_fcode,have_gift';
-
+        
         //排序方式
         $order = $this->_goods_list_order($_REQUEST['sortType'], $_REQUEST['sortOrder']);
         
@@ -107,6 +129,120 @@ class goodsControl extends mobileHomeControl{
         return $result;
     }
 
+    
+    
+    /**
+     * 根据分类编号返回下级分类列表几品牌列表
+     */
+    public function goods_filterOp() {
+        
+        
+       $model_goods = Model('goods');
+        $model_search = Model('search');
+        
+        
+        
+     //   var_dump('1');
+        
+       $post=$this->read_json();  
+        $arr=OTA($post);
+        $_REQUEST=array_merge($_REQUEST,$arr);
+        
+        $condition=$this->_dealCondition($_REQUEST['conditions']);
+        
+        
+        //Db::insert('log',array('key'=>'1','value'=>  serialize($condition)));
+        //Model('log').insert();
+        //查询条件
+       // $condition = array();
+        if(!empty($_REQUEST['gc_id']) && intval($_REQUEST['gc_id']) > 0) {
+            $condition['gc_id'] = $_REQUEST['gc_id'];
+        } elseif (!empty($_REQUEST['keyword'])) {
+            $condition['goods_name|goods_jingle'] = array('like', '%' . $_REQUEST['keyword'] . '%');
+        }
+       // ->field('DISTINCT order_id')
+        //所需字段
+        $fieldstr = "DISTINCT(gc_id_1) as gc_id_1";
+        
+       
+        $goods_list = $model_goods->getGoodsOnlineList($condition, $fieldstr,0);
+
+        $data=array();
+        foreach ($goods_list as $goods) {
+            $data['classes'][]=$this->_get_class_list($goods['gc_id_1']);
+        }
+        
+        $fieldstr2 = "DISTINCT(brand_id) as brand_id";
+        
+        
+        //获得品牌列表
+       // $model = Model();
+        
+        
+        
+        $goods_list2 = $model_goods->getGoodsOnlineList($condition, $fieldstr2,0);
+        $brandIds=array();
+        
+        foreach ($goods_list2 as $goods) {
+            $brandIds[]=$goods['brand_id'];
+        }
+        
+        
+        $data['brand_list'] = Model('brand')->field('brand_id,brand_name')->where(array('brand_id'=>array('in',implode(',',$brandIds))))->order('brand_sort asc')->select();
+        
+
+        output_data($data);
+    }
+    
+    
+   
+     public function classs_filterOp() {
+         
+         $gc=$this->_get_class_list($_REQUEST['gc_id']);
+         
+         $data['classes']=$gc['subClass'];
+         $ids=$gc['child'].','.$_REQUEST['gc_id'];
+         $data['brand_list'] = Model('brand')->field('brand_id,brand_name')->where(array('class_id'=>array('in',$ids)))->order('brand_sort asc')->select();
+        
+         output_data($data);
+         //var_dump($data);
+         
+    }
+    
+    
+    
+    
+    /**
+     * 根据分类编号返回下级分类列表
+     */
+    private function _get_class_list($gc_id) {
+        $goods_class_array = Model('goods_class')->getGoodsClassForCacheModel();
+
+        $goods_class = $goods_class_array[$gc_id];
+        
+       // $data=$goods_class['']
+        if(empty($goods_class['child'])) {
+            //无下级分类返回0
+            return 0;
+           // output_data(array('class_list' => '0'));
+        } else {
+            //返回下级分类列表
+            $class_list = array();
+            $child_class_string = $goods_class_array[$gc_id]['child'];
+            $child_class_array = explode(',', $child_class_string);
+            foreach ($child_class_array as $child_class) {
+                $class_item = array();
+                $class_item['gc_id'] .= $goods_class_array[$child_class]['gc_id'];
+                $class_item['gc_name'] .= $goods_class_array[$child_class]['gc_name'];
+                $class_list[] = $class_item;
+            }
+            $goods_class['subClass']=$class_list;
+            return $goods_class;
+           // output_data(array('class_list' => $class_list));
+        }
+    }
+    
+    
     /**
      * 处理商品列表(抢购、限时折扣、商品图片)
      */
@@ -156,7 +292,6 @@ class goodsControl extends mobileHomeControl{
         $arr=objectToArray($post);
         $_REQUEST=array_merge($_REQUEST,$arr);
         $goods_id = intval($_REQUEST ['goods_id']);
-        
         
         // 商品详细信息
         $model_goods = Model('goods');

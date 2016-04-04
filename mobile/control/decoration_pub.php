@@ -72,7 +72,7 @@ class decoration_pubControl extends mobileHomeControl{
             
             $condition['dw_commend']=1;
             
-            $result=$model_db->getExtWorksCommonList($condition, $field = '*', $page = 6);
+            $result=$model_db->getExtWorksCommonList($condition, $field = '*', $page = 7);
             if($result){
                  output_data(array('dwsuccessList'=>$result));
             }else{

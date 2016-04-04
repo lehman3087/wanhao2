@@ -59,7 +59,6 @@ class mb_adControl extends SystemControl{
 			/**
 			 * 验证
 			 */
-                 
 			$obj_validate = new Validate();
 			$obj_validate->validateparam = array(
 				array("input"=>$_POST["link_title"], "require"=>"true", "message"=>L('link_add_title_null')),

@@ -92,11 +92,22 @@ class member_evaluateControl extends mobileMemberControl{
     }
     
     
-    public function add($param) {
+    public function addOp() {
         
+            $order_id = intval($_REQUEST['order_id']);
+            
+            $model_order = Model('order');
+            $model_store = Model('store');
+            
+            
+            $model_evaluate_goods = Model('evaluate_goods');
+            $model_evaluate_store = Model('evaluate_store');
+         
         
-        
-        
+            $order_info = $model_order->getOrderInfo(array('order_id' => $order_id));
+            //查询店铺信息
+            $store_info = $model_store->getStoreInfoByID($order_info['store_id']);
+            
             $evaluate_goods_array = array();
             $goodsid_array = array();
             foreach ($order_goods as $value){
@@ -126,7 +137,7 @@ class member_evaluateControl extends mobileMemberControl{
                 $evaluate_goods_info['geval_storeid'] = $store_info['store_id'];
                 $evaluate_goods_info['geval_storename'] = $store_info['store_name'];
                 $evaluate_goods_info['geval_frommemberid'] = $this->member_info['member_id'];
-                $evaluate_goods_info['geval_frommembername'] = $_SESSION['member_name'];
+                $evaluate_goods_info['geval_frommembername'] = $this->member_info['member_name'];
 
                 $evaluate_goods_array[] = $evaluate_goods_info;
                 
@@ -155,7 +166,7 @@ class member_evaluateControl extends mobileMemberControl{
                 $evaluate_store_info['seval_storeid'] = $store_info['store_id'];
                 $evaluate_store_info['seval_storename'] = $store_info['store_name'];
                 $evaluate_store_info['seval_memberid'] = $this->member_info['member_id'];
-                $evaluate_store_info['seval_membername'] = $_SESSION['member_name'];
+                $evaluate_store_info['seval_membername'] = $this->member_info['member_name'];
                 $evaluate_store_info['seval_desccredit'] = $store_desccredit;
                 $evaluate_store_info['seval_servicecredit'] = $store_servicecredit;
                 $evaluate_store_info['seval_deliverycredit'] = $store_deliverycredit;
@@ -176,12 +187,12 @@ class member_evaluateControl extends mobileMemberControl{
             //添加会员积分
             if (C('points_isuse') == 1){
                 $points_model = Model('points');
-                $points_model->savePointsLog('comments',array('pl_memberid'=>$this->member_info['member_id'],'pl_membername'=>$_SESSION['member_name']));
+                $points_model->savePointsLog('comments',array('pl_memberid'=>$this->member_info['member_id'],'pl_membername'=>$this->member_info['member_name']));
             }
             //添加会员经验值
-            Model('exppoints')->saveExppointsLog('comments',array('exp_memberid'=>$this->member_info['member_id'],'exp_membername'=>$_SESSION['member_name']));;
+            Model('exppoints')->saveExppointsLog('comments',array('exp_memberid'=>$this->member_info['member_id'],'exp_membername'=>$this->member_info['member_name']));;
             
-output_data('1');
+            output_data('1');
            // showDialog(Language::get('member_evaluation_evaluat_success'),'index.php?act=member_order', 'succ');
         }
 

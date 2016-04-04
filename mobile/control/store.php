@@ -10,7 +10,9 @@ defined('InShopNC') or exit('Access Invalid!');
 class storeControl extends mobileHomeControl{
 
 	public function __construct() {
+            
         parent::__construct();
+        
     }
 
     /**
@@ -116,7 +118,7 @@ class storeControl extends mobileHomeControl{
     }
 
     /**
-     * 商品详细页
+     * 店铺详细页
      */
     public function store_detailOp() {
         
@@ -138,6 +140,8 @@ class storeControl extends mobileHomeControl{
          $store_navigation_list = $model_store_navigation->getStoreNavigationList(array('sn_store_id' => $store_id));
          $store_detail['store_navigation_list'] = $store_navigation_list;
          //幻灯片图片
+         
+         
          if($this->store_info['store_slide'] != '' && $this->store_info['store_slide'] != ',,,,'){
              $store_detail['store_slide'] = explode(',', $this->store_info['store_slide']);
              $store_detail['store_slide_url'] = explode(',', $this->store_info['store_slide_url']);
@@ -149,7 +153,7 @@ class storeControl extends mobileHomeControl{
         //店铺详细信息处理
          $store_detail = $this->_store_detail_extend($store_info);
          
-          $store_detail['p_bundling_count'] =  Model('p_bundling')->getOpenBundlingCount($conditionall);
+         $store_detail['p_bundling_count'] =  Model('p_bundling')->getOpenBundlingCount($conditionall);
          $store_detail['groupbuy_count'] =  Model('groupbuy')->getGroupbuyCount($conditionall);
          $store_detail['p_xianshi_count'] =  Model('p_xianshi')->getXianshiListCount($conditionall);
          $store_detail['p_mansong_count'] =  Model('p_mansong')->getMansongCountByStoreID($store_id);
@@ -236,11 +240,101 @@ class storeControl extends mobileHomeControl{
                 
                 
         }
+        
+//        public function store_activityOp() {
+//         
+//            
+//        
+//        if(empty($_REQUEST['store_id'])){
+//            output_error('10404');
+//        }
+//         $conditionall['store_id']=$_REQUEST['store_id'];     
+//         $store['groupbuy_list'] =  Model('groupbuy')->getGroupbuyOnlineList($conditionall, $this->page);
+//         $store['xianshi_list'] =  Model('p_xianshi')->getXianshiList($conditionall,$this->page);
+//         
+//         $condition_arr['order'] = 'activity_id desc';
+//            $condition_arr['store_id'] = $_SESSION['store_id'];
+//		//活动列表
+////		$page	= new Page();
+////		$page->setEachNum(5);
+////		$page->setStyle('admin');
+//		$store['signup_list']= Model('activity')->getList($conditionall,$this->page);
+//                
+//                
+//         output_data(array('store_acts'=>$store));
+//         
+//            
+//        }
+        
+        
+                        /**
+	 * 所有优惠
+	 */
+        public function store_activitysOp(){
+                
+            
+                        $activity_type = $_REQUEST['activity_type'];
+                        $store_id=intval($_REQUEST['store_id']);
+                        if($store_id>0){
+                           $conditionall['store_id']= $store_id;
+                        }
+                        
+                        
+                        if(($activity_type=='xianshis')||empty($activity_type)){
+                            
+                           $xs=Model('p_xianshi')->getXianshiList($conditionall,$_REQUEST['pageCount']);
+                            foreach ($xs as $key1 => $value1) {
+                           $model_xianshi_goods = Model('p_xianshi_goods');
+                            $condition['xianshi_id'] = $value1['xianshi_id'];
+                            $xianshi_goods_list = $model_xianshi_goods->getXianshiGoodsExtendList($condition);
+                          // $xs_details = Model('p_xianshi_goods')->getXianshiInfoByID($value1['xianshi_id']);
+                           $xs[$key1]['xs_goods_list']=$xianshi_goods_list;
+                        }
+                         $activities['xianshis']=$xs;
+                         $count =  Model('p_xianshi')->getXianshiListCount($conditionall);
+                        }
+                        
+                        if(($activity_type=='groupbuys')||empty($activity_type)){
+                            $gb=Model('groupbuy')->getGroupbuyAvailableList($conditionall,$_REQUEST['pageCount']); 
+                            $activities['groupbuys']=$gb;
+                            $count =  Model('groupbuy')->getGroupbuyCount($conditionall);
+                        }
+                        
+//                        if(($activity_type=='groupbuys')||empty($activity_type)){
+//                            $gb=Model('groupbuy')->getGroupbuyAvailableList($conditionall,$_REQUEST['pageCount']); 
+//                            $activities['groupbuys']=$gb;
+//                            $count =  Model('groupbuy')->getGroupbuyCount($conditionall);
+//                        }
+                        
+                        if(($activity_type=='signups')||empty($activity_type)){
+                           $as = Model('activity')->getList($conditionall,$this->page);
+//                            $gb=Model('groupbuy')->getGroupbuyAvailableList($conditionall,$_REQUEST['pageCount']); 
+//                            $activities['groupbuys']=$gb;
+                           $activities['signup_list']=$as;
+                           // $count =  Model('activity')->gettotalpage();
+                        }
+                        
+                        
+                        
+                        
+                     //   condition_arr['store_id'] = $_SESSION['store_id'];
+		//活动列表
+//		$page	= new Page();
+//		$page->setEachNum(5);
+//		$page->setStyle('admin');
+		//$store['signup_list']= Model('activity')->getList($conditionall,$this->page);
+                        
+                        
+                        
+                        output_data($activities, mobile_page($count));
+                
+	}
+        
     
     
     	public function snsOp(){
 		//获得店铺ID
-                
+        
 		$sid	= intval($_REQUEST['sid']);
 		//$this->getStoreInfo($sid);
                 
@@ -254,43 +348,13 @@ class storeControl extends mobileHomeControl{
 		$where['strace_state'] = 1;
                 $where['strace_type'] = 2;
 		$where['strace_storeid'] = $sid;
-//		if($_REQUEST['type'] != ''){
-//			switch (trim($_GET['type'])){
-//				case 'promotion':
-//					$where['strace_type'] = array('in', array(4,5,6,7,8));
-//					break;
-//				case 'new':
-//					$where['strace_type'] = 3;
-//					break;
-//				case 'hotsell':
-//					$where['strace_type'] = 10;
-//					break;
-//				case 'recommend':
-//					$where['strace_type'] = 9;
-//					break;
-//			}
-//		}
+
                 
 		$model_stracelog = Model('store_sns_tracelog');
 		$strace_array = $model_stracelog->getStoreSnsTracelogList($where, '*', 'strace_id desc', 0,$_REQUEST['pageCount']);
                
 		// 整理
-//		if(!empty($strace_array) && is_array($strace_array)){
-//			foreach ($strace_array as $key=>$val){
-//				if($val['strace_content'] == ''){
-//					$val['strace_goodsdata'] = json_decode($val['strace_goodsdata'],true);
-//					if( CHARSET == 'GBK') {
-//						foreach ((array)$val['strace_goodsdata'] as $k=>$v){
-//							$val['strace_goodsdata'][$k] = Language::getGBK($v);
-//						}
-//					}
-//                                        
-//					$content = $model_stracelog->spellingStyle($val['strace_type'], $val['strace_goodsdata']);
-//					$strace_array[$key]['strace_content'] = str_replace("%siteurl%", SHOP_SITE_URL.DS, $content);
-//                                       
-//				}
-//			}
-//		}
+
                 $count=$model_stracelog->getStoreSnsTracelogCount($where);
               
                 if(!empty($strace_array)){
