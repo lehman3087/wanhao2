@@ -188,7 +188,7 @@ class goodsControl extends mobileHomeControl{
         }
         
         
-        $data['brand_list'] = Model('brand')->field('brand_id,brand_id as id,brand_name,brand_name as name')->where(array('brand_id'=>array('in',implode(',',$brandIds))))->order('brand_sort asc')->select();
+        $data['brand_list'] = Model('brand')->field('brand_id,brand_name')->where(array('brand_id'=>array('in',implode(',',$brandIds))))->order('brand_sort asc')->select();
         
 
         output_data($data);
@@ -202,7 +202,7 @@ class goodsControl extends mobileHomeControl{
          
          $data['category_list']=$gc['subClass'];
          $ids=$gc['child'].','.$_REQUEST['gc_id'];
-         $data['brand_list'] = Model('brand')->field('brand_id,brand_id as id,brand_name,brand_name as name')->where(array('class_id'=>array('in',$ids)))->order('brand_sort asc')->select();
+         $data['brand_list'] = Model('brand')->field('brand_id,brand_name')->where(array('class_id'=>array('in',$ids)))->order('brand_sort asc')->select();
         
          output_data($data);
          //var_dump($data);
@@ -233,9 +233,9 @@ class goodsControl extends mobileHomeControl{
             foreach ($child_class_array as $child_class) {
                 $class_item = array();
                 $class_item['gc_id'] .= $goods_class_array[$child_class]['gc_id'];
-                $class_item['id'] .= $goods_class_array[$child_class]['gc_id'];
+                
                 $class_item['gc_name'] .= $goods_class_array[$child_class]['gc_name'];
-                $class_item['name'] .= $goods_class_array[$child_class]['gc_name'];
+                
                 $class_list[] = $class_item;
             }
             $goods_class['subClass']=$class_list;
