@@ -194,13 +194,11 @@ class goodsControl extends mobileHomeControl{
         output_data($data);
     }
     
-    
-   
      public function classs_filterOp() {
          
          $gc=$this->_get_class_list($_REQUEST['gc_id']);
          
-         $data['category_list']=$gc['subClass'];
+         $data['classes']=$gc['subClass'];
          $ids=$gc['child'].','.$_REQUEST['gc_id'];
          $data['brand_list'] = Model('brand')->field('brand_id,brand_name')->where(array('class_id'=>array('in',$ids)))->order('brand_sort asc')->select();
         
@@ -208,10 +206,7 @@ class goodsControl extends mobileHomeControl{
          //var_dump($data);
          
     }
-    
-    
-    
-    
+  
     /**
      * 根据分类编号返回下级分类列表
      */
