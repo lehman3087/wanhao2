@@ -12,7 +12,7 @@
 
 defined('InShopNC') or exit('Access Invalid!');
 
-class voucherControl extends mobileHomeControl {
+class voucherControl extends mobileMemberControl {
 
 	public function __construct() {
 		parent::__construct();
@@ -115,15 +115,15 @@ class voucherControl extends mobileHomeControl {
                 break;
 		}
 		$orderby .= 'voucher_t_id desc';
-		$voucherlist = $model_voucher->getVoucherTemplateList($where, '*', 0, $_REQUEST['pageCount'], $orderby);
+		$voucherlist = $model_voucher->getVoucherTemplateList($where, '*', 0, 0, $orderby);
                 $count=$model_voucher->where($where)->count();
-                output_data($voucherlist,  mobile_page($count));
+                output_data(array("voucher_list"=>$voucherlist));
 		//Tpl::output('voucherlist',$voucherlist);
 		//Tpl::output('show_page', $model_voucher->showpage(2));
 
 		//查询代金券面额
-		$pricelist = $model_voucher->getVoucherPriceList();
-                // output_data($pricelist);
+//		$pricelist = $model_voucher->getVoucherPriceList();
+//                 output_data($pricelist);
 		//Tpl::output('pricelist',$pricelist);
 
 //		//查询店铺分类
