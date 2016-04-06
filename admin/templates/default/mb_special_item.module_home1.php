@@ -31,7 +31,7 @@
   </div>
   <div nctype="item_content" class="content">
       <?php if($item_edit_flag) { ?>
-    <h5>内容：</h5>
+    <h5>内容1：</h5>
     <?php } ?>
     <div nctype="item_image" class="item"> <img nctype="image" src="<?php echo getMbSpecialImageUrl($item_data['image']);?>" alt="">
       <?php if($item_edit_flag) { ?>

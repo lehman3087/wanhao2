@@ -107,17 +107,18 @@ class member_evaluateControl extends mobileMemberControl{
             $order_info = $model_order->getOrderInfo(array('order_id' => $order_id));
             //查询店铺信息
             $store_info = $model_store->getStoreInfoByID($order_info['store_id']);
-            
+            //获取订单商品
+            $order_goods = $model_order->getOrderGoodsList(array('order_id'=>$order_id));
             $evaluate_goods_array = array();
             $goodsid_array = array();
             foreach ($order_goods as $value){
                 //如果未评分，默认为5分
-                $evaluate_score = intval($_POST['goods'][$value['goods_id']]['score']);
+                $evaluate_score = intval($_REQUEST['goods'][$value['goods_id']]['score']);
                 if($evaluate_score <= 0 || $evaluate_score > 5) {
                     $evaluate_score = 5;
                 }
                 //默认评语
-                $evaluate_comment = $_POST['goods'][$value['goods_id']]['comment'];
+                $evaluate_comment = $_REQUEST['goods'][$value['goods_id']]['comment'];
                 if(empty($evaluate_comment)) {
                     $evaluate_comment = '不错哦';
                 }
@@ -132,7 +133,7 @@ class member_evaluateControl extends mobileMemberControl{
                 $evaluate_goods_info['geval_goodsimage'] = $value['goods_image'];
                 $evaluate_goods_info['geval_scores'] = $evaluate_score;
                 $evaluate_goods_info['geval_content'] = $evaluate_comment;
-                $evaluate_goods_info['geval_isanonymous'] = $_POST['anony']?1:0;
+                $evaluate_goods_info['geval_isanonymous'] = $_REQUEST['anony']?1:0;
                 $evaluate_goods_info['geval_addtime'] = TIMESTAMP;
                 $evaluate_goods_info['geval_storeid'] = $store_info['store_id'];
                 $evaluate_goods_info['geval_storename'] = $store_info['store_name'];
@@ -145,15 +146,15 @@ class member_evaluateControl extends mobileMemberControl{
             }
             $model_evaluate_goods->addEvaluateGoodsArray($evaluate_goods_array, $goodsid_array);
 
-            $store_desccredit = intval($_POST['store_desccredit']);
+            $store_desccredit = intval($_REQUEST['store_desccredit']);
             if($store_desccredit <= 0 || $store_desccredit > 5) {
                 $store_desccredit= 5;
             }
-            $store_servicecredit = intval($_POST['store_servicecredit']);
+            $store_servicecredit = intval($_REQUEST['store_servicecredit']);
             if($store_servicecredit <= 0 || $store_servicecredit > 5) {
                 $store_servicecredit = 5;
             }
-            $store_deliverycredit = intval($_POST['store_deliverycredit']);
+            $store_deliverycredit = intval($_REQUEST['store_deliverycredit']);
             if($store_deliverycredit <= 0 || $store_deliverycredit > 5) {
                 $store_deliverycredit = 5;
             }

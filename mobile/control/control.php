@@ -36,6 +36,13 @@ class mobileControl{
         $arr=OTA($post);
         return array_merge($_REQUEST,$arr);
     }
+    
+    protected function post_2_request(){
+       $postdata = file_get_contents("php://input");
+        $post=json_decode($postdata);
+        $arr=OTA($post);
+        $_REQUEST = array_merge($_REQUEST,$arr);
+    }
 
 
     protected function _dealDcOrder($param) {
@@ -79,6 +86,7 @@ class mobileControl{
             
         Language::read('mobile');
         $this->request_json();
+        $this->post_2_request();
         //分页数处理
         $page = intval($_REQUEST['pageCount']);
         

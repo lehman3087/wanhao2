@@ -1,0 +1,161 @@
+<?php
+/**
+ * mobile公共方法
+ *
+ * 公共方法
+ *
+ * by 33hao.com 好商城V3 运营版
+ */
+defined('InShopNC') or exit('Access Invalid!');
+
+
+
+
+
+function output_data($datas, $extend_data = array()) {
+    $data = array();
+    $data['statuCode'] = '10200';
+    header("Content-Type: application/json; charset=utf-8");
+    header("cache-control:no-cache,must-revalidate");
+    if(!empty($extend_data)) {
+        $data = array_merge($data, $extend_data);
+    }
+
+    $data['datas'] = $datas;
+    $data['datas'] = $datas;
+    $data['datas'] = $datas;
+
+    if(!empty($_GET['callback'])) {
+        echo $_GET['callback'].'('.json_encode($data).')';die;
+    } else {
+        echo json_encode($data);die;
+    }
+}
+
+function output_data_error($datas, $extend_data = array()) {
+    $data = array();
+    $data['statuCode'] = '10500';
+    header("Content-Type: application/json; charset=utf-8");
+    if(!empty($extend_data)) {
+        $data = array_merge($data, $extend_data);
+    }
+
+    $data['datas'] = $datas;
+
+    if(!empty($_GET['callback'])) {
+        echo $_GET['callback'].'('.json_encode($data).')';die;
+    } else {
+        echo json_encode($data);die;
+    }
+}
+
+
+
+
+function output($statu, $extend_data = array()) {
+    $status = array();
+    array_push($status, $statu);
+//    if(!empty($extend_data)) {
+//        $data = array_merge($data, $extend_data);
+//    }
+    $datar['statuCode']=$status;
+    $datar['data'] = $extend_data;
+    header("Content-Type: application/json; charset=utf-8");
+    if(!empty($_GET['callback'])) {
+        echo $_GET['callback'].'('.json_encode($datar).')';die;
+    } else {
+        echo json_encode($datar);die;
+    }
+}
+
+function output_error($message, $extend_data = array()) {
+    $datas = array('error' => $message);
+    output_data_error($datas, $extend_data);
+}
+
+function output_special_code($code,$datas){
+    $data['statuCode'] = !empty($code)?$code:'10500';
+    header("Content-Type: application/json; charset=utf-8");
+
+    $data['datas'] = $datas;
+
+    echo json_encode($data);die; 
+}
+
+function output_suc($message, $extend_data = array()) {
+    $datas = array('success' => $message);
+    output_data($datas, $extend_data);
+}
+
+
+function mobile_page($page_count) {
+    //输出是否有下一页
+    $extend_data = array();
+    $current_page = intval($_GET['curpage']);
+    if($current_page <= 0) {
+        $current_page = 1;
+    }
+    if($current_page >= $page_count) {
+        $extend_data['hasmore'] = false;
+    } else {
+        $extend_data['hasmore'] = true;
+    }
+    $extend_data['page_total'] = $page_count;
+    return $extend_data;
+}
+
+
+function work_count_cmp1($a,$b) {
+    if ($a['work_count'] == $b['work_count']) return 0;
+    return ($a['work_count'] > $b['work_count']) ? -1 : 1;
+}
+
+function objectToArray($e){
+    $e=(array)$e;
+    foreach ($e as $key => $v) {
+        if(gettype($v)=='resource') return;
+        if(gettype($v)=='object'||gettype($v)=='array'){
+            $e[$k]=(array)objectToArray($v);
+        }
+    }
+return $e;
+}
+
+function OTA($e){
+    $e=(array)$e;
+    foreach ($e as $key => $v) { 
+        if(gettype($v)=='resource') return;
+        if(gettype($v)=='object'||gettype($v)=='array'){
+            $e[$key]=(array)OTA($v);
+        }
+    }
+return $e;
+}
+
+
+function request_json() {
+    
+
+}
+
+function objectToArrayAndRequest($e){
+    $e=(array)$e;
+    foreach ($e as $key => $v) {
+        if(gettype($v)=='resource') return;
+        if(gettype($v)=='object'||gettype($v)=='array'){
+            $e[$k]=(array)objectToArray($v);
+        }
+        $_REQUEST[$k]=$v;
+    }
+//return $e;
+}
+
+function arrays_values($e){
+    $ey=  array_values($e);
+    foreach ($ey as $value) {
+       $ey['children']= array_values($value['children']);
+    }
+    
+    return $ey;
+//return $e;
+}
