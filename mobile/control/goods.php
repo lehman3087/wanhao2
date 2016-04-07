@@ -69,7 +69,8 @@ class goodsControl extends mobileHomeControl{
         
         //所需字段
         $fieldstr = "gc_id_1,gc_id_2,brand_id,goods_id,gc_id,goods_freight,goods_commonid,store_id,goods_name,goods_price,goods_marketprice,goods_image,goods_salenum,evaluation_good_star,evaluation_count";
-        
+       // $fields = "goods_id,goods_commonid,goods_name,goods_jingle,gc_id,store_id,store_name,goods_price,goods_promotion_price,goods_promotion_type,goods_marketprice,goods_storage,goods_image,goods_freight,goods_salenum,color_id,evaluation_good_star,evaluation_count,is_virtual,is_fcode,is_appoint,is_presell,have_gift";
+
         // 添加3个状态字段
         $fieldstr .= ',is_virtual,is_presell,is_fcode,have_gift';
         
