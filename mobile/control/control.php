@@ -41,7 +41,9 @@ class mobileControl{
        $postdata = file_get_contents("php://input");
         $post=json_decode($postdata);
         $arr=OTA($post);
+       
         $_REQUEST = array_merge($_REQUEST,$arr);
+         $_GET['curpage']=$_REQUEST['curpage'];
     }
 
 

@@ -36,6 +36,7 @@ class goodsControl extends mobileHomeControl{
         $condition=$this->_dealCondition($_REQUEST['conditions']);
         
         
+       
         //Model('log').insert();
         //查询条件
        // $condition = array();

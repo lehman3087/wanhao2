@@ -90,6 +90,7 @@ function output_suc($message, $extend_data = array()) {
 
 function mobile_page($page_count) {
     //输出是否有下一页
+   
     $extend_data = array();
     $current_page = intval($_REQUEST['curpage']);
     if($current_page <= 0) {
