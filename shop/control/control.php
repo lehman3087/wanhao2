@@ -17,7 +17,9 @@ class Control{
         //判断cookie是否存在
         $cookie_name = 'msgnewnum'.$_SESSION['member_id'];
         if (cookie($cookie_name) != null){
+            
             $countnum = intval(cookie($cookie_name));
+            
         }else {
             $message_model = Model('message');
             $countnum = $message_model->countNewMessage($_SESSION['member_id']);

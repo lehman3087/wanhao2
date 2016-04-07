@@ -142,3 +142,695 @@ ERR: SELECT CONCAT(goods_commonid) as nc_distinct ,gc_id_1,gc_id_2,brand_id,good
 ERR: SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( start_time < '1460018688' ) AND ( end_time > '1460018688' ) AND ( goods_commonid IN ('100309','100308','100307','100306','100305','100304','100303','100302','100301','100300','100299','100298','100297','100296','100295','100294','100293','100292','100291','100290') ) ORDER BY groupbuy_id desc LIMIT 1000   [ RunTime:1,460,018,688.634641s ]SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( start_time < '1460018688' ) AND ( end_time > '1460018688' ) AND ( goods_commonid IN ('100309','100308','100307','100306','100305','100304','100303','100302','100301','100300','100299','100298','100297','100296','100295','100294','100293','100292','100291','100290') ) ORDER BY groupbuy_id desc LIMIT 1000  
 [2016-04-07 16:44:48] /33hao/mobile/index.php?act=goods&op=goods_list ( act=goods&op=goods_list ) 
 ERR: SELECT * FROM `33hao_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time < '1460018688' ) AND ( end_time > '1460018688' ) AND ( goods_id IN ('475','474','473','472','471','470','469','468','467','466','465','464','463','462','461','460','459','458','457','456') ) ORDER BY xianshi_goods_id desc LIMIT 1000   [ RunTime:1,460,018,688.634641s ]SELECT * FROM `33hao_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time < '1460018688' ) AND ( end_time > '1460018688' ) AND ( goods_id IN ('475','474','473','472','471','470','469','468','467','466','465','464','463','462','461','460','459','458','457','456') ) ORDER BY xianshi_goods_id desc LIMIT 1000  
+[2016-04-07 17:58:42] /33hao/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( start_time < '1460023122' ) AND ( end_time > '1460023122' ) ORDER BY recommended desc LIMIT 4   [ RunTime:1,460,023,122.712059s ]SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( start_time < '1460023122' ) AND ( end_time > '1460023122' ) ORDER BY recommended desc LIMIT 4  
+[2016-04-07 17:58:42] /33hao/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_link` as `link`   order by link_id [ RunTime:1,460,023,122.712059s ]SELECT * FROM `33hao_link` as `link`   order by link_id
+[2016-04-07 17:58:42] /33hao/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time < '1460023122' ) AND ( end_time > '1460023122' ) ORDER BY xianshi_recommend desc LIMIT 4   [ RunTime:1,460,023,122.712059s ]SELECT * FROM `33hao_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time < '1460023122' ) AND ( end_time > '1460023122' ) ORDER BY xianshi_recommend desc LIMIT 4  
+[2016-04-07 17:58:43] /33hao/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_web` WHERE ( web_show = '1' ) AND ( web_page LIKE 'index%' ) ORDER BY web_sort LIMIT 1000   [ RunTime:1,460,023,122.712059s ]SELECT * FROM `33hao_web` WHERE ( web_show = '1' ) AND ( web_page LIKE 'index%' ) ORDER BY web_sort LIMIT 1000  
+[2016-04-07 17:58:43] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( start_time < '1460023123' ) AND ( end_time > '1460023123' ) ORDER BY recommended desc LIMIT 4   [ RunTime:1,460,023,123.645624s ]SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( start_time < '1460023123' ) AND ( end_time > '1460023123' ) ORDER BY recommended desc LIMIT 4  
+[2016-04-07 17:58:43] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_link` as `link`   order by link_id [ RunTime:1,460,023,123.645624s ]SELECT * FROM `33hao_link` as `link`   order by link_id
+[2016-04-07 17:58:43] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time < '1460023123' ) AND ( end_time > '1460023123' ) ORDER BY xianshi_recommend desc LIMIT 4   [ RunTime:1,460,023,123.645624s ]SELECT * FROM `33hao_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time < '1460023123' ) AND ( end_time > '1460023123' ) ORDER BY xianshi_recommend desc LIMIT 4  
+[2016-04-07 17:58:44] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_web` WHERE ( web_show = '1' ) AND ( web_page LIKE 'index%' ) ORDER BY web_sort LIMIT 1000   [ RunTime:1,460,023,123.645624s ]SELECT * FROM `33hao_web` WHERE ( web_show = '1' ) AND ( web_page LIKE 'index%' ) ORDER BY web_sort LIMIT 1000  
+[2016-04-07 17:58:44] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( start_time < '1460023124' ) AND ( end_time > '1460023124' ) ORDER BY recommended desc LIMIT 4   [ RunTime:1,460,023,124.506157s ]SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( start_time < '1460023124' ) AND ( end_time > '1460023124' ) ORDER BY recommended desc LIMIT 4  
+[2016-04-07 17:58:44] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_link` as `link`   order by link_id [ RunTime:1,460,023,124.506157s ]SELECT * FROM `33hao_link` as `link`   order by link_id
+[2016-04-07 17:58:44] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time < '1460023124' ) AND ( end_time > '1460023124' ) ORDER BY xianshi_recommend desc LIMIT 4   [ RunTime:1,460,023,124.506157s ]SELECT * FROM `33hao_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time < '1460023124' ) AND ( end_time > '1460023124' ) ORDER BY xianshi_recommend desc LIMIT 4  
+[2016-04-07 17:58:44] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_web` WHERE ( web_show = '1' ) AND ( web_page LIKE 'index%' ) ORDER BY web_sort LIMIT 1000   [ RunTime:1,460,023,124.506157s ]SELECT * FROM `33hao_web` WHERE ( web_show = '1' ) AND ( web_page LIKE 'index%' ) ORDER BY web_sort LIMIT 1000  
+[2016-04-07 17:58:45] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( start_time < '1460023124' ) AND ( end_time > '1460023124' ) ORDER BY recommended desc LIMIT 4   [ RunTime:1,460,023,125.356332s ]SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( start_time < '1460023124' ) AND ( end_time > '1460023124' ) ORDER BY recommended desc LIMIT 4  
+[2016-04-07 17:58:45] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_link` as `link`   order by link_id [ RunTime:1,460,023,125.356332s ]SELECT * FROM `33hao_link` as `link`   order by link_id
+[2016-04-07 17:58:45] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time < '1460023124' ) AND ( end_time > '1460023124' ) ORDER BY xianshi_recommend desc LIMIT 4   [ RunTime:1,460,023,125.356332s ]SELECT * FROM `33hao_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time < '1460023124' ) AND ( end_time > '1460023124' ) ORDER BY xianshi_recommend desc LIMIT 4  
+[2016-04-07 17:58:45] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_web` WHERE ( web_show = '1' ) AND ( web_page LIKE 'index%' ) ORDER BY web_sort LIMIT 1000   [ RunTime:1,460,023,125.356332s ]SELECT * FROM `33hao_web` WHERE ( web_show = '1' ) AND ( web_page LIKE 'index%' ) ORDER BY web_sort LIMIT 1000  
+[2016-04-07 17:58:46] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( start_time < '1460023125' ) AND ( end_time > '1460023125' ) ORDER BY recommended desc LIMIT 4   [ RunTime:1,460,023,126.206077s ]SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( start_time < '1460023125' ) AND ( end_time > '1460023125' ) ORDER BY recommended desc LIMIT 4  
+[2016-04-07 17:58:46] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_link` as `link`   order by link_id [ RunTime:1,460,023,126.206077s ]SELECT * FROM `33hao_link` as `link`   order by link_id
+[2016-04-07 17:58:46] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time < '1460023125' ) AND ( end_time > '1460023125' ) ORDER BY xianshi_recommend desc LIMIT 4   [ RunTime:1,460,023,126.206077s ]SELECT * FROM `33hao_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time < '1460023125' ) AND ( end_time > '1460023125' ) ORDER BY xianshi_recommend desc LIMIT 4  
+[2016-04-07 17:58:46] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_web` WHERE ( web_show = '1' ) AND ( web_page LIKE 'index%' ) ORDER BY web_sort LIMIT 1000   [ RunTime:1,460,023,126.206077s ]SELECT * FROM `33hao_web` WHERE ( web_show = '1' ) AND ( web_page LIKE 'index%' ) ORDER BY web_sort LIMIT 1000  
+[2016-04-07 17:58:47] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( start_time < '1460023126' ) AND ( end_time > '1460023126' ) ORDER BY recommended desc LIMIT 4   [ RunTime:1,460,023,127.092029s ]SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( start_time < '1460023126' ) AND ( end_time > '1460023126' ) ORDER BY recommended desc LIMIT 4  
+[2016-04-07 17:58:47] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_link` as `link`   order by link_id [ RunTime:1,460,023,127.092029s ]SELECT * FROM `33hao_link` as `link`   order by link_id
+[2016-04-07 17:58:47] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time < '1460023126' ) AND ( end_time > '1460023126' ) ORDER BY xianshi_recommend desc LIMIT 4   [ RunTime:1,460,023,127.092029s ]SELECT * FROM `33hao_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time < '1460023126' ) AND ( end_time > '1460023126' ) ORDER BY xianshi_recommend desc LIMIT 4  
+[2016-04-07 17:58:47] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_web` WHERE ( web_show = '1' ) AND ( web_page LIKE 'index%' ) ORDER BY web_sort LIMIT 1000   [ RunTime:1,460,023,127.092029s ]SELECT * FROM `33hao_web` WHERE ( web_show = '1' ) AND ( web_page LIKE 'index%' ) ORDER BY web_sort LIMIT 1000  
+[2016-04-07 17:58:47] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( start_time < '1460023127' ) AND ( end_time > '1460023127' ) ORDER BY recommended desc LIMIT 4   [ RunTime:1,460,023,127.940479s ]SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( start_time < '1460023127' ) AND ( end_time > '1460023127' ) ORDER BY recommended desc LIMIT 4  
+[2016-04-07 17:58:48] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_link` as `link`   order by link_id [ RunTime:1,460,023,127.940479s ]SELECT * FROM `33hao_link` as `link`   order by link_id
+[2016-04-07 17:58:48] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time < '1460023127' ) AND ( end_time > '1460023127' ) ORDER BY xianshi_recommend desc LIMIT 4   [ RunTime:1,460,023,127.940479s ]SELECT * FROM `33hao_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time < '1460023127' ) AND ( end_time > '1460023127' ) ORDER BY xianshi_recommend desc LIMIT 4  
+[2016-04-07 17:58:48] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_web` WHERE ( web_show = '1' ) AND ( web_page LIKE 'index%' ) ORDER BY web_sort LIMIT 1000   [ RunTime:1,460,023,127.940479s ]SELECT * FROM `33hao_web` WHERE ( web_show = '1' ) AND ( web_page LIKE 'index%' ) ORDER BY web_sort LIMIT 1000  
+[2016-04-07 17:58:48] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( start_time < '1460023128' ) AND ( end_time > '1460023128' ) ORDER BY recommended desc LIMIT 4   [ RunTime:1,460,023,128.777607s ]SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( start_time < '1460023128' ) AND ( end_time > '1460023128' ) ORDER BY recommended desc LIMIT 4  
+[2016-04-07 17:58:48] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_link` as `link`   order by link_id [ RunTime:1,460,023,128.777607s ]SELECT * FROM `33hao_link` as `link`   order by link_id
+[2016-04-07 17:58:48] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time < '1460023128' ) AND ( end_time > '1460023128' ) ORDER BY xianshi_recommend desc LIMIT 4   [ RunTime:1,460,023,128.777607s ]SELECT * FROM `33hao_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time < '1460023128' ) AND ( end_time > '1460023128' ) ORDER BY xianshi_recommend desc LIMIT 4  
+[2016-04-07 17:58:49] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_web` WHERE ( web_show = '1' ) AND ( web_page LIKE 'index%' ) ORDER BY web_sort LIMIT 1000   [ RunTime:1,460,023,128.777607s ]SELECT * FROM `33hao_web` WHERE ( web_show = '1' ) AND ( web_page LIKE 'index%' ) ORDER BY web_sort LIMIT 1000  
+[2016-04-07 17:58:49] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( start_time < '1460023129' ) AND ( end_time > '1460023129' ) ORDER BY recommended desc LIMIT 4   [ RunTime:1,460,023,129.628234s ]SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( start_time < '1460023129' ) AND ( end_time > '1460023129' ) ORDER BY recommended desc LIMIT 4  
+[2016-04-07 17:58:49] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_link` as `link`   order by link_id [ RunTime:1,460,023,129.628234s ]SELECT * FROM `33hao_link` as `link`   order by link_id
+[2016-04-07 17:58:49] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time < '1460023129' ) AND ( end_time > '1460023129' ) ORDER BY xianshi_recommend desc LIMIT 4   [ RunTime:1,460,023,129.628234s ]SELECT * FROM `33hao_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time < '1460023129' ) AND ( end_time > '1460023129' ) ORDER BY xianshi_recommend desc LIMIT 4  
+[2016-04-07 17:58:50] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_web` WHERE ( web_show = '1' ) AND ( web_page LIKE 'index%' ) ORDER BY web_sort LIMIT 1000   [ RunTime:1,460,023,129.628234s ]SELECT * FROM `33hao_web` WHERE ( web_show = '1' ) AND ( web_page LIKE 'index%' ) ORDER BY web_sort LIMIT 1000  
+[2016-04-07 17:58:50] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( start_time < '1460023130' ) AND ( end_time > '1460023130' ) ORDER BY recommended desc LIMIT 4   [ RunTime:1,460,023,130.577025s ]SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( start_time < '1460023130' ) AND ( end_time > '1460023130' ) ORDER BY recommended desc LIMIT 4  
+[2016-04-07 17:58:50] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_link` as `link`   order by link_id [ RunTime:1,460,023,130.577025s ]SELECT * FROM `33hao_link` as `link`   order by link_id
+[2016-04-07 17:58:50] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time < '1460023130' ) AND ( end_time > '1460023130' ) ORDER BY xianshi_recommend desc LIMIT 4   [ RunTime:1,460,023,130.577025s ]SELECT * FROM `33hao_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time < '1460023130' ) AND ( end_time > '1460023130' ) ORDER BY xianshi_recommend desc LIMIT 4  
+[2016-04-07 17:58:51] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_web` WHERE ( web_show = '1' ) AND ( web_page LIKE 'index%' ) ORDER BY web_sort LIMIT 1000   [ RunTime:1,460,023,130.577025s ]SELECT * FROM `33hao_web` WHERE ( web_show = '1' ) AND ( web_page LIKE 'index%' ) ORDER BY web_sort LIMIT 1000  
+[2016-04-07 17:58:51] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( start_time < '1460023131' ) AND ( end_time > '1460023131' ) ORDER BY recommended desc LIMIT 4   [ RunTime:1,460,023,131.526416s ]SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( start_time < '1460023131' ) AND ( end_time > '1460023131' ) ORDER BY recommended desc LIMIT 4  
+[2016-04-07 17:58:51] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_link` as `link`   order by link_id [ RunTime:1,460,023,131.526416s ]SELECT * FROM `33hao_link` as `link`   order by link_id
+[2016-04-07 17:58:51] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time < '1460023131' ) AND ( end_time > '1460023131' ) ORDER BY xianshi_recommend desc LIMIT 4   [ RunTime:1,460,023,131.526416s ]SELECT * FROM `33hao_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time < '1460023131' ) AND ( end_time > '1460023131' ) ORDER BY xianshi_recommend desc LIMIT 4  
+[2016-04-07 17:58:51] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_web` WHERE ( web_show = '1' ) AND ( web_page LIKE 'index%' ) ORDER BY web_sort LIMIT 1000   [ RunTime:1,460,023,131.526416s ]SELECT * FROM `33hao_web` WHERE ( web_show = '1' ) AND ( web_page LIKE 'index%' ) ORDER BY web_sort LIMIT 1000  
+[2016-04-07 17:58:52] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( start_time < '1460023132' ) AND ( end_time > '1460023132' ) ORDER BY recommended desc LIMIT 4   [ RunTime:1,460,023,132.741710s ]SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( start_time < '1460023132' ) AND ( end_time > '1460023132' ) ORDER BY recommended desc LIMIT 4  
+[2016-04-07 17:58:52] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_link` as `link`   order by link_id [ RunTime:1,460,023,132.741710s ]SELECT * FROM `33hao_link` as `link`   order by link_id
+[2016-04-07 17:58:52] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time < '1460023132' ) AND ( end_time > '1460023132' ) ORDER BY xianshi_recommend desc LIMIT 4   [ RunTime:1,460,023,132.741710s ]SELECT * FROM `33hao_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time < '1460023132' ) AND ( end_time > '1460023132' ) ORDER BY xianshi_recommend desc LIMIT 4  
+[2016-04-07 17:58:53] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_web` WHERE ( web_show = '1' ) AND ( web_page LIKE 'index%' ) ORDER BY web_sort LIMIT 1000   [ RunTime:1,460,023,132.741710s ]SELECT * FROM `33hao_web` WHERE ( web_show = '1' ) AND ( web_page LIKE 'index%' ) ORDER BY web_sort LIMIT 1000  
+[2016-04-07 17:58:53] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( start_time < '1460023133' ) AND ( end_time > '1460023133' ) ORDER BY recommended desc LIMIT 4   [ RunTime:1,460,023,133.602972s ]SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( start_time < '1460023133' ) AND ( end_time > '1460023133' ) ORDER BY recommended desc LIMIT 4  
+[2016-04-07 17:58:53] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_link` as `link`   order by link_id [ RunTime:1,460,023,133.602972s ]SELECT * FROM `33hao_link` as `link`   order by link_id
+[2016-04-07 17:58:53] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time < '1460023133' ) AND ( end_time > '1460023133' ) ORDER BY xianshi_recommend desc LIMIT 4   [ RunTime:1,460,023,133.602972s ]SELECT * FROM `33hao_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time < '1460023133' ) AND ( end_time > '1460023133' ) ORDER BY xianshi_recommend desc LIMIT 4  
+[2016-04-07 17:58:54] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_web` WHERE ( web_show = '1' ) AND ( web_page LIKE 'index%' ) ORDER BY web_sort LIMIT 1000   [ RunTime:1,460,023,133.602972s ]SELECT * FROM `33hao_web` WHERE ( web_show = '1' ) AND ( web_page LIKE 'index%' ) ORDER BY web_sort LIMIT 1000  
+[2016-04-07 17:58:54] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( start_time < '1460023134' ) AND ( end_time > '1460023134' ) ORDER BY recommended desc LIMIT 4   [ RunTime:1,460,023,134.436569s ]SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( start_time < '1460023134' ) AND ( end_time > '1460023134' ) ORDER BY recommended desc LIMIT 4  
+[2016-04-07 17:58:54] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_link` as `link`   order by link_id [ RunTime:1,460,023,134.436569s ]SELECT * FROM `33hao_link` as `link`   order by link_id
+[2016-04-07 17:58:54] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time < '1460023134' ) AND ( end_time > '1460023134' ) ORDER BY xianshi_recommend desc LIMIT 4   [ RunTime:1,460,023,134.436569s ]SELECT * FROM `33hao_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time < '1460023134' ) AND ( end_time > '1460023134' ) ORDER BY xianshi_recommend desc LIMIT 4  
+[2016-04-07 17:58:54] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_web` WHERE ( web_show = '1' ) AND ( web_page LIKE 'index%' ) ORDER BY web_sort LIMIT 1000   [ RunTime:1,460,023,134.436569s ]SELECT * FROM `33hao_web` WHERE ( web_show = '1' ) AND ( web_page LIKE 'index%' ) ORDER BY web_sort LIMIT 1000  
+[2016-04-07 17:58:55] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( start_time < '1460023134' ) AND ( end_time > '1460023134' ) ORDER BY recommended desc LIMIT 4   [ RunTime:1,460,023,135.281330s ]SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( start_time < '1460023134' ) AND ( end_time > '1460023134' ) ORDER BY recommended desc LIMIT 4  
+[2016-04-07 17:58:55] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_link` as `link`   order by link_id [ RunTime:1,460,023,135.281330s ]SELECT * FROM `33hao_link` as `link`   order by link_id
+[2016-04-07 17:58:55] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time < '1460023134' ) AND ( end_time > '1460023134' ) ORDER BY xianshi_recommend desc LIMIT 4   [ RunTime:1,460,023,135.281330s ]SELECT * FROM `33hao_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time < '1460023134' ) AND ( end_time > '1460023134' ) ORDER BY xianshi_recommend desc LIMIT 4  
+[2016-04-07 17:58:55] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_web` WHERE ( web_show = '1' ) AND ( web_page LIKE 'index%' ) ORDER BY web_sort LIMIT 1000   [ RunTime:1,460,023,135.281330s ]SELECT * FROM `33hao_web` WHERE ( web_show = '1' ) AND ( web_page LIKE 'index%' ) ORDER BY web_sort LIMIT 1000  
+[2016-04-07 17:58:56] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( start_time < '1460023135' ) AND ( end_time > '1460023135' ) ORDER BY recommended desc LIMIT 4   [ RunTime:1,460,023,136.171390s ]SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( start_time < '1460023135' ) AND ( end_time > '1460023135' ) ORDER BY recommended desc LIMIT 4  
+[2016-04-07 17:58:56] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_link` as `link`   order by link_id [ RunTime:1,460,023,136.171390s ]SELECT * FROM `33hao_link` as `link`   order by link_id
+[2016-04-07 17:58:56] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time < '1460023135' ) AND ( end_time > '1460023135' ) ORDER BY xianshi_recommend desc LIMIT 4   [ RunTime:1,460,023,136.171390s ]SELECT * FROM `33hao_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time < '1460023135' ) AND ( end_time > '1460023135' ) ORDER BY xianshi_recommend desc LIMIT 4  
+[2016-04-07 17:58:56] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_web` WHERE ( web_show = '1' ) AND ( web_page LIKE 'index%' ) ORDER BY web_sort LIMIT 1000   [ RunTime:1,460,023,136.171390s ]SELECT * FROM `33hao_web` WHERE ( web_show = '1' ) AND ( web_page LIKE 'index%' ) ORDER BY web_sort LIMIT 1000  
+[2016-04-07 17:58:57] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( start_time < '1460023136' ) AND ( end_time > '1460023136' ) ORDER BY recommended desc LIMIT 4   [ RunTime:1,460,023,137.112259s ]SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( start_time < '1460023136' ) AND ( end_time > '1460023136' ) ORDER BY recommended desc LIMIT 4  
+[2016-04-07 17:58:57] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_link` as `link`   order by link_id [ RunTime:1,460,023,137.112259s ]SELECT * FROM `33hao_link` as `link`   order by link_id
+[2016-04-07 17:58:57] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time < '1460023136' ) AND ( end_time > '1460023136' ) ORDER BY xianshi_recommend desc LIMIT 4   [ RunTime:1,460,023,137.112259s ]SELECT * FROM `33hao_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time < '1460023136' ) AND ( end_time > '1460023136' ) ORDER BY xianshi_recommend desc LIMIT 4  
+[2016-04-07 17:58:57] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_web` WHERE ( web_show = '1' ) AND ( web_page LIKE 'index%' ) ORDER BY web_sort LIMIT 1000   [ RunTime:1,460,023,137.112259s ]SELECT * FROM `33hao_web` WHERE ( web_show = '1' ) AND ( web_page LIKE 'index%' ) ORDER BY web_sort LIMIT 1000  
+[2016-04-07 17:58:58] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( start_time < '1460023137' ) AND ( end_time > '1460023137' ) ORDER BY recommended desc LIMIT 4   [ RunTime:1,460,023,138.015907s ]SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( start_time < '1460023137' ) AND ( end_time > '1460023137' ) ORDER BY recommended desc LIMIT 4  
+[2016-04-07 17:58:58] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_link` as `link`   order by link_id [ RunTime:1,460,023,138.015907s ]SELECT * FROM `33hao_link` as `link`   order by link_id
+[2016-04-07 17:58:58] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time < '1460023137' ) AND ( end_time > '1460023137' ) ORDER BY xianshi_recommend desc LIMIT 4   [ RunTime:1,460,023,138.015907s ]SELECT * FROM `33hao_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time < '1460023137' ) AND ( end_time > '1460023137' ) ORDER BY xianshi_recommend desc LIMIT 4  
+[2016-04-07 17:58:58] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_web` WHERE ( web_show = '1' ) AND ( web_page LIKE 'index%' ) ORDER BY web_sort LIMIT 1000   [ RunTime:1,460,023,138.015907s ]SELECT * FROM `33hao_web` WHERE ( web_show = '1' ) AND ( web_page LIKE 'index%' ) ORDER BY web_sort LIMIT 1000  
+[2016-04-07 17:58:59] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( start_time < '1460023138' ) AND ( end_time > '1460023138' ) ORDER BY recommended desc LIMIT 4   [ RunTime:1,460,023,139.394839s ]SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( start_time < '1460023138' ) AND ( end_time > '1460023138' ) ORDER BY recommended desc LIMIT 4  
+[2016-04-07 17:58:59] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_link` as `link`   order by link_id [ RunTime:1,460,023,139.394839s ]SELECT * FROM `33hao_link` as `link`   order by link_id
+[2016-04-07 17:58:59] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time < '1460023138' ) AND ( end_time > '1460023138' ) ORDER BY xianshi_recommend desc LIMIT 4   [ RunTime:1,460,023,139.394839s ]SELECT * FROM `33hao_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time < '1460023138' ) AND ( end_time > '1460023138' ) ORDER BY xianshi_recommend desc LIMIT 4  
+[2016-04-07 17:58:59] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_web` WHERE ( web_show = '1' ) AND ( web_page LIKE 'index%' ) ORDER BY web_sort LIMIT 1000   [ RunTime:1,460,023,139.394839s ]SELECT * FROM `33hao_web` WHERE ( web_show = '1' ) AND ( web_page LIKE 'index%' ) ORDER BY web_sort LIMIT 1000  
+[2016-04-07 17:59:00] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( start_time < '1460023139' ) AND ( end_time > '1460023139' ) ORDER BY recommended desc LIMIT 4   [ RunTime:1,460,023,140.253149s ]SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( start_time < '1460023139' ) AND ( end_time > '1460023139' ) ORDER BY recommended desc LIMIT 4  
+[2016-04-07 17:59:00] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_link` as `link`   order by link_id [ RunTime:1,460,023,140.253149s ]SELECT * FROM `33hao_link` as `link`   order by link_id
+[2016-04-07 17:59:00] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time < '1460023139' ) AND ( end_time > '1460023139' ) ORDER BY xianshi_recommend desc LIMIT 4   [ RunTime:1,460,023,140.253149s ]SELECT * FROM `33hao_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time < '1460023139' ) AND ( end_time > '1460023139' ) ORDER BY xianshi_recommend desc LIMIT 4  
+[2016-04-07 17:59:00] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_web` WHERE ( web_show = '1' ) AND ( web_page LIKE 'index%' ) ORDER BY web_sort LIMIT 1000   [ RunTime:1,460,023,140.253149s ]SELECT * FROM `33hao_web` WHERE ( web_show = '1' ) AND ( web_page LIKE 'index%' ) ORDER BY web_sort LIMIT 1000  
+[2016-04-07 17:59:01] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( start_time < '1460023140' ) AND ( end_time > '1460023140' ) ORDER BY recommended desc LIMIT 4   [ RunTime:1,460,023,141.131161s ]SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( start_time < '1460023140' ) AND ( end_time > '1460023140' ) ORDER BY recommended desc LIMIT 4  
+[2016-04-07 17:59:01] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_link` as `link`   order by link_id [ RunTime:1,460,023,141.131161s ]SELECT * FROM `33hao_link` as `link`   order by link_id
+[2016-04-07 17:59:01] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time < '1460023140' ) AND ( end_time > '1460023140' ) ORDER BY xianshi_recommend desc LIMIT 4   [ RunTime:1,460,023,141.131161s ]SELECT * FROM `33hao_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time < '1460023140' ) AND ( end_time > '1460023140' ) ORDER BY xianshi_recommend desc LIMIT 4  
+[2016-04-07 17:59:01] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_web` WHERE ( web_show = '1' ) AND ( web_page LIKE 'index%' ) ORDER BY web_sort LIMIT 1000   [ RunTime:1,460,023,141.131161s ]SELECT * FROM `33hao_web` WHERE ( web_show = '1' ) AND ( web_page LIKE 'index%' ) ORDER BY web_sort LIMIT 1000  
+[2016-04-07 17:59:02] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( start_time < '1460023141' ) AND ( end_time > '1460023141' ) ORDER BY recommended desc LIMIT 4   [ RunTime:1,460,023,142.046958s ]SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( start_time < '1460023141' ) AND ( end_time > '1460023141' ) ORDER BY recommended desc LIMIT 4  
+[2016-04-07 17:59:02] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_link` as `link`   order by link_id [ RunTime:1,460,023,142.046958s ]SELECT * FROM `33hao_link` as `link`   order by link_id
+[2016-04-07 17:59:02] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time < '1460023141' ) AND ( end_time > '1460023141' ) ORDER BY xianshi_recommend desc LIMIT 4   [ RunTime:1,460,023,142.046958s ]SELECT * FROM `33hao_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time < '1460023141' ) AND ( end_time > '1460023141' ) ORDER BY xianshi_recommend desc LIMIT 4  
+[2016-04-07 17:59:02] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_web` WHERE ( web_show = '1' ) AND ( web_page LIKE 'index%' ) ORDER BY web_sort LIMIT 1000   [ RunTime:1,460,023,142.046958s ]SELECT * FROM `33hao_web` WHERE ( web_show = '1' ) AND ( web_page LIKE 'index%' ) ORDER BY web_sort LIMIT 1000  
+[2016-04-07 17:59:02] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( start_time < '1460023142' ) AND ( end_time > '1460023142' ) ORDER BY recommended desc LIMIT 4   [ RunTime:1,460,023,142.935390s ]SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( start_time < '1460023142' ) AND ( end_time > '1460023142' ) ORDER BY recommended desc LIMIT 4  
+[2016-04-07 17:59:03] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_link` as `link`   order by link_id [ RunTime:1,460,023,142.935390s ]SELECT * FROM `33hao_link` as `link`   order by link_id
+[2016-04-07 17:59:03] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time < '1460023142' ) AND ( end_time > '1460023142' ) ORDER BY xianshi_recommend desc LIMIT 4   [ RunTime:1,460,023,142.935390s ]SELECT * FROM `33hao_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time < '1460023142' ) AND ( end_time > '1460023142' ) ORDER BY xianshi_recommend desc LIMIT 4  
+[2016-04-07 17:59:03] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_web` WHERE ( web_show = '1' ) AND ( web_page LIKE 'index%' ) ORDER BY web_sort LIMIT 1000   [ RunTime:1,460,023,142.935390s ]SELECT * FROM `33hao_web` WHERE ( web_show = '1' ) AND ( web_page LIKE 'index%' ) ORDER BY web_sort LIMIT 1000  
+[2016-04-07 17:59:04] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( start_time < '1460023143' ) AND ( end_time > '1460023143' ) ORDER BY recommended desc LIMIT 4   [ RunTime:1,460,023,144.128797s ]SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( start_time < '1460023143' ) AND ( end_time > '1460023143' ) ORDER BY recommended desc LIMIT 4  
+[2016-04-07 17:59:04] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_link` as `link`   order by link_id [ RunTime:1,460,023,144.128797s ]SELECT * FROM `33hao_link` as `link`   order by link_id
+[2016-04-07 17:59:04] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time < '1460023143' ) AND ( end_time > '1460023143' ) ORDER BY xianshi_recommend desc LIMIT 4   [ RunTime:1,460,023,144.128797s ]SELECT * FROM `33hao_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time < '1460023143' ) AND ( end_time > '1460023143' ) ORDER BY xianshi_recommend desc LIMIT 4  
+[2016-04-07 17:59:04] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_web` WHERE ( web_show = '1' ) AND ( web_page LIKE 'index%' ) ORDER BY web_sort LIMIT 1000   [ RunTime:1,460,023,144.128797s ]SELECT * FROM `33hao_web` WHERE ( web_show = '1' ) AND ( web_page LIKE 'index%' ) ORDER BY web_sort LIMIT 1000  
+[2016-04-07 17:59:04] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_brand` WHERE ( brand_recommend = '1' ) AND ( class_id = '1057' ) LIMIT 1000   [ RunTime:1,460,023,144.128797s ]SELECT * FROM `33hao_brand` WHERE ( brand_recommend = '1' ) AND ( class_id = '1057' ) LIMIT 1000  
+[2016-04-07 17:59:04] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_brand` WHERE ( brand_recommend = '1' ) AND ( class_id = '1058' ) LIMIT 1000   [ RunTime:1,460,023,144.128797s ]SELECT * FROM `33hao_brand` WHERE ( brand_recommend = '1' ) AND ( class_id = '1058' ) LIMIT 1000  
+[2016-04-07 17:59:04] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_brand` WHERE ( brand_recommend = '1' ) AND ( class_id = '1073' ) LIMIT 1000   [ RunTime:1,460,023,144.128797s ]SELECT * FROM `33hao_brand` WHERE ( brand_recommend = '1' ) AND ( class_id = '1073' ) LIMIT 1000  
+[2016-04-07 17:59:04] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_brand` WHERE ( brand_recommend = '1' ) AND ( class_id = '1060' ) LIMIT 1000   [ RunTime:1,460,023,144.128797s ]SELECT * FROM `33hao_brand` WHERE ( brand_recommend = '1' ) AND ( class_id = '1060' ) LIMIT 1000  
+[2016-04-07 17:59:10] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( start_time < '1460023149' ) AND ( end_time > '1460023149' ) ORDER BY recommended desc LIMIT 4   [ RunTime:1,460,023,150.421482s ]SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( start_time < '1460023149' ) AND ( end_time > '1460023149' ) ORDER BY recommended desc LIMIT 4  
+[2016-04-07 17:59:10] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_link` as `link`   order by link_id [ RunTime:1,460,023,150.421482s ]SELECT * FROM `33hao_link` as `link`   order by link_id
+[2016-04-07 17:59:10] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time < '1460023149' ) AND ( end_time > '1460023149' ) ORDER BY xianshi_recommend desc LIMIT 4   [ RunTime:1,460,023,150.421482s ]SELECT * FROM `33hao_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time < '1460023149' ) AND ( end_time > '1460023149' ) ORDER BY xianshi_recommend desc LIMIT 4  
+[2016-04-07 17:59:10] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_web` WHERE ( web_show = '1' ) AND ( web_page LIKE 'index%' ) ORDER BY web_sort LIMIT 1000   [ RunTime:1,460,023,150.421482s ]SELECT * FROM `33hao_web` WHERE ( web_show = '1' ) AND ( web_page LIKE 'index%' ) ORDER BY web_sort LIMIT 1000  
+[2016-04-07 17:59:11] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( start_time < '1460023150' ) AND ( end_time > '1460023150' ) ORDER BY recommended desc LIMIT 4   [ RunTime:1,460,023,151.310354s ]SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( start_time < '1460023150' ) AND ( end_time > '1460023150' ) ORDER BY recommended desc LIMIT 4  
+[2016-04-07 17:59:11] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_link` as `link`   order by link_id [ RunTime:1,460,023,151.310354s ]SELECT * FROM `33hao_link` as `link`   order by link_id
+[2016-04-07 17:59:11] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time < '1460023150' ) AND ( end_time > '1460023150' ) ORDER BY xianshi_recommend desc LIMIT 4   [ RunTime:1,460,023,151.310354s ]SELECT * FROM `33hao_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time < '1460023150' ) AND ( end_time > '1460023150' ) ORDER BY xianshi_recommend desc LIMIT 4  
+[2016-04-07 17:59:11] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_web` WHERE ( web_show = '1' ) AND ( web_page LIKE 'index%' ) ORDER BY web_sort LIMIT 1000   [ RunTime:1,460,023,151.310354s ]SELECT * FROM `33hao_web` WHERE ( web_show = '1' ) AND ( web_page LIKE 'index%' ) ORDER BY web_sort LIMIT 1000  
+[2016-04-07 17:59:12] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( start_time < '1460023151' ) AND ( end_time > '1460023151' ) ORDER BY recommended desc LIMIT 4   [ RunTime:1,460,023,152.185827s ]SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( start_time < '1460023151' ) AND ( end_time > '1460023151' ) ORDER BY recommended desc LIMIT 4  
+[2016-04-07 17:59:12] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_link` as `link`   order by link_id [ RunTime:1,460,023,152.185827s ]SELECT * FROM `33hao_link` as `link`   order by link_id
+[2016-04-07 17:59:12] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time < '1460023151' ) AND ( end_time > '1460023151' ) ORDER BY xianshi_recommend desc LIMIT 4   [ RunTime:1,460,023,152.185827s ]SELECT * FROM `33hao_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time < '1460023151' ) AND ( end_time > '1460023151' ) ORDER BY xianshi_recommend desc LIMIT 4  
+[2016-04-07 17:59:12] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_web` WHERE ( web_show = '1' ) AND ( web_page LIKE 'index%' ) ORDER BY web_sort LIMIT 1000   [ RunTime:1,460,023,152.185827s ]SELECT * FROM `33hao_web` WHERE ( web_show = '1' ) AND ( web_page LIKE 'index%' ) ORDER BY web_sort LIMIT 1000  
+[2016-04-07 17:59:13] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( start_time < '1460023152' ) AND ( end_time > '1460023152' ) ORDER BY recommended desc LIMIT 4   [ RunTime:1,460,023,153.051773s ]SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( start_time < '1460023152' ) AND ( end_time > '1460023152' ) ORDER BY recommended desc LIMIT 4  
+[2016-04-07 17:59:13] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_link` as `link`   order by link_id [ RunTime:1,460,023,153.051773s ]SELECT * FROM `33hao_link` as `link`   order by link_id
+[2016-04-07 17:59:13] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time < '1460023152' ) AND ( end_time > '1460023152' ) ORDER BY xianshi_recommend desc LIMIT 4   [ RunTime:1,460,023,153.051773s ]SELECT * FROM `33hao_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time < '1460023152' ) AND ( end_time > '1460023152' ) ORDER BY xianshi_recommend desc LIMIT 4  
+[2016-04-07 17:59:13] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_web` WHERE ( web_show = '1' ) AND ( web_page LIKE 'index%' ) ORDER BY web_sort LIMIT 1000   [ RunTime:1,460,023,153.051773s ]SELECT * FROM `33hao_web` WHERE ( web_show = '1' ) AND ( web_page LIKE 'index%' ) ORDER BY web_sort LIMIT 1000  
+[2016-04-07 17:59:13] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( start_time < '1460023153' ) AND ( end_time > '1460023153' ) ORDER BY recommended desc LIMIT 4   [ RunTime:1,460,023,153.903344s ]SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( start_time < '1460023153' ) AND ( end_time > '1460023153' ) ORDER BY recommended desc LIMIT 4  
+[2016-04-07 17:59:13] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_link` as `link`   order by link_id [ RunTime:1,460,023,153.903344s ]SELECT * FROM `33hao_link` as `link`   order by link_id
+[2016-04-07 17:59:14] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time < '1460023153' ) AND ( end_time > '1460023153' ) ORDER BY xianshi_recommend desc LIMIT 4   [ RunTime:1,460,023,153.903344s ]SELECT * FROM `33hao_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time < '1460023153' ) AND ( end_time > '1460023153' ) ORDER BY xianshi_recommend desc LIMIT 4  
+[2016-04-07 17:59:14] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_web` WHERE ( web_show = '1' ) AND ( web_page LIKE 'index%' ) ORDER BY web_sort LIMIT 1000   [ RunTime:1,460,023,153.903344s ]SELECT * FROM `33hao_web` WHERE ( web_show = '1' ) AND ( web_page LIKE 'index%' ) ORDER BY web_sort LIMIT 1000  
+[2016-04-07 17:59:14] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( start_time < '1460023154' ) AND ( end_time > '1460023154' ) ORDER BY recommended desc LIMIT 4   [ RunTime:1,460,023,154.775664s ]SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( start_time < '1460023154' ) AND ( end_time > '1460023154' ) ORDER BY recommended desc LIMIT 4  
+[2016-04-07 17:59:14] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_link` as `link`   order by link_id [ RunTime:1,460,023,154.775664s ]SELECT * FROM `33hao_link` as `link`   order by link_id
+[2016-04-07 17:59:14] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time < '1460023154' ) AND ( end_time > '1460023154' ) ORDER BY xianshi_recommend desc LIMIT 4   [ RunTime:1,460,023,154.775664s ]SELECT * FROM `33hao_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time < '1460023154' ) AND ( end_time > '1460023154' ) ORDER BY xianshi_recommend desc LIMIT 4  
+[2016-04-07 17:59:15] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_web` WHERE ( web_show = '1' ) AND ( web_page LIKE 'index%' ) ORDER BY web_sort LIMIT 1000   [ RunTime:1,460,023,154.775664s ]SELECT * FROM `33hao_web` WHERE ( web_show = '1' ) AND ( web_page LIKE 'index%' ) ORDER BY web_sort LIMIT 1000  
+[2016-04-07 17:59:15] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( start_time < '1460023155' ) AND ( end_time > '1460023155' ) ORDER BY recommended desc LIMIT 4   [ RunTime:1,460,023,155.658913s ]SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( start_time < '1460023155' ) AND ( end_time > '1460023155' ) ORDER BY recommended desc LIMIT 4  
+[2016-04-07 17:59:15] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_link` as `link`   order by link_id [ RunTime:1,460,023,155.658913s ]SELECT * FROM `33hao_link` as `link`   order by link_id
+[2016-04-07 17:59:15] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time < '1460023155' ) AND ( end_time > '1460023155' ) ORDER BY xianshi_recommend desc LIMIT 4   [ RunTime:1,460,023,155.658913s ]SELECT * FROM `33hao_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time < '1460023155' ) AND ( end_time > '1460023155' ) ORDER BY xianshi_recommend desc LIMIT 4  
+[2016-04-07 17:59:16] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_web` WHERE ( web_show = '1' ) AND ( web_page LIKE 'index%' ) ORDER BY web_sort LIMIT 1000   [ RunTime:1,460,023,155.658913s ]SELECT * FROM `33hao_web` WHERE ( web_show = '1' ) AND ( web_page LIKE 'index%' ) ORDER BY web_sort LIMIT 1000  
+[2016-04-07 17:59:16] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( start_time < '1460023156' ) AND ( end_time > '1460023156' ) ORDER BY recommended desc LIMIT 4   [ RunTime:1,460,023,156.525453s ]SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( start_time < '1460023156' ) AND ( end_time > '1460023156' ) ORDER BY recommended desc LIMIT 4  
+[2016-04-07 17:59:16] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_link` as `link`   order by link_id [ RunTime:1,460,023,156.525453s ]SELECT * FROM `33hao_link` as `link`   order by link_id
+[2016-04-07 17:59:16] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time < '1460023156' ) AND ( end_time > '1460023156' ) ORDER BY xianshi_recommend desc LIMIT 4   [ RunTime:1,460,023,156.525453s ]SELECT * FROM `33hao_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time < '1460023156' ) AND ( end_time > '1460023156' ) ORDER BY xianshi_recommend desc LIMIT 4  
+[2016-04-07 17:59:16] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_web` WHERE ( web_show = '1' ) AND ( web_page LIKE 'index%' ) ORDER BY web_sort LIMIT 1000   [ RunTime:1,460,023,156.525453s ]SELECT * FROM `33hao_web` WHERE ( web_show = '1' ) AND ( web_page LIKE 'index%' ) ORDER BY web_sort LIMIT 1000  
+[2016-04-07 17:59:17] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( start_time < '1460023156' ) AND ( end_time > '1460023156' ) ORDER BY recommended desc LIMIT 4   [ RunTime:1,460,023,157.389224s ]SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( start_time < '1460023156' ) AND ( end_time > '1460023156' ) ORDER BY recommended desc LIMIT 4  
+[2016-04-07 17:59:17] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_link` as `link`   order by link_id [ RunTime:1,460,023,157.389224s ]SELECT * FROM `33hao_link` as `link`   order by link_id
+[2016-04-07 17:59:17] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time < '1460023156' ) AND ( end_time > '1460023156' ) ORDER BY xianshi_recommend desc LIMIT 4   [ RunTime:1,460,023,157.389224s ]SELECT * FROM `33hao_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time < '1460023156' ) AND ( end_time > '1460023156' ) ORDER BY xianshi_recommend desc LIMIT 4  
+[2016-04-07 17:59:17] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_web` WHERE ( web_show = '1' ) AND ( web_page LIKE 'index%' ) ORDER BY web_sort LIMIT 1000   [ RunTime:1,460,023,157.389224s ]SELECT * FROM `33hao_web` WHERE ( web_show = '1' ) AND ( web_page LIKE 'index%' ) ORDER BY web_sort LIMIT 1000  
+[2016-04-07 17:59:18] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( start_time < '1460023157' ) AND ( end_time > '1460023157' ) ORDER BY recommended desc LIMIT 4   [ RunTime:1,460,023,158.231841s ]SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( start_time < '1460023157' ) AND ( end_time > '1460023157' ) ORDER BY recommended desc LIMIT 4  
+[2016-04-07 17:59:18] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_link` as `link`   order by link_id [ RunTime:1,460,023,158.231841s ]SELECT * FROM `33hao_link` as `link`   order by link_id
+[2016-04-07 17:59:18] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time < '1460023157' ) AND ( end_time > '1460023157' ) ORDER BY xianshi_recommend desc LIMIT 4   [ RunTime:1,460,023,158.231841s ]SELECT * FROM `33hao_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time < '1460023157' ) AND ( end_time > '1460023157' ) ORDER BY xianshi_recommend desc LIMIT 4  
+[2016-04-07 17:59:18] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_web` WHERE ( web_show = '1' ) AND ( web_page LIKE 'index%' ) ORDER BY web_sort LIMIT 1000   [ RunTime:1,460,023,158.231841s ]SELECT * FROM `33hao_web` WHERE ( web_show = '1' ) AND ( web_page LIKE 'index%' ) ORDER BY web_sort LIMIT 1000  
+[2016-04-07 17:59:19] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( start_time < '1460023158' ) AND ( end_time > '1460023158' ) ORDER BY recommended desc LIMIT 4   [ RunTime:1,460,023,159.117342s ]SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( start_time < '1460023158' ) AND ( end_time > '1460023158' ) ORDER BY recommended desc LIMIT 4  
+[2016-04-07 17:59:19] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_link` as `link`   order by link_id [ RunTime:1,460,023,159.117342s ]SELECT * FROM `33hao_link` as `link`   order by link_id
+[2016-04-07 17:59:19] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time < '1460023158' ) AND ( end_time > '1460023158' ) ORDER BY xianshi_recommend desc LIMIT 4   [ RunTime:1,460,023,159.117342s ]SELECT * FROM `33hao_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time < '1460023158' ) AND ( end_time > '1460023158' ) ORDER BY xianshi_recommend desc LIMIT 4  
+[2016-04-07 17:59:19] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_web` WHERE ( web_show = '1' ) AND ( web_page LIKE 'index%' ) ORDER BY web_sort LIMIT 1000   [ RunTime:1,460,023,159.117342s ]SELECT * FROM `33hao_web` WHERE ( web_show = '1' ) AND ( web_page LIKE 'index%' ) ORDER BY web_sort LIMIT 1000  
+[2016-04-07 17:59:20] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( start_time < '1460023159' ) AND ( end_time > '1460023159' ) ORDER BY recommended desc LIMIT 4   [ RunTime:1,460,023,160.210199s ]SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( start_time < '1460023159' ) AND ( end_time > '1460023159' ) ORDER BY recommended desc LIMIT 4  
+[2016-04-07 17:59:20] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_link` as `link`   order by link_id [ RunTime:1,460,023,160.210199s ]SELECT * FROM `33hao_link` as `link`   order by link_id
+[2016-04-07 17:59:20] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time < '1460023159' ) AND ( end_time > '1460023159' ) ORDER BY xianshi_recommend desc LIMIT 4   [ RunTime:1,460,023,160.210199s ]SELECT * FROM `33hao_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time < '1460023159' ) AND ( end_time > '1460023159' ) ORDER BY xianshi_recommend desc LIMIT 4  
+[2016-04-07 17:59:20] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_web` WHERE ( web_show = '1' ) AND ( web_page LIKE 'index%' ) ORDER BY web_sort LIMIT 1000   [ RunTime:1,460,023,160.210199s ]SELECT * FROM `33hao_web` WHERE ( web_show = '1' ) AND ( web_page LIKE 'index%' ) ORDER BY web_sort LIMIT 1000  
+[2016-04-07 17:59:21] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( start_time < '1460023160' ) AND ( end_time > '1460023160' ) ORDER BY recommended desc LIMIT 4   [ RunTime:1,460,023,161.172184s ]SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( start_time < '1460023160' ) AND ( end_time > '1460023160' ) ORDER BY recommended desc LIMIT 4  
+[2016-04-07 17:59:21] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_link` as `link`   order by link_id [ RunTime:1,460,023,161.172184s ]SELECT * FROM `33hao_link` as `link`   order by link_id
+[2016-04-07 17:59:21] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time < '1460023160' ) AND ( end_time > '1460023160' ) ORDER BY xianshi_recommend desc LIMIT 4   [ RunTime:1,460,023,161.172184s ]SELECT * FROM `33hao_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time < '1460023160' ) AND ( end_time > '1460023160' ) ORDER BY xianshi_recommend desc LIMIT 4  
+[2016-04-07 17:59:21] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_web` WHERE ( web_show = '1' ) AND ( web_page LIKE 'index%' ) ORDER BY web_sort LIMIT 1000   [ RunTime:1,460,023,161.172184s ]SELECT * FROM `33hao_web` WHERE ( web_show = '1' ) AND ( web_page LIKE 'index%' ) ORDER BY web_sort LIMIT 1000  
+[2016-04-07 17:59:22] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( start_time < '1460023161' ) AND ( end_time > '1460023161' ) ORDER BY recommended desc LIMIT 4   [ RunTime:1,460,023,162.037837s ]SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( start_time < '1460023161' ) AND ( end_time > '1460023161' ) ORDER BY recommended desc LIMIT 4  
+[2016-04-07 17:59:22] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_link` as `link`   order by link_id [ RunTime:1,460,023,162.037837s ]SELECT * FROM `33hao_link` as `link`   order by link_id
+[2016-04-07 17:59:22] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time < '1460023161' ) AND ( end_time > '1460023161' ) ORDER BY xianshi_recommend desc LIMIT 4   [ RunTime:1,460,023,162.037837s ]SELECT * FROM `33hao_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time < '1460023161' ) AND ( end_time > '1460023161' ) ORDER BY xianshi_recommend desc LIMIT 4  
+[2016-04-07 17:59:22] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_web` WHERE ( web_show = '1' ) AND ( web_page LIKE 'index%' ) ORDER BY web_sort LIMIT 1000   [ RunTime:1,460,023,162.037837s ]SELECT * FROM `33hao_web` WHERE ( web_show = '1' ) AND ( web_page LIKE 'index%' ) ORDER BY web_sort LIMIT 1000  
+[2016-04-07 17:59:22] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( start_time < '1460023162' ) AND ( end_time > '1460023162' ) ORDER BY recommended desc LIMIT 4   [ RunTime:1,460,023,162.907731s ]SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( start_time < '1460023162' ) AND ( end_time > '1460023162' ) ORDER BY recommended desc LIMIT 4  
+[2016-04-07 17:59:22] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_link` as `link`   order by link_id [ RunTime:1,460,023,162.907731s ]SELECT * FROM `33hao_link` as `link`   order by link_id
+[2016-04-07 17:59:23] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time < '1460023162' ) AND ( end_time > '1460023162' ) ORDER BY xianshi_recommend desc LIMIT 4   [ RunTime:1,460,023,162.907731s ]SELECT * FROM `33hao_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time < '1460023162' ) AND ( end_time > '1460023162' ) ORDER BY xianshi_recommend desc LIMIT 4  
+[2016-04-07 17:59:23] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_web` WHERE ( web_show = '1' ) AND ( web_page LIKE 'index%' ) ORDER BY web_sort LIMIT 1000   [ RunTime:1,460,023,162.907731s ]SELECT * FROM `33hao_web` WHERE ( web_show = '1' ) AND ( web_page LIKE 'index%' ) ORDER BY web_sort LIMIT 1000  
+[2016-04-07 17:59:23] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( start_time < '1460023163' ) AND ( end_time > '1460023163' ) ORDER BY recommended desc LIMIT 4   [ RunTime:1,460,023,163.787664s ]SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( start_time < '1460023163' ) AND ( end_time > '1460023163' ) ORDER BY recommended desc LIMIT 4  
+[2016-04-07 17:59:23] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_link` as `link`   order by link_id [ RunTime:1,460,023,163.787664s ]SELECT * FROM `33hao_link` as `link`   order by link_id
+[2016-04-07 17:59:23] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time < '1460023163' ) AND ( end_time > '1460023163' ) ORDER BY xianshi_recommend desc LIMIT 4   [ RunTime:1,460,023,163.787664s ]SELECT * FROM `33hao_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time < '1460023163' ) AND ( end_time > '1460023163' ) ORDER BY xianshi_recommend desc LIMIT 4  
+[2016-04-07 17:59:24] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_web` WHERE ( web_show = '1' ) AND ( web_page LIKE 'index%' ) ORDER BY web_sort LIMIT 1000   [ RunTime:1,460,023,163.787664s ]SELECT * FROM `33hao_web` WHERE ( web_show = '1' ) AND ( web_page LIKE 'index%' ) ORDER BY web_sort LIMIT 1000  
+[2016-04-07 17:59:24] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( start_time < '1460023164' ) AND ( end_time > '1460023164' ) ORDER BY recommended desc LIMIT 4   [ RunTime:1,460,023,164.771104s ]SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( start_time < '1460023164' ) AND ( end_time > '1460023164' ) ORDER BY recommended desc LIMIT 4  
+[2016-04-07 17:59:24] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_link` as `link`   order by link_id [ RunTime:1,460,023,164.771104s ]SELECT * FROM `33hao_link` as `link`   order by link_id
+[2016-04-07 17:59:24] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time < '1460023164' ) AND ( end_time > '1460023164' ) ORDER BY xianshi_recommend desc LIMIT 4   [ RunTime:1,460,023,164.771104s ]SELECT * FROM `33hao_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time < '1460023164' ) AND ( end_time > '1460023164' ) ORDER BY xianshi_recommend desc LIMIT 4  
+[2016-04-07 17:59:25] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_web` WHERE ( web_show = '1' ) AND ( web_page LIKE 'index%' ) ORDER BY web_sort LIMIT 1000   [ RunTime:1,460,023,164.771104s ]SELECT * FROM `33hao_web` WHERE ( web_show = '1' ) AND ( web_page LIKE 'index%' ) ORDER BY web_sort LIMIT 1000  
+[2016-04-07 17:59:25] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( start_time < '1460023165' ) AND ( end_time > '1460023165' ) ORDER BY recommended desc LIMIT 4   [ RunTime:1,460,023,165.645800s ]SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( start_time < '1460023165' ) AND ( end_time > '1460023165' ) ORDER BY recommended desc LIMIT 4  
+[2016-04-07 17:59:25] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_link` as `link`   order by link_id [ RunTime:1,460,023,165.645800s ]SELECT * FROM `33hao_link` as `link`   order by link_id
+[2016-04-07 17:59:25] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time < '1460023165' ) AND ( end_time > '1460023165' ) ORDER BY xianshi_recommend desc LIMIT 4   [ RunTime:1,460,023,165.645800s ]SELECT * FROM `33hao_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time < '1460023165' ) AND ( end_time > '1460023165' ) ORDER BY xianshi_recommend desc LIMIT 4  
+[2016-04-07 17:59:26] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_web` WHERE ( web_show = '1' ) AND ( web_page LIKE 'index%' ) ORDER BY web_sort LIMIT 1000   [ RunTime:1,460,023,165.645800s ]SELECT * FROM `33hao_web` WHERE ( web_show = '1' ) AND ( web_page LIKE 'index%' ) ORDER BY web_sort LIMIT 1000  
+[2016-04-07 17:59:26] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( start_time < '1460023166' ) AND ( end_time > '1460023166' ) ORDER BY recommended desc LIMIT 4   [ RunTime:1,460,023,166.545758s ]SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( start_time < '1460023166' ) AND ( end_time > '1460023166' ) ORDER BY recommended desc LIMIT 4  
+[2016-04-07 17:59:26] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_link` as `link`   order by link_id [ RunTime:1,460,023,166.545758s ]SELECT * FROM `33hao_link` as `link`   order by link_id
+[2016-04-07 17:59:26] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time < '1460023166' ) AND ( end_time > '1460023166' ) ORDER BY xianshi_recommend desc LIMIT 4   [ RunTime:1,460,023,166.545758s ]SELECT * FROM `33hao_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time < '1460023166' ) AND ( end_time > '1460023166' ) ORDER BY xianshi_recommend desc LIMIT 4  
+[2016-04-07 17:59:26] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_web` WHERE ( web_show = '1' ) AND ( web_page LIKE 'index%' ) ORDER BY web_sort LIMIT 1000   [ RunTime:1,460,023,166.545758s ]SELECT * FROM `33hao_web` WHERE ( web_show = '1' ) AND ( web_page LIKE 'index%' ) ORDER BY web_sort LIMIT 1000  
+[2016-04-07 17:59:27] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( start_time < '1460023166' ) AND ( end_time > '1460023166' ) ORDER BY recommended desc LIMIT 4   [ RunTime:1,460,023,167.395445s ]SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( start_time < '1460023166' ) AND ( end_time > '1460023166' ) ORDER BY recommended desc LIMIT 4  
+[2016-04-07 17:59:27] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_link` as `link`   order by link_id [ RunTime:1,460,023,167.395445s ]SELECT * FROM `33hao_link` as `link`   order by link_id
+[2016-04-07 17:59:27] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time < '1460023166' ) AND ( end_time > '1460023166' ) ORDER BY xianshi_recommend desc LIMIT 4   [ RunTime:1,460,023,167.395445s ]SELECT * FROM `33hao_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time < '1460023166' ) AND ( end_time > '1460023166' ) ORDER BY xianshi_recommend desc LIMIT 4  
+[2016-04-07 17:59:27] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_web` WHERE ( web_show = '1' ) AND ( web_page LIKE 'index%' ) ORDER BY web_sort LIMIT 1000   [ RunTime:1,460,023,167.395445s ]SELECT * FROM `33hao_web` WHERE ( web_show = '1' ) AND ( web_page LIKE 'index%' ) ORDER BY web_sort LIMIT 1000  
+[2016-04-07 17:59:28] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( start_time < '1460023167' ) AND ( end_time > '1460023167' ) ORDER BY recommended desc LIMIT 4   [ RunTime:1,460,023,168.273864s ]SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( start_time < '1460023167' ) AND ( end_time > '1460023167' ) ORDER BY recommended desc LIMIT 4  
+[2016-04-07 17:59:28] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_link` as `link`   order by link_id [ RunTime:1,460,023,168.273864s ]SELECT * FROM `33hao_link` as `link`   order by link_id
+[2016-04-07 17:59:28] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time < '1460023167' ) AND ( end_time > '1460023167' ) ORDER BY xianshi_recommend desc LIMIT 4   [ RunTime:1,460,023,168.273864s ]SELECT * FROM `33hao_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time < '1460023167' ) AND ( end_time > '1460023167' ) ORDER BY xianshi_recommend desc LIMIT 4  
+[2016-04-07 17:59:28] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_web` WHERE ( web_show = '1' ) AND ( web_page LIKE 'index%' ) ORDER BY web_sort LIMIT 1000   [ RunTime:1,460,023,168.273864s ]SELECT * FROM `33hao_web` WHERE ( web_show = '1' ) AND ( web_page LIKE 'index%' ) ORDER BY web_sort LIMIT 1000  
+[2016-04-07 17:59:34] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( start_time < '1460023173' ) AND ( end_time > '1460023173' ) ORDER BY recommended desc LIMIT 4   [ RunTime:1,460,023,174.177721s ]SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( start_time < '1460023173' ) AND ( end_time > '1460023173' ) ORDER BY recommended desc LIMIT 4  
+[2016-04-07 17:59:34] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_link` as `link`   order by link_id [ RunTime:1,460,023,174.177721s ]SELECT * FROM `33hao_link` as `link`   order by link_id
+[2016-04-07 17:59:34] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time < '1460023173' ) AND ( end_time > '1460023173' ) ORDER BY xianshi_recommend desc LIMIT 4   [ RunTime:1,460,023,174.177721s ]SELECT * FROM `33hao_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time < '1460023173' ) AND ( end_time > '1460023173' ) ORDER BY xianshi_recommend desc LIMIT 4  
+[2016-04-07 17:59:34] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_web` WHERE ( web_show = '1' ) AND ( web_page LIKE 'index%' ) ORDER BY web_sort LIMIT 1000   [ RunTime:1,460,023,174.177721s ]SELECT * FROM `33hao_web` WHERE ( web_show = '1' ) AND ( web_page LIKE 'index%' ) ORDER BY web_sort LIMIT 1000  
+[2016-04-07 17:59:35] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( start_time < '1460023174' ) AND ( end_time > '1460023174' ) ORDER BY recommended desc LIMIT 4   [ RunTime:1,460,023,175.094060s ]SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( start_time < '1460023174' ) AND ( end_time > '1460023174' ) ORDER BY recommended desc LIMIT 4  
+[2016-04-07 17:59:35] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_link` as `link`   order by link_id [ RunTime:1,460,023,175.094060s ]SELECT * FROM `33hao_link` as `link`   order by link_id
+[2016-04-07 17:59:35] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time < '1460023174' ) AND ( end_time > '1460023174' ) ORDER BY xianshi_recommend desc LIMIT 4   [ RunTime:1,460,023,175.094060s ]SELECT * FROM `33hao_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time < '1460023174' ) AND ( end_time > '1460023174' ) ORDER BY xianshi_recommend desc LIMIT 4  
+[2016-04-07 17:59:35] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_web` WHERE ( web_show = '1' ) AND ( web_page LIKE 'index%' ) ORDER BY web_sort LIMIT 1000   [ RunTime:1,460,023,175.094060s ]SELECT * FROM `33hao_web` WHERE ( web_show = '1' ) AND ( web_page LIKE 'index%' ) ORDER BY web_sort LIMIT 1000  
+[2016-04-07 17:59:35] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( start_time < '1460023175' ) AND ( end_time > '1460023175' ) ORDER BY recommended desc LIMIT 4   [ RunTime:1,460,023,175.993110s ]SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( start_time < '1460023175' ) AND ( end_time > '1460023175' ) ORDER BY recommended desc LIMIT 4  
+[2016-04-07 17:59:36] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_link` as `link`   order by link_id [ RunTime:1,460,023,175.993110s ]SELECT * FROM `33hao_link` as `link`   order by link_id
+[2016-04-07 17:59:36] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time < '1460023175' ) AND ( end_time > '1460023175' ) ORDER BY xianshi_recommend desc LIMIT 4   [ RunTime:1,460,023,175.993110s ]SELECT * FROM `33hao_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time < '1460023175' ) AND ( end_time > '1460023175' ) ORDER BY xianshi_recommend desc LIMIT 4  
+[2016-04-07 17:59:36] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_web` WHERE ( web_show = '1' ) AND ( web_page LIKE 'index%' ) ORDER BY web_sort LIMIT 1000   [ RunTime:1,460,023,175.993110s ]SELECT * FROM `33hao_web` WHERE ( web_show = '1' ) AND ( web_page LIKE 'index%' ) ORDER BY web_sort LIMIT 1000  
+[2016-04-07 17:59:36] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( start_time < '1460023176' ) AND ( end_time > '1460023176' ) ORDER BY recommended desc LIMIT 4   [ RunTime:1,460,023,176.936836s ]SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( start_time < '1460023176' ) AND ( end_time > '1460023176' ) ORDER BY recommended desc LIMIT 4  
+[2016-04-07 17:59:37] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_link` as `link`   order by link_id [ RunTime:1,460,023,176.936836s ]SELECT * FROM `33hao_link` as `link`   order by link_id
+[2016-04-07 17:59:37] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time < '1460023176' ) AND ( end_time > '1460023176' ) ORDER BY xianshi_recommend desc LIMIT 4   [ RunTime:1,460,023,176.936836s ]SELECT * FROM `33hao_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time < '1460023176' ) AND ( end_time > '1460023176' ) ORDER BY xianshi_recommend desc LIMIT 4  
+[2016-04-07 17:59:37] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_web` WHERE ( web_show = '1' ) AND ( web_page LIKE 'index%' ) ORDER BY web_sort LIMIT 1000   [ RunTime:1,460,023,176.936836s ]SELECT * FROM `33hao_web` WHERE ( web_show = '1' ) AND ( web_page LIKE 'index%' ) ORDER BY web_sort LIMIT 1000  
+[2016-04-07 17:59:37] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( start_time < '1460023177' ) AND ( end_time > '1460023177' ) ORDER BY recommended desc LIMIT 4   [ RunTime:1,460,023,177.856340s ]SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( start_time < '1460023177' ) AND ( end_time > '1460023177' ) ORDER BY recommended desc LIMIT 4  
+[2016-04-07 17:59:37] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_link` as `link`   order by link_id [ RunTime:1,460,023,177.856340s ]SELECT * FROM `33hao_link` as `link`   order by link_id
+[2016-04-07 17:59:38] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time < '1460023177' ) AND ( end_time > '1460023177' ) ORDER BY xianshi_recommend desc LIMIT 4   [ RunTime:1,460,023,177.856340s ]SELECT * FROM `33hao_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time < '1460023177' ) AND ( end_time > '1460023177' ) ORDER BY xianshi_recommend desc LIMIT 4  
+[2016-04-07 17:59:38] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_web` WHERE ( web_show = '1' ) AND ( web_page LIKE 'index%' ) ORDER BY web_sort LIMIT 1000   [ RunTime:1,460,023,177.856340s ]SELECT * FROM `33hao_web` WHERE ( web_show = '1' ) AND ( web_page LIKE 'index%' ) ORDER BY web_sort LIMIT 1000  
+[2016-04-07 17:59:38] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( start_time < '1460023178' ) AND ( end_time > '1460023178' ) ORDER BY recommended desc LIMIT 4   [ RunTime:1,460,023,178.727636s ]SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( start_time < '1460023178' ) AND ( end_time > '1460023178' ) ORDER BY recommended desc LIMIT 4  
+[2016-04-07 17:59:38] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_link` as `link`   order by link_id [ RunTime:1,460,023,178.727636s ]SELECT * FROM `33hao_link` as `link`   order by link_id
+[2016-04-07 17:59:38] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time < '1460023178' ) AND ( end_time > '1460023178' ) ORDER BY xianshi_recommend desc LIMIT 4   [ RunTime:1,460,023,178.727636s ]SELECT * FROM `33hao_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time < '1460023178' ) AND ( end_time > '1460023178' ) ORDER BY xianshi_recommend desc LIMIT 4  
+[2016-04-07 17:59:39] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_web` WHERE ( web_show = '1' ) AND ( web_page LIKE 'index%' ) ORDER BY web_sort LIMIT 1000   [ RunTime:1,460,023,178.727636s ]SELECT * FROM `33hao_web` WHERE ( web_show = '1' ) AND ( web_page LIKE 'index%' ) ORDER BY web_sort LIMIT 1000  
+[2016-04-07 17:59:39] /33hao/shop/index.php ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( start_time < '1460023178' ) AND ( end_time > '1460023178' ) ORDER BY recommended desc LIMIT 4   [ RunTime:1,460,023,179.562424s ]SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( start_time < '1460023178' ) AND ( end_time > '1460023178' ) ORDER BY recommended desc LIMIT 4  
+[2016-04-07 17:59:39] /33hao/shop/index.php ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_link` as `link`   order by link_id [ RunTime:1,460,023,179.562424s ]SELECT * FROM `33hao_link` as `link`   order by link_id
+[2016-04-07 17:59:39] /33hao/shop/index.php ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time < '1460023178' ) AND ( end_time > '1460023178' ) ORDER BY xianshi_recommend desc LIMIT 4   [ RunTime:1,460,023,179.562424s ]SELECT * FROM `33hao_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time < '1460023178' ) AND ( end_time > '1460023178' ) ORDER BY xianshi_recommend desc LIMIT 4  
+[2016-04-07 17:59:40] /33hao/shop/index.php ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_web` WHERE ( web_show = '1' ) AND ( web_page LIKE 'index%' ) ORDER BY web_sort LIMIT 1000   [ RunTime:1,460,023,179.562424s ]SELECT * FROM `33hao_web` WHERE ( web_show = '1' ) AND ( web_page LIKE 'index%' ) ORDER BY web_sort LIMIT 1000  
+[2016-04-07 17:59:40] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( start_time < '1460023180' ) AND ( end_time > '1460023180' ) ORDER BY recommended desc LIMIT 4   [ RunTime:1,460,023,180.452103s ]SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( start_time < '1460023180' ) AND ( end_time > '1460023180' ) ORDER BY recommended desc LIMIT 4  
+[2016-04-07 17:59:40] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_link` as `link`   order by link_id [ RunTime:1,460,023,180.452103s ]SELECT * FROM `33hao_link` as `link`   order by link_id
+[2016-04-07 17:59:40] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time < '1460023180' ) AND ( end_time > '1460023180' ) ORDER BY xianshi_recommend desc LIMIT 4   [ RunTime:1,460,023,180.452103s ]SELECT * FROM `33hao_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time < '1460023180' ) AND ( end_time > '1460023180' ) ORDER BY xianshi_recommend desc LIMIT 4  
+[2016-04-07 17:59:40] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_web` WHERE ( web_show = '1' ) AND ( web_page LIKE 'index%' ) ORDER BY web_sort LIMIT 1000   [ RunTime:1,460,023,180.452103s ]SELECT * FROM `33hao_web` WHERE ( web_show = '1' ) AND ( web_page LIKE 'index%' ) ORDER BY web_sort LIMIT 1000  
+[2016-04-07 17:59:41] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( start_time < '1460023180' ) AND ( end_time > '1460023180' ) ORDER BY recommended desc LIMIT 4   [ RunTime:1,460,023,181.345691s ]SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( start_time < '1460023180' ) AND ( end_time > '1460023180' ) ORDER BY recommended desc LIMIT 4  
+[2016-04-07 17:59:41] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_link` as `link`   order by link_id [ RunTime:1,460,023,181.345691s ]SELECT * FROM `33hao_link` as `link`   order by link_id
+[2016-04-07 17:59:41] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time < '1460023180' ) AND ( end_time > '1460023180' ) ORDER BY xianshi_recommend desc LIMIT 4   [ RunTime:1,460,023,181.345691s ]SELECT * FROM `33hao_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time < '1460023180' ) AND ( end_time > '1460023180' ) ORDER BY xianshi_recommend desc LIMIT 4  
+[2016-04-07 17:59:41] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_web` WHERE ( web_show = '1' ) AND ( web_page LIKE 'index%' ) ORDER BY web_sort LIMIT 1000   [ RunTime:1,460,023,181.345691s ]SELECT * FROM `33hao_web` WHERE ( web_show = '1' ) AND ( web_page LIKE 'index%' ) ORDER BY web_sort LIMIT 1000  
+[2016-04-07 17:59:42] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( start_time < '1460023181' ) AND ( end_time > '1460023181' ) ORDER BY recommended desc LIMIT 4   [ RunTime:1,460,023,182.239736s ]SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( start_time < '1460023181' ) AND ( end_time > '1460023181' ) ORDER BY recommended desc LIMIT 4  
+[2016-04-07 17:59:42] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_link` as `link`   order by link_id [ RunTime:1,460,023,182.239736s ]SELECT * FROM `33hao_link` as `link`   order by link_id
+[2016-04-07 17:59:42] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time < '1460023181' ) AND ( end_time > '1460023181' ) ORDER BY xianshi_recommend desc LIMIT 4   [ RunTime:1,460,023,182.239736s ]SELECT * FROM `33hao_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time < '1460023181' ) AND ( end_time > '1460023181' ) ORDER BY xianshi_recommend desc LIMIT 4  
+[2016-04-07 17:59:42] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_web` WHERE ( web_show = '1' ) AND ( web_page LIKE 'index%' ) ORDER BY web_sort LIMIT 1000   [ RunTime:1,460,023,182.239736s ]SELECT * FROM `33hao_web` WHERE ( web_show = '1' ) AND ( web_page LIKE 'index%' ) ORDER BY web_sort LIMIT 1000  
+[2016-04-07 17:59:43] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( start_time < '1460023182' ) AND ( end_time > '1460023182' ) ORDER BY recommended desc LIMIT 4   [ RunTime:1,460,023,183.088988s ]SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( start_time < '1460023182' ) AND ( end_time > '1460023182' ) ORDER BY recommended desc LIMIT 4  
+[2016-04-07 17:59:43] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_link` as `link`   order by link_id [ RunTime:1,460,023,183.088988s ]SELECT * FROM `33hao_link` as `link`   order by link_id
+[2016-04-07 17:59:43] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time < '1460023182' ) AND ( end_time > '1460023182' ) ORDER BY xianshi_recommend desc LIMIT 4   [ RunTime:1,460,023,183.088988s ]SELECT * FROM `33hao_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time < '1460023182' ) AND ( end_time > '1460023182' ) ORDER BY xianshi_recommend desc LIMIT 4  
+[2016-04-07 17:59:43] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_web` WHERE ( web_show = '1' ) AND ( web_page LIKE 'index%' ) ORDER BY web_sort LIMIT 1000   [ RunTime:1,460,023,183.088988s ]SELECT * FROM `33hao_web` WHERE ( web_show = '1' ) AND ( web_page LIKE 'index%' ) ORDER BY web_sort LIMIT 1000  
+[2016-04-07 17:59:43] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( start_time < '1460023183' ) AND ( end_time > '1460023183' ) ORDER BY recommended desc LIMIT 4   [ RunTime:1,460,023,183.941856s ]SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( start_time < '1460023183' ) AND ( end_time > '1460023183' ) ORDER BY recommended desc LIMIT 4  
+[2016-04-07 17:59:44] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_link` as `link`   order by link_id [ RunTime:1,460,023,183.941856s ]SELECT * FROM `33hao_link` as `link`   order by link_id
+[2016-04-07 17:59:44] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time < '1460023183' ) AND ( end_time > '1460023183' ) ORDER BY xianshi_recommend desc LIMIT 4   [ RunTime:1,460,023,183.941856s ]SELECT * FROM `33hao_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time < '1460023183' ) AND ( end_time > '1460023183' ) ORDER BY xianshi_recommend desc LIMIT 4  
+[2016-04-07 17:59:44] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_web` WHERE ( web_show = '1' ) AND ( web_page LIKE 'index%' ) ORDER BY web_sort LIMIT 1000   [ RunTime:1,460,023,183.941856s ]SELECT * FROM `33hao_web` WHERE ( web_show = '1' ) AND ( web_page LIKE 'index%' ) ORDER BY web_sort LIMIT 1000  
+[2016-04-07 17:59:44] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( start_time < '1460023184' ) AND ( end_time > '1460023184' ) ORDER BY recommended desc LIMIT 4   [ RunTime:1,460,023,184.834756s ]SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( start_time < '1460023184' ) AND ( end_time > '1460023184' ) ORDER BY recommended desc LIMIT 4  
+[2016-04-07 17:59:44] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_link` as `link`   order by link_id [ RunTime:1,460,023,184.834756s ]SELECT * FROM `33hao_link` as `link`   order by link_id
+[2016-04-07 17:59:45] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time < '1460023184' ) AND ( end_time > '1460023184' ) ORDER BY xianshi_recommend desc LIMIT 4   [ RunTime:1,460,023,184.834756s ]SELECT * FROM `33hao_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time < '1460023184' ) AND ( end_time > '1460023184' ) ORDER BY xianshi_recommend desc LIMIT 4  
+[2016-04-07 17:59:45] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_web` WHERE ( web_show = '1' ) AND ( web_page LIKE 'index%' ) ORDER BY web_sort LIMIT 1000   [ RunTime:1,460,023,184.834756s ]SELECT * FROM `33hao_web` WHERE ( web_show = '1' ) AND ( web_page LIKE 'index%' ) ORDER BY web_sort LIMIT 1000  
+[2016-04-07 17:59:45] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( start_time < '1460023185' ) AND ( end_time > '1460023185' ) ORDER BY recommended desc LIMIT 4   [ RunTime:1,460,023,185.728489s ]SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( start_time < '1460023185' ) AND ( end_time > '1460023185' ) ORDER BY recommended desc LIMIT 4  
+[2016-04-07 17:59:45] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_link` as `link`   order by link_id [ RunTime:1,460,023,185.728489s ]SELECT * FROM `33hao_link` as `link`   order by link_id
+[2016-04-07 17:59:45] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time < '1460023185' ) AND ( end_time > '1460023185' ) ORDER BY xianshi_recommend desc LIMIT 4   [ RunTime:1,460,023,185.728489s ]SELECT * FROM `33hao_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time < '1460023185' ) AND ( end_time > '1460023185' ) ORDER BY xianshi_recommend desc LIMIT 4  
+[2016-04-07 17:59:46] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_web` WHERE ( web_show = '1' ) AND ( web_page LIKE 'index%' ) ORDER BY web_sort LIMIT 1000   [ RunTime:1,460,023,185.728489s ]SELECT * FROM `33hao_web` WHERE ( web_show = '1' ) AND ( web_page LIKE 'index%' ) ORDER BY web_sort LIMIT 1000  
+[2016-04-07 17:59:46] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( start_time < '1460023186' ) AND ( end_time > '1460023186' ) ORDER BY recommended desc LIMIT 4   [ RunTime:1,460,023,186.590415s ]SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( start_time < '1460023186' ) AND ( end_time > '1460023186' ) ORDER BY recommended desc LIMIT 4  
+[2016-04-07 17:59:46] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_link` as `link`   order by link_id [ RunTime:1,460,023,186.590415s ]SELECT * FROM `33hao_link` as `link`   order by link_id
+[2016-04-07 17:59:46] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time < '1460023186' ) AND ( end_time > '1460023186' ) ORDER BY xianshi_recommend desc LIMIT 4   [ RunTime:1,460,023,186.590415s ]SELECT * FROM `33hao_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time < '1460023186' ) AND ( end_time > '1460023186' ) ORDER BY xianshi_recommend desc LIMIT 4  
+[2016-04-07 17:59:47] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_web` WHERE ( web_show = '1' ) AND ( web_page LIKE 'index%' ) ORDER BY web_sort LIMIT 1000   [ RunTime:1,460,023,186.590415s ]SELECT * FROM `33hao_web` WHERE ( web_show = '1' ) AND ( web_page LIKE 'index%' ) ORDER BY web_sort LIMIT 1000  
+[2016-04-07 17:59:47] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( start_time < '1460023187' ) AND ( end_time > '1460023187' ) ORDER BY recommended desc LIMIT 4   [ RunTime:1,460,023,187.495410s ]SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( start_time < '1460023187' ) AND ( end_time > '1460023187' ) ORDER BY recommended desc LIMIT 4  
+[2016-04-07 17:59:47] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_link` as `link`   order by link_id [ RunTime:1,460,023,187.495410s ]SELECT * FROM `33hao_link` as `link`   order by link_id
+[2016-04-07 17:59:47] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time < '1460023187' ) AND ( end_time > '1460023187' ) ORDER BY xianshi_recommend desc LIMIT 4   [ RunTime:1,460,023,187.495410s ]SELECT * FROM `33hao_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time < '1460023187' ) AND ( end_time > '1460023187' ) ORDER BY xianshi_recommend desc LIMIT 4  
+[2016-04-07 17:59:47] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_web` WHERE ( web_show = '1' ) AND ( web_page LIKE 'index%' ) ORDER BY web_sort LIMIT 1000   [ RunTime:1,460,023,187.495410s ]SELECT * FROM `33hao_web` WHERE ( web_show = '1' ) AND ( web_page LIKE 'index%' ) ORDER BY web_sort LIMIT 1000  
+[2016-04-07 17:59:48] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( start_time < '1460023187' ) AND ( end_time > '1460023187' ) ORDER BY recommended desc LIMIT 4   [ RunTime:1,460,023,188.359023s ]SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( start_time < '1460023187' ) AND ( end_time > '1460023187' ) ORDER BY recommended desc LIMIT 4  
+[2016-04-07 17:59:48] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_link` as `link`   order by link_id [ RunTime:1,460,023,188.359023s ]SELECT * FROM `33hao_link` as `link`   order by link_id
+[2016-04-07 17:59:48] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time < '1460023187' ) AND ( end_time > '1460023187' ) ORDER BY xianshi_recommend desc LIMIT 4   [ RunTime:1,460,023,188.359023s ]SELECT * FROM `33hao_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time < '1460023187' ) AND ( end_time > '1460023187' ) ORDER BY xianshi_recommend desc LIMIT 4  
+[2016-04-07 17:59:48] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_web` WHERE ( web_show = '1' ) AND ( web_page LIKE 'index%' ) ORDER BY web_sort LIMIT 1000   [ RunTime:1,460,023,188.359023s ]SELECT * FROM `33hao_web` WHERE ( web_show = '1' ) AND ( web_page LIKE 'index%' ) ORDER BY web_sort LIMIT 1000  
+[2016-04-07 18:00:19] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( start_time < '1460023218' ) AND ( end_time > '1460023218' ) ORDER BY recommended desc LIMIT 4   [ RunTime:1,460,023,219.491382s ]SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( start_time < '1460023218' ) AND ( end_time > '1460023218' ) ORDER BY recommended desc LIMIT 4  
+[2016-04-07 18:00:19] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_link` as `link`   order by link_id [ RunTime:1,460,023,219.491382s ]SELECT * FROM `33hao_link` as `link`   order by link_id
+[2016-04-07 18:00:19] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time < '1460023218' ) AND ( end_time > '1460023218' ) ORDER BY xianshi_recommend desc LIMIT 4   [ RunTime:1,460,023,219.491382s ]SELECT * FROM `33hao_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time < '1460023218' ) AND ( end_time > '1460023218' ) ORDER BY xianshi_recommend desc LIMIT 4  
+[2016-04-07 18:00:19] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_web` WHERE ( web_show = '1' ) AND ( web_page LIKE 'index%' ) ORDER BY web_sort LIMIT 1000   [ RunTime:1,460,023,219.491382s ]SELECT * FROM `33hao_web` WHERE ( web_show = '1' ) AND ( web_page LIKE 'index%' ) ORDER BY web_sort LIMIT 1000  
+[2016-04-07 18:00:20] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( start_time < '1460023219' ) AND ( end_time > '1460023219' ) ORDER BY recommended desc LIMIT 4   [ RunTime:1,460,023,220.428706s ]SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( start_time < '1460023219' ) AND ( end_time > '1460023219' ) ORDER BY recommended desc LIMIT 4  
+[2016-04-07 18:00:20] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_link` as `link`   order by link_id [ RunTime:1,460,023,220.428706s ]SELECT * FROM `33hao_link` as `link`   order by link_id
+[2016-04-07 18:00:20] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time < '1460023219' ) AND ( end_time > '1460023219' ) ORDER BY xianshi_recommend desc LIMIT 4   [ RunTime:1,460,023,220.428706s ]SELECT * FROM `33hao_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time < '1460023219' ) AND ( end_time > '1460023219' ) ORDER BY xianshi_recommend desc LIMIT 4  
+[2016-04-07 18:00:20] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_web` WHERE ( web_show = '1' ) AND ( web_page LIKE 'index%' ) ORDER BY web_sort LIMIT 1000   [ RunTime:1,460,023,220.428706s ]SELECT * FROM `33hao_web` WHERE ( web_show = '1' ) AND ( web_page LIKE 'index%' ) ORDER BY web_sort LIMIT 1000  
+[2016-04-07 18:00:21] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( start_time < '1460023220' ) AND ( end_time > '1460023220' ) ORDER BY recommended desc LIMIT 4   [ RunTime:1,460,023,221.337079s ]SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( start_time < '1460023220' ) AND ( end_time > '1460023220' ) ORDER BY recommended desc LIMIT 4  
+[2016-04-07 18:00:21] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_link` as `link`   order by link_id [ RunTime:1,460,023,221.337079s ]SELECT * FROM `33hao_link` as `link`   order by link_id
+[2016-04-07 18:00:21] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time < '1460023220' ) AND ( end_time > '1460023220' ) ORDER BY xianshi_recommend desc LIMIT 4   [ RunTime:1,460,023,221.337079s ]SELECT * FROM `33hao_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time < '1460023220' ) AND ( end_time > '1460023220' ) ORDER BY xianshi_recommend desc LIMIT 4  
+[2016-04-07 18:00:21] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_web` WHERE ( web_show = '1' ) AND ( web_page LIKE 'index%' ) ORDER BY web_sort LIMIT 1000   [ RunTime:1,460,023,221.337079s ]SELECT * FROM `33hao_web` WHERE ( web_show = '1' ) AND ( web_page LIKE 'index%' ) ORDER BY web_sort LIMIT 1000  
+[2016-04-07 18:00:22] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( start_time < '1460023221' ) AND ( end_time > '1460023221' ) ORDER BY recommended desc LIMIT 4   [ RunTime:1,460,023,222.279830s ]SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( start_time < '1460023221' ) AND ( end_time > '1460023221' ) ORDER BY recommended desc LIMIT 4  
+[2016-04-07 18:00:22] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_link` as `link`   order by link_id [ RunTime:1,460,023,222.279830s ]SELECT * FROM `33hao_link` as `link`   order by link_id
+[2016-04-07 18:00:22] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time < '1460023221' ) AND ( end_time > '1460023221' ) ORDER BY xianshi_recommend desc LIMIT 4   [ RunTime:1,460,023,222.279830s ]SELECT * FROM `33hao_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time < '1460023221' ) AND ( end_time > '1460023221' ) ORDER BY xianshi_recommend desc LIMIT 4  
+[2016-04-07 18:00:22] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_web` WHERE ( web_show = '1' ) AND ( web_page LIKE 'index%' ) ORDER BY web_sort LIMIT 1000   [ RunTime:1,460,023,222.279830s ]SELECT * FROM `33hao_web` WHERE ( web_show = '1' ) AND ( web_page LIKE 'index%' ) ORDER BY web_sort LIMIT 1000  
+[2016-04-07 18:00:23] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( start_time < '1460023222' ) AND ( end_time > '1460023222' ) ORDER BY recommended desc LIMIT 4   [ RunTime:1,460,023,223.169930s ]SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( start_time < '1460023222' ) AND ( end_time > '1460023222' ) ORDER BY recommended desc LIMIT 4  
+[2016-04-07 18:00:23] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_link` as `link`   order by link_id [ RunTime:1,460,023,223.169930s ]SELECT * FROM `33hao_link` as `link`   order by link_id
+[2016-04-07 18:00:23] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time < '1460023222' ) AND ( end_time > '1460023222' ) ORDER BY xianshi_recommend desc LIMIT 4   [ RunTime:1,460,023,223.169930s ]SELECT * FROM `33hao_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time < '1460023222' ) AND ( end_time > '1460023222' ) ORDER BY xianshi_recommend desc LIMIT 4  
+[2016-04-07 18:00:23] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_web` WHERE ( web_show = '1' ) AND ( web_page LIKE 'index%' ) ORDER BY web_sort LIMIT 1000   [ RunTime:1,460,023,223.169930s ]SELECT * FROM `33hao_web` WHERE ( web_show = '1' ) AND ( web_page LIKE 'index%' ) ORDER BY web_sort LIMIT 1000  
+[2016-04-07 18:00:24] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( start_time < '1460023223' ) AND ( end_time > '1460023223' ) ORDER BY recommended desc LIMIT 4   [ RunTime:1,460,023,224.095652s ]SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( start_time < '1460023223' ) AND ( end_time > '1460023223' ) ORDER BY recommended desc LIMIT 4  
+[2016-04-07 18:00:24] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_link` as `link`   order by link_id [ RunTime:1,460,023,224.095652s ]SELECT * FROM `33hao_link` as `link`   order by link_id
+[2016-04-07 18:00:24] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time < '1460023223' ) AND ( end_time > '1460023223' ) ORDER BY xianshi_recommend desc LIMIT 4   [ RunTime:1,460,023,224.095652s ]SELECT * FROM `33hao_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time < '1460023223' ) AND ( end_time > '1460023223' ) ORDER BY xianshi_recommend desc LIMIT 4  
+[2016-04-07 18:00:24] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_web` WHERE ( web_show = '1' ) AND ( web_page LIKE 'index%' ) ORDER BY web_sort LIMIT 1000   [ RunTime:1,460,023,224.095652s ]SELECT * FROM `33hao_web` WHERE ( web_show = '1' ) AND ( web_page LIKE 'index%' ) ORDER BY web_sort LIMIT 1000  
+[2016-04-07 18:00:24] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( start_time < '1460023224' ) AND ( end_time > '1460023224' ) ORDER BY recommended desc LIMIT 4   [ RunTime:1,460,023,224.981403s ]SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( start_time < '1460023224' ) AND ( end_time > '1460023224' ) ORDER BY recommended desc LIMIT 4  
+[2016-04-07 18:00:25] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_link` as `link`   order by link_id [ RunTime:1,460,023,224.981403s ]SELECT * FROM `33hao_link` as `link`   order by link_id
+[2016-04-07 18:00:25] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time < '1460023224' ) AND ( end_time > '1460023224' ) ORDER BY xianshi_recommend desc LIMIT 4   [ RunTime:1,460,023,224.981403s ]SELECT * FROM `33hao_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time < '1460023224' ) AND ( end_time > '1460023224' ) ORDER BY xianshi_recommend desc LIMIT 4  
+[2016-04-07 18:00:25] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_web` WHERE ( web_show = '1' ) AND ( web_page LIKE 'index%' ) ORDER BY web_sort LIMIT 1000   [ RunTime:1,460,023,224.981403s ]SELECT * FROM `33hao_web` WHERE ( web_show = '1' ) AND ( web_page LIKE 'index%' ) ORDER BY web_sort LIMIT 1000  
+[2016-04-07 18:00:25] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( start_time < '1460023225' ) AND ( end_time > '1460023225' ) ORDER BY recommended desc LIMIT 4   [ RunTime:1,460,023,225.915406s ]SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( start_time < '1460023225' ) AND ( end_time > '1460023225' ) ORDER BY recommended desc LIMIT 4  
+[2016-04-07 18:00:25] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_link` as `link`   order by link_id [ RunTime:1,460,023,225.915406s ]SELECT * FROM `33hao_link` as `link`   order by link_id
+[2016-04-07 18:00:26] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time < '1460023225' ) AND ( end_time > '1460023225' ) ORDER BY xianshi_recommend desc LIMIT 4   [ RunTime:1,460,023,225.915406s ]SELECT * FROM `33hao_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time < '1460023225' ) AND ( end_time > '1460023225' ) ORDER BY xianshi_recommend desc LIMIT 4  
+[2016-04-07 18:00:26] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_web` WHERE ( web_show = '1' ) AND ( web_page LIKE 'index%' ) ORDER BY web_sort LIMIT 1000   [ RunTime:1,460,023,225.915406s ]SELECT * FROM `33hao_web` WHERE ( web_show = '1' ) AND ( web_page LIKE 'index%' ) ORDER BY web_sort LIMIT 1000  
+[2016-04-07 18:00:26] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( start_time < '1460023226' ) AND ( end_time > '1460023226' ) ORDER BY recommended desc LIMIT 4   [ RunTime:1,460,023,226.802818s ]SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( start_time < '1460023226' ) AND ( end_time > '1460023226' ) ORDER BY recommended desc LIMIT 4  
+[2016-04-07 18:00:26] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_link` as `link`   order by link_id [ RunTime:1,460,023,226.802818s ]SELECT * FROM `33hao_link` as `link`   order by link_id
+[2016-04-07 18:00:26] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time < '1460023226' ) AND ( end_time > '1460023226' ) ORDER BY xianshi_recommend desc LIMIT 4   [ RunTime:1,460,023,226.802818s ]SELECT * FROM `33hao_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time < '1460023226' ) AND ( end_time > '1460023226' ) ORDER BY xianshi_recommend desc LIMIT 4  
+[2016-04-07 18:00:27] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_web` WHERE ( web_show = '1' ) AND ( web_page LIKE 'index%' ) ORDER BY web_sort LIMIT 1000   [ RunTime:1,460,023,226.802818s ]SELECT * FROM `33hao_web` WHERE ( web_show = '1' ) AND ( web_page LIKE 'index%' ) ORDER BY web_sort LIMIT 1000  
+[2016-04-07 18:00:27] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( start_time < '1460023227' ) AND ( end_time > '1460023227' ) ORDER BY recommended desc LIMIT 4   [ RunTime:1,460,023,227.690998s ]SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( start_time < '1460023227' ) AND ( end_time > '1460023227' ) ORDER BY recommended desc LIMIT 4  
+[2016-04-07 18:00:27] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_link` as `link`   order by link_id [ RunTime:1,460,023,227.690998s ]SELECT * FROM `33hao_link` as `link`   order by link_id
+[2016-04-07 18:00:27] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time < '1460023227' ) AND ( end_time > '1460023227' ) ORDER BY xianshi_recommend desc LIMIT 4   [ RunTime:1,460,023,227.690998s ]SELECT * FROM `33hao_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time < '1460023227' ) AND ( end_time > '1460023227' ) ORDER BY xianshi_recommend desc LIMIT 4  
+[2016-04-07 18:00:28] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_web` WHERE ( web_show = '1' ) AND ( web_page LIKE 'index%' ) ORDER BY web_sort LIMIT 1000   [ RunTime:1,460,023,227.690998s ]SELECT * FROM `33hao_web` WHERE ( web_show = '1' ) AND ( web_page LIKE 'index%' ) ORDER BY web_sort LIMIT 1000  
+[2016-04-07 18:00:51] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( start_time < '1460023250' ) AND ( end_time > '1460023250' ) ORDER BY recommended desc LIMIT 4   [ RunTime:1,460,023,251.044415s ]SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( start_time < '1460023250' ) AND ( end_time > '1460023250' ) ORDER BY recommended desc LIMIT 4  
+[2016-04-07 18:00:51] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_link` as `link`   order by link_id [ RunTime:1,460,023,251.044415s ]SELECT * FROM `33hao_link` as `link`   order by link_id
+[2016-04-07 18:00:51] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time < '1460023250' ) AND ( end_time > '1460023250' ) ORDER BY xianshi_recommend desc LIMIT 4   [ RunTime:1,460,023,251.044415s ]SELECT * FROM `33hao_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time < '1460023250' ) AND ( end_time > '1460023250' ) ORDER BY xianshi_recommend desc LIMIT 4  
+[2016-04-07 18:00:51] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_web` WHERE ( web_show = '1' ) AND ( web_page LIKE 'index%' ) ORDER BY web_sort LIMIT 1000   [ RunTime:1,460,023,251.044415s ]SELECT * FROM `33hao_web` WHERE ( web_show = '1' ) AND ( web_page LIKE 'index%' ) ORDER BY web_sort LIMIT 1000  
+[2016-04-07 18:00:52] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( start_time < '1460023251' ) AND ( end_time > '1460023251' ) ORDER BY recommended desc LIMIT 4   [ RunTime:1,460,023,252.097179s ]SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( start_time < '1460023251' ) AND ( end_time > '1460023251' ) ORDER BY recommended desc LIMIT 4  
+[2016-04-07 18:00:52] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_link` as `link`   order by link_id [ RunTime:1,460,023,252.097179s ]SELECT * FROM `33hao_link` as `link`   order by link_id
+[2016-04-07 18:00:52] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time < '1460023251' ) AND ( end_time > '1460023251' ) ORDER BY xianshi_recommend desc LIMIT 4   [ RunTime:1,460,023,252.097179s ]SELECT * FROM `33hao_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time < '1460023251' ) AND ( end_time > '1460023251' ) ORDER BY xianshi_recommend desc LIMIT 4  
+[2016-04-07 18:00:52] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_web` WHERE ( web_show = '1' ) AND ( web_page LIKE 'index%' ) ORDER BY web_sort LIMIT 1000   [ RunTime:1,460,023,252.097179s ]SELECT * FROM `33hao_web` WHERE ( web_show = '1' ) AND ( web_page LIKE 'index%' ) ORDER BY web_sort LIMIT 1000  
+[2016-04-07 18:00:53] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( start_time < '1460023252' ) AND ( end_time > '1460023252' ) ORDER BY recommended desc LIMIT 4   [ RunTime:1,460,023,253.026853s ]SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( start_time < '1460023252' ) AND ( end_time > '1460023252' ) ORDER BY recommended desc LIMIT 4  
+[2016-04-07 18:00:53] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_link` as `link`   order by link_id [ RunTime:1,460,023,253.026853s ]SELECT * FROM `33hao_link` as `link`   order by link_id
+[2016-04-07 18:00:53] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time < '1460023252' ) AND ( end_time > '1460023252' ) ORDER BY xianshi_recommend desc LIMIT 4   [ RunTime:1,460,023,253.026853s ]SELECT * FROM `33hao_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time < '1460023252' ) AND ( end_time > '1460023252' ) ORDER BY xianshi_recommend desc LIMIT 4  
+[2016-04-07 18:00:53] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_web` WHERE ( web_show = '1' ) AND ( web_page LIKE 'index%' ) ORDER BY web_sort LIMIT 1000   [ RunTime:1,460,023,253.026853s ]SELECT * FROM `33hao_web` WHERE ( web_show = '1' ) AND ( web_page LIKE 'index%' ) ORDER BY web_sort LIMIT 1000  
+[2016-04-07 18:00:53] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( start_time < '1460023253' ) AND ( end_time > '1460023253' ) ORDER BY recommended desc LIMIT 4   [ RunTime:1,460,023,253.910863s ]SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( start_time < '1460023253' ) AND ( end_time > '1460023253' ) ORDER BY recommended desc LIMIT 4  
+[2016-04-07 18:00:53] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_link` as `link`   order by link_id [ RunTime:1,460,023,253.910863s ]SELECT * FROM `33hao_link` as `link`   order by link_id
+[2016-04-07 18:00:54] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time < '1460023253' ) AND ( end_time > '1460023253' ) ORDER BY xianshi_recommend desc LIMIT 4   [ RunTime:1,460,023,253.910863s ]SELECT * FROM `33hao_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time < '1460023253' ) AND ( end_time > '1460023253' ) ORDER BY xianshi_recommend desc LIMIT 4  
+[2016-04-07 18:00:54] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_web` WHERE ( web_show = '1' ) AND ( web_page LIKE 'index%' ) ORDER BY web_sort LIMIT 1000   [ RunTime:1,460,023,253.910863s ]SELECT * FROM `33hao_web` WHERE ( web_show = '1' ) AND ( web_page LIKE 'index%' ) ORDER BY web_sort LIMIT 1000  
+[2016-04-07 18:00:54] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( start_time < '1460023254' ) AND ( end_time > '1460023254' ) ORDER BY recommended desc LIMIT 4   [ RunTime:1,460,023,254.773447s ]SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( start_time < '1460023254' ) AND ( end_time > '1460023254' ) ORDER BY recommended desc LIMIT 4  
+[2016-04-07 18:00:54] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_link` as `link`   order by link_id [ RunTime:1,460,023,254.773447s ]SELECT * FROM `33hao_link` as `link`   order by link_id
+[2016-04-07 18:00:54] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time < '1460023254' ) AND ( end_time > '1460023254' ) ORDER BY xianshi_recommend desc LIMIT 4   [ RunTime:1,460,023,254.773447s ]SELECT * FROM `33hao_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time < '1460023254' ) AND ( end_time > '1460023254' ) ORDER BY xianshi_recommend desc LIMIT 4  
+[2016-04-07 18:00:55] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_web` WHERE ( web_show = '1' ) AND ( web_page LIKE 'index%' ) ORDER BY web_sort LIMIT 1000   [ RunTime:1,460,023,254.773447s ]SELECT * FROM `33hao_web` WHERE ( web_show = '1' ) AND ( web_page LIKE 'index%' ) ORDER BY web_sort LIMIT 1000  
+[2016-04-07 18:00:55] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( start_time < '1460023255' ) AND ( end_time > '1460023255' ) ORDER BY recommended desc LIMIT 4   [ RunTime:1,460,023,255.689545s ]SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( start_time < '1460023255' ) AND ( end_time > '1460023255' ) ORDER BY recommended desc LIMIT 4  
+[2016-04-07 18:00:55] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_link` as `link`   order by link_id [ RunTime:1,460,023,255.689545s ]SELECT * FROM `33hao_link` as `link`   order by link_id
+[2016-04-07 18:00:55] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time < '1460023255' ) AND ( end_time > '1460023255' ) ORDER BY xianshi_recommend desc LIMIT 4   [ RunTime:1,460,023,255.689545s ]SELECT * FROM `33hao_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time < '1460023255' ) AND ( end_time > '1460023255' ) ORDER BY xianshi_recommend desc LIMIT 4  
+[2016-04-07 18:00:56] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_web` WHERE ( web_show = '1' ) AND ( web_page LIKE 'index%' ) ORDER BY web_sort LIMIT 1000   [ RunTime:1,460,023,255.689545s ]SELECT * FROM `33hao_web` WHERE ( web_show = '1' ) AND ( web_page LIKE 'index%' ) ORDER BY web_sort LIMIT 1000  
+[2016-04-07 18:00:56] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( start_time < '1460023256' ) AND ( end_time > '1460023256' ) ORDER BY recommended desc LIMIT 4   [ RunTime:1,460,023,256.601058s ]SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( start_time < '1460023256' ) AND ( end_time > '1460023256' ) ORDER BY recommended desc LIMIT 4  
+[2016-04-07 18:00:56] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_link` as `link`   order by link_id [ RunTime:1,460,023,256.601058s ]SELECT * FROM `33hao_link` as `link`   order by link_id
+[2016-04-07 18:00:56] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time < '1460023256' ) AND ( end_time > '1460023256' ) ORDER BY xianshi_recommend desc LIMIT 4   [ RunTime:1,460,023,256.601058s ]SELECT * FROM `33hao_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time < '1460023256' ) AND ( end_time > '1460023256' ) ORDER BY xianshi_recommend desc LIMIT 4  
+[2016-04-07 18:00:57] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_web` WHERE ( web_show = '1' ) AND ( web_page LIKE 'index%' ) ORDER BY web_sort LIMIT 1000   [ RunTime:1,460,023,256.601058s ]SELECT * FROM `33hao_web` WHERE ( web_show = '1' ) AND ( web_page LIKE 'index%' ) ORDER BY web_sort LIMIT 1000  
+[2016-04-07 18:00:57] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( start_time < '1460023257' ) AND ( end_time > '1460023257' ) ORDER BY recommended desc LIMIT 4   [ RunTime:1,460,023,257.470707s ]SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( start_time < '1460023257' ) AND ( end_time > '1460023257' ) ORDER BY recommended desc LIMIT 4  
+[2016-04-07 18:00:57] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_link` as `link`   order by link_id [ RunTime:1,460,023,257.470707s ]SELECT * FROM `33hao_link` as `link`   order by link_id
+[2016-04-07 18:00:57] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time < '1460023257' ) AND ( end_time > '1460023257' ) ORDER BY xianshi_recommend desc LIMIT 4   [ RunTime:1,460,023,257.470707s ]SELECT * FROM `33hao_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time < '1460023257' ) AND ( end_time > '1460023257' ) ORDER BY xianshi_recommend desc LIMIT 4  
+[2016-04-07 18:00:57] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_web` WHERE ( web_show = '1' ) AND ( web_page LIKE 'index%' ) ORDER BY web_sort LIMIT 1000   [ RunTime:1,460,023,257.470707s ]SELECT * FROM `33hao_web` WHERE ( web_show = '1' ) AND ( web_page LIKE 'index%' ) ORDER BY web_sort LIMIT 1000  
+[2016-04-07 18:00:58] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( start_time < '1460023257' ) AND ( end_time > '1460023257' ) ORDER BY recommended desc LIMIT 4   [ RunTime:1,460,023,258.435520s ]SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( start_time < '1460023257' ) AND ( end_time > '1460023257' ) ORDER BY recommended desc LIMIT 4  
+[2016-04-07 18:00:58] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_link` as `link`   order by link_id [ RunTime:1,460,023,258.435520s ]SELECT * FROM `33hao_link` as `link`   order by link_id
+[2016-04-07 18:00:58] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time < '1460023257' ) AND ( end_time > '1460023257' ) ORDER BY xianshi_recommend desc LIMIT 4   [ RunTime:1,460,023,258.435520s ]SELECT * FROM `33hao_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time < '1460023257' ) AND ( end_time > '1460023257' ) ORDER BY xianshi_recommend desc LIMIT 4  
+[2016-04-07 18:00:58] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_web` WHERE ( web_show = '1' ) AND ( web_page LIKE 'index%' ) ORDER BY web_sort LIMIT 1000   [ RunTime:1,460,023,258.435520s ]SELECT * FROM `33hao_web` WHERE ( web_show = '1' ) AND ( web_page LIKE 'index%' ) ORDER BY web_sort LIMIT 1000  
+[2016-04-07 18:00:59] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( start_time < '1460023258' ) AND ( end_time > '1460023258' ) ORDER BY recommended desc LIMIT 4   [ RunTime:1,460,023,259.316899s ]SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( start_time < '1460023258' ) AND ( end_time > '1460023258' ) ORDER BY recommended desc LIMIT 4  
+[2016-04-07 18:00:59] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_link` as `link`   order by link_id [ RunTime:1,460,023,259.316899s ]SELECT * FROM `33hao_link` as `link`   order by link_id
+[2016-04-07 18:00:59] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time < '1460023258' ) AND ( end_time > '1460023258' ) ORDER BY xianshi_recommend desc LIMIT 4   [ RunTime:1,460,023,259.316899s ]SELECT * FROM `33hao_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time < '1460023258' ) AND ( end_time > '1460023258' ) ORDER BY xianshi_recommend desc LIMIT 4  
+[2016-04-07 18:00:59] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_web` WHERE ( web_show = '1' ) AND ( web_page LIKE 'index%' ) ORDER BY web_sort LIMIT 1000   [ RunTime:1,460,023,259.316899s ]SELECT * FROM `33hao_web` WHERE ( web_show = '1' ) AND ( web_page LIKE 'index%' ) ORDER BY web_sort LIMIT 1000  
+[2016-04-07 18:01:09] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( start_time < '1460023268' ) AND ( end_time > '1460023268' ) ORDER BY recommended desc LIMIT 4   [ RunTime:1,460,023,269.187533s ]SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( start_time < '1460023268' ) AND ( end_time > '1460023268' ) ORDER BY recommended desc LIMIT 4  
+[2016-04-07 18:01:09] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_link` as `link`   order by link_id [ RunTime:1,460,023,269.187533s ]SELECT * FROM `33hao_link` as `link`   order by link_id
+[2016-04-07 18:01:09] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time < '1460023268' ) AND ( end_time > '1460023268' ) ORDER BY xianshi_recommend desc LIMIT 4   [ RunTime:1,460,023,269.187533s ]SELECT * FROM `33hao_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time < '1460023268' ) AND ( end_time > '1460023268' ) ORDER BY xianshi_recommend desc LIMIT 4  
+[2016-04-07 18:01:09] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_web` WHERE ( web_show = '1' ) AND ( web_page LIKE 'index%' ) ORDER BY web_sort LIMIT 1000   [ RunTime:1,460,023,269.187533s ]SELECT * FROM `33hao_web` WHERE ( web_show = '1' ) AND ( web_page LIKE 'index%' ) ORDER BY web_sort LIMIT 1000  
+[2016-04-07 18:03:11] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( start_time < '1460023390' ) AND ( end_time > '1460023390' ) ORDER BY recommended desc LIMIT 4   [ RunTime:1,460,023,391.774639s ]SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( start_time < '1460023390' ) AND ( end_time > '1460023390' ) ORDER BY recommended desc LIMIT 4  
+[2016-04-07 18:03:11] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_link` as `link`   order by link_id [ RunTime:1,460,023,391.774639s ]SELECT * FROM `33hao_link` as `link`   order by link_id
+[2016-04-07 18:03:11] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time < '1460023390' ) AND ( end_time > '1460023390' ) ORDER BY xianshi_recommend desc LIMIT 4   [ RunTime:1,460,023,391.774639s ]SELECT * FROM `33hao_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time < '1460023390' ) AND ( end_time > '1460023390' ) ORDER BY xianshi_recommend desc LIMIT 4  
+[2016-04-07 18:03:12] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_web` WHERE ( web_show = '1' ) AND ( web_page LIKE 'index%' ) ORDER BY web_sort LIMIT 1000   [ RunTime:1,460,023,391.774639s ]SELECT * FROM `33hao_web` WHERE ( web_show = '1' ) AND ( web_page LIKE 'index%' ) ORDER BY web_sort LIMIT 1000  
+[2016-04-07 18:03:12] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_brand` WHERE ( brand_recommend = '1' ) AND ( class_id = '1057' ) LIMIT 1000   [ RunTime:1,460,023,391.774639s ]SELECT * FROM `33hao_brand` WHERE ( brand_recommend = '1' ) AND ( class_id = '1057' ) LIMIT 1000  
+[2016-04-07 18:03:12] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_brand` WHERE ( brand_recommend = '1' ) AND ( class_id = '1058' ) LIMIT 1000   [ RunTime:1,460,023,391.774639s ]SELECT * FROM `33hao_brand` WHERE ( brand_recommend = '1' ) AND ( class_id = '1058' ) LIMIT 1000  
+[2016-04-07 18:03:12] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_brand` WHERE ( brand_recommend = '1' ) AND ( class_id = '1073' ) LIMIT 1000   [ RunTime:1,460,023,391.774639s ]SELECT * FROM `33hao_brand` WHERE ( brand_recommend = '1' ) AND ( class_id = '1073' ) LIMIT 1000  
+[2016-04-07 18:03:12] /33hao/shop/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_brand` WHERE ( brand_recommend = '1' ) AND ( class_id = '1060' ) LIMIT 1000   [ RunTime:1,460,023,391.774639s ]SELECT * FROM `33hao_brand` WHERE ( brand_recommend = '1' ) AND ( class_id = '1060' ) LIMIT 1000  
+[2016-04-07 22:33:26] /33hao/mobile/index.php?act=goods&op=get_all_comments&goods_id=844 ( act=goods&op=get_all_comments ) 
+ERR: SELECT COUNT(*) AS nc_count FROM `33hao_evaluate_goods` WHERE ( geval_goodsid = '844' ) LIMIT 1   [ RunTime:1,460,039,606.479471s ]SELECT COUNT(*) AS nc_count FROM `33hao_evaluate_goods` WHERE ( geval_goodsid = '844' ) LIMIT 1  
+[2016-04-07 22:33:26] /33hao/mobile/index.php?act=goods&op=get_all_comments&goods_id=844 ( act=goods&op=get_all_comments ) 
+ERR: SELECT * FROM `33hao_evaluate_goods` WHERE ( geval_goodsid = '844' ) ORDER BY geval_id desc LIMIT 0,5   [ RunTime:1,460,039,606.479471s ]SELECT * FROM `33hao_evaluate_goods` WHERE ( geval_goodsid = '844' ) ORDER BY geval_id desc LIMIT 0,5  
