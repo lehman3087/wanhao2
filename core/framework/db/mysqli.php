@@ -107,6 +107,7 @@ class Db{
 			}
 		}else {
                    // var_dump($sql);
+                    Log::record($sql." [ RunTime:".addUpTime('queryStartTime','queryEndTime',6)."s ]".$sql,Log::ERR);
 		    Log::record($sql." [ RunTime:".addUpTime('queryStartTime','queryEndTime',6)."s ]",Log::SQL);
                  //   var_dump($query);
 			return $query;

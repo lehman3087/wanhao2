@@ -33,7 +33,7 @@ class member_orderControl extends mobileMemberControl {
         }
        
 
-        $order_list_array = $model_order->getNormalOrderList($condition, $_REQUEST['pageCount'], '*', 'order_id desc','', array('order_goods'));
+        $order_list_array = $model_order->getNormalOrderList($condition, $this->page, '*', 'order_id desc','', array('order_goods'));
 
         $order_group_list = array();
         $order_pay_sn_array = array();

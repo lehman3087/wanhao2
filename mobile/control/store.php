@@ -282,7 +282,7 @@ class storeControl extends mobileHomeControl{
                         
                         if(($activity_type=='xianshis')||empty($activity_type)){
                             
-                           $xs=Model('p_xianshi')->getXianshiList($conditionall,$_REQUEST['pageCount']);
+                           $xs=Model('p_xianshi')->getXianshiList($conditionall,$this->page);
                             foreach ($xs as $key1 => $value1) {
                            $model_xianshi_goods = Model('p_xianshi_goods');
                             $condition['xianshi_id'] = $value1['xianshi_id'];
@@ -295,20 +295,20 @@ class storeControl extends mobileHomeControl{
                         }
                         
                         if(($activity_type=='groupbuys')||empty($activity_type)){
-                            $gb=Model('groupbuy')->getGroupbuyAvailableList($conditionall,$_REQUEST['pageCount']); 
+                            $gb=Model('groupbuy')->getGroupbuyAvailableList($conditionall,$this->page); 
                             $activities['groupbuys']=$gb;
                             $count =  Model('groupbuy')->getGroupbuyCount($conditionall);
                         }
                         
 //                        if(($activity_type=='groupbuys')||empty($activity_type)){
-//                            $gb=Model('groupbuy')->getGroupbuyAvailableList($conditionall,$_REQUEST['pageCount']); 
+//                            $gb=Model('groupbuy')->getGroupbuyAvailableList($conditionall,$this->page); 
 //                            $activities['groupbuys']=$gb;
 //                            $count =  Model('groupbuy')->getGroupbuyCount($conditionall);
 //                        }
                         
                         if(($activity_type=='signups')||empty($activity_type)){
                            $as = Model('activity')->getList($conditionall,$this->page);
-//                            $gb=Model('groupbuy')->getGroupbuyAvailableList($conditionall,$_REQUEST['pageCount']); 
+//                            $gb=Model('groupbuy')->getGroupbuyAvailableList($conditionall,$this->page); 
 //                            $activities['groupbuys']=$gb;
                            $activities['signup_list']=$as;
                            // $count =  Model('activity')->gettotalpage();
@@ -351,7 +351,7 @@ class storeControl extends mobileHomeControl{
 
                 
 		$model_stracelog = Model('store_sns_tracelog');
-		$strace_array = $model_stracelog->getStoreSnsTracelogList($where, '*', 'strace_id desc', 0,$_REQUEST['pageCount']);
+		$strace_array = $model_stracelog->getStoreSnsTracelogList($where, '*', 'strace_id desc', 0,$this->page);
                
 		// 整理
 

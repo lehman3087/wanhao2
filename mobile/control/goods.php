@@ -29,13 +29,13 @@ class goodsControl extends mobileHomeControl{
         $model_goods = Model('goods');
         $model_search = Model('search');
         
-       $post=$this->read_json();  
-        $arr=OTA($post);
-        $_REQUEST=array_merge($_REQUEST,$arr);
+//       $post=$this->read_json();  
+//        $arr=OTA($post);
+//        $_REQUEST=array_merge($_REQUEST,$arr);
         
         $condition=$this->_dealCondition($_REQUEST['conditions']);
         
-        Db::insert('log',array('key'=>'1','value'=>  serialize($condition)));
+        
         //Model('log').insert();
         //查询条件
        // $condition = array();
@@ -78,19 +78,19 @@ class goodsControl extends mobileHomeControl{
         $order = $this->_goods_list_order($_REQUEST['sortType'], $_REQUEST['sortOrder']);
         
         //优先从全文索引库里查找
-        list($indexer_ids,$indexer_count) = $model_search->indexerSearch($_REQUEST,$_REQUEST['pageCount']);
+        list($indexer_ids,$indexer_count) = $model_search->indexerSearch($_REQUEST,$this->page);
         if (is_array($indexer_ids)) {
             //商品主键搜索
-            $goods_list = $model_goods->getGoodsOnlineList(array('goods_id'=>array('in',$indexer_ids)), $fieldstr, 0, $order, $_REQUEST['pageCount'], null, false);
+            $goods_list = $model_goods->getGoodsOnlineList(array('goods_id'=>array('in',$indexer_ids)), $fieldstr, 0, $order, $this->page, null, false);
             //如果有商品下架等情况，则删除下架商品的搜索索引信息
             if (count($goods_list) != count($indexer_ids)) {
                 $model_search->delInvalidGoods($goods_list, $indexer_ids);
             }
-            pagecmd('setEachNum',$_REQUEST['pageCount']);
+            pagecmd('setEachNum',$this->page);
             pagecmd('setTotalNum',$indexer_count);
         } else {
             
-            $goods_list = $model_goods->getGoodsListByColorDistinct($condition, $fieldstr, $order, $_REQUEST['pageCount']);
+            $goods_list = $model_goods->getGoodsListByColorDistinct($condition, $fieldstr, $order, $this->page);
         }
         $page_count = $model_goods->gettotalpage();
 
@@ -427,11 +427,52 @@ class goodsControl extends mobileHomeControl{
     
     private function goods_all_commentsOp() {
         $goods_id=$_REQUEST['goods_id'];
-        $comments=$this->_get_comments($goods_id, $_REQUEST['type'], 5);
+        $comments=$this->_get_comments($goods_id, $_REQUEST['type'], $this->page);
         if(!empty($comments)){
             output_data($comments);
         }
     }
+    
+      /**
+     * 商品评价详细页
+     */
+//    public function comments_listOp() {
+//        
+//        $goods_id = intval($_REQUEST['goods_id']);
+//
+//        // 商品详细信息
+//        $model_goods = Model('goods');
+//        $goods_info = $model_goods->getGoodsInfoByID($goods_id, '*');
+//        // 验证商品是否存在
+//        if (empty($goods_info)) {
+//            showMessage(L('goods_index_no_goods'), '', 'html', 'error');
+//        }
+//        Tpl::output('goods', $goods_info);
+//
+//        $this->getStoreInfo($goods_info['store_id']);
+//
+//        // 当前位置导航
+//        $nav_link_list = Model('goods_class')->getGoodsClassNav($goods_info['gc_id'], 0);
+//        $nav_link_list[] = array('title' => $goods_info['goods_name'], 'link' => urlShop('goods', 'index', array('goods_id' => $goods_id)));
+//        $nav_link_list[] = array('title' => '商品评价');
+//        Tpl::output('nav_link_list', $nav_link_list );
+//
+//        //评价信息
+//        $goods_evaluate_info = Model('evaluate_goods')->getEvaluateGoodsInfoByGoodsID($goods_id);
+//        Tpl::output('goods_evaluate_info', $goods_evaluate_info);
+//
+//        $seo_param = array ();
+//
+//        $seo_param['name'] = $goods_info['goods_name'];
+//        $seo_param['key'] = $goods_info['goods_keywords'];
+//        $seo_param['description'] = $goods_info['goods_description'];
+//        Model('seo')->type('product')->param($seo_param)->show();
+//
+//        $this->_get_comments($goods_id, $_GET['type'], 20);
+//
+//		Tpl::showpage('goods.comments_list');
+//    }
+//    
     
   
     /**

@@ -338,6 +338,27 @@ class member_evaluateControl extends mobileMemberControl{
         }
     }
 
+    
+        /**
+     * 评价列表
+     */
+    public function comments_listOp(){
+        $model_evaluate_goods = Model('evaluate_goods');
+
+        $condition = array();
+        $condition['geval_frommemberid'] = $this->member_info['member_id'];
+        $goodsevallist = $model_evaluate_goods->getEvaluateGoodsList($condition, 10, 'geval_id desc');
+        
+        $data['goodsevallist']=$goodsevallist;
+        output_data($data);
+        
+//        Tpl::output('goodsevallist',$goodsevallist);
+//        Tpl::output('show_page',$model_evaluate_goods->showpage());
+//
+//        Tpl::showpage('evaluation.index');
+    }
+    
+    
     /**
      * 评价列表
      */
