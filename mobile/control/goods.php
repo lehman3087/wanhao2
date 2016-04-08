@@ -430,7 +430,7 @@ class goodsControl extends mobileHomeControl{
         $goods_id=$_REQUEST['goods_id'];
         $comments=$this->_get_comments($goods_id, $_REQUEST['type'], $this->page);
         if(!empty($comments)){
-            output_data($comments);
+            output_data(array('goods_evaluate_list'=>$comments));
         }
     }
     

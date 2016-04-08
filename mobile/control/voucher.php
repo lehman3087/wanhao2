@@ -118,28 +118,7 @@ class voucherControl extends mobileMemberControl {
 		$voucherlist = $model_voucher->getVoucherTemplateList($where, '*', 0, 0, $orderby);
                 $count=$model_voucher->where($where)->count();
                 output_data(array("voucher_list"=>$voucherlist));
-		//Tpl::output('voucherlist',$voucherlist);
-		//Tpl::output('show_page', $model_voucher->showpage(2));
 
-		//查询代金券面额
-//		$pricelist = $model_voucher->getVoucherPriceList();
-//                 output_data($pricelist);
-		//Tpl::output('pricelist',$pricelist);
-
-//		//查询店铺分类
-//		$store_class = rkcache('store_class', true);
-//		Tpl::output('store_class', $store_class);
-//
-//		//分类导航
-//		$nav_link = array(
-//		        0=>array('title'=>Language::get('homepage'),'link'=>SHOP_SITE_URL),
-//		        1=>array('title'=>'积分中心','link'=>urlShop('pointshop','index')),
-//		        2=>array('title'=>'代金券列表')
-//		);
-                
-       // output($statu)
-		//Tpl::output('nav_link_list', $nav_link);
-		//Tpl::showpage('pointvoucher');
 	}
     
 }

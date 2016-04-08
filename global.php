@@ -34,7 +34,7 @@ define('DIR_MICROSHOP','microshop');
 define('DIR_ADMIN','admin');
 define('DIR_API','api');
 define('DIR_MOBILE','mobile');
-define('DIR_WAP','shop');
+define('DIR_WAP','wap');
 
 define('DIR_RESOURCE','data/resource');
 define('DIR_UPLOAD','data/upload');

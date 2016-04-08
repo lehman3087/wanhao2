@@ -22,8 +22,10 @@ class evaluate_goodsModel extends Model {
 	 */
     public function getEvaluateGoodsList($condition, $page = null, $order = 'geval_id desc', $field = '*') {
         $list = $this->field($field)->where($condition)->page($page)->order($order)->select();
-        foreach ($list as $key =>$val) { 
+        foreach ($list as $key =>$val) { //getMemberAvatarForID
             $list[$key]['goods_image']=cthumb($val['geval_goodsimage'], 360, $goods_info['geval_storeid']);
+            $list[$key]['member_avatar']=getMemberAvatarForID($val['geval_frommemberid']);
+            
         }
         return $list;
     }

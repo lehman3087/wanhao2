@@ -32,13 +32,13 @@ class loginControl extends mobileHomeControl {
 			$array['member_passwd']	= md5(trim($_REQUEST['password']));
 
         $member_info = $this->getMemberAndGradeInfo($array);
+        
         $model_order=  Model('order'); 
          $member_info['orders_count_class']['order_nopay'] = $model_order->getOrderStateNewCount(array('buyer_id'=>$this->member_info['member_id']));
          $member_info['orders_count_class']['order_noreceiving'] = $model_order->getOrderStateSendCount(array('buyer_id'=>$this->member_info['member_id']));
          $member_info['orders_count_class']['order_noeval'] = $model_order->getOrderStateEvalCount(array('buyer_id'=>$this->member_info['member_id']));
          $member_info['orders_count_class']['order_nosend']=$model_order->getOrderStatePayCount(array('buyer_id'=>$this->member_info['member_id']));           
             
-         
         //var_dump($member_info);
         if(!empty($member_info)) {
             $token = $this->_get_token($member_info['member_id'], $member_info['member_name'], $_REQUEST['client']);
