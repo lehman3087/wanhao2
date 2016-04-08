@@ -27,15 +27,15 @@ class logoutControl extends mobileMemberControl {
         }
         $model_mb_user_token = Model('mb_user_token');
 
-        if($this->member_info['member_name'] == $_REQUEST['username']) {
+     //   if($this->member_info['member_name'] == $_REQUEST['username']) {
             $condition = array();
             $condition['member_id'] = $this->member_info['member_id'];
             $condition['client_type'] = $_REQUEST['client'];
             $model_mb_user_token->delMbUserToken($condition);
             output_data('1');
-        } else {
-            output_error('参数错误'.$this->member_info['member_name'].$_REQUEST['username']);
-        }
+//        } else {
+//            output_error('参数错误'.$this->member_info['member_name'].$_REQUEST['username']);
+//        }
 	}
 
 }
