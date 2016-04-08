@@ -23,7 +23,7 @@ class logoutControl extends mobileMemberControl {
      */
 	public function indexOp(){
         if(empty($_REQUEST['username']) || !in_array($_REQUEST['client'], $this->client_type_array)) {
-            output_error('参数错误');
+            output_error('参数错误'.$_REQUEST['username'].$_REQUEST['client']);
         }
         $model_mb_user_token = Model('mb_user_token');
 
@@ -34,7 +34,7 @@ class logoutControl extends mobileMemberControl {
             $model_mb_user_token->delMbUserToken($condition);
             output_data('1');
         } else {
-            output_error('参数错误');
+            output_error('参数错误'.$this->member_info['member_name'].$_REQUEST['username']);
         }
 	}
 
