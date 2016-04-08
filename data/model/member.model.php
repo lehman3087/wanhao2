@@ -21,7 +21,11 @@ class memberModel extends Model {
      * @return array
      */
     public function getMemberInfo($condition, $field = '*', $master = false) {
-        return $this->table('member')->field($field)->where($condition)->master($master)->find();
+        $member_info=$this->table('member')->field($field)->where($condition)->master($master)->find();
+        if (empty($member_info)) {
+            $member_info['avatar'] = getMemberAvatarForID($member_info['member_id']);
+        }
+        return $member_info;
     }
     
 

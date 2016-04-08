@@ -317,17 +317,17 @@ if ($fp)
 		 */
 		$model_upload = Model('upload');
 		if(intval($_POST['file_id']) > 0){
-			$file_info = $model_upload->getOneUpload($_POST['file_id']);
+			$file_info = $model_upload->getOneUpload($_REQUEST['file_id']);
 			@unlink(BASE_UPLOAD_PATH.DS.ATTACH_HEADER.DS.$file_info['file_name']);
 
 			$update_array	= array();
-			$update_array['upload_id']	= intval($_POST['file_id']);
+			$update_array['upload_id']	= intval($_REQUEST['file_id']);
 			$update_array['file_name']	= $img_path;
 			//$update_array['file_size']	= $_FILES[$_POST['id']]['size'];
                         $update_array['file_size']	= $_FILES['image']['size'];
 			$model_upload->update($update_array);
 
-			$output['file_id']	= intval($_POST['file_id']);
+			$output['file_id']	= intval($_REQUEST['file_id']);
 			//$output['id']		= $_POST['id'];
                         $output['id']		= 'image';
 			$output['file_name']	= $img_path;

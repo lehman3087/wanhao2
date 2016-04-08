@@ -30,20 +30,10 @@ class loginControl extends mobileHomeControl {
         
         $array['member_name|member_email|member_mobile']	= $_REQUEST['username'];
 			$array['member_passwd']	= md5(trim($_REQUEST['password']));
-//			$member_info = $model_member->getMemberInfo($array);
-//			if(is_array($member_info) and !empty($member_info)) {
-//				if(!$member_info['member_state']){
-//			        showDialog($lang['login_index_account_stop'],''.'error',$script);
-//				}
-//			}else{361458577
-//			    process::addprocess('login');
-//			    showDialog($lang['login_index_login_fail'],'','error',$script);
-//			}
-                        
-       // var_dump($array);
+
         $member_info = $this->getMemberAndGradeInfo($array);
         $model_order=  Model('order'); 
-        $member_info['orders_count_class']['order_nopay'] = $model_order->getOrderStateNewCount(array('buyer_id'=>$this->member_info['member_id']));
+         $member_info['orders_count_class']['order_nopay'] = $model_order->getOrderStateNewCount(array('buyer_id'=>$this->member_info['member_id']));
          $member_info['orders_count_class']['order_noreceiving'] = $model_order->getOrderStateSendCount(array('buyer_id'=>$this->member_info['member_id']));
          $member_info['orders_count_class']['order_noeval'] = $model_order->getOrderStateEvalCount(array('buyer_id'=>$this->member_info['member_id']));
          $member_info['orders_count_class']['order_nosend']=$model_order->getOrderStatePayCount(array('buyer_id'=>$this->member_info['member_id']));           
