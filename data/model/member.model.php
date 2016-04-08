@@ -22,7 +22,7 @@ class memberModel extends Model {
      */
     public function getMemberInfo($condition, $field = '*', $master = false) {
         $member_info=$this->table('member')->field($field)->where($condition)->master($master)->find();
-        if (empty($member_info)) {
+        if (!empty($member_info)) {
             $member_info['avatar'] = getMemberAvatarForID($member_info['member_id']);
         }
         return $member_info;
