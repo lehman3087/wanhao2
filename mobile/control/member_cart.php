@@ -243,6 +243,10 @@ class member_cartControl extends mobileMemberControl {
 	 *
 	 */
 	public function add_blOp() {
+            
+            
+            
+            
 	    $model_goods = Model('goods');
 	    $logic_buy_1 = Logic('buy_1');
 //        if (is_numeric($_REQUEST['goods_id'])) {
@@ -271,6 +275,7 @@ class member_cartControl extends mobileMemberControl {
             $model_bl = Model('p_bundling');
             $bl_info = $model_bl->getBundlingInfo(array('bl_id'=>$bl_id));
             if (empty($bl_info) || $bl_info['bl_state'] == '0') {
+                
                 //exit(json_encode(array('msg'=>'该优惠套装已不存在，建议您单独购买','UTF-8')));
             }
 
@@ -299,30 +304,164 @@ class member_cartControl extends mobileMemberControl {
             $goods_info['store_name'] = $bl_info['store_name'];
             $goods_info['bl_id'] = $bl_id;
             $quantity = 1;
-       // }
 
-        //已登录状态，存入数据库,未登录时，存入COOKIE
-//        if($_SESSION['member_id']) {
             $save_type = 'db';
             $goods_info['buyer_id'] = $this->member_info['member_id'];
-//        } else {
-//            $save_type = 'cookie';
-//        }
+
         $model_cart	= Model('cart');
         $insert = $model_cart->addCart($goods_info,$save_type,$quantity);
+        
+        //直接购买
         if ($insert) {
+           $cart_id=$insert.'|1';
+          $logic_buy = logic('buy');
+          $result = $logic_buy->buyStep1($cart_id, $_REQUEST['ifcart'], $this->member_info['member_id'], $this->member_info['store_id']);
+        
+            //得到购买数据
+      //  $result = $logic_buy->buyStep1($cart_id, $_REQUEST['ifcart'], $this->member_info['member_id'], $this->member_info['store_id']);
+        
+        
+        if(!$result['state']) {
+           // var_dump($result['msg']);
+            output_error($result['msg']);
+        } else {
+            $result = $result['data'];
+        }
+        
+        //整理数据
+        $store_cart_list = array();
+        foreach ($result['store_cart_list'] as $key => $value) {
+            $store_cart_list[$key]['goods_list'] = $value;
+            $store_cart_list[$key]['store_goods_total'] = $result['store_goods_total'][$key];
+            if(!empty($result['store_premiums_list'][$key])) {
+                $result['store_premiums_list'][$key][0]['premiums'] = true;
+                $result['store_premiums_list'][$key][0]['goods_total'] = 0.00;
+                $store_cart_list[$key]['goods_list'][] = $result['store_premiums_list'][$key][0];
+            }
+            $store_cart_list[$key]['store_mansong_rule_list'] = $result['store_mansong_rule_list'][$key];
+            $store_cart_list[$key]['store_voucher_list'] = $result['store_voucher_list'][$key];
+            if(!empty($result['cancel_calc_sid_list'][$key])) {
+                $store_cart_list[$key]['freight'] = '0';
+                $store_cart_list[$key]['freight_message'] = $result['cancel_calc_sid_list'][$key]['desc'];
+            } else {
+                $store_cart_list[$key]['freight'] = '1';
+            }
+            $store_cart_list[$key]['store_name'] = $value[0]['store_name'];
+            $store_cart_list[$key]['store_id'] = $value[0]['store_id'];
+             
+        }
+        
+        foreach ($store_cart_list as $key => $value) {
+            $store_cart_list[$key]['store_voucher_list']=  array_values($value['store_voucher_list']);
+        }
+        
+        $buy_list = array();
+        $buy_list['store_cart_list'] = array_values($store_cart_list);
+        
+        $buy_list['freight_hash'] = $result['freight_list'];
+        $buy_list['address_info'] = !empty($result['address_info'])?$result['address_info']:'';
+        $buy_list['ifshow_offpay'] = $result['ifshow_offpay'];
+        $buy_list['vat_hash'] = $result['vat_hash'];
+        $buy_list['inv_info'] = $result['inv_info'];
+        $buy_list['available_predeposit'] = $result['available_predeposit'];
+        $buy_list['available_rc_balance'] = $result['available_rc_balance'];
+        
+        output_data($buy_list);
+        
+        
+        
             //购物车商品种数记入cookie
             //setNcCookie('cart_goods_num',$model_cart->cart_goods_num,2*3600);
-            $data = array('state'=>'true', 'num' => $model_cart->cart_goods_num, 'amount' => ncPriceFormat($model_cart->cart_all_price));
-            
-            
+         //   $data = array('state'=>'true', 'num' => $model_cart->cart_goods_num, 'amount' => ncPriceFormat($model_cart->cart_all_price));
         } else {
-            $data = array('state'=>'false');
+            output_error(array('state'=>'false'));
         }
-         output_data($data);
+        // output_data($data);
 	  //  exit(json_encode($data));
 	}
       
+        
+        
+      public function check_bl_add_cartOp() {   
+	 $model_goods = Model('goods');
+	 $logic_buy_1 = Logic('buy_1');
+         $bl_ids_string = $_REQUEST['bl_item_ids'];
+        
+        $bl_ids=  explode(',', $bl_ids_string);
+       // var_dump(empty($cart_ids));
+        if(!is_array($cart_ids)||empty($cart_ids_string)){
+            output_error('参数错误');
+           // output_special_code('10400','参数错误');
+        }
+        
+        $datar=array();
+         $model_cart->beginTransaction();
+         
+        foreach ($bl_ids as $key => $value) {
+            
+            $bl_id_count=  explode('|', $value);
+            
+            $bl_id = intval($bl_id_count[0]);
+            if ($bl_id <= 0) return ;
+            $model_bl = Model('p_bundling');
+            $bl_info = $model_bl->getBundlingInfo(array('bl_id'=>$bl_id));
+            if (empty($bl_info) || $bl_info['bl_state'] == '0') {
+                output_special_code('10400',array('bl_id'=>$value,'message'=>'优惠套装已结束'));
+               // output_error();
+                //exit(json_encode(array('msg'=>'该优惠套装已不存在，建议您单独购买','UTF-8')));
+            }
+
+            //检查每个商品是否符合条件,并重新计算套装总价
+            $bl_goods_list = $model_bl->getBundlingGoodsList(array('bl_id'=>$bl_id));
+            $goods_id_array = array();
+            $bl_amount = 0;
+            foreach ($bl_goods_list as $goods) {
+            	$goods_id_array[] = $goods['goods_id'];
+            	$bl_amount += $goods['bl_goods_price'];
+            }
+            $model_goods = Model('goods');
+            $goods_list = $model_goods->getGoodsOnlineListAndPromotionByIdArray($goods_id_array);
+            foreach ($goods_list as $goods) {
+                $this->_check_goods_and_roolback($goods,$bl_id_count[1],$model_cart,$value);
+            }
+
+            //优惠套装作为一条记录插入购物车，图片取套装内的第一个商品图
+            $goods_info    = array();
+            $goods_info['store_id']	= $bl_info['store_id'];
+            $goods_info['goods_id']	= $goods_list[0]['goods_id'];
+            $goods_info['goods_name'] = $bl_info['bl_name'];
+            $goods_info['goods_price'] = $bl_amount;
+            $goods_info['goods_num']   = 1;
+            $goods_info['goods_image'] = $goods_list[0]['goods_image'];
+            $goods_info['store_name'] = $bl_info['store_name'];
+            $goods_info['bl_id'] = $bl_id;
+            $quantity = $bl_id_count[1];
+
+            $save_type = 'db';
+            $goods_info['buyer_id'] = $this->member_info['member_id'];
+
+        $model_cart	= Model('cart');
+        $insert = $model_cart->addCart($goods_info,$save_type,$quantity);
+        
+        //插入成功
+            if ($insert) {
+                $datac['cart_id']=$insert;
+                $datac['bl_id']=$bl_id;
+                $datar[]=$datac;
+             //   $datar[]=$insert.'|'.$bl_id_count[1];
+               // output_data(array('cart_id'=>$insert));
+             } else {
+                 $model_cart->rollback();
+                output_error(array('state'=>'false'));
+            } 
+        }
+        
+       $model_cart->commit();   
+       output_data(array('bl_carts'=>$datar));
+        // output_data($data);
+	  //  exit(json_encode($data));
+}
+        
         
         
        
@@ -353,6 +492,45 @@ class member_cartControl extends mobileMemberControl {
 			//exit(json_encode(array('msg'=>Language::get('cart_add_too_much','UTF-8'))));
 		}
 		if ($goods_info['is_virtual'] || $goods_info['is_fcode'] || $goods_info['is_presell']) {
+                    output_error();
+		  //  exit(json_encode(array('msg'=>'该商品不允许加入购物车，请直接购买','UTF-8')));
+		}
+	}
+  
+                	/**
+	 * 检查商品是否符合加入购物车条件
+	 * @param unknown $goods
+	 * @param number $quantity
+	 */
+	private function _check_goods_and_roolback($goods_info, $quantity,$model,$bl_id) {
+		if(empty($quantity)) {
+                    $model->rollback();
+                    output_error();
+			//exit(json_encode(array('msg'=>Language::get('wrong_argument','UTF-8'))));
+		}
+		if(empty($goods_info)) {
+                    $model->rollback();
+                    output_error();
+                    
+			//exit(json_encode(array('msg'=>Language::get('cart_add_goods_not_exists','UTF-8'))));
+		}
+		if ($goods_info['store_id'] == $this->member_info['store_id']) {
+                    $model->rollback();
+                    output_error();
+			//exit(json_encode(array('msg'=>Language::get('cart_add_cannot_buy','UTF-8'))));
+		}
+		if(intval($goods_info['goods_storage']) < 1) {
+                    $model->rollback();
+                    output_special_code('10400',array('bl_id'=>$bl_id,'message'=>'暂无商品库存'));
+			//exit(json_encode(array('msg'=>Language::get('cart_add_stock_shortage','UTF-8'))));
+		}
+		if(intval($goods_info['goods_storage']) < $quantity) {
+                    $model->rollback();
+                    output_special_code('10400',array('bl_id'=>$bl_id,'message'=>'暂无商品库存'));
+			//exit(json_encode(array('msg'=>Language::get('cart_add_too_much','UTF-8'))));
+		}
+		if ($goods_info['is_virtual'] || $goods_info['is_fcode'] || $goods_info['is_presell']) {
+                   $model->rollback();
                     output_error();
 		  //  exit(json_encode(array('msg'=>'该商品不允许加入购物车，请直接购买','UTF-8')));
 		}

@@ -22,6 +22,7 @@ class member_buyControl extends mobileMemberControl {
      * 购物车、直接购买第一步:选择收获地址和配置方式
      */
     public function buy_step1Op() {
+        
         $cart_id = explode(',', $_REQUEST['cart_ids']);
       //  var_dump($cart_id);
         $logic_buy = logic('buy');
