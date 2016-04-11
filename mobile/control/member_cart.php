@@ -395,7 +395,10 @@ class member_cartControl extends mobileMemberControl {
            // output_special_code('10400','参数错误');
         }
         
+        
         $datar=array();
+        
+         $model_cart	= Model('cart');
          $model_cart->beginTransaction();
          
         foreach ($bl_ids as $key => $value) {
@@ -423,7 +426,7 @@ class member_cartControl extends mobileMemberControl {
             $model_goods = Model('goods');
             $goods_list = $model_goods->getGoodsOnlineListAndPromotionByIdArray($goods_id_array);
             foreach ($goods_list as $goods) {
-                $this->_check_goods_and_roolback($goods,$bl_id_count[1],$model_cart,$value);
+                $this->_check_goods_and_roolback($goods,$bl_id_count[1],$model_cart,$bl_id_count[0]);
             }
 
             //优惠套装作为一条记录插入购物车，图片取套装内的第一个商品图
@@ -441,7 +444,7 @@ class member_cartControl extends mobileMemberControl {
             $save_type = 'db';
             $goods_info['buyer_id'] = $this->member_info['member_id'];
 
-        $model_cart	= Model('cart');
+       
         $insert = $model_cart->addCart($goods_info,$save_type,$quantity);
         
         //插入成功
@@ -461,12 +464,9 @@ class member_cartControl extends mobileMemberControl {
        output_data(array('bl_carts'=>$datar));
         // output_data($data);
 	  //  exit(json_encode($data));
-}
-        
-        
-        
-       
-        	/**
+    }
+    
+        /**
 	 * 检查商品是否符合加入购物车条件
 	 * @param unknown $goods
 	 * @param number $quantity
