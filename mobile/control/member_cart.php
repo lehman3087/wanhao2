@@ -388,7 +388,7 @@ class member_cartControl extends mobileMemberControl {
          $bl_ids_string = $_REQUEST['bl_item_ids'];
         
         $bl_ids=  explode(',', $bl_ids_string);
-        array_filter($bl_ids);
+        $bl_ids=array_filter($bl_ids);
        // var_dump(empty($cart_ids));
         if(!is_array($bl_ids)){
             output_error('参数错误');

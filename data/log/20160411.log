@@ -280,3 +280,123 @@ ERR: SELECT * FROM `33hao_cart` WHERE ( goods_id = '857' ) AND ( buyer_id = '16'
 ERR: INSERT  INTO `33hao_cart` (buyer_id,store_id,goods_id,goods_name,goods_price,goods_num,goods_image,store_name,bl_id) VALUES ('16','17','857','活动2','2768','1','17_05127354412838040.png','欧普照明旗舰店','13') [ RunTime:1,460,370,535.414089s ]INSERT  INTO `33hao_cart` (buyer_id,store_id,goods_id,goods_name,goods_price,goods_num,goods_image,store_name,bl_id) VALUES ('16','17','857','活动2','2768','1','17_05127354412838040.png','欧普照明旗舰店','13')
 [2016-04-11 18:28:57] /33hao/mobile/index.php?act=member_cart&op=check_bl_add_cart ( act=member_cart&op=check_bl_add_cart ) 
 ERR: SELECT * FROM `33hao_cart` WHERE ( buyer_id = '16' ) LIMIT 1000   [ RunTime:1,460,370,535.414089s ]SELECT * FROM `33hao_cart` WHERE ( buyer_id = '16' ) LIMIT 1000  
+[2016-04-11 18:35:43] /33hao/mobile/index.php?act=member_cart&op=check_bl_add_cart ( act=member_cart&op=check_bl_add_cart ) 
+ERR: SELECT * FROM `33hao_mb_user_token` WHERE ( token = 'f84b5d031307e1342590a0ee028d907e' ) LIMIT 1   [ RunTime:1,460,370,943.126905s ]SELECT * FROM `33hao_mb_user_token` WHERE ( token = 'f84b5d031307e1342590a0ee028d907e' ) LIMIT 1  
+[2016-04-11 18:35:43] /33hao/mobile/index.php?act=member_cart&op=check_bl_add_cart ( act=member_cart&op=check_bl_add_cart ) 
+ERR: SELECT * FROM `33hao_member` WHERE ( member_id = '16' ) LIMIT 1   [ RunTime:1,460,370,943.126905s ]SELECT * FROM `33hao_member` WHERE ( member_id = '16' ) LIMIT 1  
+[2016-04-11 18:35:43] /33hao/mobile/index.php?act=member_cart&op=check_bl_add_cart ( act=member_cart&op=check_bl_add_cart ) 
+ERR: SELECT * FROM `33hao_seller` WHERE ( member_id = '16' ) LIMIT 1   [ RunTime:1,460,370,943.126905s ]SELECT * FROM `33hao_seller` WHERE ( member_id = '16' ) LIMIT 1  
+[2016-04-11 18:35:43] /33hao/mobile/index.php?act=member_cart&op=check_bl_add_cart ( act=member_cart&op=check_bl_add_cart ) 
+ERR: SELECT * FROM `33hao_p_bundling` WHERE ( bl_id = '13' ) LIMIT 1   [ RunTime:1,460,370,943.126905s ]SELECT * FROM `33hao_p_bundling` WHERE ( bl_id = '13' ) LIMIT 1  
+[2016-04-11 18:35:43] /33hao/mobile/index.php?act=member_cart&op=check_bl_add_cart ( act=member_cart&op=check_bl_add_cart ) 
+ERR: SELECT * FROM `33hao_p_bundling_goods` WHERE ( bl_id = '13' ) ORDER BY bl_goods_id asc LIMIT 1000   [ RunTime:1,460,370,943.126905s ]SELECT * FROM `33hao_p_bundling_goods` WHERE ( bl_id = '13' ) ORDER BY bl_goods_id asc LIMIT 1000  
+[2016-04-11 18:35:43] /33hao/mobile/index.php?act=member_cart&op=check_bl_add_cart ( act=member_cart&op=check_bl_add_cart ) 
+ERR: SELECT * FROM `33hao_goods` WHERE ( goods_id = '857' ) LIMIT 1   [ RunTime:1,460,370,943.126905s ]SELECT * FROM `33hao_goods` WHERE ( goods_id = '857' ) LIMIT 1  
+[2016-04-11 18:35:43] /33hao/mobile/index.php?act=member_cart&op=check_bl_add_cart ( act=member_cart&op=check_bl_add_cart ) 
+ERR: SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( end_time > '1460370942' ) AND ( goods_commonid = '100390' ) ORDER BY start_time asc LIMIT 1   [ RunTime:1,460,370,943.126905s ]SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( end_time > '1460370942' ) AND ( goods_commonid = '100390' ) ORDER BY start_time asc LIMIT 1  
+[2016-04-11 18:35:43] /33hao/mobile/index.php?act=member_cart&op=check_bl_add_cart ( act=member_cart&op=check_bl_add_cart ) 
+ERR: SELECT * FROM `33hao_p_xianshi_goods` WHERE ( state = '1' ) AND ( end_time > '1460370942' ) AND ( goods_id = '857' ) ORDER BY start_time asc LIMIT 1   [ RunTime:1,460,370,943.126905s ]SELECT * FROM `33hao_p_xianshi_goods` WHERE ( state = '1' ) AND ( end_time > '1460370942' ) AND ( goods_id = '857' ) ORDER BY start_time asc LIMIT 1  
+[2016-04-11 18:35:44] /33hao/mobile/index.php?act=member_cart&op=check_bl_add_cart ( act=member_cart&op=check_bl_add_cart ) 
+ERR: SELECT * FROM `33hao_goods` WHERE ( goods_id = '299' ) LIMIT 1   [ RunTime:1,460,370,943.126905s ]SELECT * FROM `33hao_goods` WHERE ( goods_id = '299' ) LIMIT 1  
+[2016-04-11 18:35:44] /33hao/mobile/index.php?act=member_cart&op=check_bl_add_cart ( act=member_cart&op=check_bl_add_cart ) 
+ERR: SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( end_time > '1460370942' ) AND ( goods_commonid = '100132' ) ORDER BY start_time asc LIMIT 1   [ RunTime:1,460,370,943.126905s ]SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( end_time > '1460370942' ) AND ( goods_commonid = '100132' ) ORDER BY start_time asc LIMIT 1  
+[2016-04-11 18:35:44] /33hao/mobile/index.php?act=member_cart&op=check_bl_add_cart ( act=member_cart&op=check_bl_add_cart ) 
+ERR: SELECT * FROM `33hao_goods` WHERE ( goods_id = '294' ) LIMIT 1   [ RunTime:1,460,370,943.126905s ]SELECT * FROM `33hao_goods` WHERE ( goods_id = '294' ) LIMIT 1  
+[2016-04-11 18:35:44] /33hao/mobile/index.php?act=member_cart&op=check_bl_add_cart ( act=member_cart&op=check_bl_add_cart ) 
+ERR: SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( end_time > '1460370942' ) AND ( goods_commonid = '100127' ) ORDER BY start_time asc LIMIT 1   [ RunTime:1,460,370,943.126905s ]SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( end_time > '1460370942' ) AND ( goods_commonid = '100127' ) ORDER BY start_time asc LIMIT 1  
+[2016-04-11 18:35:44] /33hao/mobile/index.php?act=member_cart&op=check_bl_add_cart ( act=member_cart&op=check_bl_add_cart ) 
+ERR: SELECT * FROM `33hao_cart` WHERE ( goods_id = '857' ) AND ( buyer_id = '16' ) AND ( bl_id = '13' ) LIMIT 1   [ RunTime:1,460,370,943.126905s ]SELECT * FROM `33hao_cart` WHERE ( goods_id = '857' ) AND ( buyer_id = '16' ) AND ( bl_id = '13' ) LIMIT 1  
+[2016-04-11 18:35:44] /33hao/mobile/index.php?act=member_cart&op=check_bl_add_cart ( act=member_cart&op=check_bl_add_cart ) 
+ERR: INSERT  INTO `33hao_cart` (buyer_id,store_id,goods_id,goods_name,goods_price,goods_num,goods_image,store_name,bl_id) VALUES ('16','17','857','活动2','2768','1','17_05127354412838040.png','欧普照明旗舰店','13') [ RunTime:1,460,370,943.126905s ]INSERT  INTO `33hao_cart` (buyer_id,store_id,goods_id,goods_name,goods_price,goods_num,goods_image,store_name,bl_id) VALUES ('16','17','857','活动2','2768','1','17_05127354412838040.png','欧普照明旗舰店','13')
+[2016-04-11 18:35:44] /33hao/mobile/index.php?act=member_cart&op=check_bl_add_cart ( act=member_cart&op=check_bl_add_cart ) 
+ERR: SELECT * FROM `33hao_cart` WHERE ( buyer_id = '16' ) LIMIT 1000   [ RunTime:1,460,370,943.126905s ]SELECT * FROM `33hao_cart` WHERE ( buyer_id = '16' ) LIMIT 1000  
+[2016-04-11 18:35:57] /33hao/mobile/index.php?act=member_cart&op=check_bl_add_cart ( act=member_cart&op=check_bl_add_cart ) 
+ERR: SELECT * FROM `33hao_mb_user_token` WHERE ( token = 'f84b5d031307e1342590a0ee028d907e' ) LIMIT 1   [ RunTime:1,460,370,957.712084s ]SELECT * FROM `33hao_mb_user_token` WHERE ( token = 'f84b5d031307e1342590a0ee028d907e' ) LIMIT 1  
+[2016-04-11 18:35:57] /33hao/mobile/index.php?act=member_cart&op=check_bl_add_cart ( act=member_cart&op=check_bl_add_cart ) 
+ERR: SELECT * FROM `33hao_member` WHERE ( member_id = '16' ) LIMIT 1   [ RunTime:1,460,370,957.712084s ]SELECT * FROM `33hao_member` WHERE ( member_id = '16' ) LIMIT 1  
+[2016-04-11 18:35:57] /33hao/mobile/index.php?act=member_cart&op=check_bl_add_cart ( act=member_cart&op=check_bl_add_cart ) 
+ERR: SELECT * FROM `33hao_seller` WHERE ( member_id = '16' ) LIMIT 1   [ RunTime:1,460,370,957.712084s ]SELECT * FROM `33hao_seller` WHERE ( member_id = '16' ) LIMIT 1  
+[2016-04-11 18:35:58] /33hao/mobile/index.php?act=member_cart&op=check_bl_add_cart ( act=member_cart&op=check_bl_add_cart ) 
+ERR: SELECT * FROM `33hao_p_bundling` WHERE ( bl_id = '13' ) LIMIT 1   [ RunTime:1,460,370,957.712084s ]SELECT * FROM `33hao_p_bundling` WHERE ( bl_id = '13' ) LIMIT 1  
+[2016-04-11 18:35:58] /33hao/mobile/index.php?act=member_cart&op=check_bl_add_cart ( act=member_cart&op=check_bl_add_cart ) 
+ERR: SELECT * FROM `33hao_p_bundling_goods` WHERE ( bl_id = '13' ) ORDER BY bl_goods_id asc LIMIT 1000   [ RunTime:1,460,370,957.712084s ]SELECT * FROM `33hao_p_bundling_goods` WHERE ( bl_id = '13' ) ORDER BY bl_goods_id asc LIMIT 1000  
+[2016-04-11 18:35:58] /33hao/mobile/index.php?act=member_cart&op=check_bl_add_cart ( act=member_cart&op=check_bl_add_cart ) 
+ERR: SELECT * FROM `33hao_goods` WHERE ( goods_id = '857' ) LIMIT 1   [ RunTime:1,460,370,957.712084s ]SELECT * FROM `33hao_goods` WHERE ( goods_id = '857' ) LIMIT 1  
+[2016-04-11 18:35:58] /33hao/mobile/index.php?act=member_cart&op=check_bl_add_cart ( act=member_cart&op=check_bl_add_cart ) 
+ERR: SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( end_time > '1460370957' ) AND ( goods_commonid = '100390' ) ORDER BY start_time asc LIMIT 1   [ RunTime:1,460,370,957.712084s ]SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( end_time > '1460370957' ) AND ( goods_commonid = '100390' ) ORDER BY start_time asc LIMIT 1  
+[2016-04-11 18:35:58] /33hao/mobile/index.php?act=member_cart&op=check_bl_add_cart ( act=member_cart&op=check_bl_add_cart ) 
+ERR: SELECT * FROM `33hao_p_xianshi_goods` WHERE ( state = '1' ) AND ( end_time > '1460370957' ) AND ( goods_id = '857' ) ORDER BY start_time asc LIMIT 1   [ RunTime:1,460,370,957.712084s ]SELECT * FROM `33hao_p_xianshi_goods` WHERE ( state = '1' ) AND ( end_time > '1460370957' ) AND ( goods_id = '857' ) ORDER BY start_time asc LIMIT 1  
+[2016-04-11 18:35:58] /33hao/mobile/index.php?act=member_cart&op=check_bl_add_cart ( act=member_cart&op=check_bl_add_cart ) 
+ERR: SELECT * FROM `33hao_goods` WHERE ( goods_id = '299' ) LIMIT 1   [ RunTime:1,460,370,957.712084s ]SELECT * FROM `33hao_goods` WHERE ( goods_id = '299' ) LIMIT 1  
+[2016-04-11 18:35:58] /33hao/mobile/index.php?act=member_cart&op=check_bl_add_cart ( act=member_cart&op=check_bl_add_cart ) 
+ERR: SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( end_time > '1460370957' ) AND ( goods_commonid = '100132' ) ORDER BY start_time asc LIMIT 1   [ RunTime:1,460,370,957.712084s ]SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( end_time > '1460370957' ) AND ( goods_commonid = '100132' ) ORDER BY start_time asc LIMIT 1  
+[2016-04-11 18:35:58] /33hao/mobile/index.php?act=member_cart&op=check_bl_add_cart ( act=member_cart&op=check_bl_add_cart ) 
+ERR: SELECT * FROM `33hao_goods` WHERE ( goods_id = '294' ) LIMIT 1   [ RunTime:1,460,370,957.712084s ]SELECT * FROM `33hao_goods` WHERE ( goods_id = '294' ) LIMIT 1  
+[2016-04-11 18:35:58] /33hao/mobile/index.php?act=member_cart&op=check_bl_add_cart ( act=member_cart&op=check_bl_add_cart ) 
+ERR: SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( end_time > '1460370957' ) AND ( goods_commonid = '100127' ) ORDER BY start_time asc LIMIT 1   [ RunTime:1,460,370,957.712084s ]SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( end_time > '1460370957' ) AND ( goods_commonid = '100127' ) ORDER BY start_time asc LIMIT 1  
+[2016-04-11 18:35:58] /33hao/mobile/index.php?act=member_cart&op=check_bl_add_cart ( act=member_cart&op=check_bl_add_cart ) 
+ERR: SELECT * FROM `33hao_cart` WHERE ( goods_id = '857' ) AND ( buyer_id = '16' ) AND ( bl_id = '13' ) LIMIT 1   [ RunTime:1,460,370,957.712084s ]SELECT * FROM `33hao_cart` WHERE ( goods_id = '857' ) AND ( buyer_id = '16' ) AND ( bl_id = '13' ) LIMIT 1  
+[2016-04-11 18:35:59] /33hao/mobile/index.php?act=member_cart&op=check_bl_add_cart ( act=member_cart&op=check_bl_add_cart ) 
+ERR: INSERT  INTO `33hao_cart` (buyer_id,store_id,goods_id,goods_name,goods_price,goods_num,goods_image,store_name,bl_id) VALUES ('16','17','857','活动2','2768','1','17_05127354412838040.png','欧普照明旗舰店','13') [ RunTime:1,460,370,957.712084s ]INSERT  INTO `33hao_cart` (buyer_id,store_id,goods_id,goods_name,goods_price,goods_num,goods_image,store_name,bl_id) VALUES ('16','17','857','活动2','2768','1','17_05127354412838040.png','欧普照明旗舰店','13')
+[2016-04-11 18:35:59] /33hao/mobile/index.php?act=member_cart&op=check_bl_add_cart ( act=member_cart&op=check_bl_add_cart ) 
+ERR: SELECT * FROM `33hao_cart` WHERE ( buyer_id = '16' ) LIMIT 1000   [ RunTime:1,460,370,957.712084s ]SELECT * FROM `33hao_cart` WHERE ( buyer_id = '16' ) LIMIT 1000  
+[2016-04-11 18:37:17] /33hao/mobile/index.php?act=member_cart&op=check_bl_add_cart ( act=member_cart&op=check_bl_add_cart ) 
+ERR: SELECT * FROM `33hao_mb_user_token` WHERE ( token = 'f84b5d031307e1342590a0ee028d907e' ) LIMIT 1   [ RunTime:1,460,371,037.911338s ]SELECT * FROM `33hao_mb_user_token` WHERE ( token = 'f84b5d031307e1342590a0ee028d907e' ) LIMIT 1  
+[2016-04-11 18:37:18] /33hao/mobile/index.php?act=member_cart&op=check_bl_add_cart ( act=member_cart&op=check_bl_add_cart ) 
+ERR: SELECT * FROM `33hao_member` WHERE ( member_id = '16' ) LIMIT 1   [ RunTime:1,460,371,037.911338s ]SELECT * FROM `33hao_member` WHERE ( member_id = '16' ) LIMIT 1  
+[2016-04-11 18:37:18] /33hao/mobile/index.php?act=member_cart&op=check_bl_add_cart ( act=member_cart&op=check_bl_add_cart ) 
+ERR: SELECT * FROM `33hao_seller` WHERE ( member_id = '16' ) LIMIT 1   [ RunTime:1,460,371,037.911338s ]SELECT * FROM `33hao_seller` WHERE ( member_id = '16' ) LIMIT 1  
+[2016-04-11 18:37:18] /33hao/mobile/index.php?act=member_cart&op=check_bl_add_cart ( act=member_cart&op=check_bl_add_cart ) 
+ERR: SELECT * FROM `33hao_p_bundling` WHERE ( bl_id = '13' ) LIMIT 1   [ RunTime:1,460,371,037.911338s ]SELECT * FROM `33hao_p_bundling` WHERE ( bl_id = '13' ) LIMIT 1  
+[2016-04-11 18:37:18] /33hao/mobile/index.php?act=member_cart&op=check_bl_add_cart ( act=member_cart&op=check_bl_add_cart ) 
+ERR: SELECT * FROM `33hao_p_bundling_goods` WHERE ( bl_id = '13' ) ORDER BY bl_goods_id asc LIMIT 1000   [ RunTime:1,460,371,037.911338s ]SELECT * FROM `33hao_p_bundling_goods` WHERE ( bl_id = '13' ) ORDER BY bl_goods_id asc LIMIT 1000  
+[2016-04-11 18:37:18] /33hao/mobile/index.php?act=member_cart&op=check_bl_add_cart ( act=member_cart&op=check_bl_add_cart ) 
+ERR: SELECT * FROM `33hao_goods` WHERE ( goods_id = '857' ) LIMIT 1   [ RunTime:1,460,371,037.911338s ]SELECT * FROM `33hao_goods` WHERE ( goods_id = '857' ) LIMIT 1  
+[2016-04-11 18:37:18] /33hao/mobile/index.php?act=member_cart&op=check_bl_add_cart ( act=member_cart&op=check_bl_add_cart ) 
+ERR: SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( end_time > '1460371037' ) AND ( goods_commonid = '100390' ) ORDER BY start_time asc LIMIT 1   [ RunTime:1,460,371,037.911338s ]SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( end_time > '1460371037' ) AND ( goods_commonid = '100390' ) ORDER BY start_time asc LIMIT 1  
+[2016-04-11 18:37:18] /33hao/mobile/index.php?act=member_cart&op=check_bl_add_cart ( act=member_cart&op=check_bl_add_cart ) 
+ERR: SELECT * FROM `33hao_p_xianshi_goods` WHERE ( state = '1' ) AND ( end_time > '1460371037' ) AND ( goods_id = '857' ) ORDER BY start_time asc LIMIT 1   [ RunTime:1,460,371,037.911338s ]SELECT * FROM `33hao_p_xianshi_goods` WHERE ( state = '1' ) AND ( end_time > '1460371037' ) AND ( goods_id = '857' ) ORDER BY start_time asc LIMIT 1  
+[2016-04-11 18:37:18] /33hao/mobile/index.php?act=member_cart&op=check_bl_add_cart ( act=member_cart&op=check_bl_add_cart ) 
+ERR: SELECT * FROM `33hao_goods` WHERE ( goods_id = '299' ) LIMIT 1   [ RunTime:1,460,371,037.911338s ]SELECT * FROM `33hao_goods` WHERE ( goods_id = '299' ) LIMIT 1  
+[2016-04-11 18:37:18] /33hao/mobile/index.php?act=member_cart&op=check_bl_add_cart ( act=member_cart&op=check_bl_add_cart ) 
+ERR: SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( end_time > '1460371037' ) AND ( goods_commonid = '100132' ) ORDER BY start_time asc LIMIT 1   [ RunTime:1,460,371,037.911338s ]SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( end_time > '1460371037' ) AND ( goods_commonid = '100132' ) ORDER BY start_time asc LIMIT 1  
+[2016-04-11 18:37:18] /33hao/mobile/index.php?act=member_cart&op=check_bl_add_cart ( act=member_cart&op=check_bl_add_cart ) 
+ERR: SELECT * FROM `33hao_goods` WHERE ( goods_id = '294' ) LIMIT 1   [ RunTime:1,460,371,037.911338s ]SELECT * FROM `33hao_goods` WHERE ( goods_id = '294' ) LIMIT 1  
+[2016-04-11 18:37:19] /33hao/mobile/index.php?act=member_cart&op=check_bl_add_cart ( act=member_cart&op=check_bl_add_cart ) 
+ERR: SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( end_time > '1460371037' ) AND ( goods_commonid = '100127' ) ORDER BY start_time asc LIMIT 1   [ RunTime:1,460,371,037.911338s ]SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( end_time > '1460371037' ) AND ( goods_commonid = '100127' ) ORDER BY start_time asc LIMIT 1  
+[2016-04-11 18:37:19] /33hao/mobile/index.php?act=member_cart&op=check_bl_add_cart ( act=member_cart&op=check_bl_add_cart ) 
+ERR: SELECT * FROM `33hao_cart` WHERE ( goods_id = '857' ) AND ( buyer_id = '16' ) AND ( bl_id = '13' ) LIMIT 1   [ RunTime:1,460,371,037.911338s ]SELECT * FROM `33hao_cart` WHERE ( goods_id = '857' ) AND ( buyer_id = '16' ) AND ( bl_id = '13' ) LIMIT 1  
+[2016-04-11 18:37:19] /33hao/mobile/index.php?act=member_cart&op=check_bl_add_cart ( act=member_cart&op=check_bl_add_cart ) 
+ERR: INSERT  INTO `33hao_cart` (buyer_id,store_id,goods_id,goods_name,goods_price,goods_num,goods_image,store_name,bl_id) VALUES ('16','17','857','活动2','2768','1','17_05127354412838040.png','欧普照明旗舰店','13') [ RunTime:1,460,371,037.911338s ]INSERT  INTO `33hao_cart` (buyer_id,store_id,goods_id,goods_name,goods_price,goods_num,goods_image,store_name,bl_id) VALUES ('16','17','857','活动2','2768','1','17_05127354412838040.png','欧普照明旗舰店','13')
+[2016-04-11 18:37:19] /33hao/mobile/index.php?act=member_cart&op=check_bl_add_cart ( act=member_cart&op=check_bl_add_cart ) 
+ERR: SELECT * FROM `33hao_cart` WHERE ( buyer_id = '16' ) LIMIT 1000   [ RunTime:1,460,371,037.911338s ]SELECT * FROM `33hao_cart` WHERE ( buyer_id = '16' ) LIMIT 1000  
+[2016-04-11 18:37:46] /33hao/mobile/index.php?act=member_cart&op=check_bl_add_cart ( act=member_cart&op=check_bl_add_cart ) 
+ERR: SELECT * FROM `33hao_mb_user_token` WHERE ( token = 'f84b5d031307e1342590a0ee028d907e' ) LIMIT 1   [ RunTime:1,460,371,066.161953s ]SELECT * FROM `33hao_mb_user_token` WHERE ( token = 'f84b5d031307e1342590a0ee028d907e' ) LIMIT 1  
+[2016-04-11 18:37:46] /33hao/mobile/index.php?act=member_cart&op=check_bl_add_cart ( act=member_cart&op=check_bl_add_cart ) 
+ERR: SELECT * FROM `33hao_member` WHERE ( member_id = '16' ) LIMIT 1   [ RunTime:1,460,371,066.161953s ]SELECT * FROM `33hao_member` WHERE ( member_id = '16' ) LIMIT 1  
+[2016-04-11 18:37:46] /33hao/mobile/index.php?act=member_cart&op=check_bl_add_cart ( act=member_cart&op=check_bl_add_cart ) 
+ERR: SELECT * FROM `33hao_seller` WHERE ( member_id = '16' ) LIMIT 1   [ RunTime:1,460,371,066.161953s ]SELECT * FROM `33hao_seller` WHERE ( member_id = '16' ) LIMIT 1  
+[2016-04-11 18:37:46] /33hao/mobile/index.php?act=member_cart&op=check_bl_add_cart ( act=member_cart&op=check_bl_add_cart ) 
+ERR: SELECT * FROM `33hao_p_bundling` WHERE ( bl_id = '13' ) LIMIT 1   [ RunTime:1,460,371,066.161953s ]SELECT * FROM `33hao_p_bundling` WHERE ( bl_id = '13' ) LIMIT 1  
+[2016-04-11 18:37:46] /33hao/mobile/index.php?act=member_cart&op=check_bl_add_cart ( act=member_cart&op=check_bl_add_cart ) 
+ERR: SELECT * FROM `33hao_p_bundling_goods` WHERE ( bl_id = '13' ) ORDER BY bl_goods_id asc LIMIT 1000   [ RunTime:1,460,371,066.161953s ]SELECT * FROM `33hao_p_bundling_goods` WHERE ( bl_id = '13' ) ORDER BY bl_goods_id asc LIMIT 1000  
+[2016-04-11 18:37:46] /33hao/mobile/index.php?act=member_cart&op=check_bl_add_cart ( act=member_cart&op=check_bl_add_cart ) 
+ERR: SELECT * FROM `33hao_goods` WHERE ( goods_id = '857' ) LIMIT 1   [ RunTime:1,460,371,066.161953s ]SELECT * FROM `33hao_goods` WHERE ( goods_id = '857' ) LIMIT 1  
+[2016-04-11 18:37:46] /33hao/mobile/index.php?act=member_cart&op=check_bl_add_cart ( act=member_cart&op=check_bl_add_cart ) 
+ERR: SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( end_time > '1460371065' ) AND ( goods_commonid = '100390' ) ORDER BY start_time asc LIMIT 1   [ RunTime:1,460,371,066.161953s ]SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( end_time > '1460371065' ) AND ( goods_commonid = '100390' ) ORDER BY start_time asc LIMIT 1  
+[2016-04-11 18:37:46] /33hao/mobile/index.php?act=member_cart&op=check_bl_add_cart ( act=member_cart&op=check_bl_add_cart ) 
+ERR: SELECT * FROM `33hao_p_xianshi_goods` WHERE ( state = '1' ) AND ( end_time > '1460371065' ) AND ( goods_id = '857' ) ORDER BY start_time asc LIMIT 1   [ RunTime:1,460,371,066.161953s ]SELECT * FROM `33hao_p_xianshi_goods` WHERE ( state = '1' ) AND ( end_time > '1460371065' ) AND ( goods_id = '857' ) ORDER BY start_time asc LIMIT 1  
+[2016-04-11 18:37:47] /33hao/mobile/index.php?act=member_cart&op=check_bl_add_cart ( act=member_cart&op=check_bl_add_cart ) 
+ERR: SELECT * FROM `33hao_goods` WHERE ( goods_id = '299' ) LIMIT 1   [ RunTime:1,460,371,066.161953s ]SELECT * FROM `33hao_goods` WHERE ( goods_id = '299' ) LIMIT 1  
+[2016-04-11 18:37:47] /33hao/mobile/index.php?act=member_cart&op=check_bl_add_cart ( act=member_cart&op=check_bl_add_cart ) 
+ERR: SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( end_time > '1460371065' ) AND ( goods_commonid = '100132' ) ORDER BY start_time asc LIMIT 1   [ RunTime:1,460,371,066.161953s ]SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( end_time > '1460371065' ) AND ( goods_commonid = '100132' ) ORDER BY start_time asc LIMIT 1  
+[2016-04-11 18:37:47] /33hao/mobile/index.php?act=member_cart&op=check_bl_add_cart ( act=member_cart&op=check_bl_add_cart ) 
+ERR: SELECT * FROM `33hao_goods` WHERE ( goods_id = '294' ) LIMIT 1   [ RunTime:1,460,371,066.161953s ]SELECT * FROM `33hao_goods` WHERE ( goods_id = '294' ) LIMIT 1  
+[2016-04-11 18:37:47] /33hao/mobile/index.php?act=member_cart&op=check_bl_add_cart ( act=member_cart&op=check_bl_add_cart ) 
+ERR: SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( end_time > '1460371065' ) AND ( goods_commonid = '100127' ) ORDER BY start_time asc LIMIT 1   [ RunTime:1,460,371,066.161953s ]SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( end_time > '1460371065' ) AND ( goods_commonid = '100127' ) ORDER BY start_time asc LIMIT 1  
+[2016-04-11 18:37:47] /33hao/mobile/index.php?act=member_cart&op=check_bl_add_cart ( act=member_cart&op=check_bl_add_cart ) 
+ERR: SELECT * FROM `33hao_cart` WHERE ( goods_id = '857' ) AND ( buyer_id = '16' ) AND ( bl_id = '13' ) LIMIT 1   [ RunTime:1,460,371,066.161953s ]SELECT * FROM `33hao_cart` WHERE ( goods_id = '857' ) AND ( buyer_id = '16' ) AND ( bl_id = '13' ) LIMIT 1  
+[2016-04-11 18:37:47] /33hao/mobile/index.php?act=member_cart&op=check_bl_add_cart ( act=member_cart&op=check_bl_add_cart ) 
+ERR: INSERT  INTO `33hao_cart` (buyer_id,store_id,goods_id,goods_name,goods_price,goods_num,goods_image,store_name,bl_id) VALUES ('16','17','857','活动2','2768','1','17_05127354412838040.png','欧普照明旗舰店','13') [ RunTime:1,460,371,066.161953s ]INSERT  INTO `33hao_cart` (buyer_id,store_id,goods_id,goods_name,goods_price,goods_num,goods_image,store_name,bl_id) VALUES ('16','17','857','活动2','2768','1','17_05127354412838040.png','欧普照明旗舰店','13')
+[2016-04-11 18:37:47] /33hao/mobile/index.php?act=member_cart&op=check_bl_add_cart ( act=member_cart&op=check_bl_add_cart ) 
+ERR: SELECT * FROM `33hao_cart` WHERE ( buyer_id = '16' ) LIMIT 1000   [ RunTime:1,460,371,066.161953s ]SELECT * FROM `33hao_cart` WHERE ( buyer_id = '16' ) LIMIT 1000  
