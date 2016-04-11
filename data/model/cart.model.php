@@ -158,13 +158,29 @@ class cartModel extends Model {
         }
         $cart_list = is_array($cart_list) ? $cart_list : array();
         //顺便设置购物车商品数和总金额
-		$this->cart_goods_num =  count($cart_list);
-	    $cart_all_price = 0;
+	$this->cart_goods_num =  count($cart_list);
+	$cart_all_price = 0;
 		if(is_array($cart_list)) {
 			foreach ($cart_list as $val) {
 				$cart_all_price	+= $val['goods_price'] * $val['goods_num'];
+                                if($val['bl_id']>0){
+                                   // 优惠套装
+                                    $array = Model('p_bundling')->getBundlingCacheByGoodsId($goods_id);
+                                    if (!empty($array)) {
+                                        $bundling_arra=unserialize($array['bundling_array']);
+                                        $b_goods_array=unserialize($array['b_goods_array']);
+                                        foreach ($bundling_arra as $key => $value) {
+                                            $bundling_arra[$key]['b_goods_array']=  array_values($b_goods_array[$key]);
+                                        }
+                                       // output_data(array_values($bundling_arra));
+                                        //$bundling_arranew=array_values($array['bundling_array']);
+                                      //  output_data(array('bundling_array'=> unserialize($array['bundling_array']),'b_goods_array', unserialize($array['b_goods_array'])));
+                                       // Tpl::output('bundling_array', unserialize($array['bundling_array']));
+                                       //Tpl::output('b_goods_array', unserialize($array['b_goods_array']));
+                                    }  
+                                }
 			}
-		}
+	}
         $this->cart_all_price = ncPriceFormat($cart_all_price);
 		return !is_array($cart_list) ? array() : $cart_list;
 	}
