@@ -38,6 +38,7 @@ class store_infoControl extends BaseSellerControl {
 
         $model_store_joinin = Model('store_joinin');
         $joinin_detail = $model_store_joinin->getOne(array('member_id'=>$store_info['member_id']));
+        
         Tpl::output('joinin_detail', $joinin_detail);
 
         $store_bind_class_list = $model_store_bind_class->getStoreBindClassList(array('store_id'=>$_SESSION['store_id'],'state'=>array('in',array(1,2))), null);

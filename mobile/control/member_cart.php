@@ -164,7 +164,7 @@ class member_cartControl extends mobileMemberControl {
     /**
      * 更新购物车购买数量
      */
-    public function cart_item_edit_quantityOp() {
+    public function cart_item_edit_quantity1Op() {
         $cart_id = intval(abs($_REQUEST['cart_item_id']));
 		$quantity = intval(abs($_REQUEST['quantity']));
 		if(empty($cart_id) || empty($quantity)) {
@@ -189,8 +189,8 @@ class member_cartControl extends mobileMemberControl {
         $data['goods_num'] = $quantity;
         $update = $model_cart->editCart($data, array('cart_id'=>$cart_id));
 		if ($update) {
-		    $return = array();
-            $return['quantity'] = $quantity;
+                            $return = array();
+                        $return['quantity'] = $quantity;
 			$return['goods_price'] = ncPriceFormat($cart_info['goods_price']);
 			$return['total_price'] = ncPriceFormat($cart_info['goods_price'] * $quantity);
                     output_data($return);
@@ -198,6 +198,127 @@ class member_cartControl extends mobileMemberControl {
             output_error('修改失败');
 		}
     }
+    
+    
+    
+    	/**
+	 * 购物车更新商品数量
+	 */
+	public function cart_item_edit_quantityOp() {
+		$cart_id	= intval(abs($_REQUEST['cart_item_id']));
+		$quantity	= intval(abs($_REQUEST['quantity']));
+
+		if(empty($cart_id) || empty($quantity)) {
+                    output_error('更新失败');
+			//exit(json_encode(array('msg'=>Language::get('cart_update_buy_fail','UTF-8'))));
+		}
+
+		$model_cart = Model('cart');
+		$model_goods= Model('goods');
+		$logic_buy_1 = logic('buy_1');
+
+		//存放返回信息
+		$return = array();
+
+		$cart_info = $model_cart->getCartInfo(array('cart_id'=>$cart_id,'buyer_id'=>$_SESSION['member_id']));
+		if ($cart_info['bl_id'] == '0') {
+
+		    //普通商品
+		    $goods_id = intval($cart_info['goods_id']);
+		    $goods_info	= $logic_buy_1->getGoodsOnlineInfo($goods_id,$quantity);
+		    if(empty($goods_info)) {
+		       // $return['state'] = 'invalid';
+		        //$return['msg'] = '商品已被下架';
+		      //  $return['subtotal'] = 0;
+		        QueueClient::push('delCart', array('buyer_id'=>$this->member_info['member_id'],'cart_ids'=>array($cart_id)));
+		      // output_error('商品已被下架');
+                       output_special_code('10400','商品已被下架');
+                       // exit(json_encode($return));
+		    }
+
+		    //抢购
+		    $logic_buy_1->getGroupbuyInfo($goods_info);
+
+		    //限时折扣
+		    $logic_buy_1->getXianshiInfo($goods_info,$quantity);
+
+		    $quantity = $goods_info['goods_num'];
+
+		    if(intval($goods_info['goods_storage']) < $quantity) {
+		      //  $return['state'] = 'shortage';
+		      //  $return['msg'] = '库存不足';
+		      //  $return['goods_num'] = $goods_info['goods_num'];
+		      //  $return['goods_price'] = $goods_info['goods_price'];
+		       // $return['subtotal'] = $goods_info['goods_price'] * $quantity;
+		        $model_cart->editCart(array('goods_num'=>$goods_info['goods_storage']),array('cart_id'=>$cart_id,'buyer_id'=>$this->member_info['member_id']));
+		        output_special_code('10400','库存不足');
+                       // output_error('库存不足');
+                       // exit(json_encode($return));
+		    }
+		} else {
+
+		    //优惠套装商品
+		    $model_bl = Model('p_bundling');
+		    $bl_goods_list = $model_bl->getBundlingGoodsList(array('bl_id'=>$cart_info['bl_id']));
+		    $goods_id_array = array();
+		    foreach ($bl_goods_list as $goods) {
+		        $goods_id_array[] = $goods['goods_id'];
+		    }
+		    $goods_list = $model_goods->getGoodsOnlineListAndPromotionByIdArray($goods_id_array);
+
+		    //如果其中有商品下架，删除
+		    if (count($goods_list) != count($goods_id_array)) {
+		      //  $return['state'] = 'invalid';
+		       // $return['msg'] = '该优惠套装已经无效，建议您购买单个商品';
+		       // $return['subtotal'] = 0;
+		        QueueClient::push('delCart', array('buyer_id'=>$this->member_info['member_id'],'cart_ids'=>array($cart_id)));
+		        output_special_code('10400','该优惠套装已经无效，建议您购买单个商品');
+                        //exit(json_encode($return));
+		    }
+
+		    //如果有商品库存不足，更新购买数量到目前最大库存
+		    foreach ($goods_list as $goods_info) {
+		        if ($quantity > $goods_info['goods_storage']) {
+		           // $return['state'] = 'shortage';
+		           // $return['msg'] = '该优惠套装部分商品库存不足，建议您降低购买数量或购买库存足够的单个商品';
+		           // $return['goods_num'] = $goods_info['goods_storage'];
+		           // $return['goods_price'] = $cart_info['goods_price'];
+		            //$return['subtotal'] = $cart_info['goods_price'] * $quantity;
+		            $model_cart->editCart(array('goods_num'=>$goods_info['goods_storage']),array('cart_id'=>$cart_id,'buyer_id'=>$_SESSION['member_id']));
+		            output_special_code('10400','该优惠套装部分商品库存不足，建议您降低购买数量或购买库存足够的单个商品');
+                            //exit(json_encode($return));
+		            break;
+		        }
+		    }
+		    $goods_info['goods_price'] = $cart_info['goods_price'];
+		}
+
+		$data = array();
+        $data['goods_num'] = $quantity;
+        $data['goods_price'] = $goods_info['goods_price'];
+        $update = $model_cart->editCart($data,array('cart_id'=>$cart_id,'buyer_id'=>$_SESSION['member_id']));
+		if ($update) {
+		    $return = array();
+			$return['state'] = 'true';
+			$return['total_price'] = $goods_info['goods_price'] * $quantity;
+			$return['goods_price'] = $goods_info['goods_price'];
+			$return['quantity'] = $quantity;
+                        
+//                         $return['quantity'] = $quantity;
+//			$return['goods_price'] = ncPriceFormat($cart_info['goods_price']);
+//			$return['total_price'] = ncPriceFormat($cart_info['goods_price'] * $quantity);
+                        
+                        
+		} else {
+                    output_error('更新失败');
+			//$return = array('msg'=>Language::get('cart_update_buy_fail','UTF-8'));
+		}
+                output_data($return);;
+		//exit(json_encode($return));
+	}
+        
+        
+        
 
     /**
      * 检查库存是否充足

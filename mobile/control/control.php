@@ -108,8 +108,33 @@ class mobileControl{
 }
 
 class mobileHomeControl extends mobileControl{
+    
+    protected $member_info = array();
+    
 	public function __construct() {
         parent::__construct();
+        
+         $model_mb_user_token = Model('mb_user_token');
+        $key = $_REQUEST['token'];
+        if(empty($key)) {
+            $key = $_REQUEST['token'];
+        }
+        
+        $mb_user_token_info = $model_mb_user_token->getMbUserTokenInfoByToken($key);
+
+        $model_member = Model('member');
+       
+        $this->member_info = $model_member->getMemberInfoByID($mb_user_token_info['member_id']);
+       // var_dump($mb_user_token_info['member_id']);
+         
+        $this->member_info['client_type'] = $mb_user_token_info['client_type'];
+        if(!empty($this->member_info)) {
+            //读取卖家信息
+            $seller_info = Model('seller')->getSellerInfo(array('member_id'=>$this->member_info['member_id']));
+           
+            $this->member_info['store_id'] = $seller_info['store_id'];
+        }
+        
     }
     
         protected function getStoreInfo($store_id) {

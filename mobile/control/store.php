@@ -174,7 +174,30 @@ class storeControl extends mobileHomeControl{
          $model_stracelog = Model('store_sns_tracelog');
          $store_detail['strace_count']=$model_stracelog->getStoreSnsTracelogCount($where);
          
+        if(!empty($this->member_info['member_id'])){
+            $favorites_model = Model('favorites');
+       //   Model('goods_browse')->addViewedGoods($goods_id,$this->member_info['member_id'],$goods_detail['goods_info']['store_id']);
+            $favorites_info = $favorites_model->getOneFavorites(array('fav_id'=>"$store_id",'fav_type'=>'store','member_id'=>"{$this->member_info['member_id']}"));
+            if(!empty($favorites_info)){
+                    $store_detail['member_collected']=1;
+                }else{
+                $store_detail['member_collected']=0;
+            }
+          
+        }
+        
+        	
+                
+        
          output_data($store_detail);
+         
+//         if(!empty($this->member_info['member_id'])){
+//          Model('goods_browse')->addViewedGoods($goods_id,$this->member_info['member_id'],$goods_detail['goods_info']['store_id']);
+//        }
+        
+
+        
+        
     }
 
     /**
