@@ -36,7 +36,7 @@ class member_invoiceControl extends mobileMemberControl {
      * 发票信息删除
      */
     public function invoice_delOp() {
-        $inv_id = intval($_POST['inv_id']);
+        $inv_id = intval($_REQUEST['inv_id']);
         if($inv_id <= 0) {
             output_error('参数错误');
         }
@@ -59,8 +59,8 @@ class member_invoiceControl extends mobileMemberControl {
 
         $data = array();
         $data['inv_state'] = 1;
-        $data['inv_title'] = $_POST['inv_title_select'] == 'person' ? '个人' : $_POST['inv_title'];
-        $data['inv_content'] = $_POST['inv_content'];
+        $data['inv_title'] = $_REQUEST['inv_title_select'] == 'person' ? '个人' : $_REQUEST['inv_title'];
+        $data['inv_content'] = $_REQUEST['inv_content'];
         $data['member_id'] = $this->member_info['member_id'];
         $result = $model_invoice->addInv($data);
         if($result) {

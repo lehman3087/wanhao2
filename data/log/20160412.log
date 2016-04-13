@@ -1,0 +1,12 @@
+[2016-04-12 13:47:00] /33hao/mobile/index.php?act=voucher&op=store_voucher_list&store_id=17&token=1ae8fe2ec7e03d985cdefe6746294e2a ( act=voucher&op=store_voucher_list ) 
+ERR: SELECT * FROM `33hao_mb_user_token` WHERE ( token = '1ae8fe2ec7e03d985cdefe6746294e2a' ) LIMIT 1   [ RunTime:1,460,440,020.018348s ]SELECT * FROM `33hao_mb_user_token` WHERE ( token = '1ae8fe2ec7e03d985cdefe6746294e2a' ) LIMIT 1  
+[2016-04-12 13:47:00] /33hao/mobile/index.php?act=voucher&op=store_voucher_list&store_id=17&token=1ae8fe2ec7e03d985cdefe6746294e2a ( act=voucher&op=store_voucher_list ) 
+ERR: SELECT * FROM `33hao_member` WHERE ( member_id = '16' ) LIMIT 1   [ RunTime:1,460,440,020.018348s ]SELECT * FROM `33hao_member` WHERE ( member_id = '16' ) LIMIT 1  
+[2016-04-12 13:47:00] /33hao/mobile/index.php?act=voucher&op=store_voucher_list&store_id=17&token=1ae8fe2ec7e03d985cdefe6746294e2a ( act=voucher&op=store_voucher_list ) 
+ERR: SELECT * FROM `33hao_seller` WHERE ( member_id = '16' ) LIMIT 1   [ RunTime:1,460,440,020.018348s ]SELECT * FROM `33hao_seller` WHERE ( member_id = '16' ) LIMIT 1  
+[2016-04-12 13:47:01] /33hao/mobile/index.php?act=voucher&op=store_voucher_list&store_id=17&token=1ae8fe2ec7e03d985cdefe6746294e2a ( act=voucher&op=store_voucher_list ) 
+ERR: SELECT * FROM `33hao_member` WHERE ( member_id = '16' ) LIMIT 1   [ RunTime:1,460,440,020.018348s ]SELECT * FROM `33hao_member` WHERE ( member_id = '16' ) LIMIT 1  
+[2016-04-12 13:47:01] /33hao/mobile/index.php?act=voucher&op=store_voucher_list&store_id=17&token=1ae8fe2ec7e03d985cdefe6746294e2a ( act=voucher&op=store_voucher_list ) 
+ERR: SELECT * FROM `33hao_voucher_template` WHERE ( voucher_t_store_id = '17' ) AND ( voucher_t_state = '1' ) AND ( voucher_t_end_date > '1460440021' ) ORDER BY voucher_t_id desc LIMIT 1000   [ RunTime:1,460,440,020.018348s ]SELECT * FROM `33hao_voucher_template` WHERE ( voucher_t_store_id = '17' ) AND ( voucher_t_state = '1' ) AND ( voucher_t_end_date > '1460440021' ) ORDER BY voucher_t_id desc LIMIT 1000  
+[2016-04-12 13:47:02] /33hao/mobile/index.php?act=voucher&op=store_voucher_list&store_id=17&token=1ae8fe2ec7e03d985cdefe6746294e2a ( act=voucher&op=store_voucher_list ) 
+ERR: SELECT COUNT(*) AS nc_count FROM `33hao_voucher_template` WHERE ( voucher_t_store_id = '17' ) AND ( voucher_t_state = '1' ) AND ( voucher_t_end_date > '1460440021' ) LIMIT 1   [ RunTime:1,460,440,020.018348s ]SELECT COUNT(*) AS nc_count FROM `33hao_voucher_template` WHERE ( voucher_t_store_id = '17' ) AND ( voucher_t_state = '1' ) AND ( voucher_t_end_date > '1460440021' ) LIMIT 1  
