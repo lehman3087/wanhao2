@@ -402,7 +402,7 @@ class goodsControl extends mobileHomeControl{
             }
 
         }
-        if ($goods_detail['have_gift'] == '1') {
+        if ($goods_detail['have_gift'] == 'gift') {
             $promotionMessage.="<font size=14 color='#ff7419'>赠品 </font> <font size=14 color='#999'>赠下方的热销商品，赠完即止</font>";
         }
         
