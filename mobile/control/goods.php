@@ -398,12 +398,12 @@ class goodsControl extends mobileHomeControl{
         
         if ($goods_detail['promotion_type'] == 'groupbuy') {
             if ($goods_detail['upper_limit']) {
-                $promotionMessage.=sprintf(" <font size=14 color='#690'>最多限购%s件</font><br/>",$output['goods']['upper_limit']);
+                $promotionMessage.=sprintf(" <font size=14 color='#690000'>最多限购%s件</font><br/>",$output['goods']['upper_limit']);
             }
 
         }
         if ($goods_detail['have_gift'] == 'gift') {
-            $promotionMessage.="<font size=14 color='#ff7419'>赠品 </font> <font size=14 color='#999'>赠下方的热销商品，赠完即止</font>";
+            $promotionMessage.="<font size=14 color='#ff7419'>赠品 </font> <font size=14 color='#999999'>赠下方的热销商品，赠完即止</font>";
         }
         
         return $promotionMessage;
