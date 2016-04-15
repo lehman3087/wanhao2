@@ -390,7 +390,7 @@ class goodsControl extends mobileHomeControl{
              $xianshi= "<font size=14 color='#ff7419'>直降：¥".$goods_detail['down_price']."</font>";
         
             if($goods_detail['lower_limit']){ 
-                $xianshi .= sprintf(" <font size=14 color='#690000'>最低%s件起</font><br>/n %s",$goods_detail['lower_limit'],$goods_detail['explain']);
+                $xianshi .= sprintf(" <font size=14 color='#690000'>最低%s件起</font><br>\n %s",$goods_detail['lower_limit'],$goods_detail['explain']);
             }
             $promotionMessage.=$xianshi."<br/>";
          }
@@ -398,7 +398,7 @@ class goodsControl extends mobileHomeControl{
         
         if ($goods_detail['promotion_type'] == 'groupbuy') {
             if ($goods_detail['upper_limit']) {
-                $promotionMessage.=sprintf(" <font size=14 color='#690000'>最多限购%s件</font><br/>",$output['goods']['upper_limit']);
+                $promotionMessage.=sprintf(" <font size=14 color='#690000'>最多限购%s件</font><br/>\n",$output['goods']['upper_limit']);
             }
 
         }
