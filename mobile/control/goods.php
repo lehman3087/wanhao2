@@ -384,25 +384,25 @@ class goodsControl extends mobileHomeControl{
     
     
     private function getptype($goods_detail) {
-        
+        $promotionMessage='';
          if($goods_detail['promotion_type']== '2'){ 
              $xianshi= "<font size=14 color='#ff7419'>直降：¥".$goods_detail['down_price']."</font>";
         
             if($goods_detail['lower_limit']){ 
                 $xianshi .= sprintf(" <font size=14 color='#690'>最低%s件起</font> %s",$goods_detail['lower_limit'],$goods_detail['explain']);
             }
-            $promotionMessage[]=$xianshi."<br/>";
+            $promotionMessage.=$xianshi."<br/>";
          }
         
         
         if ($goods_detail['promotion_type'] == '1') {
             if ($goods_detail['upper_limit']) {
-                $promotionMessage[]=sprintf(" <font size=14 color='#690'>最多限购%s件</font><br/>",$output['goods']['upper_limit']);
+                $promotionMessage.=sprintf(" <font size=14 color='#690'>最多限购%s件</font><br/>",$output['goods']['upper_limit']);
             }
 
         }
         if ($output['goods']['have_gift'] == '1') {
-            $promotionMessage[]="<font size=14 color='#ff7419'>赠品 </font> <font size=14 color='#999'>赠下方的热销商品，赠完即止</font>";
+            $promotionMessage.="<font size=14 color='#ff7419'>赠品 </font> <font size=14 color='#999'>赠下方的热销商品，赠完即止</font>";
         }
         
         return $promotionMessage;
