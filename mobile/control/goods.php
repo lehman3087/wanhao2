@@ -365,10 +365,11 @@ class goodsControl extends mobileHomeControl{
         }
 
 	
-       $goods_detail['promotion_message']=$this->getptype($goods_detail['goods_info']);
+       
         
 		//v3-b11 抢购商品是否开始
 	$goods_info=$goods_detail['goods_info'];
+        $goods_detail['promotion_message']=$this->getptype($goods_detail['goods_info']);
 
         $goods_detail['goods_comments']=$this->_get_comments($goods_id, $_REQUEST['type'], 3);
         
@@ -384,7 +385,7 @@ class goodsControl extends mobileHomeControl{
     
     private function getptype($goods_detail) {
         
-         if($goods_detail['promotion_type']== 'xianshi'){ 
+         if($goods_detail['promotion_type']== '2'){ 
              $xianshi= "<font size=14 color='#ff7419'>直降：¥".$goods_detail['down_price']."</font>";
         
             if($goods_detail['lower_limit']){ 
@@ -394,13 +395,13 @@ class goodsControl extends mobileHomeControl{
          }
         
         
-        if ($goods_detail['promotion_type'] == 'groupbuy') {
+        if ($goods_detail['promotion_type'] == '1') {
             if ($goods_detail['upper_limit']) {
                 $promotionMessage[]=sprintf(" <font size=14 color='#690'>最多限购%s件</font><br/>",$output['goods']['upper_limit']);
             }
 
         }
-        if ($output['goods']['have_gift'] == 'gift') {
+        if ($output['goods']['have_gift'] == '1') {
             $promotionMessage[]="<font size=14 color='#ff7419'>赠品 </font> <font size=14 color='#999'>赠下方的热销商品，赠完即止</font>";
         }
         
