@@ -287,9 +287,9 @@ class goodsControl extends mobileHomeControl{
 
     public function goods_detailOp() {
         //var_dump('1');
-        $post=$this->read_json();  
-        $arr=objectToArray($post);
-        $_REQUEST=array_merge($_REQUEST,$arr);
+//        $post=$this->read_json();  
+//        $arr=objectToArray($post);
+//        $_REQUEST=array_merge($_REQUEST,$arr);
         $goods_id = intval($_REQUEST ['goods_id']);
         
         // 商品详细信息
@@ -365,10 +365,10 @@ class goodsControl extends mobileHomeControl{
         }
 
 	
-
+       $goods_detail['promotion_message']=$this->getptype($goods_detail['goods_info']);
         
 		//v3-b11 抢购商品是否开始
-		$goods_info=$goods_detail['goods_info'];
+	$goods_info=$goods_detail['goods_info'];
 
         $goods_detail['goods_comments']=$this->_get_comments($goods_id, $_REQUEST['type'], 3);
         
@@ -381,6 +381,31 @@ class goodsControl extends mobileHomeControl{
         
     }
     
+    
+    private function getptype($goods_detail) {
+        
+         if($goods_detail['promotion_type']== 'xianshi'){ 
+             $xianshi= "<font size=14 color='#ff7419'>直降：¥".$goods_detail['down_price']."</font>";
+        
+            if($goods_detail['lower_limit']){ 
+                $xianshi .= sprintf(" <font size=14 color='#690'>最低%s件起</font> %s",$goods_detail['lower_limit'],$goods_detail['explain']);
+            }
+            $promotionMessage[]=$xianshi."<br/>";
+         }
+        
+        
+        if ($goods_detail['promotion_type'] == 'groupbuy') {
+            if ($goods_detail['upper_limit']) {
+                $promotionMessage[]=sprintf(" <font size=14 color='#690'>最多限购%s件</font><br/>",$output['goods']['upper_limit']);
+            }
+
+        }
+        if ($output['goods']['have_gift'] == 'gift') {
+            $promotionMessage[]="<font size=14 color='#ff7419'>赠品 </font> <font size=14 color='#999'>赠下方的热销商品，赠完即止</font>";
+        }
+        
+        return $promotionMessage;
+    }
     
       /**
      * 异步显示优惠套装/推荐组合
