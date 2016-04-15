@@ -24,6 +24,9 @@ class goodsControl extends BaseGoodsControl {
         // 商品详细信息
         $model_goods = Model('goods');
         $goods_detail = $model_goods->getGoodsDetail($goods_id);
+        
+
+        
         $goods_info = $goods_detail['goods_info'];
         
         if (empty($goods_info)) {

@@ -44,7 +44,7 @@
         <!-- S 促销 -->
         <?php if (isset($output['goods']['promotion_type']) || $output['goods']['have_gift'] == 'gift') {?>
         <dl>
-          <dt>促销信息：</dt>
+          <dt>促销信息1：</dt>
           <dd class="promotion-info">
             <!-- S 限时折扣 -->
             <?php if ($output['goods']['promotion_type'] == 'xianshi') {?>

@@ -296,6 +296,7 @@ class goodsControl extends mobileHomeControl{
         $model_goods = Model('goods');
         $goods_detail = $model_goods->getGoodsDetail($goods_id);
         
+       // var_dump($goods_detail);
         
         if (empty($goods_detail)) {
             output_error('商品不存在');
@@ -385,7 +386,7 @@ class goodsControl extends mobileHomeControl{
     
     private function getptype($goods_detail) {
         $promotionMessage='';
-         if($goods_detail['promotion_type']== '2'){ 
+         if($goods_detail['promotion_type']== 'xianshi'){ 
              $xianshi= "<font size=14 color='#ff7419'>直降：¥".$goods_detail['down_price']."</font>";
         
             if($goods_detail['lower_limit']){ 
@@ -395,13 +396,13 @@ class goodsControl extends mobileHomeControl{
          }
         
         
-        if ($goods_detail['promotion_type'] == '1') {
+        if ($goods_detail['promotion_type'] == 'groupbuy') {
             if ($goods_detail['upper_limit']) {
                 $promotionMessage.=sprintf(" <font size=14 color='#690'>最多限购%s件</font><br/>",$output['goods']['upper_limit']);
             }
 
         }
-        if ($output['goods']['have_gift'] == '1') {
+        if ($goods_detail['have_gift'] == '1') {
             $promotionMessage.="<font size=14 color='#ff7419'>赠品 </font> <font size=14 color='#999'>赠下方的热销商品，赠完即止</font>";
         }
         
