@@ -15,6 +15,7 @@ function selClass($this){
     $('#dataLoading').show();
     var deep = parseInt(data_str.deep) + 1;
     
+    //alert(data_str.tid);
     $.getJSON('index.php?act=store_goods_add&op=ajax_goods_class', {gc_id : data_str.gcid, deep: deep}, function(data) {
         if (data != null) {
             $('input[nctype="buttonNextStep"]').attr('disabled', true);

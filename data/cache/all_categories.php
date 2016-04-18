@@ -367,8 +367,8 @@
       array (
         'gc_id' => '1066',
         'gc_name' => '床',
-        'type_id' => '46',
-        'type_name' => '床',
+        'type_id' => '0',
+        'type_name' => '',
         'gc_parent_id' => '1058',
         'commis_rate' => '0',
         'gc_sort' => '0',
@@ -383,8 +383,8 @@
           array (
             'gc_id' => '1107',
             'gc_name' => '高低床',
-            'type_id' => '46',
-            'type_name' => '床',
+            'type_id' => '0',
+            'type_name' => '',
             'gc_parent_id' => '1066',
             'commis_rate' => '0',
             'gc_sort' => '0',
@@ -398,8 +398,8 @@
           array (
             'gc_id' => '1119',
             'gc_name' => '儿童床',
-            'type_id' => '46',
-            'type_name' => '床',
+            'type_id' => '0',
+            'type_name' => '',
             'gc_parent_id' => '1066',
             'commis_rate' => '0',
             'gc_sort' => '0',
@@ -410,15 +410,7 @@
             'gc_show' => '1',
           ),
         ),
-        'brands' => 
-        array (
-          388 => 
-          array (
-            'brand_id' => '388',
-            'brand_name' => '林氏木业',
-            'brand_pic' => '05048213169726953_sm.jpg',
-          ),
-        ),
+        'brands' => NULL,
       ),
       1109 => 
       array (
@@ -711,22 +703,6 @@
         ),
         'brands' => NULL,
       ),
-      1075 => 
-      array (
-        'gc_id' => '1075',
-        'gc_name' => '架类',
-        'type_id' => '0',
-        'type_name' => '',
-        'gc_parent_id' => '1058',
-        'commis_rate' => '0',
-        'gc_sort' => '8',
-        'gc_virtual' => '0',
-        'gc_title' => '',
-        'gc_keywords' => '',
-        'gc_description' => '',
-        'gc_show' => '1',
-        'brands' => NULL,
-      ),
       1076 => 
       array (
         'gc_id' => '1076',
@@ -766,8 +742,8 @@
       array (
         'gc_id' => '1107',
         'gc_name' => '高低床',
-        'type_id' => '46',
-        'type_name' => '床',
+        'type_id' => '0',
+        'type_name' => '',
         'gc_parent_id' => '1066',
         'commis_rate' => '0',
         'gc_sort' => '0',
@@ -781,8 +757,8 @@
       array (
         'gc_id' => '1119',
         'gc_name' => '儿童床',
-        'type_id' => '46',
-        'type_name' => '床',
+        'type_id' => '0',
+        'type_name' => '',
         'gc_parent_id' => '1066',
         'commis_rate' => '0',
         'gc_sort' => '0',
@@ -977,8 +953,8 @@
   array (
     'gc_id' => '1060',
     'gc_name' => '灯具灯饰',
-    'type_id' => '0',
-    'type_name' => '',
+    'type_id' => '48',
+    'type_name' => '吸顶灯',
     'gc_parent_id' => '0',
     'commis_rate' => '0',
     'gc_sort' => '3',
@@ -993,8 +969,8 @@
       array (
         'gc_id' => '1083',
         'gc_name' => '吊灯',
-        'type_id' => '0',
-        'type_name' => '',
+        'type_id' => '48',
+        'type_name' => '吸顶灯',
         'gc_parent_id' => '1060',
         'commis_rate' => '0',
         'gc_sort' => '0',
@@ -1027,8 +1003,8 @@
       array (
         'gc_id' => '1102',
         'gc_name' => '灯具辅料',
-        'type_id' => '0',
-        'type_name' => '',
+        'type_id' => '48',
+        'type_name' => '吸顶灯',
         'gc_parent_id' => '1060',
         'commis_rate' => '0',
         'gc_sort' => '0',
@@ -1043,8 +1019,8 @@
       array (
         'gc_id' => '1084',
         'gc_name' => '吸顶灯',
-        'type_id' => '0',
-        'type_name' => '',
+        'type_id' => '48',
+        'type_name' => '吸顶灯',
         'gc_parent_id' => '1060',
         'commis_rate' => '0',
         'gc_sort' => '1',
@@ -1077,8 +1053,8 @@
       array (
         'gc_id' => '1085',
         'gc_name' => '台灯',
-        'type_id' => '0',
-        'type_name' => '',
+        'type_id' => '48',
+        'type_name' => '吸顶灯',
         'gc_parent_id' => '1060',
         'commis_rate' => '0',
         'gc_sort' => '2',
@@ -1093,8 +1069,8 @@
           array (
             'gc_id' => '1120',
             'gc_name' => '装饰台灯',
-            'type_id' => '0',
-            'type_name' => '',
+            'type_id' => '48',
+            'type_name' => '吸顶灯',
             'gc_parent_id' => '1085',
             'commis_rate' => '0',
             'gc_sort' => '0',
@@ -1111,8 +1087,8 @@
       array (
         'gc_id' => '1086',
         'gc_name' => '壁灯',
-        'type_id' => '0',
-        'type_name' => '',
+        'type_id' => '48',
+        'type_name' => '吸顶灯',
         'gc_parent_id' => '1060',
         'commis_rate' => '0',
         'gc_sort' => '3',
@@ -1127,8 +1103,8 @@
       array (
         'gc_id' => '1087',
         'gc_name' => '落地灯',
-        'type_id' => '0',
-        'type_name' => '',
+        'type_id' => '48',
+        'type_name' => '吸顶灯',
         'gc_parent_id' => '1060',
         'commis_rate' => '0',
         'gc_sort' => '4',
@@ -1143,8 +1119,8 @@
       array (
         'gc_id' => '1088',
         'gc_name' => '镜前灯',
-        'type_id' => '0',
-        'type_name' => '',
+        'type_id' => '48',
+        'type_name' => '吸顶灯',
         'gc_parent_id' => '1060',
         'commis_rate' => '0',
         'gc_sort' => '5',
@@ -1159,8 +1135,8 @@
       array (
         'gc_id' => '1089',
         'gc_name' => '家居照明',
-        'type_id' => '0',
-        'type_name' => '',
+        'type_id' => '48',
+        'type_name' => '吸顶灯',
         'gc_parent_id' => '1060',
         'commis_rate' => '0',
         'gc_sort' => '6',
@@ -1175,8 +1151,8 @@
       array (
         'gc_id' => '1090',
         'gc_name' => '光源',
-        'type_id' => '0',
-        'type_name' => '',
+        'type_id' => '48',
+        'type_name' => '吸顶灯',
         'gc_parent_id' => '1060',
         'commis_rate' => '0',
         'gc_sort' => '7',
@@ -1191,8 +1167,8 @@
           array (
             'gc_id' => '1113',
             'gc_name' => '照明光源',
-            'type_id' => '0',
-            'type_name' => '',
+            'type_id' => '48',
+            'type_name' => '吸顶灯',
             'gc_parent_id' => '1090',
             'commis_rate' => '0',
             'gc_sort' => '0',
@@ -1206,8 +1182,8 @@
           array (
             'gc_id' => '1118',
             'gc_name' => '灯带',
-            'type_id' => '0',
-            'type_name' => '',
+            'type_id' => '48',
+            'type_name' => '吸顶灯',
             'gc_parent_id' => '1090',
             'commis_rate' => '0',
             'gc_sort' => '0',
@@ -1257,8 +1233,8 @@
       array (
         'gc_id' => '1120',
         'gc_name' => '装饰台灯',
-        'type_id' => '0',
-        'type_name' => '',
+        'type_id' => '48',
+        'type_name' => '吸顶灯',
         'gc_parent_id' => '1085',
         'commis_rate' => '0',
         'gc_sort' => '0',
@@ -1272,8 +1248,8 @@
       array (
         'gc_id' => '1113',
         'gc_name' => '照明光源',
-        'type_id' => '0',
-        'type_name' => '',
+        'type_id' => '48',
+        'type_name' => '吸顶灯',
         'gc_parent_id' => '1090',
         'commis_rate' => '0',
         'gc_sort' => '0',
@@ -1287,8 +1263,8 @@
       array (
         'gc_id' => '1118',
         'gc_name' => '灯带',
-        'type_id' => '0',
-        'type_name' => '',
+        'type_id' => '48',
+        'type_name' => '吸顶灯',
         'gc_parent_id' => '1090',
         'commis_rate' => '0',
         'gc_sort' => '0',

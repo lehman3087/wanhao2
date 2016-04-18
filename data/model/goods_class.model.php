@@ -49,6 +49,7 @@ class goods_classModel extends Model
         if ($this->cachedData) {
             return $this->cachedData;
         }
+        
         $data = rkcache('gc_class');
         if (!$data) {
             $data = array();
@@ -189,6 +190,7 @@ class goods_classModel extends Model
      */
     public function getGoodsClassListByParentId($pid) {
         $data = $this->getCache();
+
         $ret = array();
         foreach ((array) $data['children'][$pid] as $i) {
             if ($data['data'][$i]) {
@@ -277,6 +279,7 @@ class goods_classModel extends Model
                 'store_id' => $store_id,
                 'state' => array('in', array(1, 2)),
             ), '', "class_{$deep} asc", "distinct class_{$deep}");
+            
 
             if (!empty($gcid_array)) {
                 $tmp_gc_list = array();
@@ -288,6 +291,7 @@ class goods_classModel extends Model
                     }
                 }
                 $gc_list = $tmp_gc_list;
+
             } else {
                 return array();
             }

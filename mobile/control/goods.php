@@ -387,7 +387,7 @@ class goodsControl extends mobileHomeControl{
     private function getptype($goods_detail) {
         $promotionMessage='';
          if($goods_detail['promotion_type']== 'xianshi'){ 
-             $xianshi= "<font size=13 color='#ff7419'>直降：¥".$goods_detail['down_price']."</font>";
+             $xianshi= "<font size=13 color='#ff7419'> 直降：¥".$goods_detail['down_price']."</font>";
         
             if($goods_detail['lower_limit']){ 
                 $xianshi .= sprintf(" <font size=13 color='#690000'>最低%s件起</font><br>\n %s",$goods_detail['lower_limit'],$goods_detail['explain']);
@@ -403,7 +403,7 @@ class goodsControl extends mobileHomeControl{
 
         }
         if ($goods_detail['have_gift'] == 'gift') {
-            $promotionMessage.="<font size=13 color='#ff7419'>赠品 </font> <font size=14 color='#999999'>点击右边查看，赠完即止</font>";
+            $promotionMessage.="<font size=13 color='#ff7419'>赠品 </font> <font size=14 color='#999999'>先买先赠，赠完即止</font>";
         }
         
         return $promotionMessage;
@@ -529,7 +529,7 @@ class goodsControl extends mobileHomeControl{
         unset($goods_detail['goods_info']['brand_name']);
         unset($goods_detail['goods_info']['type_id']);
         unset($goods_detail['goods_info']['goods_image']);
-        unset($goods_detail['goods_info']['goods_body']);
+       // unset($goods_detail['goods_info']['goods_body']);
         unset($goods_detail['goods_info']['goods_state']);
         unset($goods_detail['goods_info']['goods_stateremark']);
         unset($goods_detail['goods_info']['goods_verify']);

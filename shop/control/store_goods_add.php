@@ -39,7 +39,7 @@ class store_goods_addControl extends BaseSellerControl {
         $model_goodsclass = Model('goods_class');
         // 商品分类
         $goods_class = $model_goodsclass->getGoodsClass($_SESSION['store_id']);
-
+        
         // 常用商品分类
         $model_staple = Model('goods_class_staple');
         $param_array = array();
