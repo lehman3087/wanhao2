@@ -1,0 +1,68 @@
+[2016-04-18 11:06:18] /33hao/mobile/index.php?act=goods&op=calc&tid= ( act=goods&op=calc ) 
+ERR: SELECT * FROM `33hao_member` WHERE ( member_id = NULL ) LIMIT 1   [ RunTime:1,460,948,778.184045s ]SELECT * FROM `33hao_member` WHERE ( member_id = NULL ) LIMIT 1  
+[2016-04-18 11:06:18] /33hao/mobile/index.php?act=goods&op=calc&tid= ( act=goods&op=calc ) 
+ERR: SELECT * FROM `33hao_seller` WHERE ( member_id = NULL ) LIMIT 1   [ RunTime:1,460,948,778.184045s ]SELECT * FROM `33hao_seller` WHERE ( member_id = NULL ) LIMIT 1  
+[2016-04-18 11:07:15] /33hao/mobile/index.php?act=goods&op=calc&tid=5&area_name=%E8%B4%B5%E5%B7%9E ( act=goods&op=calc ) 
+ERR: SELECT * FROM `33hao_member` WHERE ( member_id = NULL ) LIMIT 1   [ RunTime:1,460,948,835.218003s ]SELECT * FROM `33hao_member` WHERE ( member_id = NULL ) LIMIT 1  
+[2016-04-18 11:07:15] /33hao/mobile/index.php?act=goods&op=calc&tid=5&area_name=%E8%B4%B5%E5%B7%9E ( act=goods&op=calc ) 
+ERR: SELECT * FROM `33hao_seller` WHERE ( member_id = NULL ) LIMIT 1   [ RunTime:1,460,948,835.218003s ]SELECT * FROM `33hao_seller` WHERE ( member_id = NULL ) LIMIT 1  
+[2016-04-18 11:07:15] /33hao/mobile/index.php?act=goods&op=calc&tid=5&area_name=%E8%B4%B5%E5%B7%9E ( act=goods&op=calc ) 
+ERR: SELECT * FROM `33hao_area` WHERE ( area_name LIKE '贵州' ) LIMIT 1   [ RunTime:1,460,948,835.218003s ]SELECT * FROM `33hao_area` WHERE ( area_name LIKE '贵州' ) LIMIT 1  
+[2016-04-18 11:07:15] /33hao/mobile/index.php?act=goods&op=calc&tid=5&area_name=%E8%B4%B5%E5%B7%9E ( act=goods&op=calc ) 
+ERR: SELECT * FROM `33hao_transport_extend` WHERE ( (transport_id = '5')  ) ORDER BY is_default LIMIT 1000   [ RunTime:1,460,948,835.218003s ]SELECT * FROM `33hao_transport_extend` WHERE ( (transport_id = '5')  ) ORDER BY is_default LIMIT 1000  
+[2016-04-18 11:07:47] /33hao/mobile/index.php?act=goods&op=calc&tid=5&area_name=%E8%B4%B5%E5%B7%9E ( act=goods&op=calc ) 
+ERR: SELECT * FROM `33hao_member` WHERE ( member_id = NULL ) LIMIT 1   [ RunTime:1,460,948,867.790894s ]SELECT * FROM `33hao_member` WHERE ( member_id = NULL ) LIMIT 1  
+[2016-04-18 11:07:47] /33hao/mobile/index.php?act=goods&op=calc&tid=5&area_name=%E8%B4%B5%E5%B7%9E ( act=goods&op=calc ) 
+ERR: SELECT * FROM `33hao_seller` WHERE ( member_id = NULL ) LIMIT 1   [ RunTime:1,460,948,867.790894s ]SELECT * FROM `33hao_seller` WHERE ( member_id = NULL ) LIMIT 1  
+[2016-04-18 11:07:47] /33hao/mobile/index.php?act=goods&op=calc&tid=5&area_name=%E8%B4%B5%E5%B7%9E ( act=goods&op=calc ) 
+ERR: SELECT * FROM `33hao_area` WHERE ( area_name LIKE '贵州' ) LIMIT 1   [ RunTime:1,460,948,867.790894s ]SELECT * FROM `33hao_area` WHERE ( area_name LIKE '贵州' ) LIMIT 1  
+[2016-04-18 11:07:48] /33hao/mobile/index.php?act=goods&op=calc&tid=5&area_name=%E8%B4%B5%E5%B7%9E ( act=goods&op=calc ) 
+ERR: SELECT * FROM `33hao_transport_extend` WHERE ( (transport_id = '5')  ) ORDER BY is_default LIMIT 1000   [ RunTime:1,460,948,867.790894s ]SELECT * FROM `33hao_transport_extend` WHERE ( (transport_id = '5')  ) ORDER BY is_default LIMIT 1000  
+[2016-04-18 11:07:56] /33hao/mobile/index.php?act=goods&op=calc&tid=5&area_name=%E8%B4%B5%E5%B7%9E%E7%9C%81 ( act=goods&op=calc ) 
+ERR: SELECT * FROM `33hao_member` WHERE ( member_id = NULL ) LIMIT 1   [ RunTime:1,460,948,876.661142s ]SELECT * FROM `33hao_member` WHERE ( member_id = NULL ) LIMIT 1  
+[2016-04-18 11:07:56] /33hao/mobile/index.php?act=goods&op=calc&tid=5&area_name=%E8%B4%B5%E5%B7%9E%E7%9C%81 ( act=goods&op=calc ) 
+ERR: SELECT * FROM `33hao_seller` WHERE ( member_id = NULL ) LIMIT 1   [ RunTime:1,460,948,876.661142s ]SELECT * FROM `33hao_seller` WHERE ( member_id = NULL ) LIMIT 1  
+[2016-04-18 11:07:56] /33hao/mobile/index.php?act=goods&op=calc&tid=5&area_name=%E8%B4%B5%E5%B7%9E%E7%9C%81 ( act=goods&op=calc ) 
+ERR: SELECT * FROM `33hao_area` WHERE ( area_name LIKE '贵州省' ) LIMIT 1   [ RunTime:1,460,948,876.661142s ]SELECT * FROM `33hao_area` WHERE ( area_name LIKE '贵州省' ) LIMIT 1  
+[2016-04-18 11:07:56] /33hao/mobile/index.php?act=goods&op=calc&tid=5&area_name=%E8%B4%B5%E5%B7%9E%E7%9C%81 ( act=goods&op=calc ) 
+ERR: SELECT * FROM `33hao_transport_extend` WHERE ( (transport_id = '5')  ) ORDER BY is_default LIMIT 1000   [ RunTime:1,460,948,876.661142s ]SELECT * FROM `33hao_transport_extend` WHERE ( (transport_id = '5')  ) ORDER BY is_default LIMIT 1000  
+[2016-04-18 11:08:12] /33hao/mobile/index.php?act=goods&op=calc&tid=5&area_name=%E8%B4%B5%E5%B7%9E ( act=goods&op=calc ) 
+ERR: SELECT * FROM `33hao_member` WHERE ( member_id = NULL ) LIMIT 1   [ RunTime:1,460,948,892.224589s ]SELECT * FROM `33hao_member` WHERE ( member_id = NULL ) LIMIT 1  
+[2016-04-18 11:08:12] /33hao/mobile/index.php?act=goods&op=calc&tid=5&area_name=%E8%B4%B5%E5%B7%9E ( act=goods&op=calc ) 
+ERR: SELECT * FROM `33hao_seller` WHERE ( member_id = NULL ) LIMIT 1   [ RunTime:1,460,948,892.224589s ]SELECT * FROM `33hao_seller` WHERE ( member_id = NULL ) LIMIT 1  
+[2016-04-18 11:08:12] /33hao/mobile/index.php?act=goods&op=calc&tid=5&area_name=%E8%B4%B5%E5%B7%9E ( act=goods&op=calc ) 
+ERR: SELECT * FROM `33hao_area` WHERE ( area_name LIKE '贵州' ) LIMIT 1   [ RunTime:1,460,948,892.224589s ]SELECT * FROM `33hao_area` WHERE ( area_name LIKE '贵州' ) LIMIT 1  
+[2016-04-18 11:08:12] /33hao/mobile/index.php?act=goods&op=calc&tid=5&area_name=%E8%B4%B5%E5%B7%9E ( act=goods&op=calc ) 
+ERR: SELECT * FROM `33hao_transport_extend` WHERE ( (transport_id = '5')  ) ORDER BY is_default LIMIT 1000   [ RunTime:1,460,948,892.224589s ]SELECT * FROM `33hao_transport_extend` WHERE ( (transport_id = '5')  ) ORDER BY is_default LIMIT 1000  
+[2016-04-18 11:13:23] /33hao/mobile/index.php?act=goods&op=calc&tid=5&area_name=%E8%B4%B5%E5%B7%9E ( act=goods&op=calc ) 
+ERR: SELECT * FROM `33hao_member` WHERE ( member_id = NULL ) LIMIT 1   [ RunTime:1,460,949,203.545404s ]SELECT * FROM `33hao_member` WHERE ( member_id = NULL ) LIMIT 1  
+[2016-04-18 11:13:23] /33hao/mobile/index.php?act=goods&op=calc&tid=5&area_name=%E8%B4%B5%E5%B7%9E ( act=goods&op=calc ) 
+ERR: SELECT * FROM `33hao_seller` WHERE ( member_id = NULL ) LIMIT 1   [ RunTime:1,460,949,203.545404s ]SELECT * FROM `33hao_seller` WHERE ( member_id = NULL ) LIMIT 1  
+[2016-04-18 11:13:29] /33hao/mobile/index.php?act=goods&op=calc&tid=5&area_name=%E8%B4%B5%E5%B7%9E%E7%9C%81 ( act=goods&op=calc ) 
+ERR: SELECT * FROM `33hao_member` WHERE ( member_id = NULL ) LIMIT 1   [ RunTime:1,460,949,209.429762s ]SELECT * FROM `33hao_member` WHERE ( member_id = NULL ) LIMIT 1  
+[2016-04-18 11:13:29] /33hao/mobile/index.php?act=goods&op=calc&tid=5&area_name=%E8%B4%B5%E5%B7%9E%E7%9C%81 ( act=goods&op=calc ) 
+ERR: SELECT * FROM `33hao_seller` WHERE ( member_id = NULL ) LIMIT 1   [ RunTime:1,460,949,209.429762s ]SELECT * FROM `33hao_seller` WHERE ( member_id = NULL ) LIMIT 1  
+[2016-04-18 11:13:42] /33hao/mobile/index.php?act=goods&op=calc&tid=5&area_name=%E8%B4%B5%E5%B7%9E%E7%9C%81 ( act=goods&op=calc ) 
+ERR: SELECT * FROM `33hao_member` WHERE ( member_id = NULL ) LIMIT 1   [ RunTime:1,460,949,222.595554s ]SELECT * FROM `33hao_member` WHERE ( member_id = NULL ) LIMIT 1  
+[2016-04-18 11:13:42] /33hao/mobile/index.php?act=goods&op=calc&tid=5&area_name=%E8%B4%B5%E5%B7%9E%E7%9C%81 ( act=goods&op=calc ) 
+ERR: SELECT * FROM `33hao_seller` WHERE ( member_id = NULL ) LIMIT 1   [ RunTime:1,460,949,222.595554s ]SELECT * FROM `33hao_seller` WHERE ( member_id = NULL ) LIMIT 1  
+[2016-04-18 11:14:50] /33hao/mobile/index.php?act=goods&op=calc&tid=5&area_name=%E8%B4%B5%E5%B7%9E%E7%9C%81 ( act=goods&op=calc ) 
+ERR: SELECT * FROM `33hao_member` WHERE ( member_id = NULL ) LIMIT 1   [ RunTime:1,460,949,290.850083s ]SELECT * FROM `33hao_member` WHERE ( member_id = NULL ) LIMIT 1  
+[2016-04-18 11:14:50] /33hao/mobile/index.php?act=goods&op=calc&tid=5&area_name=%E8%B4%B5%E5%B7%9E%E7%9C%81 ( act=goods&op=calc ) 
+ERR: SELECT * FROM `33hao_seller` WHERE ( member_id = NULL ) LIMIT 1   [ RunTime:1,460,949,290.850083s ]SELECT * FROM `33hao_seller` WHERE ( member_id = NULL ) LIMIT 1  
+[2016-04-18 11:15:04] /33hao/mobile/index.php?act=goods&op=calc&tid=5&area_name=%E8%B4%B5%E5%B7%9E%E8%87%AA%E6%B2%BB%E5%8C%BA ( act=goods&op=calc ) 
+ERR: SELECT * FROM `33hao_member` WHERE ( member_id = NULL ) LIMIT 1   [ RunTime:1,460,949,304.209320s ]SELECT * FROM `33hao_member` WHERE ( member_id = NULL ) LIMIT 1  
+[2016-04-18 11:15:04] /33hao/mobile/index.php?act=goods&op=calc&tid=5&area_name=%E8%B4%B5%E5%B7%9E%E8%87%AA%E6%B2%BB%E5%8C%BA ( act=goods&op=calc ) 
+ERR: SELECT * FROM `33hao_seller` WHERE ( member_id = NULL ) LIMIT 1   [ RunTime:1,460,949,304.209320s ]SELECT * FROM `33hao_seller` WHERE ( member_id = NULL ) LIMIT 1  
+[2016-04-18 11:15:08] /33hao/mobile/index.php?act=goods&op=calc&tid=5&area_name=%E8%B4%B5%E5%B7%9E%E5%B8%82 ( act=goods&op=calc ) 
+ERR: SELECT * FROM `33hao_member` WHERE ( member_id = NULL ) LIMIT 1   [ RunTime:1,460,949,308.479378s ]SELECT * FROM `33hao_member` WHERE ( member_id = NULL ) LIMIT 1  
+[2016-04-18 11:15:08] /33hao/mobile/index.php?act=goods&op=calc&tid=5&area_name=%E8%B4%B5%E5%B7%9E%E5%B8%82 ( act=goods&op=calc ) 
+ERR: SELECT * FROM `33hao_seller` WHERE ( member_id = NULL ) LIMIT 1   [ RunTime:1,460,949,308.479378s ]SELECT * FROM `33hao_seller` WHERE ( member_id = NULL ) LIMIT 1  
+[2016-04-18 11:15:24] /33hao/mobile/index.php?act=goods&op=calc&tid=5&area_name=%E8%B4%B5%E5%B7%9E%E5%B8%82 ( act=goods&op=calc ) 
+ERR: SELECT * FROM `33hao_member` WHERE ( member_id = NULL ) LIMIT 1   [ RunTime:1,460,949,324.876962s ]SELECT * FROM `33hao_member` WHERE ( member_id = NULL ) LIMIT 1  
+[2016-04-18 11:15:24] /33hao/mobile/index.php?act=goods&op=calc&tid=5&area_name=%E8%B4%B5%E5%B7%9E%E5%B8%82 ( act=goods&op=calc ) 
+ERR: SELECT * FROM `33hao_seller` WHERE ( member_id = NULL ) LIMIT 1   [ RunTime:1,460,949,324.876962s ]SELECT * FROM `33hao_seller` WHERE ( member_id = NULL ) LIMIT 1  
+[2016-04-18 11:15:25] /33hao/mobile/index.php?act=goods&op=calc&tid=5&area_name=%E8%B4%B5%E5%B7%9E%E5%B8%82 ( act=goods&op=calc ) 
+ERR: SELECT * FROM `33hao_area` WHERE ( area_name LIKE '贵州' ) LIMIT 1   [ RunTime:1,460,949,324.876962s ]SELECT * FROM `33hao_area` WHERE ( area_name LIKE '贵州' ) LIMIT 1  
+[2016-04-18 11:15:25] /33hao/mobile/index.php?act=goods&op=calc&tid=5&area_name=%E8%B4%B5%E5%B7%9E%E5%B8%82 ( act=goods&op=calc ) 
+ERR: SELECT * FROM `33hao_transport_extend` WHERE ( (transport_id = '5')  ) ORDER BY is_default LIMIT 1000   [ RunTime:1,460,949,324.876962s ]SELECT * FROM `33hao_transport_extend` WHERE ( (transport_id = '5')  ) ORDER BY is_default LIMIT 1000  

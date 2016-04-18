@@ -60,6 +60,8 @@ class areaModel extends Model {
 
         return $arr;
     }
+    
+
 
     /**
      * 获取获取市级id对应省级id的数组

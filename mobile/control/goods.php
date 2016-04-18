@@ -387,10 +387,10 @@ class goodsControl extends mobileHomeControl{
     private function getptype($goods_detail) {
         $promotionMessage='';
          if($goods_detail['promotion_type']== 'xianshi'){ 
-             $xianshi= "<font size=14 color='#ff7419'>直降：¥".$goods_detail['down_price']."</font>";
+             $xianshi= "<font size=13 color='#ff7419'>直降：¥".$goods_detail['down_price']."</font>";
         
             if($goods_detail['lower_limit']){ 
-                $xianshi .= sprintf(" <font size=14 color='#690000'>最低%s件起</font><br>\n %s",$goods_detail['lower_limit'],$goods_detail['explain']);
+                $xianshi .= sprintf(" <font size=13 color='#690000'>最低%s件起</font><br>\n %s",$goods_detail['lower_limit'],$goods_detail['explain']);
             }
             $promotionMessage.=$xianshi."<br/>";
          }
@@ -398,12 +398,12 @@ class goodsControl extends mobileHomeControl{
         
         if ($goods_detail['promotion_type'] == 'groupbuy') {
             if ($goods_detail['upper_limit']) {
-                $promotionMessage.=sprintf(" <font size=14 color='#690000'>最多限购%s件</font><br/>\n",$output['goods']['upper_limit']);
+                $promotionMessage.=sprintf(" <font size=13 color='#690000'>最多限购%s件</font><br/>\n",$output['goods']['upper_limit']);
             }
 
         }
         if ($goods_detail['have_gift'] == 'gift') {
-            $promotionMessage.="<font size=14 color='#ff7419'>赠品 </font> <font size=14 color='#999999'>赠下方的热销商品，赠完即止</font>";
+            $promotionMessage.="<font size=13 color='#ff7419'>赠品 </font> <font size=14 color='#999999'>点击右边查看，赠完即止</font>";
         }
         
         return $promotionMessage;
@@ -736,4 +736,48 @@ class goodsControl extends mobileHomeControl{
 
         output_data($goods_detail);
     }
+    
+    
+    /**
+	 * 商品详细页运费显示
+	 *
+	 * @return unknown
+	 */
+	function calcOp(){
+		if (empty($_REQUEST['area_name']) || !is_numeric($_REQUEST['tid'])) return false;
+                //$area_list = Model('area')->getTopLevelAreas();
+                // 输出一级地区
+                if(preg_match('/(省|市|自治区)+/',$_REQUEST['area_name'],$match)){
+                    $index=  strpos($_REQUEST['area_name'], $match[0]);
+                    $_REQUEST['area_name']=  substr($_REQUEST['area_name'], 0,$index);
+                   // var_dump($_REQUEST['area_name']);
+                }
+                
+  
+                $condition['area_name']=array('like',$_REQUEST['area_name']);
+                
+                $province = Model('area')->getAreaInfo($condition);
+        
+		$model_transport = Model('transport');
+		$extend = $model_transport->getExtendList(array('transport_id'=>array(intval($_REQUEST['tid']))));
+		if (!empty($extend) && is_array($extend)){
+			$calc = array();
+			$calc_default = array();
+			foreach ($extend as $v) {
+				if (strpos($v['top_area_id'],",".intval($province['area_id']).",") !== false){
+					$calc = $v['sprice'];
+				}
+				if ($v['is_default']==1){
+					$calc_default = $v['sprice'];
+				}
+			}
+			//如果运费模板中没有指定该地区，取默认运费
+			if (empty($calc) && !empty($calc_default)){
+				$calc = $calc_default;
+			}
+		}
+                output_data(array('freight_fee'=>$calc));
+	}
+
+        
 }
