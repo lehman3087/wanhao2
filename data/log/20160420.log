@@ -1,0 +1,46 @@
+[2016-04-20 18:40:22] /33hao/admin/index.php?act=operation&op=setting ( act=operation&op=setting ) 
+ERR: SELECT * FROM `33hao_setting` as `setting`   [ RunTime:1,461,148,822.416208s ]SELECT * FROM `33hao_setting` as `setting`  
+[2016-04-20 18:40:23] /33hao/admin/index.php?act=article_class&op=article_class ( act=article_class&op=article_class ) 
+ERR: SELECT * FROM `33hao_article_class` as `article_class`   order by ac_parent_id asc,ac_sort asc,ac_id asc [ RunTime:1,461,148,823.718811s ]SELECT * FROM `33hao_article_class` as `article_class`   order by ac_parent_id asc,ac_sort asc,ac_id asc
+[2016-04-20 18:40:28] /33hao/admin/index.php?act=rec_position&op=rec_list ( act=rec_position&op=rec_list ) 
+ERR: SELECT COUNT(*) AS nc_count FROM `33hao_rec_position` ORDER BY rec_id desc LIMIT 1   [ RunTime:1,461,148,828.343672s ]SELECT COUNT(*) AS nc_count FROM `33hao_rec_position` ORDER BY rec_id desc LIMIT 1  
+[2016-04-20 18:40:28] /33hao/admin/index.php?act=rec_position&op=rec_list ( act=rec_position&op=rec_list ) 
+ERR: SELECT * FROM `33hao_rec_position` ORDER BY rec_id desc LIMIT 0,10   [ RunTime:1,461,148,828.343672s ]SELECT * FROM `33hao_rec_position` ORDER BY rec_id desc LIMIT 0,10  
+[2016-04-20 18:40:30] /33hao/admin/index.php?act=rec_position&op=rec_edit&rec_id=60 ( act=rec_position&op=rec_edit ) 
+ERR: SELECT * FROM `33hao_rec_position` WHERE ( rec_id = '60' ) LIMIT 1   [ RunTime:1,461,148,830.887280s ]SELECT * FROM `33hao_rec_position` WHERE ( rec_id = '60' ) LIMIT 1  
+[2016-04-20 18:40:30] /33hao/admin/index.php?act=rec_position&op=rec_edit&rec_id=60 ( act=rec_position&op=rec_edit ) 
+ERR: SELECT * FROM `33hao_cms_article_class` ORDER BY class_sort asc  [ RunTime:1,461,148,830.887280s ]SELECT * FROM `33hao_cms_article_class` ORDER BY class_sort asc 
+[2016-04-20 18:40:31] /33hao/admin/index.php?act=rec_position&op=activity_list_ajax&id=pf_signup ( act=rec_position&op=activity_list_ajax ) 
+ERR: SELECT * FROM `33hao_activity` as `activity`  WHERE  activity.activity_type='10'  and activity.activity_state = '1' order by activity_id [ RunTime:1,461,148,831.742437s ]SELECT * FROM `33hao_activity` as `activity`  WHERE  activity.activity_type='10'  and activity.activity_state = '1' order by activity_id
+[2016-04-20 18:40:36] /33hao/admin/index.php?act=rec_position&op=activity_list_ajax&id=pf_goods ( act=rec_position&op=activity_list_ajax ) 
+ERR: SELECT * FROM `33hao_activity` as `activity`  WHERE  activity.activity_type='1'  and activity.activity_state = '1' order by activity_id [ RunTime:1,461,148,836.237377s ]SELECT * FROM `33hao_activity` as `activity`  WHERE  activity.activity_type='1'  and activity.activity_state = '1' order by activity_id
+[2016-04-20 18:40:36] /33hao/admin/index.php?act=rec_position&op=activity_list_ajax&id=pf_goods ( act=rec_position&op=activity_list_ajax ) 
+ERR: SELECT COUNT(*) as `count` FROM `33hao_activity_detail` as `activity_detail`  WHERE  `activity_id`='27' AND `activity_detail_state`='1' [ RunTime:1,461,148,836.237377s ]SELECT COUNT(*) as `count` FROM `33hao_activity_detail` as `activity_detail`  WHERE  `activity_id`='27' AND `activity_detail_state`='1'
+[2016-04-20 18:40:36] /33hao/admin/index.php?act=rec_position&op=activity_list_ajax&id=pf_goods ( act=rec_position&op=activity_list_ajax ) 
+ERR: SELECT COUNT(*) as `count` FROM `33hao_activity_detail` as `activity_detail`  WHERE  `activity_id`='28' AND `activity_detail_state`='1' [ RunTime:1,461,148,836.237377s ]SELECT COUNT(*) as `count` FROM `33hao_activity_detail` as `activity_detail`  WHERE  `activity_id`='28' AND `activity_detail_state`='1'
+[2016-04-20 18:40:36] /33hao/admin/index.php?act=rec_position&op=activity_list_ajax&id=pf_goods ( act=rec_position&op=activity_list_ajax ) 
+ERR: SELECT COUNT(*) as `count` FROM `33hao_activity_detail` as `activity_detail`  WHERE  `activity_id`='31' AND `activity_detail_state`='1' [ RunTime:1,461,148,836.237377s ]SELECT COUNT(*) as `count` FROM `33hao_activity_detail` as `activity_detail`  WHERE  `activity_id`='31' AND `activity_detail_state`='1'
+[2016-04-20 18:40:39] /33hao/admin/index.php?act=rec_position&op=activity_list_ajax&id=pf_signup ( act=rec_position&op=activity_list_ajax ) 
+ERR: SELECT * FROM `33hao_activity` as `activity`  WHERE  activity.activity_type='10'  and activity.activity_state = '1' order by activity_id [ RunTime:1,461,148,839.081818s ]SELECT * FROM `33hao_activity` as `activity`  WHERE  activity.activity_type='10'  and activity.activity_state = '1' order by activity_id
+[2016-04-20 18:41:09] /33hao/admin/index.php?act=rec_position&op=activity_list_ajax&id=pf_goods ( act=rec_position&op=activity_list_ajax ) 
+ERR: SELECT * FROM `33hao_activity` as `activity`  WHERE  activity.activity_type='1'  and activity.activity_state = '1' order by activity_id [ RunTime:1,461,148,869.270179s ]SELECT * FROM `33hao_activity` as `activity`  WHERE  activity.activity_type='1'  and activity.activity_state = '1' order by activity_id
+[2016-04-20 18:41:09] /33hao/admin/index.php?act=rec_position&op=activity_list_ajax&id=pf_goods ( act=rec_position&op=activity_list_ajax ) 
+ERR: SELECT COUNT(*) as `count` FROM `33hao_activity_detail` as `activity_detail`  WHERE  `activity_id`='27' AND `activity_detail_state`='1' [ RunTime:1,461,148,869.270179s ]SELECT COUNT(*) as `count` FROM `33hao_activity_detail` as `activity_detail`  WHERE  `activity_id`='27' AND `activity_detail_state`='1'
+[2016-04-20 18:41:09] /33hao/admin/index.php?act=rec_position&op=activity_list_ajax&id=pf_goods ( act=rec_position&op=activity_list_ajax ) 
+ERR: SELECT COUNT(*) as `count` FROM `33hao_activity_detail` as `activity_detail`  WHERE  `activity_id`='28' AND `activity_detail_state`='1' [ RunTime:1,461,148,869.270179s ]SELECT COUNT(*) as `count` FROM `33hao_activity_detail` as `activity_detail`  WHERE  `activity_id`='28' AND `activity_detail_state`='1'
+[2016-04-20 18:41:09] /33hao/admin/index.php?act=rec_position&op=activity_list_ajax&id=pf_goods ( act=rec_position&op=activity_list_ajax ) 
+ERR: SELECT COUNT(*) as `count` FROM `33hao_activity_detail` as `activity_detail`  WHERE  `activity_id`='31' AND `activity_detail_state`='1' [ RunTime:1,461,148,869.270179s ]SELECT COUNT(*) as `count` FROM `33hao_activity_detail` as `activity_detail`  WHERE  `activity_id`='31' AND `activity_detail_state`='1'
+[2016-04-20 18:41:13] /33hao/admin/index.php?act=rec_position&op=activity_list_ajax&id=pf_signup ( act=rec_position&op=activity_list_ajax ) 
+ERR: SELECT * FROM `33hao_activity` as `activity`  WHERE  activity.activity_type='10'  and activity.activity_state = '1' order by activity_id [ RunTime:1,461,148,873.505547s ]SELECT * FROM `33hao_activity` as `activity`  WHERE  activity.activity_type='10'  and activity.activity_state = '1' order by activity_id
+[2016-04-20 18:43:46] /33hao/admin/index.php?act=operation&op=setting ( act=operation&op=setting ) 
+ERR: SELECT * FROM `33hao_setting` as `setting`   [ RunTime:1,461,149,026.908350s ]SELECT * FROM `33hao_setting` as `setting`  
+[2016-04-20 18:43:59] /33hao/admin/index.php?act=activity&op=activity ( act=activity&op=activity ) 
+ERR: SELECT count(*) as count FROM `33hao_activity` as `activity`   [ RunTime:1,461,149,039.529196s ]SELECT count(*) as count FROM `33hao_activity` as `activity`  
+[2016-04-20 18:43:59] /33hao/admin/index.php?act=activity&op=activity ( act=activity&op=activity ) 
+ERR: SELECT * FROM `33hao_activity` as `activity`   order by activity_id desc,activity_sort asc limit 0,10 [ RunTime:1,461,149,039.529196s ]SELECT * FROM `33hao_activity` as `activity`   order by activity_id desc,activity_sort asc limit 0,10
+[2016-04-20 18:44:14] /33hao/admin/index.php?act=activity&op=edit&activity_id=33 ( act=activity&op=edit ) 
+ERR: SELECT * FROM `33hao_activity` WHERE activity_id='33' [ RunTime:1,461,149,054.155215s ]SELECT * FROM `33hao_activity` WHERE activity_id='33'
+[2016-04-20 18:44:29] /33hao/admin/index.php?act=activity&op=activity ( act=activity&op=activity ) 
+ERR: SELECT count(*) as count FROM `33hao_activity` as `activity`   [ RunTime:1,461,149,069.957444s ]SELECT count(*) as count FROM `33hao_activity` as `activity`  
+[2016-04-20 18:44:30] /33hao/admin/index.php?act=activity&op=activity ( act=activity&op=activity ) 
+ERR: SELECT * FROM `33hao_activity` as `activity`   order by activity_id desc,activity_sort asc limit 0,10 [ RunTime:1,461,149,069.957444s ]SELECT * FROM `33hao_activity` as `activity`   order by activity_id desc,activity_sort asc limit 0,10

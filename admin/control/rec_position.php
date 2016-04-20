@@ -419,7 +419,7 @@ class rec_positionControl extends SystemControl{
      */
     public function activity_list_ajaxOp() {
         //获取活动列表
-        $ay=array('pf_goods'=>1,'pf_signup'=>10);
+        $ay=array('pf_goods'=>1,'pf_signup'=>11,'store_signup'=>10);
         $condition = array();
         if(!empty($_REQUEST['id'])) {
             $condition['activity_type'] = $ay[$_REQUEST['id']];
@@ -429,8 +429,8 @@ class rec_positionControl extends SystemControl{
         $activity	= Model('activity');
         $list	= $activity->getListAndItemCount($condition);
         
-      //  var_dump($list);
-        echo json_encode(array_values($list));
+        var_dump($list);
+       // echo json_encode(array_values($list));
     }
     
     

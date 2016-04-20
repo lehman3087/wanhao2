@@ -36,6 +36,9 @@ class activityModel{
 		$param['table']	= 'activity';
 		$param['where']	= $this->getCondition($condition);
 		$param['order']	= $condition['order'] ? $condition['order'] : 'activity_id';
+                
+
+                
 		$list = Db::select($param,$page);
                 
 //                var_dump($list);
