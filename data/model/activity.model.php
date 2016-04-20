@@ -146,6 +146,10 @@ class activityModel{
 		if($condition['activity_type'] != ''){
 			$conditionStr	.= " and activity.activity_type='{$condition['activity_type']}' ";
 		}
+                if($condition['activity_type_in'] != ''){
+                    $in=  implode(',', $condition['activity_type_in']);
+                        $conditionStr	.= " and activity.activity_type in ({$in}) ";
+		}
                 if($condition['verify'] != ''){
 			$conditionStr	.= " and activity.activity_verify!=1 ";
 		}
