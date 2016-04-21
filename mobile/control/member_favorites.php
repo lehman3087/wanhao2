@@ -33,7 +33,7 @@ class member_favoritesControl extends mobileMemberControl {
         $favorites_id = rtrim($favorites_id, ',');
 
         $model_goods = Model('goods');
-        $field = 'goods_id,goods_name,goods_price,goods_image,store_id,evaluation_good_star,evaluation_count';
+        $field = 'goods_id,goods_name,goods_price,goods_image,store_id,evaluation_good_star,evaluation_count,goods_freight';
         $goods_list = $model_goods->getGoodsList(array('goods_id' => array('in', $favorites_id)), $field);
         foreach ($goods_list as $key=>$value) {
             $goods_list[$key]['fav_id'] = $value['goods_id'];
@@ -93,6 +93,7 @@ class member_favoritesControl extends mobileMemberControl {
 	 * @return
 	 */
 	public function favorites_store_listOp(){
+               // var_dump($this->member_info);
 		$favorites_model = Model('favorites');
 		$favorites_list = $favorites_model->getStoreFavoritesList(array('member_id'=>$this->member_info['member_id']), '*');
 		$page_count = $favorites_model->gettotalpage();
@@ -105,8 +106,16 @@ class member_favoritesControl extends mobileMemberControl {
 			}
 			$store_model = Model('store');
 			$store_list = $store_model->getStoreList(array('store_id'=>array('in', $favorites_id)),$this->page);
-			if (!empty($store_list) && is_array($store_list)){
-				foreach ($store_list as $key=>$fav){
+			
+                        $storeListBasic = $store_model-> getStoreInfoBasic($store_list);
+            
+          //  $count=$model_store->getStoreCount2($post->conditions);
+            
+                        //$storeListBasic= array_values($storeListBasic);
+            
+                        
+                        if (!empty($storeListBasic) && is_array($storeListBasic)){
+				foreach ($storeListBasic as $key=>$fav){
 					$fav_id = $fav['store_id'];
 					$key = $favorites_key[$fav_id];
 					$favorites_list[$key]['store'] = $fav;
