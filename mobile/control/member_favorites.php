@@ -33,7 +33,7 @@ class member_favoritesControl extends mobileMemberControl {
         $favorites_id = rtrim($favorites_id, ',');
 
         $model_goods = Model('goods');
-        $field = 'goods_id,goods_name,goods_price,goods_image,store_id';
+        $field = 'goods_id,goods_name,goods_price,goods_image,store_id,evaluation_good_star,evaluation_count';
         $goods_list = $model_goods->getGoodsList(array('goods_id' => array('in', $favorites_id)), $field);
         foreach ($goods_list as $key=>$value) {
             $goods_list[$key]['fav_id'] = $value['goods_id'];
