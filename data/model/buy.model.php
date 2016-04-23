@@ -714,9 +714,9 @@ class buyModel {
         //发票信息
         $inv = array();
         if ($invoice_info['inv_state'] == 1) {
-            $inv['类型'] = '普通发票 ';
-            $inv['抬头'] = $invoice_info['inv_title_select'] == 'person' ? '个人' : $invoice_info['inv_title'];
-            $inv['内容'] = $invoice_info['inv_content'];
+            $inv['type'] = '普通发票 ';
+            $inv['title'] = $invoice_info['inv_title_select'] == 'person' ? '个人' : $invoice_info['inv_title'];
+            $inv['content'] = $invoice_info['inv_content'];
         } elseif (!empty($invoice_info)) {
             $inv['单位名称'] = $invoice_info['inv_company'];
             $inv['纳税人识别号'] = $invoice_info['inv_code'];
