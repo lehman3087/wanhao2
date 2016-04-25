@@ -49,11 +49,7 @@ class member_cartControl extends mobileMemberControl {
             $newarray[$value['store_id']]['mansong_info'] = $model_mansong->getMansongInfoByStoreID($value['store_id']);
             $_condition['voucher_store_id']=$value['store_id'];
             $newarray[$value['store_id']]['store_voucher_list'] = $model_voucher->getCurrentAvailableVoucher($_condition);
-            
-            
-            
         }
-        
         $newarray2=  array_values($newarray);
         output_data(array('cart_list' => $newarray2, 'sum' => ncPriceFormat($sum)));
     }
@@ -370,10 +366,6 @@ class member_cartControl extends mobileMemberControl {
 	 *
 	 */
 	public function add_blOp() {
-            
-            
-            
-            
 	    $model_goods = Model('goods');
 	    $logic_buy_1 = Logic('buy_1');
 //        if (is_numeric($_REQUEST['goods_id'])) {
@@ -486,7 +478,7 @@ class member_cartControl extends mobileMemberControl {
         $buy_list['store_cart_list'] = array_values($store_cart_list);
         
         $buy_list['freight_hash'] = $result['freight_list'];
-        $buy_list['address_info'] = !empty($result['address_info'])?$result['address_info']:'';
+        $buy_list['address_info'] = $result['address_info'];
         $buy_list['ifshow_offpay'] = $result['ifshow_offpay'];
         $buy_list['vat_hash'] = $result['vat_hash'];
         $buy_list['inv_info'] = $result['inv_info'];
@@ -500,11 +492,13 @@ class member_cartControl extends mobileMemberControl {
             //购物车商品种数记入cookie
             //setNcCookie('cart_goods_num',$model_cart->cart_goods_num,2*3600);
          //   $data = array('state'=>'true', 'num' => $model_cart->cart_goods_num, 'amount' => ncPriceFormat($model_cart->cart_all_price));
+        
+        
         } else {
             output_error(array('state'=>'false'));
         }
         // output_data($data);
-	  //  exit(json_encode($data));
+	//  exit(json_encode($data));
 	}
       
         

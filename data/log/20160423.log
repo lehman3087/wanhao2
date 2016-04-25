@@ -1,0 +1,432 @@
+[2016-04-23 13:35:55] /33hao/mobile/index.php?act=member_order&op=show_order&order_id=312&token=4a26d6eeae9b08df1fce18213c822c28 ( act=member_order&op=show_order ) 
+ERR: SELECT * FROM `33hao_mb_user_token` WHERE ( token = '4a26d6eeae9b08df1fce18213c822c28' ) LIMIT 1   [ RunTime:1,461,389,755.417527s ]SELECT * FROM `33hao_mb_user_token` WHERE ( token = '4a26d6eeae9b08df1fce18213c822c28' ) LIMIT 1  
+[2016-04-23 13:35:55] /33hao/mobile/index.php?act=member_order&op=show_order&order_id=312&token=4a26d6eeae9b08df1fce18213c822c28 ( act=member_order&op=show_order ) 
+ERR: SELECT * FROM `33hao_member` WHERE ( member_id = '16' ) LIMIT 1   [ RunTime:1,461,389,755.417527s ]SELECT * FROM `33hao_member` WHERE ( member_id = '16' ) LIMIT 1  
+[2016-04-23 13:35:55] /33hao/mobile/index.php?act=member_order&op=show_order&order_id=312&token=4a26d6eeae9b08df1fce18213c822c28 ( act=member_order&op=show_order ) 
+ERR: SELECT * FROM `33hao_seller` WHERE ( member_id = '16' ) LIMIT 1   [ RunTime:1,461,389,755.417527s ]SELECT * FROM `33hao_seller` WHERE ( member_id = '16' ) LIMIT 1  
+[2016-04-23 13:35:55] /33hao/mobile/index.php?act=member_order&op=show_order&order_id=312&token=4a26d6eeae9b08df1fce18213c822c28 ( act=member_order&op=show_order ) 
+ERR: SELECT * FROM `33hao_order` WHERE ( order_id = '312' ) AND ( buyer_id = '16' ) LIMIT 1   [ RunTime:1,461,389,755.417527s ]SELECT * FROM `33hao_order` WHERE ( order_id = '312' ) AND ( buyer_id = '16' ) LIMIT 1  
+[2016-04-23 13:35:55] /33hao/mobile/index.php?act=member_order&op=show_order&order_id=312&token=4a26d6eeae9b08df1fce18213c822c28 ( act=member_order&op=show_order ) 
+ERR: SELECT * FROM `33hao_order_common` WHERE ( order_id = '312' ) LIMIT 1   [ RunTime:1,461,389,755.417527s ]SELECT * FROM `33hao_order_common` WHERE ( order_id = '312' ) LIMIT 1  
+[2016-04-23 13:35:55] /33hao/mobile/index.php?act=member_order&op=show_order&order_id=312&token=4a26d6eeae9b08df1fce18213c822c28 ( act=member_order&op=show_order ) 
+ERR: SELECT * FROM `33hao_store` WHERE ( store_id = '43' ) LIMIT 1   [ RunTime:1,461,389,755.417527s ]SELECT * FROM `33hao_store` WHERE ( store_id = '43' ) LIMIT 1  
+[2016-04-23 13:35:55] /33hao/mobile/index.php?act=member_order&op=show_order&order_id=312&token=4a26d6eeae9b08df1fce18213c822c28 ( act=member_order&op=show_order ) 
+ERR: SELECT COUNT(*) AS nc_count FROM `33hao_goods_common` WHERE ( store_id = '43' ) AND ( goods_state = '1' ) AND ( goods_verify = '1' ) LIMIT 1   [ RunTime:1,461,389,755.417527s ]SELECT COUNT(*) AS nc_count FROM `33hao_goods_common` WHERE ( store_id = '43' ) AND ( goods_state = '1' ) AND ( goods_verify = '1' ) LIMIT 1  
+[2016-04-23 13:35:56] /33hao/mobile/index.php?act=member_order&op=show_order&order_id=312&token=4a26d6eeae9b08df1fce18213c822c28 ( act=member_order&op=show_order ) 
+ERR: SELECT AVG(seval_desccredit) as store_desccredit,AVG(seval_servicecredit) as store_servicecredit,AVG(seval_deliverycredit) as store_deliverycredit,COUNT(seval_id) as count FROM `33hao_evaluate_store` WHERE ( seval_storeid = '43' ) LIMIT 1   [ RunTime:1,461,389,755.417527s ]SELECT AVG(seval_desccredit) as store_desccredit,AVG(seval_servicecredit) as store_servicecredit,AVG(seval_deliverycredit) as store_deliverycredit,COUNT(seval_id) as count FROM `33hao_evaluate_store` WHERE ( seval_storeid = '43' ) LIMIT 1  
+[2016-04-23 13:35:56] /33hao/mobile/index.php?act=member_order&op=show_order&order_id=312&token=4a26d6eeae9b08df1fce18213c822c28 ( act=member_order&op=show_order ) 
+ERR: SELECT * FROM `33hao_store` WHERE ( sc_id = '11' ) AND ( store_state = '1' ) LIMIT 1000   [ RunTime:1,461,389,755.417527s ]SELECT * FROM `33hao_store` WHERE ( sc_id = '11' ) AND ( store_state = '1' ) LIMIT 1000  
+[2016-04-23 13:35:56] /33hao/mobile/index.php?act=member_order&op=show_order&order_id=312&token=4a26d6eeae9b08df1fce18213c822c28 ( act=member_order&op=show_order ) 
+ERR: SELECT AVG(seval_desccredit) as store_desccredit,AVG(seval_servicecredit) as store_servicecredit,AVG(seval_deliverycredit) as store_deliverycredit,COUNT(seval_id) as count FROM `33hao_evaluate_store` WHERE ( seval_storeid IN ('16','17','18','19','20','21','22','24','25','26','27','28','29','32','33','34','35','36','37','39','41','43','') ) LIMIT 1   [ RunTime:1,461,389,755.417527s ]SELECT AVG(seval_desccredit) as store_desccredit,AVG(seval_servicecredit) as store_servicecredit,AVG(seval_deliverycredit) as store_deliverycredit,COUNT(seval_id) as count FROM `33hao_evaluate_store` WHERE ( seval_storeid IN ('16','17','18','19','20','21','22','24','25','26','27','28','29','32','33','34','35','36','37','39','41','43','') ) LIMIT 1  
+[2016-04-23 13:35:56] /33hao/mobile/index.php?act=member_order&op=show_order&order_id=312&token=4a26d6eeae9b08df1fce18213c822c28 ( act=member_order&op=show_order ) 
+ERR: SELECT * FROM `33hao_order_goods` WHERE ( order_id = '312' ) ORDER BY rec_id desc LIMIT 1000   [ RunTime:1,461,389,755.417527s ]SELECT * FROM `33hao_order_goods` WHERE ( order_id = '312' ) ORDER BY rec_id desc LIMIT 1000  
+[2016-04-23 13:35:56] /33hao/mobile/index.php?act=member_order&op=show_order&order_id=312&token=4a26d6eeae9b08df1fce18213c822c28 ( act=member_order&op=show_order ) 
+ERR: SELECT * FROM `33hao_refund_return` WHERE ( order_id IN ('312') ) ORDER BY refund_id desc LIMIT 1000   [ RunTime:1,461,389,755.417527s ]SELECT * FROM `33hao_refund_return` WHERE ( order_id IN ('312') ) ORDER BY refund_id desc LIMIT 1000  
+[2016-04-23 14:55:14] /33hao/mobile/index.php?act=member_order&op=show_order&order_id=312&token=4a26d6eeae9b08df1fce18213c822c28 ( act=member_order&op=show_order ) 
+ERR: SELECT * FROM `33hao_mb_user_token` WHERE ( token = '4a26d6eeae9b08df1fce18213c822c28' ) LIMIT 1   [ RunTime:1,461,394,514.994678s ]SELECT * FROM `33hao_mb_user_token` WHERE ( token = '4a26d6eeae9b08df1fce18213c822c28' ) LIMIT 1  
+[2016-04-23 14:55:15] /33hao/mobile/index.php?act=member_order&op=show_order&order_id=312&token=4a26d6eeae9b08df1fce18213c822c28 ( act=member_order&op=show_order ) 
+ERR: SELECT * FROM `33hao_member` WHERE ( member_id = '16' ) LIMIT 1   [ RunTime:1,461,394,514.994678s ]SELECT * FROM `33hao_member` WHERE ( member_id = '16' ) LIMIT 1  
+[2016-04-23 14:55:15] /33hao/mobile/index.php?act=member_order&op=show_order&order_id=312&token=4a26d6eeae9b08df1fce18213c822c28 ( act=member_order&op=show_order ) 
+ERR: SELECT * FROM `33hao_seller` WHERE ( member_id = '16' ) LIMIT 1   [ RunTime:1,461,394,514.994678s ]SELECT * FROM `33hao_seller` WHERE ( member_id = '16' ) LIMIT 1  
+[2016-04-23 14:55:15] /33hao/mobile/index.php?act=member_order&op=show_order&order_id=312&token=4a26d6eeae9b08df1fce18213c822c28 ( act=member_order&op=show_order ) 
+ERR: SELECT * FROM `33hao_order` WHERE ( order_id = '312' ) AND ( buyer_id = '16' ) LIMIT 1   [ RunTime:1,461,394,514.994678s ]SELECT * FROM `33hao_order` WHERE ( order_id = '312' ) AND ( buyer_id = '16' ) LIMIT 1  
+[2016-04-23 14:55:15] /33hao/mobile/index.php?act=member_order&op=show_order&order_id=312&token=4a26d6eeae9b08df1fce18213c822c28 ( act=member_order&op=show_order ) 
+ERR: SELECT * FROM `33hao_store` WHERE ( store_id = '43' ) LIMIT 1   [ RunTime:1,461,394,514.994678s ]SELECT * FROM `33hao_store` WHERE ( store_id = '43' ) LIMIT 1  
+[2016-04-23 14:55:15] /33hao/mobile/index.php?act=member_order&op=show_order&order_id=312&token=4a26d6eeae9b08df1fce18213c822c28 ( act=member_order&op=show_order ) 
+ERR: SELECT COUNT(*) AS nc_count FROM `33hao_goods_common` WHERE ( store_id = '43' ) AND ( goods_state = '1' ) AND ( goods_verify = '1' ) LIMIT 1   [ RunTime:1,461,394,514.994678s ]SELECT COUNT(*) AS nc_count FROM `33hao_goods_common` WHERE ( store_id = '43' ) AND ( goods_state = '1' ) AND ( goods_verify = '1' ) LIMIT 1  
+[2016-04-23 14:55:15] /33hao/mobile/index.php?act=member_order&op=show_order&order_id=312&token=4a26d6eeae9b08df1fce18213c822c28 ( act=member_order&op=show_order ) 
+ERR: SELECT AVG(seval_desccredit) as store_desccredit,AVG(seval_servicecredit) as store_servicecredit,AVG(seval_deliverycredit) as store_deliverycredit,COUNT(seval_id) as count FROM `33hao_evaluate_store` WHERE ( seval_storeid = '43' ) LIMIT 1   [ RunTime:1,461,394,514.994678s ]SELECT AVG(seval_desccredit) as store_desccredit,AVG(seval_servicecredit) as store_servicecredit,AVG(seval_deliverycredit) as store_deliverycredit,COUNT(seval_id) as count FROM `33hao_evaluate_store` WHERE ( seval_storeid = '43' ) LIMIT 1  
+[2016-04-23 14:55:15] /33hao/mobile/index.php?act=member_order&op=show_order&order_id=312&token=4a26d6eeae9b08df1fce18213c822c28 ( act=member_order&op=show_order ) 
+ERR: SELECT * FROM `33hao_store` WHERE ( sc_id = '11' ) AND ( store_state = '1' ) LIMIT 1000   [ RunTime:1,461,394,514.994678s ]SELECT * FROM `33hao_store` WHERE ( sc_id = '11' ) AND ( store_state = '1' ) LIMIT 1000  
+[2016-04-23 14:55:15] /33hao/mobile/index.php?act=member_order&op=show_order&order_id=312&token=4a26d6eeae9b08df1fce18213c822c28 ( act=member_order&op=show_order ) 
+ERR: SELECT AVG(seval_desccredit) as store_desccredit,AVG(seval_servicecredit) as store_servicecredit,AVG(seval_deliverycredit) as store_deliverycredit,COUNT(seval_id) as count FROM `33hao_evaluate_store` WHERE ( seval_storeid IN ('16','17','18','19','20','21','22','24','25','26','27','28','29','32','33','34','35','36','37','39','41','43','') ) LIMIT 1   [ RunTime:1,461,394,514.994678s ]SELECT AVG(seval_desccredit) as store_desccredit,AVG(seval_servicecredit) as store_servicecredit,AVG(seval_deliverycredit) as store_deliverycredit,COUNT(seval_id) as count FROM `33hao_evaluate_store` WHERE ( seval_storeid IN ('16','17','18','19','20','21','22','24','25','26','27','28','29','32','33','34','35','36','37','39','41','43','') ) LIMIT 1  
+[2016-04-23 14:55:15] /33hao/mobile/index.php?act=member_order&op=show_order&order_id=312&token=4a26d6eeae9b08df1fce18213c822c28 ( act=member_order&op=show_order ) 
+ERR: SELECT * FROM `33hao_order_goods` WHERE ( order_id = '312' ) ORDER BY rec_id desc LIMIT 1000   [ RunTime:1,461,394,514.994678s ]SELECT * FROM `33hao_order_goods` WHERE ( order_id = '312' ) ORDER BY rec_id desc LIMIT 1000  
+[2016-04-23 14:55:15] /33hao/mobile/index.php?act=member_order&op=show_order&order_id=312&token=4a26d6eeae9b08df1fce18213c822c28 ( act=member_order&op=show_order ) 
+ERR: SELECT * FROM `33hao_refund_return` WHERE ( order_id IN ('312') ) ORDER BY refund_id desc LIMIT 1000   [ RunTime:1,461,394,514.994678s ]SELECT * FROM `33hao_refund_return` WHERE ( order_id IN ('312') ) ORDER BY refund_id desc LIMIT 1000  
+[2016-04-23 14:56:21] /33hao/mobile/index.php?act=member_order&op=show_order&order_id=312&token=4a26d6eeae9b08df1fce18213c822c28 ( act=member_order&op=show_order ) 
+ERR: SELECT * FROM `33hao_mb_user_token` WHERE ( token = '4a26d6eeae9b08df1fce18213c822c28' ) LIMIT 1   [ RunTime:1,461,394,581.863569s ]SELECT * FROM `33hao_mb_user_token` WHERE ( token = '4a26d6eeae9b08df1fce18213c822c28' ) LIMIT 1  
+[2016-04-23 14:56:21] /33hao/mobile/index.php?act=member_order&op=show_order&order_id=312&token=4a26d6eeae9b08df1fce18213c822c28 ( act=member_order&op=show_order ) 
+ERR: SELECT * FROM `33hao_member` WHERE ( member_id = '16' ) LIMIT 1   [ RunTime:1,461,394,581.863569s ]SELECT * FROM `33hao_member` WHERE ( member_id = '16' ) LIMIT 1  
+[2016-04-23 14:56:22] /33hao/mobile/index.php?act=member_order&op=show_order&order_id=312&token=4a26d6eeae9b08df1fce18213c822c28 ( act=member_order&op=show_order ) 
+ERR: SELECT * FROM `33hao_seller` WHERE ( member_id = '16' ) LIMIT 1   [ RunTime:1,461,394,581.863569s ]SELECT * FROM `33hao_seller` WHERE ( member_id = '16' ) LIMIT 1  
+[2016-04-23 14:56:22] /33hao/mobile/index.php?act=member_order&op=show_order&order_id=312&token=4a26d6eeae9b08df1fce18213c822c28 ( act=member_order&op=show_order ) 
+ERR: SELECT * FROM `33hao_order` WHERE ( order_id = '312' ) AND ( buyer_id = '16' ) LIMIT 1   [ RunTime:1,461,394,581.863569s ]SELECT * FROM `33hao_order` WHERE ( order_id = '312' ) AND ( buyer_id = '16' ) LIMIT 1  
+[2016-04-23 14:56:22] /33hao/mobile/index.php?act=member_order&op=show_order&order_id=312&token=4a26d6eeae9b08df1fce18213c822c28 ( act=member_order&op=show_order ) 
+ERR: SELECT * FROM `33hao_store` WHERE ( store_id = '43' ) LIMIT 1   [ RunTime:1,461,394,581.863569s ]SELECT * FROM `33hao_store` WHERE ( store_id = '43' ) LIMIT 1  
+[2016-04-23 14:56:22] /33hao/mobile/index.php?act=member_order&op=show_order&order_id=312&token=4a26d6eeae9b08df1fce18213c822c28 ( act=member_order&op=show_order ) 
+ERR: SELECT COUNT(*) AS nc_count FROM `33hao_goods_common` WHERE ( store_id = '43' ) AND ( goods_state = '1' ) AND ( goods_verify = '1' ) LIMIT 1   [ RunTime:1,461,394,581.863569s ]SELECT COUNT(*) AS nc_count FROM `33hao_goods_common` WHERE ( store_id = '43' ) AND ( goods_state = '1' ) AND ( goods_verify = '1' ) LIMIT 1  
+[2016-04-23 14:56:22] /33hao/mobile/index.php?act=member_order&op=show_order&order_id=312&token=4a26d6eeae9b08df1fce18213c822c28 ( act=member_order&op=show_order ) 
+ERR: SELECT AVG(seval_desccredit) as store_desccredit,AVG(seval_servicecredit) as store_servicecredit,AVG(seval_deliverycredit) as store_deliverycredit,COUNT(seval_id) as count FROM `33hao_evaluate_store` WHERE ( seval_storeid = '43' ) LIMIT 1   [ RunTime:1,461,394,581.863569s ]SELECT AVG(seval_desccredit) as store_desccredit,AVG(seval_servicecredit) as store_servicecredit,AVG(seval_deliverycredit) as store_deliverycredit,COUNT(seval_id) as count FROM `33hao_evaluate_store` WHERE ( seval_storeid = '43' ) LIMIT 1  
+[2016-04-23 14:56:22] /33hao/mobile/index.php?act=member_order&op=show_order&order_id=312&token=4a26d6eeae9b08df1fce18213c822c28 ( act=member_order&op=show_order ) 
+ERR: SELECT * FROM `33hao_store` WHERE ( sc_id = '11' ) AND ( store_state = '1' ) LIMIT 1000   [ RunTime:1,461,394,581.863569s ]SELECT * FROM `33hao_store` WHERE ( sc_id = '11' ) AND ( store_state = '1' ) LIMIT 1000  
+[2016-04-23 14:56:22] /33hao/mobile/index.php?act=member_order&op=show_order&order_id=312&token=4a26d6eeae9b08df1fce18213c822c28 ( act=member_order&op=show_order ) 
+ERR: SELECT AVG(seval_desccredit) as store_desccredit,AVG(seval_servicecredit) as store_servicecredit,AVG(seval_deliverycredit) as store_deliverycredit,COUNT(seval_id) as count FROM `33hao_evaluate_store` WHERE ( seval_storeid IN ('16','17','18','19','20','21','22','24','25','26','27','28','29','32','33','34','35','36','37','39','41','43','') ) LIMIT 1   [ RunTime:1,461,394,581.863569s ]SELECT AVG(seval_desccredit) as store_desccredit,AVG(seval_servicecredit) as store_servicecredit,AVG(seval_deliverycredit) as store_deliverycredit,COUNT(seval_id) as count FROM `33hao_evaluate_store` WHERE ( seval_storeid IN ('16','17','18','19','20','21','22','24','25','26','27','28','29','32','33','34','35','36','37','39','41','43','') ) LIMIT 1  
+[2016-04-23 14:56:22] /33hao/mobile/index.php?act=member_order&op=show_order&order_id=312&token=4a26d6eeae9b08df1fce18213c822c28 ( act=member_order&op=show_order ) 
+ERR: SELECT * FROM `33hao_order_goods` WHERE ( order_id = '312' ) ORDER BY rec_id desc LIMIT 1000   [ RunTime:1,461,394,581.863569s ]SELECT * FROM `33hao_order_goods` WHERE ( order_id = '312' ) ORDER BY rec_id desc LIMIT 1000  
+[2016-04-23 14:56:22] /33hao/mobile/index.php?act=member_order&op=show_order&order_id=312&token=4a26d6eeae9b08df1fce18213c822c28 ( act=member_order&op=show_order ) 
+ERR: SELECT * FROM `33hao_refund_return` WHERE ( order_id IN ('312') ) ORDER BY refund_id desc LIMIT 1000   [ RunTime:1,461,394,581.863569s ]SELECT * FROM `33hao_refund_return` WHERE ( order_id IN ('312') ) ORDER BY refund_id desc LIMIT 1000  
+[2016-04-23 16:34:10] /33hao/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_member` WHERE ( member_id = '43' ) LIMIT 1   [ RunTime:1,461,400,450.277017s ]SELECT * FROM `33hao_member` WHERE ( member_id = '43' ) LIMIT 1  
+[2016-04-23 16:34:10] /33hao/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( start_time < '1461400449' ) AND ( end_time > '1461400449' ) ORDER BY recommended desc LIMIT 4   [ RunTime:1,461,400,450.277017s ]SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( start_time < '1461400449' ) AND ( end_time > '1461400449' ) ORDER BY recommended desc LIMIT 4  
+[2016-04-23 16:34:10] /33hao/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_link` as `link`   order by link_id [ RunTime:1,461,400,450.277017s ]SELECT * FROM `33hao_link` as `link`   order by link_id
+[2016-04-23 16:34:10] /33hao/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time < '1461400449' ) AND ( end_time > '1461400449' ) ORDER BY xianshi_recommend desc LIMIT 4   [ RunTime:1,461,400,450.277017s ]SELECT * FROM `33hao_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time < '1461400449' ) AND ( end_time > '1461400449' ) ORDER BY xianshi_recommend desc LIMIT 4  
+[2016-04-23 16:34:10] /33hao/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_web` WHERE ( web_show = '1' ) AND ( web_page LIKE 'index%' ) ORDER BY web_sort LIMIT 1000   [ RunTime:1,461,400,450.277017s ]SELECT * FROM `33hao_web` WHERE ( web_show = '1' ) AND ( web_page LIKE 'index%' ) ORDER BY web_sort LIMIT 1000  
+[2016-04-23 16:34:10] /33hao/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_brand` WHERE ( brand_recommend = '1' ) AND ( class_id = '1057' ) LIMIT 1000   [ RunTime:1,461,400,450.277017s ]SELECT * FROM `33hao_brand` WHERE ( brand_recommend = '1' ) AND ( class_id = '1057' ) LIMIT 1000  
+[2016-04-23 16:34:10] /33hao/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_brand` WHERE ( brand_recommend = '1' ) AND ( class_id = '1058' ) LIMIT 1000   [ RunTime:1,461,400,450.277017s ]SELECT * FROM `33hao_brand` WHERE ( brand_recommend = '1' ) AND ( class_id = '1058' ) LIMIT 1000  
+[2016-04-23 16:34:10] /33hao/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_brand` WHERE ( brand_recommend = '1' ) AND ( class_id = '1073' ) LIMIT 1000   [ RunTime:1,461,400,450.277017s ]SELECT * FROM `33hao_brand` WHERE ( brand_recommend = '1' ) AND ( class_id = '1073' ) LIMIT 1000  
+[2016-04-23 16:34:11] /33hao/ ( act=index&op=index ) 
+ERR: SELECT * FROM `33hao_brand` WHERE ( brand_recommend = '1' ) AND ( class_id = '1060' ) LIMIT 1000   [ RunTime:1,461,400,450.277017s ]SELECT * FROM `33hao_brand` WHERE ( brand_recommend = '1' ) AND ( class_id = '1060' ) LIMIT 1000  
+[2016-04-23 16:34:20] /33hao/index.php?act=index&op=ads ( act=index&op=ads ) 
+ERR: SELECT * FROM `33hao_member` WHERE ( member_id = '43' ) LIMIT 1   [ RunTime:1,461,400,460.808917s ]SELECT * FROM `33hao_member` WHERE ( member_id = '43' ) LIMIT 1  
+[2016-04-23 16:34:20] /33hao/index.php?act=index&op=ads ( act=index&op=ads ) 
+ERR: SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( start_time < '1461400460' ) AND ( end_time > '1461400460' ) ORDER BY recommended desc LIMIT 4   [ RunTime:1,461,400,460.808917s ]SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( start_time < '1461400460' ) AND ( end_time > '1461400460' ) ORDER BY recommended desc LIMIT 4  
+[2016-04-23 16:34:20] /33hao/index.php?act=index&op=ads ( act=index&op=ads ) 
+ERR: SELECT * FROM `33hao_link` as `link`   order by link_id [ RunTime:1,461,400,460.808917s ]SELECT * FROM `33hao_link` as `link`   order by link_id
+[2016-04-23 16:34:21] /33hao/index.php?act=index&op=ads ( act=index&op=ads ) 
+ERR: SELECT * FROM `33hao_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time < '1461400460' ) AND ( end_time > '1461400460' ) ORDER BY xianshi_recommend desc LIMIT 4   [ RunTime:1,461,400,460.808917s ]SELECT * FROM `33hao_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time < '1461400460' ) AND ( end_time > '1461400460' ) ORDER BY xianshi_recommend desc LIMIT 4  
+[2016-04-23 16:34:21] /33hao/index.php?act=index&op=ads ( act=index&op=ads ) 
+ERR: SELECT * FROM `33hao_web` WHERE ( web_show = '1' ) AND ( web_page LIKE 'index%' ) ORDER BY web_sort LIMIT 1000   [ RunTime:1,461,400,460.808917s ]SELECT * FROM `33hao_web` WHERE ( web_show = '1' ) AND ( web_page LIKE 'index%' ) ORDER BY web_sort LIMIT 1000  
+[2016-04-23 16:34:21] /33hao/index.php?act=index&op=ads ( act=index&op=ads ) 
+ERR: SELECT * FROM `33hao_brand` WHERE ( brand_recommend = '1' ) AND ( class_id = '1057' ) LIMIT 1000   [ RunTime:1,461,400,460.808917s ]SELECT * FROM `33hao_brand` WHERE ( brand_recommend = '1' ) AND ( class_id = '1057' ) LIMIT 1000  
+[2016-04-23 16:34:21] /33hao/index.php?act=index&op=ads ( act=index&op=ads ) 
+ERR: SELECT * FROM `33hao_brand` WHERE ( brand_recommend = '1' ) AND ( class_id = '1058' ) LIMIT 1000   [ RunTime:1,461,400,460.808917s ]SELECT * FROM `33hao_brand` WHERE ( brand_recommend = '1' ) AND ( class_id = '1058' ) LIMIT 1000  
+[2016-04-23 16:34:21] /33hao/index.php?act=index&op=ads ( act=index&op=ads ) 
+ERR: SELECT * FROM `33hao_brand` WHERE ( brand_recommend = '1' ) AND ( class_id = '1073' ) LIMIT 1000   [ RunTime:1,461,400,460.808917s ]SELECT * FROM `33hao_brand` WHERE ( brand_recommend = '1' ) AND ( class_id = '1073' ) LIMIT 1000  
+[2016-04-23 16:34:21] /33hao/index.php?act=index&op=ads ( act=index&op=ads ) 
+ERR: SELECT * FROM `33hao_brand` WHERE ( brand_recommend = '1' ) AND ( class_id = '1060' ) LIMIT 1000   [ RunTime:1,461,400,460.808917s ]SELECT * FROM `33hao_brand` WHERE ( brand_recommend = '1' ) AND ( class_id = '1060' ) LIMIT 1000  
+[2016-04-23 16:34:23] /33hao/shop/index.php?act=index&op=viewed_info ( act=index&op=viewed_info ) 
+ERR: SELECT * FROM `33hao_member` WHERE ( member_id = '43' ) LIMIT 1   [ RunTime:1,461,400,463.515684s ]SELECT * FROM `33hao_member` WHERE ( member_id = '43' ) LIMIT 1  
+[2016-04-23 16:34:23] /33hao/shop/index.php?act=index&op=viewed_info ( act=index&op=viewed_info ) 
+ERR: SELECT COUNT(*) AS nc_count FROM `33hao_voucher` WHERE ( voucher_owner_id = '43' ) AND ( voucher_state = '1' ) AND ( voucher_start_date <= '1461400463' ) AND ( voucher_end_date >= '1461400463' ) LIMIT 1   [ RunTime:1,461,400,463.515684s ]SELECT COUNT(*) AS nc_count FROM `33hao_voucher` WHERE ( voucher_owner_id = '43' ) AND ( voucher_state = '1' ) AND ( voucher_start_date <= '1461400463' ) AND ( voucher_end_date >= '1461400463' ) LIMIT 1  
+[2016-04-23 16:34:23] /33hao/shop/index.php?act=index&op=viewed_info ( act=index&op=viewed_info ) 
+ERR: SELECT COUNT(*) AS nc_count FROM `33hao_consult` WHERE ( member_id = '43' ) AND ( (consult_reply_time > '1460736000') AND (consult_reply_time < '1461427200')  ) LIMIT 1   [ RunTime:1,461,400,463.515684s ]SELECT COUNT(*) AS nc_count FROM `33hao_consult` WHERE ( member_id = '43' ) AND ( (consult_reply_time > '1460736000') AND (consult_reply_time < '1461427200')  ) LIMIT 1  
+[2016-04-23 16:34:23] /33hao/shop/index.php?act=index&op=viewed_info ( act=index&op=viewed_info ) 
+ERR: SELECT * FROM `33hao_goods_browse` WHERE ( member_id = '43' ) ORDER BY browsetime desc LIMIT 5   [ RunTime:1,461,400,463.515684s ]SELECT * FROM `33hao_goods_browse` WHERE ( member_id = '43' ) ORDER BY browsetime desc LIMIT 5  
+[2016-04-23 16:34:23] /33hao/shop/index.php?act=index&op=viewed_info ( act=index&op=viewed_info ) 
+ERR: SELECT goods_id, goods_name, goods_promotion_price, goods_promotion_type, goods_marketprice, goods_image, store_id, gc_id, gc_id_1, gc_id_2, gc_id_3 FROM `33hao_goods` WHERE ( goods_id IN ('502','498','330') ) LIMIT 1000   [ RunTime:1,461,400,463.515684s ]SELECT goods_id, goods_name, goods_promotion_price, goods_promotion_type, goods_marketprice, goods_image, store_id, gc_id, gc_id_1, gc_id_2, gc_id_3 FROM `33hao_goods` WHERE ( goods_id IN ('502','498','330') ) LIMIT 1000  
+[2016-04-23 16:34:24] /33hao/shop/index.php?act=member&op=home ( act=member&op=home ) 
+ERR: SELECT * FROM `33hao_member` WHERE ( member_id = '43' ) LIMIT 1   [ RunTime:1,461,400,464.723089s ]SELECT * FROM `33hao_member` WHERE ( member_id = '43' ) LIMIT 1  
+[2016-04-23 16:34:24] /33hao/shop/index.php?act=member&op=home ( act=member&op=home ) 
+ERR: SELECT * FROM `33hao_setting` as `setting`   [ RunTime:1,461,400,464.723089s ]SELECT * FROM `33hao_setting` as `setting`  
+[2016-04-23 16:34:24] /33hao/shop/index.php?act=member&op=home ( act=member&op=home ) 
+ERR: SELECT * FROM `33hao_brand` WHERE ( brand_recommend = '1' ) AND ( class_id = '1057' ) LIMIT 1000   [ RunTime:1,461,400,464.723089s ]SELECT * FROM `33hao_brand` WHERE ( brand_recommend = '1' ) AND ( class_id = '1057' ) LIMIT 1000  
+[2016-04-23 16:34:24] /33hao/shop/index.php?act=member&op=home ( act=member&op=home ) 
+ERR: SELECT * FROM `33hao_brand` WHERE ( brand_recommend = '1' ) AND ( class_id = '1058' ) LIMIT 1000   [ RunTime:1,461,400,464.723089s ]SELECT * FROM `33hao_brand` WHERE ( brand_recommend = '1' ) AND ( class_id = '1058' ) LIMIT 1000  
+[2016-04-23 16:34:25] /33hao/shop/index.php?act=member&op=home ( act=member&op=home ) 
+ERR: SELECT * FROM `33hao_brand` WHERE ( brand_recommend = '1' ) AND ( class_id = '1073' ) LIMIT 1000   [ RunTime:1,461,400,464.723089s ]SELECT * FROM `33hao_brand` WHERE ( brand_recommend = '1' ) AND ( class_id = '1073' ) LIMIT 1000  
+[2016-04-23 16:34:25] /33hao/shop/index.php?act=member&op=home ( act=member&op=home ) 
+ERR: SELECT * FROM `33hao_brand` WHERE ( brand_recommend = '1' ) AND ( class_id = '1060' ) LIMIT 1000   [ RunTime:1,461,400,464.723089s ]SELECT * FROM `33hao_brand` WHERE ( brand_recommend = '1' ) AND ( class_id = '1060' ) LIMIT 1000  
+[2016-04-23 16:34:25] /33hao/shop/index.php?act=member&op=ajax_load_member_info ( act=member&op=ajax_load_member_info ) 
+ERR: SELECT * FROM `33hao_member` WHERE ( member_id = '43' ) LIMIT 1   [ RunTime:1,461,400,465.871189s ]SELECT * FROM `33hao_member` WHERE ( member_id = '43' ) LIMIT 1  
+[2016-04-23 16:34:25] /33hao/shop/index.php?act=member&op=ajax_load_member_info ( act=member&op=ajax_load_member_info ) 
+ERR: SELECT * FROM `33hao_setting` as `setting`   [ RunTime:1,461,400,465.871189s ]SELECT * FROM `33hao_setting` as `setting`  
+[2016-04-23 16:34:26] /33hao/shop/index.php?act=member&op=ajax_load_member_info ( act=member&op=ajax_load_member_info ) 
+ERR: SELECT COUNT(*) AS nc_count FROM `33hao_voucher` WHERE ( voucher_owner_id = '43' ) AND ( voucher_end_date > '1461400465' ) AND ( voucher_state = '1' ) LIMIT 1   [ RunTime:1,461,400,465.871189s ]SELECT COUNT(*) AS nc_count FROM `33hao_voucher` WHERE ( voucher_owner_id = '43' ) AND ( voucher_end_date > '1461400465' ) AND ( voucher_state = '1' ) LIMIT 1  
+[2016-04-23 16:34:26] /33hao/shop/index.php?act=member&op=ajax_load_order_info ( act=member&op=ajax_load_order_info ) 
+ERR: SELECT * FROM `33hao_member` WHERE ( member_id = '43' ) LIMIT 1   [ RunTime:1,461,400,466.649874s ]SELECT * FROM `33hao_member` WHERE ( member_id = '43' ) LIMIT 1  
+[2016-04-23 16:34:26] /33hao/shop/index.php?act=member&op=ajax_load_order_info ( act=member&op=ajax_load_order_info ) 
+ERR: SELECT * FROM `33hao_setting` as `setting`   [ RunTime:1,461,400,466.649874s ]SELECT * FROM `33hao_setting` as `setting`  
+[2016-04-23 16:34:26] /33hao/shop/index.php?act=member&op=ajax_load_order_info ( act=member&op=ajax_load_order_info ) 
+ERR: SELECT COUNT(*) AS nc_count FROM `33hao_order` WHERE ( buyer_id = '43' ) AND ( order_state = '10' ) LIMIT 1   [ RunTime:1,461,400,466.649874s ]SELECT COUNT(*) AS nc_count FROM `33hao_order` WHERE ( buyer_id = '43' ) AND ( order_state = '10' ) LIMIT 1  
+[2016-04-23 16:34:26] /33hao/shop/index.php?act=member&op=ajax_load_order_info ( act=member&op=ajax_load_order_info ) 
+ERR: SELECT COUNT(*) AS nc_count FROM `33hao_order` WHERE ( buyer_id = '43' ) AND ( order_state = '30' ) LIMIT 1   [ RunTime:1,461,400,466.649874s ]SELECT COUNT(*) AS nc_count FROM `33hao_order` WHERE ( buyer_id = '43' ) AND ( order_state = '30' ) LIMIT 1  
+[2016-04-23 16:34:26] /33hao/shop/index.php?act=member&op=ajax_load_order_info ( act=member&op=ajax_load_order_info ) 
+ERR: SELECT COUNT(*) AS nc_count FROM `33hao_order` WHERE ( buyer_id = '43' ) AND ( order_state = '40' ) AND ( evaluation_state = '0' ) LIMIT 1   [ RunTime:1,461,400,466.649874s ]SELECT COUNT(*) AS nc_count FROM `33hao_order` WHERE ( buyer_id = '43' ) AND ( order_state = '40' ) AND ( evaluation_state = '0' ) LIMIT 1  
+[2016-04-23 16:34:27] /33hao/shop/index.php?act=member&op=ajax_load_order_info ( act=member&op=ajax_load_order_info ) 
+ERR: SELECT * FROM `33hao_order` WHERE ( buyer_id = '43' ) AND ( order_state IN ('10','20','30','40') ) AND ( delete_state = '0' ) ORDER BY order_id desc LIMIT 3   [ RunTime:1,461,400,466.649874s ]SELECT * FROM `33hao_order` WHERE ( buyer_id = '43' ) AND ( order_state IN ('10','20','30','40') ) AND ( delete_state = '0' ) ORDER BY order_id desc LIMIT 3  
+[2016-04-23 16:34:27] /33hao/shop/index.php?act=member&op=ajax_load_order_info ( act=member&op=ajax_load_order_info ) 
+ERR: SELECT * FROM `33hao_cart` WHERE ( buyer_id = '43' ) LIMIT 3   [ RunTime:1,461,400,466.649874s ]SELECT * FROM `33hao_cart` WHERE ( buyer_id = '43' ) LIMIT 3  
+[2016-04-23 16:34:27] /33hao/shop/index.php?act=member&op=ajax_load_goods_info ( act=member&op=ajax_load_goods_info ) 
+ERR: SELECT * FROM `33hao_member` WHERE ( member_id = '43' ) LIMIT 1   [ RunTime:1,461,400,467.565057s ]SELECT * FROM `33hao_member` WHERE ( member_id = '43' ) LIMIT 1  
+[2016-04-23 16:34:27] /33hao/shop/index.php?act=member&op=ajax_load_goods_info ( act=member&op=ajax_load_goods_info ) 
+ERR: SELECT * FROM `33hao_setting` as `setting`   [ RunTime:1,461,400,467.565057s ]SELECT * FROM `33hao_setting` as `setting`  
+[2016-04-23 16:34:27] /33hao/shop/index.php?act=member&op=ajax_load_goods_info ( act=member&op=ajax_load_goods_info ) 
+ERR: SELECT COUNT(*) AS nc_count FROM `33hao_favorites` WHERE ( member_id = '43' ) AND ( fav_type = 'goods' ) ORDER BY fav_time desc LIMIT 1   [ RunTime:1,461,400,467.565057s ]SELECT COUNT(*) AS nc_count FROM `33hao_favorites` WHERE ( member_id = '43' ) AND ( fav_type = 'goods' ) ORDER BY fav_time desc LIMIT 1  
+[2016-04-23 16:34:27] /33hao/shop/index.php?act=member&op=ajax_load_goods_info ( act=member&op=ajax_load_goods_info ) 
+ERR: SELECT * FROM `33hao_favorites` WHERE ( member_id = '43' ) AND ( fav_type = 'goods' ) ORDER BY fav_time desc LIMIT 0,7   [ RunTime:1,461,400,467.565057s ]SELECT * FROM `33hao_favorites` WHERE ( member_id = '43' ) AND ( fav_type = 'goods' ) ORDER BY fav_time desc LIMIT 0,7  
+[2016-04-23 16:34:27] /33hao/shop/index.php?act=member&op=ajax_load_goods_info ( act=member&op=ajax_load_goods_info ) 
+ERR: SELECT COUNT(*) AS nc_count FROM `33hao_favorites` WHERE ( member_id = '43' ) AND ( fav_type = 'store' ) ORDER BY fav_time desc LIMIT 1   [ RunTime:1,461,400,467.565057s ]SELECT COUNT(*) AS nc_count FROM `33hao_favorites` WHERE ( member_id = '43' ) AND ( fav_type = 'store' ) ORDER BY fav_time desc LIMIT 1  
+[2016-04-23 16:34:27] /33hao/shop/index.php?act=member&op=ajax_load_goods_info ( act=member&op=ajax_load_goods_info ) 
+ERR: SELECT * FROM `33hao_favorites` WHERE ( member_id = '43' ) AND ( fav_type = 'store' ) ORDER BY fav_time desc LIMIT 0,6   [ RunTime:1,461,400,467.565057s ]SELECT * FROM `33hao_favorites` WHERE ( member_id = '43' ) AND ( fav_type = 'store' ) ORDER BY fav_time desc LIMIT 0,6  
+[2016-04-23 16:34:28] /33hao/shop/index.php?act=member&op=ajax_load_sns_info ( act=member&op=ajax_load_sns_info ) 
+ERR: SELECT * FROM `33hao_member` WHERE ( member_id = '43' ) LIMIT 1   [ RunTime:1,461,400,468.365234s ]SELECT * FROM `33hao_member` WHERE ( member_id = '43' ) LIMIT 1  
+[2016-04-23 16:34:28] /33hao/shop/index.php?act=member&op=ajax_load_sns_info ( act=member&op=ajax_load_sns_info ) 
+ERR: SELECT * FROM `33hao_setting` as `setting`   [ RunTime:1,461,400,468.365234s ]SELECT * FROM `33hao_setting` as `setting`  
+[2016-04-23 16:34:28] /33hao/shop/index.php?act=member&op=ajax_load_sns_info ( act=member&op=ajax_load_sns_info ) 
+ERR: SELECT * FROM `33hao_goods_browse` WHERE ( member_id = '43' ) ORDER BY browsetime desc LIMIT 20   [ RunTime:1,461,400,468.365234s ]SELECT * FROM `33hao_goods_browse` WHERE ( member_id = '43' ) ORDER BY browsetime desc LIMIT 20  
+[2016-04-23 16:34:28] /33hao/shop/index.php?act=member&op=ajax_load_sns_info ( act=member&op=ajax_load_sns_info ) 
+ERR: SELECT goods_id, goods_name, goods_promotion_price, goods_promotion_type, goods_marketprice, goods_image, store_id, gc_id, gc_id_1, gc_id_2, gc_id_3 FROM `33hao_goods` WHERE ( goods_id IN ('502','498','330') ) LIMIT 1000   [ RunTime:1,461,400,468.365234s ]SELECT goods_id, goods_name, goods_promotion_price, goods_promotion_type, goods_marketprice, goods_image, store_id, gc_id, gc_id_1, gc_id_2, gc_id_3 FROM `33hao_goods` WHERE ( goods_id IN ('502','498','330') ) LIMIT 1000  
+[2016-04-23 16:34:28] /33hao/shop/index.php?act=member&op=ajax_load_sns_info ( act=member&op=ajax_load_sns_info ) 
+ERR: SELECT * FROM `33hao_circle_member` WHERE ( member_id = '43' ) LIMIT 1000   [ RunTime:1,461,400,468.365234s ]SELECT * FROM `33hao_circle_member` WHERE ( member_id = '43' ) LIMIT 1000  
+[2016-04-23 16:34:28] /33hao/shop/index.php?act=member&op=ajax_load_sns_info ( act=member&op=ajax_load_sns_info ) 
+ERR: SELECT member.member_id,member.member_name,member.member_avatar FROM `33hao_sns_friend` as `sns_friend` INNER JOIN `33hao_member` as `member` ON sns_friend.friend_tomid=member.member_id  WHERE  sns_friend.friend_frommid= '43' order by sns_friend.friend_id desc limit 15 [ RunTime:1,461,400,468.365234s ]SELECT member.member_id,member.member_name,member.member_avatar FROM `33hao_sns_friend` as `sns_friend` INNER JOIN `33hao_member` as `member` ON sns_friend.friend_tomid=member.member_id  WHERE  sns_friend.friend_frommid= '43' order by sns_friend.friend_id desc limit 15
+[2016-04-23 16:34:28] /33hao/shop/index.php?act=member&op=ajax_load_sns_info ( act=member&op=ajax_load_sns_info ) 
+ERR: SELECT count(*) as _count,trace_memberid FROM `33hao_sns_tracelog` WHERE ( trace_memberid IN('') ) AND ( trace_privacy = '0' ) AND ( trace_state = '0' ) GROUP BY trace_memberid LIMIT 5   [ RunTime:1,461,400,468.365234s ]SELECT count(*) as _count,trace_memberid FROM `33hao_sns_tracelog` WHERE ( trace_memberid IN('') ) AND ( trace_privacy = '0' ) AND ( trace_state = '0' ) GROUP BY trace_memberid LIMIT 5  
+[2016-04-23 16:34:32] /33hao/shop/index.php?act=login&op=logout ( act=login&op=logout ) 
+ERR: SELECT * FROM `33hao_member` WHERE ( member_id = '43' ) LIMIT 1   [ RunTime:1,461,400,472.039884s ]SELECT * FROM `33hao_member` WHERE ( member_id = '43' ) LIMIT 1  
+[2016-04-23 16:34:32] /33hao/shop/index.php?act=login&ref_url=http%3A%2F%2Flocalhost%2F33hao%2Fshop%2Findex.php%3Fact%3Dmember%26op%3Dhome ( act=login&op=index ) 
+ERR: SELECT * FROM `33hao_brand` WHERE ( brand_recommend = '1' ) AND ( class_id = '1057' ) LIMIT 1000   [ RunTime:1,461,400,472.480987s ]SELECT * FROM `33hao_brand` WHERE ( brand_recommend = '1' ) AND ( class_id = '1057' ) LIMIT 1000  
+[2016-04-23 16:34:32] /33hao/shop/index.php?act=login&ref_url=http%3A%2F%2Flocalhost%2F33hao%2Fshop%2Findex.php%3Fact%3Dmember%26op%3Dhome ( act=login&op=index ) 
+ERR: SELECT * FROM `33hao_brand` WHERE ( brand_recommend = '1' ) AND ( class_id = '1058' ) LIMIT 1000   [ RunTime:1,461,400,472.480987s ]SELECT * FROM `33hao_brand` WHERE ( brand_recommend = '1' ) AND ( class_id = '1058' ) LIMIT 1000  
+[2016-04-23 16:34:32] /33hao/shop/index.php?act=login&ref_url=http%3A%2F%2Flocalhost%2F33hao%2Fshop%2Findex.php%3Fact%3Dmember%26op%3Dhome ( act=login&op=index ) 
+ERR: SELECT * FROM `33hao_brand` WHERE ( brand_recommend = '1' ) AND ( class_id = '1073' ) LIMIT 1000   [ RunTime:1,461,400,472.480987s ]SELECT * FROM `33hao_brand` WHERE ( brand_recommend = '1' ) AND ( class_id = '1073' ) LIMIT 1000  
+[2016-04-23 16:34:32] /33hao/shop/index.php?act=login&ref_url=http%3A%2F%2Flocalhost%2F33hao%2Fshop%2Findex.php%3Fact%3Dmember%26op%3Dhome ( act=login&op=index ) 
+ERR: SELECT * FROM `33hao_brand` WHERE ( brand_recommend = '1' ) AND ( class_id = '1060' ) LIMIT 1000   [ RunTime:1,461,400,472.480987s ]SELECT * FROM `33hao_brand` WHERE ( brand_recommend = '1' ) AND ( class_id = '1060' ) LIMIT 1000  
+[2016-04-23 16:34:42] /33hao/shop/index.php?act=login&op=login ( act=login&op=login ) 
+ERR: SELECT * FROM `33hao_lock` WHERE ( pid = '000000000001' ) LIMIT 1   [ RunTime:1,461,400,482.136249s ]SELECT * FROM `33hao_lock` WHERE ( pid = '000000000001' ) LIMIT 1  
+[2016-04-23 16:34:42] /33hao/shop/index.php?act=login&op=login ( act=login&op=login ) 
+ERR: SELECT * FROM `33hao_member` WHERE ( (member_name = '18934488948') OR (member_email = '18934488948') OR (member_mobile = '18934488948') ) AND ( member_passwd = 'e10adc3949ba59abbe56e057f20f883e' ) LIMIT 1   [ RunTime:1,461,400,482.136249s ]SELECT * FROM `33hao_member` WHERE ( (member_name = '18934488948') OR (member_email = '18934488948') OR (member_mobile = '18934488948') ) AND ( member_passwd = 'e10adc3949ba59abbe56e057f20f883e' ) LIMIT 1  
+[2016-04-23 16:34:42] /33hao/shop/index.php?act=login&op=login ( act=login&op=login ) 
+ERR: SELECT * FROM `33hao_seller` WHERE ( member_id = '16' ) LIMIT 1   [ RunTime:1,461,400,482.136249s ]SELECT * FROM `33hao_seller` WHERE ( member_id = '16' ) LIMIT 1  
+[2016-04-23 16:34:42] /33hao/shop/index.php?act=login&op=login ( act=login&op=login ) 
+ERR: INSERT INTO `33hao_points_log` (`pl_memberid`,`pl_membername`,`pl_points`,`pl_addtime`,`pl_desc`,`pl_stage`) VALUES('16','18934488948','30','1461400482','会员登录','login') [ RunTime:1,461,400,482.136249s ]INSERT INTO `33hao_points_log` (`pl_memberid`,`pl_membername`,`pl_points`,`pl_addtime`,`pl_desc`,`pl_stage`) VALUES('16','18934488948','30','1461400482','会员登录','login')
+[2016-04-23 16:34:42] /33hao/shop/index.php?act=login&op=login ( act=login&op=login ) 
+ERR: UPDATE `33hao_member` SET member_points=member_points+30 WHERE ( member_id = '16' ) [ RunTime:1,461,400,482.136249s ]UPDATE `33hao_member` SET member_points=member_points+30 WHERE ( member_id = '16' )
+[2016-04-23 16:34:42] /33hao/shop/index.php?act=login&op=login ( act=login&op=login ) 
+ERR: INSERT  INTO `33hao_exppoints_log` (exp_memberid,exp_membername,exp_points,exp_addtime,exp_desc,exp_stage) VALUES ('16','18934488948','5','1461400482','会员登录','login') [ RunTime:1,461,400,482.136249s ]INSERT  INTO `33hao_exppoints_log` (exp_memberid,exp_membername,exp_points,exp_addtime,exp_desc,exp_stage) VALUES ('16','18934488948','5','1461400482','会员登录','login')
+[2016-04-23 16:34:42] /33hao/shop/index.php?act=login&op=login ( act=login&op=login ) 
+ERR: UPDATE `33hao_member` SET member_exppoints=member_exppoints + 5 WHERE ( member_id = '16' ) [ RunTime:1,461,400,482.136249s ]UPDATE `33hao_member` SET member_exppoints=member_exppoints + 5 WHERE ( member_id = '16' )
+[2016-04-23 16:34:42] /33hao/shop/index.php?act=login&op=login ( act=login&op=login ) 
+ERR: UPDATE `33hao_member` SET member_login_num='37',member_login_time='1461400481',member_old_login_time='1461230084',member_login_ip='',member_old_login_ip='192.168.31.169' WHERE ( member_id = '16' ) [ RunTime:1,461,400,482.136249s ]UPDATE `33hao_member` SET member_login_num='37',member_login_time='1461400481',member_old_login_time='1461230084',member_login_ip='',member_old_login_ip='192.168.31.169' WHERE ( member_id = '16' )
+[2016-04-23 16:34:42] /33hao/shop/index.php?act=login&op=login ( act=login&op=login ) 
+ERR: DELETE  FROM `33hao_lock` WHERE ( pid = '000000000001' ) [ RunTime:1,461,400,482.136249s ]DELETE  FROM `33hao_lock` WHERE ( pid = '000000000001' )
+[2016-04-23 16:34:42] /33hao/shop/index.php?act=login&op=login ( act=login&op=login ) 
+ERR: DELETE  FROM `33hao_lock` WHERE ( pid = '00000000001' ) [ RunTime:1,461,400,482.136249s ]DELETE  FROM `33hao_lock` WHERE ( pid = '00000000001' )
+[2016-04-23 16:34:43] /33hao/shop/index.php?act=member&op=home ( act=member&op=home ) 
+ERR: SELECT  count(message_id) as countnum  FROM `33hao_message` as `message`  WHERE  message.message_state != '2' and message.message_open = '0' and (message.to_member_id ='all' or (message.message_ismore=0 and message.to_member_id='16') or (message.message_ismore=1 and message.to_member_id like '%,16,%')) and message.del_member_id not like '%,16,%'  and message.read_member_id not like '%,16,%' [ RunTime:1,461,400,483.290766s ]SELECT  count(message_id) as countnum  FROM `33hao_message` as `message`  WHERE  message.message_state != '2' and message.message_open = '0' and (message.to_member_id ='all' or (message.message_ismore=0 and message.to_member_id='16') or (message.message_ismore=1 and message.to_member_id like '%,16,%')) and message.del_member_id not like '%,16,%'  and message.read_member_id not like '%,16,%'
+[2016-04-23 16:34:43] /33hao/shop/index.php?act=member&op=home ( act=member&op=home ) 
+ERR: SELECT * FROM `33hao_cart` WHERE ( buyer_id = '16' ) LIMIT 1000   [ RunTime:1,461,400,483.290766s ]SELECT * FROM `33hao_cart` WHERE ( buyer_id = '16' ) LIMIT 1000  
+[2016-04-23 16:34:43] /33hao/shop/index.php?act=member&op=home ( act=member&op=home ) 
+ERR: SELECT bl_id FROM `33hao_p_bundling_goods` WHERE ( goods_id = NULL ) AND ( bl_appoint = '1' ) ORDER BY bl_goods_id asc LIMIT 1000   [ RunTime:1,461,400,483.290766s ]SELECT bl_id FROM `33hao_p_bundling_goods` WHERE ( goods_id = NULL ) AND ( bl_appoint = '1' ) ORDER BY bl_goods_id asc LIMIT 1000  
+[2016-04-23 16:34:43] /33hao/shop/index.php?act=member&op=home ( act=member&op=home ) 
+ERR: SELECT * FROM `33hao_member` WHERE ( member_id = '16' ) LIMIT 1   [ RunTime:1,461,400,483.290766s ]SELECT * FROM `33hao_member` WHERE ( member_id = '16' ) LIMIT 1  
+[2016-04-23 16:34:43] /33hao/shop/index.php?act=member&op=home ( act=member&op=home ) 
+ERR: SELECT * FROM `33hao_setting` as `setting`   [ RunTime:1,461,400,483.290766s ]SELECT * FROM `33hao_setting` as `setting`  
+[2016-04-23 16:34:43] /33hao/shop/index.php?act=member&op=home ( act=member&op=home ) 
+ERR: SELECT * FROM `33hao_brand` WHERE ( brand_recommend = '1' ) AND ( class_id = '1057' ) LIMIT 1000   [ RunTime:1,461,400,483.290766s ]SELECT * FROM `33hao_brand` WHERE ( brand_recommend = '1' ) AND ( class_id = '1057' ) LIMIT 1000  
+[2016-04-23 16:34:43] /33hao/shop/index.php?act=member&op=home ( act=member&op=home ) 
+ERR: SELECT * FROM `33hao_brand` WHERE ( brand_recommend = '1' ) AND ( class_id = '1058' ) LIMIT 1000   [ RunTime:1,461,400,483.290766s ]SELECT * FROM `33hao_brand` WHERE ( brand_recommend = '1' ) AND ( class_id = '1058' ) LIMIT 1000  
+[2016-04-23 16:34:43] /33hao/shop/index.php?act=member&op=home ( act=member&op=home ) 
+ERR: SELECT * FROM `33hao_brand` WHERE ( brand_recommend = '1' ) AND ( class_id = '1073' ) LIMIT 1000   [ RunTime:1,461,400,483.290766s ]SELECT * FROM `33hao_brand` WHERE ( brand_recommend = '1' ) AND ( class_id = '1073' ) LIMIT 1000  
+[2016-04-23 16:34:43] /33hao/shop/index.php?act=member&op=home ( act=member&op=home ) 
+ERR: SELECT * FROM `33hao_brand` WHERE ( brand_recommend = '1' ) AND ( class_id = '1060' ) LIMIT 1000   [ RunTime:1,461,400,483.290766s ]SELECT * FROM `33hao_brand` WHERE ( brand_recommend = '1' ) AND ( class_id = '1060' ) LIMIT 1000  
+[2016-04-23 16:34:44] /33hao/shop/index.php?act=member&op=ajax_load_member_info ( act=member&op=ajax_load_member_info ) 
+ERR: SELECT * FROM `33hao_member` WHERE ( member_id = '16' ) LIMIT 1   [ RunTime:1,461,400,484.568045s ]SELECT * FROM `33hao_member` WHERE ( member_id = '16' ) LIMIT 1  
+[2016-04-23 16:34:44] /33hao/shop/index.php?act=member&op=ajax_load_member_info ( act=member&op=ajax_load_member_info ) 
+ERR: SELECT * FROM `33hao_setting` as `setting`   [ RunTime:1,461,400,484.568045s ]SELECT * FROM `33hao_setting` as `setting`  
+[2016-04-23 16:34:44] /33hao/shop/index.php?act=member&op=ajax_load_member_info ( act=member&op=ajax_load_member_info ) 
+ERR: SELECT COUNT(*) AS nc_count FROM `33hao_voucher` WHERE ( voucher_owner_id = '16' ) AND ( voucher_end_date > '1461400484' ) AND ( voucher_state = '1' ) LIMIT 1   [ RunTime:1,461,400,484.568045s ]SELECT COUNT(*) AS nc_count FROM `33hao_voucher` WHERE ( voucher_owner_id = '16' ) AND ( voucher_end_date > '1461400484' ) AND ( voucher_state = '1' ) LIMIT 1  
+[2016-04-23 16:34:45] /33hao/shop/index.php?act=member&op=ajax_load_order_info ( act=member&op=ajax_load_order_info ) 
+ERR: SELECT * FROM `33hao_member` WHERE ( member_id = '16' ) LIMIT 1   [ RunTime:1,461,400,485.232798s ]SELECT * FROM `33hao_member` WHERE ( member_id = '16' ) LIMIT 1  
+[2016-04-23 16:34:45] /33hao/shop/index.php?act=member&op=ajax_load_order_info ( act=member&op=ajax_load_order_info ) 
+ERR: SELECT * FROM `33hao_setting` as `setting`   [ RunTime:1,461,400,485.232798s ]SELECT * FROM `33hao_setting` as `setting`  
+[2016-04-23 16:34:45] /33hao/shop/index.php?act=member&op=ajax_load_order_info ( act=member&op=ajax_load_order_info ) 
+ERR: SELECT COUNT(*) AS nc_count FROM `33hao_order` WHERE ( buyer_id = '16' ) AND ( order_state = '10' ) LIMIT 1   [ RunTime:1,461,400,485.232798s ]SELECT COUNT(*) AS nc_count FROM `33hao_order` WHERE ( buyer_id = '16' ) AND ( order_state = '10' ) LIMIT 1  
+[2016-04-23 16:34:45] /33hao/shop/index.php?act=member&op=ajax_load_order_info ( act=member&op=ajax_load_order_info ) 
+ERR: SELECT COUNT(*) AS nc_count FROM `33hao_order` WHERE ( buyer_id = '16' ) AND ( order_state = '30' ) LIMIT 1   [ RunTime:1,461,400,485.232798s ]SELECT COUNT(*) AS nc_count FROM `33hao_order` WHERE ( buyer_id = '16' ) AND ( order_state = '30' ) LIMIT 1  
+[2016-04-23 16:34:45] /33hao/shop/index.php?act=member&op=ajax_load_order_info ( act=member&op=ajax_load_order_info ) 
+ERR: SELECT COUNT(*) AS nc_count FROM `33hao_order` WHERE ( buyer_id = '16' ) AND ( order_state = '40' ) AND ( evaluation_state = '0' ) LIMIT 1   [ RunTime:1,461,400,485.232798s ]SELECT COUNT(*) AS nc_count FROM `33hao_order` WHERE ( buyer_id = '16' ) AND ( order_state = '40' ) AND ( evaluation_state = '0' ) LIMIT 1  
+[2016-04-23 16:34:45] /33hao/shop/index.php?act=member&op=ajax_load_order_info ( act=member&op=ajax_load_order_info ) 
+ERR: SELECT * FROM `33hao_order` WHERE ( buyer_id = '16' ) AND ( order_state IN ('10','20','30','40') ) AND ( delete_state = '0' ) ORDER BY order_id desc LIMIT 3   [ RunTime:1,461,400,485.232798s ]SELECT * FROM `33hao_order` WHERE ( buyer_id = '16' ) AND ( order_state IN ('10','20','30','40') ) AND ( delete_state = '0' ) ORDER BY order_id desc LIMIT 3  
+[2016-04-23 16:34:45] /33hao/shop/index.php?act=member&op=ajax_load_order_info ( act=member&op=ajax_load_order_info ) 
+ERR: SELECT * FROM `33hao_order_goods` WHERE ( order_id IN ('315','314','312') ) ORDER BY rec_id desc LIMIT 1000   [ RunTime:1,461,400,485.232798s ]SELECT * FROM `33hao_order_goods` WHERE ( order_id IN ('315','314','312') ) ORDER BY rec_id desc LIMIT 1000  
+[2016-04-23 16:34:45] /33hao/shop/index.php?act=member&op=ajax_load_order_info ( act=member&op=ajax_load_order_info ) 
+ERR: SELECT * FROM `33hao_cart` WHERE ( buyer_id = '16' ) LIMIT 3   [ RunTime:1,461,400,485.232798s ]SELECT * FROM `33hao_cart` WHERE ( buyer_id = '16' ) LIMIT 3  
+[2016-04-23 16:34:45] /33hao/shop/index.php?act=member&op=ajax_load_order_info ( act=member&op=ajax_load_order_info ) 
+ERR: SELECT bl_id FROM `33hao_p_bundling_goods` WHERE ( goods_id = NULL ) AND ( bl_appoint = '1' ) ORDER BY bl_goods_id asc LIMIT 1000   [ RunTime:1,461,400,485.232798s ]SELECT bl_id FROM `33hao_p_bundling_goods` WHERE ( goods_id = NULL ) AND ( bl_appoint = '1' ) ORDER BY bl_goods_id asc LIMIT 1000  
+[2016-04-23 16:34:46] /33hao/shop/index.php?act=member&op=ajax_load_goods_info ( act=member&op=ajax_load_goods_info ) 
+ERR: SELECT * FROM `33hao_member` WHERE ( member_id = '16' ) LIMIT 1   [ RunTime:1,461,400,486.379298s ]SELECT * FROM `33hao_member` WHERE ( member_id = '16' ) LIMIT 1  
+[2016-04-23 16:34:46] /33hao/shop/index.php?act=member&op=ajax_load_goods_info ( act=member&op=ajax_load_goods_info ) 
+ERR: SELECT * FROM `33hao_setting` as `setting`   [ RunTime:1,461,400,486.379298s ]SELECT * FROM `33hao_setting` as `setting`  
+[2016-04-23 16:34:46] /33hao/shop/index.php?act=member&op=ajax_load_goods_info ( act=member&op=ajax_load_goods_info ) 
+ERR: SELECT COUNT(*) AS nc_count FROM `33hao_favorites` WHERE ( member_id = '16' ) AND ( fav_type = 'goods' ) ORDER BY fav_time desc LIMIT 1   [ RunTime:1,461,400,486.379298s ]SELECT COUNT(*) AS nc_count FROM `33hao_favorites` WHERE ( member_id = '16' ) AND ( fav_type = 'goods' ) ORDER BY fav_time desc LIMIT 1  
+[2016-04-23 16:34:46] /33hao/shop/index.php?act=member&op=ajax_load_goods_info ( act=member&op=ajax_load_goods_info ) 
+ERR: SELECT * FROM `33hao_favorites` WHERE ( member_id = '16' ) AND ( fav_type = 'goods' ) ORDER BY fav_time desc LIMIT 0,7   [ RunTime:1,461,400,486.379298s ]SELECT * FROM `33hao_favorites` WHERE ( member_id = '16' ) AND ( fav_type = 'goods' ) ORDER BY fav_time desc LIMIT 0,7  
+[2016-04-23 16:34:46] /33hao/shop/index.php?act=member&op=ajax_load_goods_info ( act=member&op=ajax_load_goods_info ) 
+ERR: SELECT goods.goods_id,goods.goods_name,goods.store_id,goods.goods_image,goods.goods_price,goods.evaluation_count,goods.goods_salenum,goods.goods_collect,store.store_name,store.member_id,store.member_name,store.store_qq,store.store_ww,store.store_domain FROM `33hao_goods` AS `goods` INNER JOIN `33hao_store` AS `store` ON goods.store_id = store.store_id WHERE ( goods_id IN ('549') ) LIMIT 1000   [ RunTime:1,461,400,486.379298s ]SELECT goods.goods_id,goods.goods_name,goods.store_id,goods.goods_image,goods.goods_price,goods.evaluation_count,goods.goods_salenum,goods.goods_collect,store.store_name,store.member_id,store.member_name,store.store_qq,store.store_ww,store.store_domain FROM `33hao_goods` AS `goods` INNER JOIN `33hao_store` AS `store` ON goods.store_id = store.store_id WHERE ( goods_id IN ('549') ) LIMIT 1000  
+[2016-04-23 16:34:46] /33hao/shop/index.php?act=member&op=ajax_load_goods_info ( act=member&op=ajax_load_goods_info ) 
+ERR: SELECT COUNT(*) AS nc_count FROM `33hao_favorites` WHERE ( member_id = '16' ) AND ( fav_type = 'store' ) ORDER BY fav_time desc LIMIT 1   [ RunTime:1,461,400,486.379298s ]SELECT COUNT(*) AS nc_count FROM `33hao_favorites` WHERE ( member_id = '16' ) AND ( fav_type = 'store' ) ORDER BY fav_time desc LIMIT 1  
+[2016-04-23 16:34:46] /33hao/shop/index.php?act=member&op=ajax_load_goods_info ( act=member&op=ajax_load_goods_info ) 
+ERR: SELECT * FROM `33hao_favorites` WHERE ( member_id = '16' ) AND ( fav_type = 'store' ) ORDER BY fav_time desc LIMIT 0,6   [ RunTime:1,461,400,486.379298s ]SELECT * FROM `33hao_favorites` WHERE ( member_id = '16' ) AND ( fav_type = 'store' ) ORDER BY fav_time desc LIMIT 0,6  
+[2016-04-23 16:34:46] /33hao/shop/index.php?act=member&op=ajax_load_goods_info ( act=member&op=ajax_load_goods_info ) 
+ERR: SELECT * FROM `33hao_store` WHERE ( store_id IN ('17','33','35','43') ) LIMIT 1000   [ RunTime:1,461,400,486.379298s ]SELECT * FROM `33hao_store` WHERE ( store_id IN ('17','33','35','43') ) LIMIT 1000  
+[2016-04-23 16:34:46] /33hao/shop/index.php?act=member&op=ajax_load_goods_info ( act=member&op=ajax_load_goods_info ) 
+ERR: SELECT COUNT(*) AS nc_count FROM `33hao_goods_common` WHERE ( store_id = '17' ) AND ( goods_state = '1' ) AND ( goods_verify = '1' ) LIMIT 1   [ RunTime:1,461,400,486.379298s ]SELECT COUNT(*) AS nc_count FROM `33hao_goods_common` WHERE ( store_id = '17' ) AND ( goods_state = '1' ) AND ( goods_verify = '1' ) LIMIT 1  
+[2016-04-23 16:34:47] /33hao/shop/index.php?act=member&op=ajax_load_goods_info ( act=member&op=ajax_load_goods_info ) 
+ERR: SELECT COUNT(*) AS nc_count FROM `33hao_goods_common` WHERE ( store_id = '33' ) AND ( goods_state = '1' ) AND ( goods_verify = '1' ) LIMIT 1   [ RunTime:1,461,400,486.379298s ]SELECT COUNT(*) AS nc_count FROM `33hao_goods_common` WHERE ( store_id = '33' ) AND ( goods_state = '1' ) AND ( goods_verify = '1' ) LIMIT 1  
+[2016-04-23 16:34:47] /33hao/shop/index.php?act=member&op=ajax_load_goods_info ( act=member&op=ajax_load_goods_info ) 
+ERR: SELECT COUNT(*) AS nc_count FROM `33hao_goods_common` WHERE ( store_id = '35' ) AND ( goods_state = '1' ) AND ( goods_verify = '1' ) LIMIT 1   [ RunTime:1,461,400,486.379298s ]SELECT COUNT(*) AS nc_count FROM `33hao_goods_common` WHERE ( store_id = '35' ) AND ( goods_state = '1' ) AND ( goods_verify = '1' ) LIMIT 1  
+[2016-04-23 16:34:47] /33hao/shop/index.php?act=member&op=ajax_load_goods_info ( act=member&op=ajax_load_goods_info ) 
+ERR: SELECT COUNT(*) AS nc_count FROM `33hao_goods_common` WHERE ( store_id = '43' ) AND ( goods_state = '1' ) AND ( goods_verify = '1' ) LIMIT 1   [ RunTime:1,461,400,486.379298s ]SELECT COUNT(*) AS nc_count FROM `33hao_goods_common` WHERE ( store_id = '43' ) AND ( goods_state = '1' ) AND ( goods_verify = '1' ) LIMIT 1  
+[2016-04-23 16:34:47] /33hao/shop/index.php?act=member&op=ajax_load_sns_info ( act=member&op=ajax_load_sns_info ) 
+ERR: SELECT * FROM `33hao_member` WHERE ( member_id = '16' ) LIMIT 1   [ RunTime:1,461,400,487.668050s ]SELECT * FROM `33hao_member` WHERE ( member_id = '16' ) LIMIT 1  
+[2016-04-23 16:34:47] /33hao/shop/index.php?act=member&op=ajax_load_sns_info ( act=member&op=ajax_load_sns_info ) 
+ERR: SELECT * FROM `33hao_setting` as `setting`   [ RunTime:1,461,400,487.668050s ]SELECT * FROM `33hao_setting` as `setting`  
+[2016-04-23 16:34:47] /33hao/shop/index.php?act=member&op=ajax_load_sns_info ( act=member&op=ajax_load_sns_info ) 
+ERR: SELECT * FROM `33hao_goods_browse` WHERE ( member_id = '16' ) ORDER BY browsetime desc LIMIT 20   [ RunTime:1,461,400,487.668050s ]SELECT * FROM `33hao_goods_browse` WHERE ( member_id = '16' ) ORDER BY browsetime desc LIMIT 20  
+[2016-04-23 16:34:47] /33hao/shop/index.php?act=member&op=ajax_load_sns_info ( act=member&op=ajax_load_sns_info ) 
+ERR: SELECT goods_id, goods_name, goods_promotion_price, goods_promotion_type, goods_marketprice, goods_image, store_id, gc_id, gc_id_1, gc_id_2, gc_id_3 FROM `33hao_goods` WHERE ( goods_id IN ('857','862','858','278','280','547','299','294','506','514','549','856','851') ) LIMIT 1000   [ RunTime:1,461,400,487.668050s ]SELECT goods_id, goods_name, goods_promotion_price, goods_promotion_type, goods_marketprice, goods_image, store_id, gc_id, gc_id_1, gc_id_2, gc_id_3 FROM `33hao_goods` WHERE ( goods_id IN ('857','862','858','278','280','547','299','294','506','514','549','856','851') ) LIMIT 1000  
+[2016-04-23 16:34:48] /33hao/shop/index.php?act=member&op=ajax_load_sns_info ( act=member&op=ajax_load_sns_info ) 
+ERR: SELECT * FROM `33hao_circle_member` WHERE ( member_id = '16' ) LIMIT 1000   [ RunTime:1,461,400,487.668050s ]SELECT * FROM `33hao_circle_member` WHERE ( member_id = '16' ) LIMIT 1000  
+[2016-04-23 16:34:48] /33hao/shop/index.php?act=member&op=ajax_load_sns_info ( act=member&op=ajax_load_sns_info ) 
+ERR: SELECT member.member_id,member.member_name,member.member_avatar FROM `33hao_sns_friend` as `sns_friend` INNER JOIN `33hao_member` as `member` ON sns_friend.friend_tomid=member.member_id  WHERE  sns_friend.friend_frommid= '16' order by sns_friend.friend_id desc limit 15 [ RunTime:1,461,400,487.668050s ]SELECT member.member_id,member.member_name,member.member_avatar FROM `33hao_sns_friend` as `sns_friend` INNER JOIN `33hao_member` as `member` ON sns_friend.friend_tomid=member.member_id  WHERE  sns_friend.friend_frommid= '16' order by sns_friend.friend_id desc limit 15
+[2016-04-23 16:34:48] /33hao/shop/index.php?act=member&op=ajax_load_sns_info ( act=member&op=ajax_load_sns_info ) 
+ERR: SELECT count(*) as _count,trace_memberid FROM `33hao_sns_tracelog` WHERE ( trace_memberid IN('') ) AND ( trace_privacy = '0' ) AND ( trace_state = '0' ) GROUP BY trace_memberid LIMIT 5   [ RunTime:1,461,400,487.668050s ]SELECT count(*) as _count,trace_memberid FROM `33hao_sns_tracelog` WHERE ( trace_memberid IN('') ) AND ( trace_privacy = '0' ) AND ( trace_state = '0' ) GROUP BY trace_memberid LIMIT 5  
+[2016-04-23 16:34:48] /33hao/shop/index.php?act=member_order&state_type=state_new ( act=member_order&op=index ) 
+ERR: SELECT * FROM `33hao_member` WHERE ( member_id = '16' ) LIMIT 1   [ RunTime:1,461,400,488.794023s ]SELECT * FROM `33hao_member` WHERE ( member_id = '16' ) LIMIT 1  
+[2016-04-23 16:34:48] /33hao/shop/index.php?act=member_order&state_type=state_new ( act=member_order&op=index ) 
+ERR: SELECT * FROM `33hao_setting` as `setting`   [ RunTime:1,461,400,488.794023s ]SELECT * FROM `33hao_setting` as `setting`  
+[2016-04-23 16:34:48] /33hao/shop/index.php?act=member_order&state_type=state_new ( act=member_order&op=index ) 
+ERR: SELECT COUNT(*) AS nc_count FROM `33hao_order` WHERE ( buyer_id = '16' ) AND ( order_state = '10' ) AND ( delete_state = '0' ) LIMIT 1   [ RunTime:1,461,400,488.794023s ]SELECT COUNT(*) AS nc_count FROM `33hao_order` WHERE ( buyer_id = '16' ) AND ( order_state = '10' ) AND ( delete_state = '0' ) LIMIT 1  
+[2016-04-23 16:34:49] /33hao/shop/index.php?act=member_order&state_type=state_new ( act=member_order&op=index ) 
+ERR: SELECT * FROM `33hao_order` WHERE ( buyer_id = '16' ) AND ( order_state = '10' ) AND ( delete_state = '0' ) ORDER BY order_id desc LIMIT 0,20   [ RunTime:1,461,400,488.794023s ]SELECT * FROM `33hao_order` WHERE ( buyer_id = '16' ) AND ( order_state = '10' ) AND ( delete_state = '0' ) ORDER BY order_id desc LIMIT 0,20  
+[2016-04-23 16:34:49] /33hao/shop/index.php?act=member_order&state_type=state_new ( act=member_order&op=index ) 
+ERR: SELECT * FROM `33hao_order_common` WHERE ( order_id IN ('315','314','312','311','304','303','302','8','7') ) LIMIT 1000   [ RunTime:1,461,400,488.794023s ]SELECT * FROM `33hao_order_common` WHERE ( order_id IN ('315','314','312','311','304','303','302','8','7') ) LIMIT 1000  
+[2016-04-23 16:34:49] /33hao/shop/index.php?act=member_order&state_type=state_new ( act=member_order&op=index ) 
+ERR: SELECT * FROM `33hao_store` WHERE ( store_id IN ('17','43','37','39','6') ) LIMIT 1000   [ RunTime:1,461,400,488.794023s ]SELECT * FROM `33hao_store` WHERE ( store_id IN ('17','43','37','39','6') ) LIMIT 1000  
+[2016-04-23 16:34:49] /33hao/shop/index.php?act=member_order&state_type=state_new ( act=member_order&op=index ) 
+ERR: SELECT * FROM `33hao_order_goods` WHERE ( order_id IN ('315','314','312','311','304','303','302','8','7') ) ORDER BY rec_id desc LIMIT 1000   [ RunTime:1,461,400,488.794023s ]SELECT * FROM `33hao_order_goods` WHERE ( order_id IN ('315','314','312','311','304','303','302','8','7') ) ORDER BY rec_id desc LIMIT 1000  
+[2016-04-23 16:34:49] /33hao/shop/index.php?act=member_order&state_type=state_new ( act=member_order&op=index ) 
+ERR: SELECT * FROM `33hao_refund_return` WHERE ( order_id IN ('315','314','312','311','304','303','302','8','7') ) ORDER BY refund_id desc LIMIT 1000   [ RunTime:1,461,400,488.794023s ]SELECT * FROM `33hao_refund_return` WHERE ( order_id IN ('315','314','312','311','304','303','302','8','7') ) ORDER BY refund_id desc LIMIT 1000  
+[2016-04-23 16:34:49] /33hao/shop/index.php?act=member_order&state_type=state_new ( act=member_order&op=index ) 
+ERR: SELECT * FROM `33hao_order_pay` WHERE ( pay_sn IN ('600514484309797016','450514483972524016','530513891661407016','140512063359153016','990503437144762016','910503414873677016') ) LIMIT 1000   [ RunTime:1,461,400,488.794023s ]SELECT * FROM `33hao_order_pay` WHERE ( pay_sn IN ('600514484309797016','450514483972524016','530513891661407016','140512063359153016','990503437144762016','910503414873677016') ) LIMIT 1000  
+[2016-04-23 16:34:49] /33hao/shop/index.php?act=member_order&state_type=state_new ( act=member_order&op=index ) 
+ERR: SELECT * FROM `33hao_brand` WHERE ( brand_recommend = '1' ) AND ( class_id = '1057' ) LIMIT 1000   [ RunTime:1,461,400,488.794023s ]SELECT * FROM `33hao_brand` WHERE ( brand_recommend = '1' ) AND ( class_id = '1057' ) LIMIT 1000  
+[2016-04-23 16:34:49] /33hao/shop/index.php?act=member_order&state_type=state_new ( act=member_order&op=index ) 
+ERR: SELECT * FROM `33hao_brand` WHERE ( brand_recommend = '1' ) AND ( class_id = '1058' ) LIMIT 1000   [ RunTime:1,461,400,488.794023s ]SELECT * FROM `33hao_brand` WHERE ( brand_recommend = '1' ) AND ( class_id = '1058' ) LIMIT 1000  
+[2016-04-23 16:34:49] /33hao/shop/index.php?act=member_order&state_type=state_new ( act=member_order&op=index ) 
+ERR: SELECT * FROM `33hao_brand` WHERE ( brand_recommend = '1' ) AND ( class_id = '1073' ) LIMIT 1000   [ RunTime:1,461,400,488.794023s ]SELECT * FROM `33hao_brand` WHERE ( brand_recommend = '1' ) AND ( class_id = '1073' ) LIMIT 1000  
+[2016-04-23 16:34:49] /33hao/shop/index.php?act=member_order&state_type=state_new ( act=member_order&op=index ) 
+ERR: SELECT * FROM `33hao_brand` WHERE ( brand_recommend = '1' ) AND ( class_id = '1060' ) LIMIT 1000   [ RunTime:1,461,400,488.794023s ]SELECT * FROM `33hao_brand` WHERE ( brand_recommend = '1' ) AND ( class_id = '1060' ) LIMIT 1000  
+[2016-04-23 16:38:35] /33hao/shop/index.php?act=member_order&op=change_state&state_type=order_cancel&order_id=8 ( act=member_order&op=change_state ) 
+ERR: SELECT * FROM `33hao_member` WHERE ( member_id = '16' ) LIMIT 1   [ RunTime:1,461,400,715.870653s ]SELECT * FROM `33hao_member` WHERE ( member_id = '16' ) LIMIT 1  
+[2016-04-23 16:38:35] /33hao/shop/index.php?act=member_order&op=change_state&state_type=order_cancel&order_id=8 ( act=member_order&op=change_state ) 
+ERR: SELECT * FROM `33hao_setting` as `setting`   [ RunTime:1,461,400,715.870653s ]SELECT * FROM `33hao_setting` as `setting`  
+[2016-04-23 16:38:36] /33hao/shop/index.php?act=member_order&op=change_state&state_type=order_cancel&order_id=8 ( act=member_order&op=change_state ) 
+ERR: SELECT * FROM `33hao_order` WHERE ( order_id = '8' ) AND ( buyer_id = '16' ) LIMIT 1   [ RunTime:1,461,400,715.870653s ]SELECT * FROM `33hao_order` WHERE ( order_id = '8' ) AND ( buyer_id = '16' ) LIMIT 1  
+[2016-04-23 16:38:38] /33hao/shop/index.php?act=member_order&op=change_state&state_type=order_cancel&order_id=8&inajax=1 ( act=member_order&op=change_state ) 
+ERR: SELECT * FROM `33hao_member` WHERE ( member_id = '16' ) LIMIT 1   [ RunTime:1,461,400,718.159232s ]SELECT * FROM `33hao_member` WHERE ( member_id = '16' ) LIMIT 1  
+[2016-04-23 16:38:38] /33hao/shop/index.php?act=member_order&op=change_state&state_type=order_cancel&order_id=8&inajax=1 ( act=member_order&op=change_state ) 
+ERR: SELECT * FROM `33hao_setting` as `setting`   [ RunTime:1,461,400,718.159232s ]SELECT * FROM `33hao_setting` as `setting`  
+[2016-04-23 16:38:38] /33hao/shop/index.php?act=member_order&op=change_state&state_type=order_cancel&order_id=8&inajax=1 ( act=member_order&op=change_state ) 
+ERR: SELECT * FROM `33hao_order` WHERE ( order_id = '8' ) AND ( buyer_id = '16' ) LIMIT 1   [ RunTime:1,461,400,718.159232s ]SELECT * FROM `33hao_order` WHERE ( order_id = '8' ) AND ( buyer_id = '16' ) LIMIT 1  
+[2016-04-23 16:38:38] /33hao/shop/index.php?act=member_order&op=change_state&state_type=order_cancel&order_id=8&inajax=1 ( act=member_order&op=change_state ) 
+ERR: SELECT * FROM `33hao_order_goods` WHERE ( order_id = '8' ) ORDER BY rec_id desc LIMIT 1000   [ RunTime:1,461,400,718.159232s ]SELECT * FROM `33hao_order_goods` WHERE ( order_id = '8' ) ORDER BY rec_id desc LIMIT 1000  
+[2016-04-23 16:38:38] /33hao/shop/index.php?act=member_order&op=change_state&state_type=order_cancel&order_id=8&inajax=1 ( act=member_order&op=change_state ) 
+ERR: UPDATE `33hao_goods` SET goods_storage=goods_storage+1,goods_salenum=goods_salenum-1,goods_edittime='1461400717' WHERE ( goods_id IN ('252') ) [ RunTime:1,461,400,718.159232s ]UPDATE `33hao_goods` SET goods_storage=goods_storage+1,goods_salenum=goods_salenum-1,goods_edittime='1461400717' WHERE ( goods_id IN ('252') )
+[2016-04-23 16:38:38] /33hao/shop/index.php?act=member_order&op=change_state&state_type=order_cancel&order_id=8&inajax=1 ( act=member_order&op=change_state ) 
+ERR: UPDATE `33hao_order` SET order_state='0',pd_amount='0' WHERE ( order_id = '8' ) [ RunTime:1,461,400,718.159232s ]UPDATE `33hao_order` SET order_state='0',pd_amount='0' WHERE ( order_id = '8' )
+[2016-04-23 16:38:38] /33hao/shop/index.php?act=member_order&op=change_state&state_type=order_cancel&order_id=8&inajax=1 ( act=member_order&op=change_state ) 
+ERR: SELECT buyer_id,store_id FROM `33hao_order` WHERE ( order_id = '8' ) LIMIT 1   [ RunTime:1,461,400,718.159232s ]SELECT buyer_id,store_id FROM `33hao_order` WHERE ( order_id = '8' ) LIMIT 1  
+[2016-04-23 16:38:39] /33hao/shop/index.php?act=member_order&op=change_state&state_type=order_cancel&order_id=8&inajax=1 ( act=member_order&op=change_state ) 
+ERR: INSERT  INTO `33hao_order_log` (order_id,log_role,log_msg,log_user,log_orderstate,log_time) VALUES ('8','买家','取消了订单 ( 改买其他商品 )','18934488948','0','1461400717') [ RunTime:1,461,400,718.159232s ]INSERT  INTO `33hao_order_log` (order_id,log_role,log_msg,log_user,log_orderstate,log_time) VALUES ('8','买家','取消了订单 ( 改买其他商品 )','18934488948','0','1461400717')
+[2016-04-23 16:38:39] /33hao/shop/index.php?act=member_order&state_type=state_new ( act=member_order&op=index ) 
+ERR: SELECT * FROM `33hao_member` WHERE ( member_id = '16' ) LIMIT 1   [ RunTime:1,461,400,719.678763s ]SELECT * FROM `33hao_member` WHERE ( member_id = '16' ) LIMIT 1  
+[2016-04-23 16:38:39] /33hao/shop/index.php?act=member_order&state_type=state_new ( act=member_order&op=index ) 
+ERR: SELECT * FROM `33hao_setting` as `setting`   [ RunTime:1,461,400,719.678763s ]SELECT * FROM `33hao_setting` as `setting`  
+[2016-04-23 16:38:39] /33hao/shop/index.php?act=member_order&state_type=state_new ( act=member_order&op=index ) 
+ERR: SELECT COUNT(*) AS nc_count FROM `33hao_order` WHERE ( buyer_id = '16' ) AND ( order_state = '10' ) AND ( delete_state = '0' ) LIMIT 1   [ RunTime:1,461,400,719.678763s ]SELECT COUNT(*) AS nc_count FROM `33hao_order` WHERE ( buyer_id = '16' ) AND ( order_state = '10' ) AND ( delete_state = '0' ) LIMIT 1  
+[2016-04-23 16:38:39] /33hao/shop/index.php?act=member_order&state_type=state_new ( act=member_order&op=index ) 
+ERR: SELECT * FROM `33hao_order` WHERE ( buyer_id = '16' ) AND ( order_state = '10' ) AND ( delete_state = '0' ) ORDER BY order_id desc LIMIT 0,20   [ RunTime:1,461,400,719.678763s ]SELECT * FROM `33hao_order` WHERE ( buyer_id = '16' ) AND ( order_state = '10' ) AND ( delete_state = '0' ) ORDER BY order_id desc LIMIT 0,20  
+[2016-04-23 16:38:39] /33hao/shop/index.php?act=member_order&state_type=state_new ( act=member_order&op=index ) 
+ERR: SELECT * FROM `33hao_order_common` WHERE ( order_id IN ('315','314','312','311','304','303','302','7') ) LIMIT 1000   [ RunTime:1,461,400,719.678763s ]SELECT * FROM `33hao_order_common` WHERE ( order_id IN ('315','314','312','311','304','303','302','7') ) LIMIT 1000  
+[2016-04-23 16:38:40] /33hao/shop/index.php?act=member_order&state_type=state_new ( act=member_order&op=index ) 
+ERR: SELECT * FROM `33hao_store` WHERE ( store_id IN ('17','43','37','39','6') ) LIMIT 1000   [ RunTime:1,461,400,719.678763s ]SELECT * FROM `33hao_store` WHERE ( store_id IN ('17','43','37','39','6') ) LIMIT 1000  
+[2016-04-23 16:38:40] /33hao/shop/index.php?act=member_order&state_type=state_new ( act=member_order&op=index ) 
+ERR: SELECT * FROM `33hao_order_goods` WHERE ( order_id IN ('315','314','312','311','304','303','302','7') ) ORDER BY rec_id desc LIMIT 1000   [ RunTime:1,461,400,719.678763s ]SELECT * FROM `33hao_order_goods` WHERE ( order_id IN ('315','314','312','311','304','303','302','7') ) ORDER BY rec_id desc LIMIT 1000  
+[2016-04-23 16:38:40] /33hao/shop/index.php?act=member_order&state_type=state_new ( act=member_order&op=index ) 
+ERR: SELECT * FROM `33hao_refund_return` WHERE ( order_id IN ('315','314','312','311','304','303','302','7') ) ORDER BY refund_id desc LIMIT 1000   [ RunTime:1,461,400,719.678763s ]SELECT * FROM `33hao_refund_return` WHERE ( order_id IN ('315','314','312','311','304','303','302','7') ) ORDER BY refund_id desc LIMIT 1000  
+[2016-04-23 16:38:40] /33hao/shop/index.php?act=member_order&state_type=state_new ( act=member_order&op=index ) 
+ERR: SELECT * FROM `33hao_order_pay` WHERE ( pay_sn IN ('600514484309797016','450514483972524016','530513891661407016','140512063359153016','910503414873677016') ) LIMIT 1000   [ RunTime:1,461,400,719.678763s ]SELECT * FROM `33hao_order_pay` WHERE ( pay_sn IN ('600514484309797016','450514483972524016','530513891661407016','140512063359153016','910503414873677016') ) LIMIT 1000  
+[2016-04-23 16:38:40] /33hao/shop/index.php?act=member_order&state_type=state_new ( act=member_order&op=index ) 
+ERR: SELECT * FROM `33hao_brand` WHERE ( brand_recommend = '1' ) AND ( class_id = '1057' ) LIMIT 1000   [ RunTime:1,461,400,719.678763s ]SELECT * FROM `33hao_brand` WHERE ( brand_recommend = '1' ) AND ( class_id = '1057' ) LIMIT 1000  
+[2016-04-23 16:38:40] /33hao/shop/index.php?act=member_order&state_type=state_new ( act=member_order&op=index ) 
+ERR: SELECT * FROM `33hao_brand` WHERE ( brand_recommend = '1' ) AND ( class_id = '1058' ) LIMIT 1000   [ RunTime:1,461,400,719.678763s ]SELECT * FROM `33hao_brand` WHERE ( brand_recommend = '1' ) AND ( class_id = '1058' ) LIMIT 1000  
+[2016-04-23 16:38:40] /33hao/shop/index.php?act=member_order&state_type=state_new ( act=member_order&op=index ) 
+ERR: SELECT * FROM `33hao_brand` WHERE ( brand_recommend = '1' ) AND ( class_id = '1073' ) LIMIT 1000   [ RunTime:1,461,400,719.678763s ]SELECT * FROM `33hao_brand` WHERE ( brand_recommend = '1' ) AND ( class_id = '1073' ) LIMIT 1000  
+[2016-04-23 16:38:40] /33hao/shop/index.php?act=member_order&state_type=state_new ( act=member_order&op=index ) 
+ERR: SELECT * FROM `33hao_brand` WHERE ( brand_recommend = '1' ) AND ( class_id = '1060' ) LIMIT 1000   [ RunTime:1,461,400,719.678763s ]SELECT * FROM `33hao_brand` WHERE ( brand_recommend = '1' ) AND ( class_id = '1060' ) LIMIT 1000  
+[2016-04-23 16:38:47] /33hao/shop/index.php?act=member_order&op=change_state&state_type=order_cancel&order_id=303 ( act=member_order&op=change_state ) 
+ERR: SELECT * FROM `33hao_member` WHERE ( member_id = '16' ) LIMIT 1   [ RunTime:1,461,400,727.887845s ]SELECT * FROM `33hao_member` WHERE ( member_id = '16' ) LIMIT 1  
+[2016-04-23 16:38:47] /33hao/shop/index.php?act=member_order&op=change_state&state_type=order_cancel&order_id=303 ( act=member_order&op=change_state ) 
+ERR: SELECT * FROM `33hao_setting` as `setting`   [ RunTime:1,461,400,727.887845s ]SELECT * FROM `33hao_setting` as `setting`  
+[2016-04-23 16:38:48] /33hao/shop/index.php?act=member_order&op=change_state&state_type=order_cancel&order_id=303 ( act=member_order&op=change_state ) 
+ERR: SELECT * FROM `33hao_order` WHERE ( order_id = '303' ) AND ( buyer_id = '16' ) LIMIT 1   [ RunTime:1,461,400,727.887845s ]SELECT * FROM `33hao_order` WHERE ( order_id = '303' ) AND ( buyer_id = '16' ) LIMIT 1  
+[2016-04-23 16:38:49] /33hao/shop/index.php?act=member_order&op=change_state&state_type=order_cancel&order_id=303&inajax=1 ( act=member_order&op=change_state ) 
+ERR: SELECT * FROM `33hao_member` WHERE ( member_id = '16' ) LIMIT 1   [ RunTime:1,461,400,729.579959s ]SELECT * FROM `33hao_member` WHERE ( member_id = '16' ) LIMIT 1  
+[2016-04-23 16:38:49] /33hao/shop/index.php?act=member_order&op=change_state&state_type=order_cancel&order_id=303&inajax=1 ( act=member_order&op=change_state ) 
+ERR: SELECT * FROM `33hao_setting` as `setting`   [ RunTime:1,461,400,729.579959s ]SELECT * FROM `33hao_setting` as `setting`  
+[2016-04-23 16:38:49] /33hao/shop/index.php?act=member_order&op=change_state&state_type=order_cancel&order_id=303&inajax=1 ( act=member_order&op=change_state ) 
+ERR: SELECT * FROM `33hao_order` WHERE ( order_id = '303' ) AND ( buyer_id = '16' ) LIMIT 1   [ RunTime:1,461,400,729.579959s ]SELECT * FROM `33hao_order` WHERE ( order_id = '303' ) AND ( buyer_id = '16' ) LIMIT 1  
+[2016-04-23 16:38:49] /33hao/shop/index.php?act=member_order&op=change_state&state_type=order_cancel&order_id=303&inajax=1 ( act=member_order&op=change_state ) 
+ERR: SELECT * FROM `33hao_order_goods` WHERE ( order_id = '303' ) ORDER BY rec_id desc LIMIT 1000   [ RunTime:1,461,400,729.579959s ]SELECT * FROM `33hao_order_goods` WHERE ( order_id = '303' ) ORDER BY rec_id desc LIMIT 1000  
+[2016-04-23 16:38:49] /33hao/shop/index.php?act=member_order&op=change_state&state_type=order_cancel&order_id=303&inajax=1 ( act=member_order&op=change_state ) 
+ERR: UPDATE `33hao_goods` SET goods_storage=goods_storage+1,goods_salenum=goods_salenum-1,goods_edittime='1461400729' WHERE ( goods_id IN ('531') ) [ RunTime:1,461,400,729.579959s ]UPDATE `33hao_goods` SET goods_storage=goods_storage+1,goods_salenum=goods_salenum-1,goods_edittime='1461400729' WHERE ( goods_id IN ('531') )
+[2016-04-23 16:38:50] /33hao/shop/index.php?act=member_order&op=change_state&state_type=order_cancel&order_id=303&inajax=1 ( act=member_order&op=change_state ) 
+ERR: UPDATE `33hao_order` SET order_state='0',pd_amount='0' WHERE ( order_id = '303' ) [ RunTime:1,461,400,729.579959s ]UPDATE `33hao_order` SET order_state='0',pd_amount='0' WHERE ( order_id = '303' )
+[2016-04-23 16:38:50] /33hao/shop/index.php?act=member_order&op=change_state&state_type=order_cancel&order_id=303&inajax=1 ( act=member_order&op=change_state ) 
+ERR: SELECT buyer_id,store_id FROM `33hao_order` WHERE ( order_id = '303' ) LIMIT 1   [ RunTime:1,461,400,729.579959s ]SELECT buyer_id,store_id FROM `33hao_order` WHERE ( order_id = '303' ) LIMIT 1  
+[2016-04-23 16:38:50] /33hao/shop/index.php?act=member_order&op=change_state&state_type=order_cancel&order_id=303&inajax=1 ( act=member_order&op=change_state ) 
+ERR: INSERT  INTO `33hao_order_log` (order_id,log_role,log_msg,log_user,log_orderstate,log_time) VALUES ('303','买家','取消了订单 ( 改买其他商品 )','18934488948','0','1461400729') [ RunTime:1,461,400,729.579959s ]INSERT  INTO `33hao_order_log` (order_id,log_role,log_msg,log_user,log_orderstate,log_time) VALUES ('303','买家','取消了订单 ( 改买其他商品 )','18934488948','0','1461400729')
+[2016-04-23 16:38:50] /33hao/shop/index.php?act=member_order&state_type=state_new ( act=member_order&op=index ) 
+ERR: SELECT * FROM `33hao_member` WHERE ( member_id = '16' ) LIMIT 1   [ RunTime:1,461,400,730.819150s ]SELECT * FROM `33hao_member` WHERE ( member_id = '16' ) LIMIT 1  
+[2016-04-23 16:38:50] /33hao/shop/index.php?act=member_order&state_type=state_new ( act=member_order&op=index ) 
+ERR: SELECT * FROM `33hao_setting` as `setting`   [ RunTime:1,461,400,730.819150s ]SELECT * FROM `33hao_setting` as `setting`  
+[2016-04-23 16:38:50] /33hao/shop/index.php?act=member_order&state_type=state_new ( act=member_order&op=index ) 
+ERR: SELECT COUNT(*) AS nc_count FROM `33hao_order` WHERE ( buyer_id = '16' ) AND ( order_state = '10' ) AND ( delete_state = '0' ) LIMIT 1   [ RunTime:1,461,400,730.819150s ]SELECT COUNT(*) AS nc_count FROM `33hao_order` WHERE ( buyer_id = '16' ) AND ( order_state = '10' ) AND ( delete_state = '0' ) LIMIT 1  
+[2016-04-23 16:38:51] /33hao/shop/index.php?act=member_order&state_type=state_new ( act=member_order&op=index ) 
+ERR: SELECT * FROM `33hao_order` WHERE ( buyer_id = '16' ) AND ( order_state = '10' ) AND ( delete_state = '0' ) ORDER BY order_id desc LIMIT 0,20   [ RunTime:1,461,400,730.819150s ]SELECT * FROM `33hao_order` WHERE ( buyer_id = '16' ) AND ( order_state = '10' ) AND ( delete_state = '0' ) ORDER BY order_id desc LIMIT 0,20  
+[2016-04-23 16:38:51] /33hao/shop/index.php?act=member_order&state_type=state_new ( act=member_order&op=index ) 
+ERR: SELECT * FROM `33hao_order_common` WHERE ( order_id IN ('315','314','312','311','304','302','7') ) LIMIT 1000   [ RunTime:1,461,400,730.819150s ]SELECT * FROM `33hao_order_common` WHERE ( order_id IN ('315','314','312','311','304','302','7') ) LIMIT 1000  
+[2016-04-23 16:38:51] /33hao/shop/index.php?act=member_order&state_type=state_new ( act=member_order&op=index ) 
+ERR: SELECT * FROM `33hao_store` WHERE ( store_id IN ('17','43','37','6') ) LIMIT 1000   [ RunTime:1,461,400,730.819150s ]SELECT * FROM `33hao_store` WHERE ( store_id IN ('17','43','37','6') ) LIMIT 1000  
+[2016-04-23 16:38:51] /33hao/shop/index.php?act=member_order&state_type=state_new ( act=member_order&op=index ) 
+ERR: SELECT * FROM `33hao_order_goods` WHERE ( order_id IN ('315','314','312','311','304','302','7') ) ORDER BY rec_id desc LIMIT 1000   [ RunTime:1,461,400,730.819150s ]SELECT * FROM `33hao_order_goods` WHERE ( order_id IN ('315','314','312','311','304','302','7') ) ORDER BY rec_id desc LIMIT 1000  
+[2016-04-23 16:38:51] /33hao/shop/index.php?act=member_order&state_type=state_new ( act=member_order&op=index ) 
+ERR: SELECT * FROM `33hao_refund_return` WHERE ( order_id IN ('315','314','312','311','304','302','7') ) ORDER BY refund_id desc LIMIT 1000   [ RunTime:1,461,400,730.819150s ]SELECT * FROM `33hao_refund_return` WHERE ( order_id IN ('315','314','312','311','304','302','7') ) ORDER BY refund_id desc LIMIT 1000  
+[2016-04-23 16:38:51] /33hao/shop/index.php?act=member_order&state_type=state_new ( act=member_order&op=index ) 
+ERR: SELECT * FROM `33hao_order_pay` WHERE ( pay_sn IN ('600514484309797016','450514483972524016','530513891661407016','140512063359153016','910503414873677016') ) LIMIT 1000   [ RunTime:1,461,400,730.819150s ]SELECT * FROM `33hao_order_pay` WHERE ( pay_sn IN ('600514484309797016','450514483972524016','530513891661407016','140512063359153016','910503414873677016') ) LIMIT 1000  
+[2016-04-23 16:38:51] /33hao/shop/index.php?act=member_order&state_type=state_new ( act=member_order&op=index ) 
+ERR: SELECT * FROM `33hao_brand` WHERE ( brand_recommend = '1' ) AND ( class_id = '1057' ) LIMIT 1000   [ RunTime:1,461,400,730.819150s ]SELECT * FROM `33hao_brand` WHERE ( brand_recommend = '1' ) AND ( class_id = '1057' ) LIMIT 1000  
+[2016-04-23 16:38:51] /33hao/shop/index.php?act=member_order&state_type=state_new ( act=member_order&op=index ) 
+ERR: SELECT * FROM `33hao_brand` WHERE ( brand_recommend = '1' ) AND ( class_id = '1058' ) LIMIT 1000   [ RunTime:1,461,400,730.819150s ]SELECT * FROM `33hao_brand` WHERE ( brand_recommend = '1' ) AND ( class_id = '1058' ) LIMIT 1000  
+[2016-04-23 16:38:51] /33hao/shop/index.php?act=member_order&state_type=state_new ( act=member_order&op=index ) 
+ERR: SELECT * FROM `33hao_brand` WHERE ( brand_recommend = '1' ) AND ( class_id = '1073' ) LIMIT 1000   [ RunTime:1,461,400,730.819150s ]SELECT * FROM `33hao_brand` WHERE ( brand_recommend = '1' ) AND ( class_id = '1073' ) LIMIT 1000  
+[2016-04-23 16:38:51] /33hao/shop/index.php?act=member_order&state_type=state_new ( act=member_order&op=index ) 
+ERR: SELECT * FROM `33hao_brand` WHERE ( brand_recommend = '1' ) AND ( class_id = '1060' ) LIMIT 1000   [ RunTime:1,461,400,730.819150s ]SELECT * FROM `33hao_brand` WHERE ( brand_recommend = '1' ) AND ( class_id = '1060' ) LIMIT 1000  
+[2016-04-23 16:54:42] /33hao/shop/index.php?act=member_order&op=change_state&state_type=order_cancel&order_id=302 ( act=member_order&op=change_state ) 
+ERR: SELECT * FROM `33hao_member` WHERE ( member_id = '16' ) LIMIT 1   [ RunTime:1,461,401,682.076244s ]SELECT * FROM `33hao_member` WHERE ( member_id = '16' ) LIMIT 1  
+[2016-04-23 16:54:42] /33hao/shop/index.php?act=member_order&op=change_state&state_type=order_cancel&order_id=302 ( act=member_order&op=change_state ) 
+ERR: SELECT * FROM `33hao_setting` as `setting`   [ RunTime:1,461,401,682.076244s ]SELECT * FROM `33hao_setting` as `setting`  
+[2016-04-23 16:54:42] /33hao/shop/index.php?act=member_order&op=change_state&state_type=order_cancel&order_id=302 ( act=member_order&op=change_state ) 
+ERR: SELECT * FROM `33hao_order` WHERE ( order_id = '302' ) AND ( buyer_id = '16' ) LIMIT 1   [ RunTime:1,461,401,682.076244s ]SELECT * FROM `33hao_order` WHERE ( order_id = '302' ) AND ( buyer_id = '16' ) LIMIT 1  
+[2016-04-23 16:58:15] /33hao/mobile/index.php?act=member_order&op=show_order&order_id=312&token=4a26d6eeae9b08df1fce18213c822c28 ( act=member_order&op=show_order ) 
+ERR: SELECT * FROM `33hao_mb_user_token` WHERE ( token = '4a26d6eeae9b08df1fce18213c822c28' ) LIMIT 1   [ RunTime:1,461,401,895.356843s ]SELECT * FROM `33hao_mb_user_token` WHERE ( token = '4a26d6eeae9b08df1fce18213c822c28' ) LIMIT 1  
+[2016-04-23 16:58:15] /33hao/mobile/index.php?act=member_order&op=show_order&order_id=312&token=4a26d6eeae9b08df1fce18213c822c28 ( act=member_order&op=show_order ) 
+ERR: SELECT * FROM `33hao_member` WHERE ( member_id = '16' ) LIMIT 1   [ RunTime:1,461,401,895.356843s ]SELECT * FROM `33hao_member` WHERE ( member_id = '16' ) LIMIT 1  
+[2016-04-23 16:58:15] /33hao/mobile/index.php?act=member_order&op=show_order&order_id=312&token=4a26d6eeae9b08df1fce18213c822c28 ( act=member_order&op=show_order ) 
+ERR: SELECT * FROM `33hao_seller` WHERE ( member_id = '16' ) LIMIT 1   [ RunTime:1,461,401,895.356843s ]SELECT * FROM `33hao_seller` WHERE ( member_id = '16' ) LIMIT 1  
+[2016-04-23 16:58:15] /33hao/mobile/index.php?act=member_order&op=show_order&order_id=312&token=4a26d6eeae9b08df1fce18213c822c28 ( act=member_order&op=show_order ) 
+ERR: SELECT * FROM `33hao_order` WHERE ( order_id = '312' ) AND ( buyer_id = '16' ) LIMIT 1   [ RunTime:1,461,401,895.356843s ]SELECT * FROM `33hao_order` WHERE ( order_id = '312' ) AND ( buyer_id = '16' ) LIMIT 1  
+[2016-04-23 16:58:15] /33hao/mobile/index.php?act=member_order&op=show_order&order_id=312&token=4a26d6eeae9b08df1fce18213c822c28 ( act=member_order&op=show_order ) 
+ERR: SELECT * FROM `33hao_store` WHERE ( store_id = '43' ) LIMIT 1   [ RunTime:1,461,401,895.356843s ]SELECT * FROM `33hao_store` WHERE ( store_id = '43' ) LIMIT 1  
+[2016-04-23 16:58:15] /33hao/mobile/index.php?act=member_order&op=show_order&order_id=312&token=4a26d6eeae9b08df1fce18213c822c28 ( act=member_order&op=show_order ) 
+ERR: SELECT COUNT(*) AS nc_count FROM `33hao_goods_common` WHERE ( store_id = '43' ) AND ( goods_state = '1' ) AND ( goods_verify = '1' ) LIMIT 1   [ RunTime:1,461,401,895.356843s ]SELECT COUNT(*) AS nc_count FROM `33hao_goods_common` WHERE ( store_id = '43' ) AND ( goods_state = '1' ) AND ( goods_verify = '1' ) LIMIT 1  
+[2016-04-23 16:58:15] /33hao/mobile/index.php?act=member_order&op=show_order&order_id=312&token=4a26d6eeae9b08df1fce18213c822c28 ( act=member_order&op=show_order ) 
+ERR: SELECT AVG(seval_desccredit) as store_desccredit,AVG(seval_servicecredit) as store_servicecredit,AVG(seval_deliverycredit) as store_deliverycredit,COUNT(seval_id) as count FROM `33hao_evaluate_store` WHERE ( seval_storeid = '43' ) LIMIT 1   [ RunTime:1,461,401,895.356843s ]SELECT AVG(seval_desccredit) as store_desccredit,AVG(seval_servicecredit) as store_servicecredit,AVG(seval_deliverycredit) as store_deliverycredit,COUNT(seval_id) as count FROM `33hao_evaluate_store` WHERE ( seval_storeid = '43' ) LIMIT 1  
+[2016-04-23 16:58:16] /33hao/mobile/index.php?act=member_order&op=show_order&order_id=312&token=4a26d6eeae9b08df1fce18213c822c28 ( act=member_order&op=show_order ) 
+ERR: SELECT * FROM `33hao_store` WHERE ( sc_id = '11' ) AND ( store_state = '1' ) LIMIT 1000   [ RunTime:1,461,401,895.356843s ]SELECT * FROM `33hao_store` WHERE ( sc_id = '11' ) AND ( store_state = '1' ) LIMIT 1000  
+[2016-04-23 16:58:16] /33hao/mobile/index.php?act=member_order&op=show_order&order_id=312&token=4a26d6eeae9b08df1fce18213c822c28 ( act=member_order&op=show_order ) 
+ERR: SELECT AVG(seval_desccredit) as store_desccredit,AVG(seval_servicecredit) as store_servicecredit,AVG(seval_deliverycredit) as store_deliverycredit,COUNT(seval_id) as count FROM `33hao_evaluate_store` WHERE ( seval_storeid IN ('16','17','18','19','20','21','22','24','25','26','27','28','29','32','33','34','35','36','37','39','41','43','') ) LIMIT 1   [ RunTime:1,461,401,895.356843s ]SELECT AVG(seval_desccredit) as store_desccredit,AVG(seval_servicecredit) as store_servicecredit,AVG(seval_deliverycredit) as store_deliverycredit,COUNT(seval_id) as count FROM `33hao_evaluate_store` WHERE ( seval_storeid IN ('16','17','18','19','20','21','22','24','25','26','27','28','29','32','33','34','35','36','37','39','41','43','') ) LIMIT 1  
+[2016-04-23 16:58:16] /33hao/mobile/index.php?act=member_order&op=show_order&order_id=312&token=4a26d6eeae9b08df1fce18213c822c28 ( act=member_order&op=show_order ) 
+ERR: SELECT * FROM `33hao_order_goods` WHERE ( order_id = '312' ) ORDER BY rec_id desc LIMIT 1000   [ RunTime:1,461,401,895.356843s ]SELECT * FROM `33hao_order_goods` WHERE ( order_id = '312' ) ORDER BY rec_id desc LIMIT 1000  
+[2016-04-23 16:58:16] /33hao/mobile/index.php?act=member_order&op=show_order&order_id=312&token=4a26d6eeae9b08df1fce18213c822c28 ( act=member_order&op=show_order ) 
+ERR: SELECT * FROM `33hao_refund_return` WHERE ( order_id IN ('312') ) ORDER BY refund_id desc LIMIT 1000   [ RunTime:1,461,401,895.356843s ]SELECT * FROM `33hao_refund_return` WHERE ( order_id IN ('312') ) ORDER BY refund_id desc LIMIT 1000  

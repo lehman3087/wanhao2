@@ -129,7 +129,7 @@ class member_orderControl extends mobileMemberControl {
     public function order_cancelOp() {
         $model_order = Model('order');
         $logic_order = Logic('order');
-        $order_id = intval($_POST['order_id']);
+        $order_id = intval($_REQUEST['order_id']);
 
         $condition = array();
         $condition['order_id'] = $order_id;
@@ -140,7 +140,7 @@ class member_orderControl extends mobileMemberControl {
             output_error('无权操作');
         }
 
-        $result = $logic_order->changeOrderStateCancel($order_info,'buyer', $this->member_info['member_name'], '其它原因');
+        $result = $logic_order->changeOrderStateCancel($order_info,'buyer', $this->member_info['member_name'], $_REQUEST['reason']);
         if(!$result['state']) {
             output_error($result['msg']);
         } else {
@@ -150,6 +150,7 @@ class member_orderControl extends mobileMemberControl {
 
     /**
      * 订单确认收货
+     * 
      */
     public function order_receiveOp() {
         $model_order = Model('order');

@@ -23,7 +23,7 @@ class member_voucherControl extends mobileMemberControl {
      */
     public function voucher_listOp() {
 	$model_voucher = Model('voucher');
-        $voucher_list = $model_voucher->getMemberVoucherList($this->member_info['member_id'], $_POST['voucher_state'], $_POST['pageCount']);
+        $voucher_list = $model_voucher->getMemberVoucherList($this->member_info['member_id'], $_REQUEST['voucher_state'], $this->page);
         $page_count = $model_voucher->gettotalpage();
 
         output_data(array('voucher_list' => $voucher_list), mobile_page($page_count));
