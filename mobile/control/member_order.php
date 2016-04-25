@@ -207,6 +207,7 @@ class member_orderControl extends mobileMemberControl {
     public function _get_express($e_code, $shipping_code){
 
         $url = 'http://www.kuaidi100.com/query?type='.$e_code.'&postid='.$shipping_code.'&id=1&valicode=&temp='.random(4).'&sessionid=&tmp='.random(4);
+      //  var_dump($url);
         import('function.ftp');
         $content = dfsockopen($url);
         $content = json_decode($content,true);
