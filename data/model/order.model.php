@@ -104,9 +104,16 @@ class orderModel extends Model {
      * @return Ambigous <multitype:boolean Ambigous <string, mixed> , unknown>
      */
     public function getOrderList($condition, $pagesize = '', $field = '*', $order = 'order_id desc', $limit = '', $extend = array(), $master = false){
+        
+
         $list = $this->table('order')->field($field)->where($condition)->page($pagesize)->order($order)->limit($limit)->master($master)->select();
+        
+        
+        
         if (empty($list)) return array();
         $order_list = array();
+        
+        
         foreach ($list as $order) {
             if (isset($order['order_state'])) {
                 $order['state_desc'] = orderState($order);

@@ -190,3 +190,127 @@ ERR: SELECT * FROM `33hao_order` WHERE ( order_id = '11' ) AND ( buyer_id = '16'
 ERR: SELECT * FROM `33hao_order_common` WHERE ( order_id = '11' ) LIMIT 1   [ RunTime:1,461,559,089.612383s ]SELECT * FROM `33hao_order_common` WHERE ( order_id = '11' ) LIMIT 1  
 [2016-04-25 12:38:10] /33hao/mobile/index.php?act=member_order&op=search_deliver&token=fea098511f8bcbc448cb7497f03509d0&order_id=11 ( act=member_order&op=search_deliver ) 
 ERR: SELECT * FROM `33hao_order_goods` WHERE ( order_id = '11' ) ORDER BY rec_id desc LIMIT 1000   [ RunTime:1,461,559,089.612383s ]SELECT * FROM `33hao_order_goods` WHERE ( order_id = '11' ) ORDER BY rec_id desc LIMIT 1000  
+[2016-04-25 19:02:29] /33hao/mobile/index.php?act=login&op=index&username=18934488948&password=123456&client=android ( act=login&op=index ) 
+ERR: SELECT * FROM `33hao_member` WHERE ( member_id = NULL ) LIMIT 1   [ RunTime:1,461,582,149.908186s ]SELECT * FROM `33hao_member` WHERE ( member_id = NULL ) LIMIT 1  
+[2016-04-25 19:02:29] /33hao/mobile/index.php?act=login&op=index&username=18934488948&password=123456&client=android ( act=login&op=index ) 
+ERR: SELECT * FROM `33hao_seller` WHERE ( member_id = NULL ) LIMIT 1   [ RunTime:1,461,582,149.908186s ]SELECT * FROM `33hao_seller` WHERE ( member_id = NULL ) LIMIT 1  
+[2016-04-25 19:02:30] /33hao/mobile/index.php?act=login&op=index&username=18934488948&password=123456&client=android ( act=login&op=index ) 
+ERR: SELECT * FROM `33hao_member` WHERE ( (member_name = '18934488948') OR (member_email = '18934488948') OR (member_mobile = '18934488948') ) AND ( member_passwd = 'e10adc3949ba59abbe56e057f20f883e' ) LIMIT 1   [ RunTime:1,461,582,149.908186s ]SELECT * FROM `33hao_member` WHERE ( (member_name = '18934488948') OR (member_email = '18934488948') OR (member_mobile = '18934488948') ) AND ( member_passwd = 'e10adc3949ba59abbe56e057f20f883e' ) LIMIT 1  
+[2016-04-25 19:02:30] /33hao/mobile/index.php?act=login&op=index&username=18934488948&password=123456&client=android ( act=login&op=index ) 
+ERR: SELECT COUNT(*) AS nc_count FROM `33hao_order` WHERE ( buyer_id = NULL ) AND ( order_state = '10' ) LIMIT 1   [ RunTime:1,461,582,149.908186s ]SELECT COUNT(*) AS nc_count FROM `33hao_order` WHERE ( buyer_id = NULL ) AND ( order_state = '10' ) LIMIT 1  
+[2016-04-25 19:02:30] /33hao/mobile/index.php?act=login&op=index&username=18934488948&password=123456&client=android ( act=login&op=index ) 
+ERR: SELECT COUNT(*) AS nc_count FROM `33hao_order` WHERE ( buyer_id = NULL ) AND ( order_state = '30' ) LIMIT 1   [ RunTime:1,461,582,149.908186s ]SELECT COUNT(*) AS nc_count FROM `33hao_order` WHERE ( buyer_id = NULL ) AND ( order_state = '30' ) LIMIT 1  
+[2016-04-25 19:02:30] /33hao/mobile/index.php?act=login&op=index&username=18934488948&password=123456&client=android ( act=login&op=index ) 
+ERR: SELECT COUNT(*) AS nc_count FROM `33hao_order` WHERE ( buyer_id = NULL ) AND ( order_state = '40' ) AND ( evaluation_state = '0' ) LIMIT 1   [ RunTime:1,461,582,149.908186s ]SELECT COUNT(*) AS nc_count FROM `33hao_order` WHERE ( buyer_id = NULL ) AND ( order_state = '40' ) AND ( evaluation_state = '0' ) LIMIT 1  
+[2016-04-25 19:02:30] /33hao/mobile/index.php?act=login&op=index&username=18934488948&password=123456&client=android ( act=login&op=index ) 
+ERR: SELECT COUNT(*) AS nc_count FROM `33hao_order` WHERE ( buyer_id = NULL ) AND ( order_state = '20' ) LIMIT 1   [ RunTime:1,461,582,149.908186s ]SELECT COUNT(*) AS nc_count FROM `33hao_order` WHERE ( buyer_id = NULL ) AND ( order_state = '20' ) LIMIT 1  
+[2016-04-25 19:02:30] /33hao/mobile/index.php?act=login&op=index&username=18934488948&password=123456&client=android ( act=login&op=index ) 
+ERR: INSERT  INTO `33hao_mb_user_token` (member_id,member_name,token,login_time,client_type) VALUES ('16','18934488948','2015e368d4534caa4cc6fefce23a081b','1461582149','android') [ RunTime:1,461,582,149.908186s ]INSERT  INTO `33hao_mb_user_token` (member_id,member_name,token,login_time,client_type) VALUES ('16','18934488948','2015e368d4534caa4cc6fefce23a081b','1461582149','android')
+[2016-04-25 19:03:15] /33hao/mobile/index.php?act=member_order&op=order_list&token=2015e368d4534caa4cc6fefce23a081b ( act=member_order&op=order_list ) 
+ERR: SELECT * FROM `33hao_mb_user_token` WHERE ( token = '2015e368d4534caa4cc6fefce23a081b' ) LIMIT 1   [ RunTime:1,461,582,195.787377s ]SELECT * FROM `33hao_mb_user_token` WHERE ( token = '2015e368d4534caa4cc6fefce23a081b' ) LIMIT 1  
+[2016-04-25 19:03:16] /33hao/mobile/index.php?act=member_order&op=order_list&token=2015e368d4534caa4cc6fefce23a081b ( act=member_order&op=order_list ) 
+ERR: SELECT * FROM `33hao_member` WHERE ( member_id = '16' ) LIMIT 1   [ RunTime:1,461,582,195.787377s ]SELECT * FROM `33hao_member` WHERE ( member_id = '16' ) LIMIT 1  
+[2016-04-25 19:03:16] /33hao/mobile/index.php?act=member_order&op=order_list&token=2015e368d4534caa4cc6fefce23a081b ( act=member_order&op=order_list ) 
+ERR: SELECT * FROM `33hao_seller` WHERE ( member_id = '16' ) LIMIT 1   [ RunTime:1,461,582,195.787377s ]SELECT * FROM `33hao_seller` WHERE ( member_id = '16' ) LIMIT 1  
+[2016-04-25 19:03:16] /33hao/mobile/index.php?act=member_order&op=order_list&token=2015e368d4534caa4cc6fefce23a081b ( act=member_order&op=order_list ) 
+ERR: SELECT COUNT(*) AS nc_count FROM `33hao_order` WHERE ( buyer_id = '16' ) AND ( delete_state = '0' ) LIMIT 1   [ RunTime:1,461,582,195.787377s ]SELECT COUNT(*) AS nc_count FROM `33hao_order` WHERE ( buyer_id = '16' ) AND ( delete_state = '0' ) LIMIT 1  
+[2016-04-25 19:03:16] /33hao/mobile/index.php?act=member_order&op=order_list&token=2015e368d4534caa4cc6fefce23a081b ( act=member_order&op=order_list ) 
+ERR: SELECT * FROM `33hao_order` WHERE ( buyer_id = '16' ) AND ( delete_state = '0' ) ORDER BY order_id desc LIMIT 0,5   [ RunTime:1,461,582,195.787377s ]SELECT * FROM `33hao_order` WHERE ( buyer_id = '16' ) AND ( delete_state = '0' ) ORDER BY order_id desc LIMIT 0,5  
+[2016-04-25 19:03:16] /33hao/mobile/index.php?act=member_order&op=order_list&token=2015e368d4534caa4cc6fefce23a081b ( act=member_order&op=order_list ) 
+ERR: SELECT * FROM `33hao_order_goods` WHERE ( order_id IN ('318','317','315','314','312') ) ORDER BY rec_id desc LIMIT 1000   [ RunTime:1,461,582,195.787377s ]SELECT * FROM `33hao_order_goods` WHERE ( order_id IN ('318','317','315','314','312') ) ORDER BY rec_id desc LIMIT 1000  
+[2016-04-25 19:03:35] /33hao/mobile/index.php?act=member_order&op=order_list&token=2015e368d4534caa4cc6fefce23a081b&order_state=0 ( act=member_order&op=order_list ) 
+ERR: SELECT * FROM `33hao_mb_user_token` WHERE ( token = '2015e368d4534caa4cc6fefce23a081b' ) LIMIT 1   [ RunTime:1,461,582,215.954937s ]SELECT * FROM `33hao_mb_user_token` WHERE ( token = '2015e368d4534caa4cc6fefce23a081b' ) LIMIT 1  
+[2016-04-25 19:03:36] /33hao/mobile/index.php?act=member_order&op=order_list&token=2015e368d4534caa4cc6fefce23a081b&order_state=0 ( act=member_order&op=order_list ) 
+ERR: SELECT * FROM `33hao_member` WHERE ( member_id = '16' ) LIMIT 1   [ RunTime:1,461,582,215.954937s ]SELECT * FROM `33hao_member` WHERE ( member_id = '16' ) LIMIT 1  
+[2016-04-25 19:03:36] /33hao/mobile/index.php?act=member_order&op=order_list&token=2015e368d4534caa4cc6fefce23a081b&order_state=0 ( act=member_order&op=order_list ) 
+ERR: SELECT * FROM `33hao_seller` WHERE ( member_id = '16' ) LIMIT 1   [ RunTime:1,461,582,215.954937s ]SELECT * FROM `33hao_seller` WHERE ( member_id = '16' ) LIMIT 1  
+[2016-04-25 19:03:36] /33hao/mobile/index.php?act=member_order&op=order_list&token=2015e368d4534caa4cc6fefce23a081b&order_state=0 ( act=member_order&op=order_list ) 
+ERR: SELECT COUNT(*) AS nc_count FROM `33hao_order` WHERE ( buyer_id = '16' ) AND ( delete_state = '0' ) LIMIT 1   [ RunTime:1,461,582,215.954937s ]SELECT COUNT(*) AS nc_count FROM `33hao_order` WHERE ( buyer_id = '16' ) AND ( delete_state = '0' ) LIMIT 1  
+[2016-04-25 19:03:36] /33hao/mobile/index.php?act=member_order&op=order_list&token=2015e368d4534caa4cc6fefce23a081b&order_state=0 ( act=member_order&op=order_list ) 
+ERR: SELECT * FROM `33hao_order` WHERE ( buyer_id = '16' ) AND ( delete_state = '0' ) ORDER BY order_id desc LIMIT 0,5   [ RunTime:1,461,582,215.954937s ]SELECT * FROM `33hao_order` WHERE ( buyer_id = '16' ) AND ( delete_state = '0' ) ORDER BY order_id desc LIMIT 0,5  
+[2016-04-25 19:03:36] /33hao/mobile/index.php?act=member_order&op=order_list&token=2015e368d4534caa4cc6fefce23a081b&order_state=0 ( act=member_order&op=order_list ) 
+ERR: SELECT * FROM `33hao_order_goods` WHERE ( order_id IN ('318','317','315','314','312') ) ORDER BY rec_id desc LIMIT 1000   [ RunTime:1,461,582,215.954937s ]SELECT * FROM `33hao_order_goods` WHERE ( order_id IN ('318','317','315','314','312') ) ORDER BY rec_id desc LIMIT 1000  
+[2016-04-25 19:03:39] /33hao/mobile/index.php?act=member_order&op=order_list&token=2015e368d4534caa4cc6fefce23a081b&order_state=0 ( act=member_order&op=order_list ) 
+ERR: SELECT * FROM `33hao_mb_user_token` WHERE ( token = '2015e368d4534caa4cc6fefce23a081b' ) LIMIT 1   [ RunTime:1,461,582,219.697464s ]SELECT * FROM `33hao_mb_user_token` WHERE ( token = '2015e368d4534caa4cc6fefce23a081b' ) LIMIT 1  
+[2016-04-25 19:03:39] /33hao/mobile/index.php?act=member_order&op=order_list&token=2015e368d4534caa4cc6fefce23a081b&order_state=0 ( act=member_order&op=order_list ) 
+ERR: SELECT * FROM `33hao_member` WHERE ( member_id = '16' ) LIMIT 1   [ RunTime:1,461,582,219.697464s ]SELECT * FROM `33hao_member` WHERE ( member_id = '16' ) LIMIT 1  
+[2016-04-25 19:03:39] /33hao/mobile/index.php?act=member_order&op=order_list&token=2015e368d4534caa4cc6fefce23a081b&order_state=0 ( act=member_order&op=order_list ) 
+ERR: SELECT * FROM `33hao_seller` WHERE ( member_id = '16' ) LIMIT 1   [ RunTime:1,461,582,219.697464s ]SELECT * FROM `33hao_seller` WHERE ( member_id = '16' ) LIMIT 1  
+[2016-04-25 19:03:39] /33hao/mobile/index.php?act=member_order&op=order_list&token=2015e368d4534caa4cc6fefce23a081b&order_state=0 ( act=member_order&op=order_list ) 
+ERR: SELECT COUNT(*) AS nc_count FROM `33hao_order` WHERE ( buyer_id = '16' ) AND ( delete_state = '0' ) LIMIT 1   [ RunTime:1,461,582,219.697464s ]SELECT COUNT(*) AS nc_count FROM `33hao_order` WHERE ( buyer_id = '16' ) AND ( delete_state = '0' ) LIMIT 1  
+[2016-04-25 19:03:40] /33hao/mobile/index.php?act=member_order&op=order_list&token=2015e368d4534caa4cc6fefce23a081b&order_state=0 ( act=member_order&op=order_list ) 
+ERR: SELECT * FROM `33hao_order` WHERE ( buyer_id = '16' ) AND ( delete_state = '0' ) ORDER BY order_id desc LIMIT 0,5   [ RunTime:1,461,582,219.697464s ]SELECT * FROM `33hao_order` WHERE ( buyer_id = '16' ) AND ( delete_state = '0' ) ORDER BY order_id desc LIMIT 0,5  
+[2016-04-25 19:03:40] /33hao/mobile/index.php?act=member_order&op=order_list&token=2015e368d4534caa4cc6fefce23a081b&order_state=0 ( act=member_order&op=order_list ) 
+ERR: SELECT * FROM `33hao_order_goods` WHERE ( order_id IN ('318','317','315','314','312') ) ORDER BY rec_id desc LIMIT 1000   [ RunTime:1,461,582,219.697464s ]SELECT * FROM `33hao_order_goods` WHERE ( order_id IN ('318','317','315','314','312') ) ORDER BY rec_id desc LIMIT 1000  
+[2016-04-25 19:06:20] /33hao/mobile/index.php?act=member_order&op=order_list&token=2015e368d4534caa4cc6fefce23a081b&order_state=0 ( act=member_order&op=order_list ) 
+ERR: SELECT * FROM `33hao_mb_user_token` WHERE ( token = '2015e368d4534caa4cc6fefce23a081b' ) LIMIT 1   [ RunTime:1,461,582,380.970386s ]SELECT * FROM `33hao_mb_user_token` WHERE ( token = '2015e368d4534caa4cc6fefce23a081b' ) LIMIT 1  
+[2016-04-25 19:06:21] /33hao/mobile/index.php?act=member_order&op=order_list&token=2015e368d4534caa4cc6fefce23a081b&order_state=0 ( act=member_order&op=order_list ) 
+ERR: SELECT * FROM `33hao_member` WHERE ( member_id = '16' ) LIMIT 1   [ RunTime:1,461,582,380.970386s ]SELECT * FROM `33hao_member` WHERE ( member_id = '16' ) LIMIT 1  
+[2016-04-25 19:06:21] /33hao/mobile/index.php?act=member_order&op=order_list&token=2015e368d4534caa4cc6fefce23a081b&order_state=0 ( act=member_order&op=order_list ) 
+ERR: SELECT * FROM `33hao_seller` WHERE ( member_id = '16' ) LIMIT 1   [ RunTime:1,461,582,380.970386s ]SELECT * FROM `33hao_seller` WHERE ( member_id = '16' ) LIMIT 1  
+[2016-04-25 19:07:02] /33hao/mobile/index.php?act=member_order&op=order_list&token=2015e368d4534caa4cc6fefce23a081b&order_state=0 ( act=member_order&op=order_list ) 
+ERR: SELECT * FROM `33hao_mb_user_token` WHERE ( token = '2015e368d4534caa4cc6fefce23a081b' ) LIMIT 1   [ RunTime:1,461,582,422.270269s ]SELECT * FROM `33hao_mb_user_token` WHERE ( token = '2015e368d4534caa4cc6fefce23a081b' ) LIMIT 1  
+[2016-04-25 19:07:02] /33hao/mobile/index.php?act=member_order&op=order_list&token=2015e368d4534caa4cc6fefce23a081b&order_state=0 ( act=member_order&op=order_list ) 
+ERR: SELECT * FROM `33hao_member` WHERE ( member_id = '16' ) LIMIT 1   [ RunTime:1,461,582,422.270269s ]SELECT * FROM `33hao_member` WHERE ( member_id = '16' ) LIMIT 1  
+[2016-04-25 19:07:02] /33hao/mobile/index.php?act=member_order&op=order_list&token=2015e368d4534caa4cc6fefce23a081b&order_state=0 ( act=member_order&op=order_list ) 
+ERR: SELECT * FROM `33hao_seller` WHERE ( member_id = '16' ) LIMIT 1   [ RunTime:1,461,582,422.270269s ]SELECT * FROM `33hao_seller` WHERE ( member_id = '16' ) LIMIT 1  
+[2016-04-25 19:07:23] /33hao/mobile/index.php?act=member_order&op=order_list&token=2015e368d4534caa4cc6fefce23a081b&order_state=0&abc=1 ( act=member_order&op=order_list ) 
+ERR: SELECT * FROM `33hao_mb_user_token` WHERE ( token = '2015e368d4534caa4cc6fefce23a081b' ) LIMIT 1   [ RunTime:1,461,582,443.881342s ]SELECT * FROM `33hao_mb_user_token` WHERE ( token = '2015e368d4534caa4cc6fefce23a081b' ) LIMIT 1  
+[2016-04-25 19:07:23] /33hao/mobile/index.php?act=member_order&op=order_list&token=2015e368d4534caa4cc6fefce23a081b&order_state=0&abc=1 ( act=member_order&op=order_list ) 
+ERR: SELECT * FROM `33hao_member` WHERE ( member_id = '16' ) LIMIT 1   [ RunTime:1,461,582,443.881342s ]SELECT * FROM `33hao_member` WHERE ( member_id = '16' ) LIMIT 1  
+[2016-04-25 19:07:24] /33hao/mobile/index.php?act=member_order&op=order_list&token=2015e368d4534caa4cc6fefce23a081b&order_state=0&abc=1 ( act=member_order&op=order_list ) 
+ERR: SELECT * FROM `33hao_seller` WHERE ( member_id = '16' ) LIMIT 1   [ RunTime:1,461,582,443.881342s ]SELECT * FROM `33hao_seller` WHERE ( member_id = '16' ) LIMIT 1  
+[2016-04-25 19:07:41] /33hao/mobile/index.php?act=member_order&op=order_list&token=2015e368d4534caa4cc6fefce23a081b&order_state=0&abc=1 ( act=member_order&op=order_list ) 
+ERR: SELECT * FROM `33hao_mb_user_token` WHERE ( token = '2015e368d4534caa4cc6fefce23a081b' ) LIMIT 1   [ RunTime:1,461,582,461.977404s ]SELECT * FROM `33hao_mb_user_token` WHERE ( token = '2015e368d4534caa4cc6fefce23a081b' ) LIMIT 1  
+[2016-04-25 19:07:42] /33hao/mobile/index.php?act=member_order&op=order_list&token=2015e368d4534caa4cc6fefce23a081b&order_state=0&abc=1 ( act=member_order&op=order_list ) 
+ERR: SELECT * FROM `33hao_member` WHERE ( member_id = '16' ) LIMIT 1   [ RunTime:1,461,582,461.977404s ]SELECT * FROM `33hao_member` WHERE ( member_id = '16' ) LIMIT 1  
+[2016-04-25 19:07:42] /33hao/mobile/index.php?act=member_order&op=order_list&token=2015e368d4534caa4cc6fefce23a081b&order_state=0&abc=1 ( act=member_order&op=order_list ) 
+ERR: SELECT * FROM `33hao_seller` WHERE ( member_id = '16' ) LIMIT 1   [ RunTime:1,461,582,461.977404s ]SELECT * FROM `33hao_seller` WHERE ( member_id = '16' ) LIMIT 1  
+[2016-04-25 19:08:28] /33hao/mobile/index.php?act=member_order&op=order_list&token=2015e368d4534caa4cc6fefce23a081b&order_state=0&abc=1 ( act=member_order&op=order_list ) 
+ERR: SELECT * FROM `33hao_mb_user_token` WHERE ( token = '2015e368d4534caa4cc6fefce23a081b' ) LIMIT 1   [ RunTime:1,461,582,508.832204s ]SELECT * FROM `33hao_mb_user_token` WHERE ( token = '2015e368d4534caa4cc6fefce23a081b' ) LIMIT 1  
+[2016-04-25 19:08:28] /33hao/mobile/index.php?act=member_order&op=order_list&token=2015e368d4534caa4cc6fefce23a081b&order_state=0&abc=1 ( act=member_order&op=order_list ) 
+ERR: SELECT * FROM `33hao_member` WHERE ( member_id = '16' ) LIMIT 1   [ RunTime:1,461,582,508.832204s ]SELECT * FROM `33hao_member` WHERE ( member_id = '16' ) LIMIT 1  
+[2016-04-25 19:08:29] /33hao/mobile/index.php?act=member_order&op=order_list&token=2015e368d4534caa4cc6fefce23a081b&order_state=0&abc=1 ( act=member_order&op=order_list ) 
+ERR: SELECT * FROM `33hao_seller` WHERE ( member_id = '16' ) LIMIT 1   [ RunTime:1,461,582,508.832204s ]SELECT * FROM `33hao_seller` WHERE ( member_id = '16' ) LIMIT 1  
+[2016-04-25 19:08:37] /33hao/mobile/index.php?act=member_order&op=order_list&token=2015e368d4534caa4cc6fefce23a081b&order_state=0&abc=1 ( act=member_order&op=order_list ) 
+ERR: SELECT * FROM `33hao_mb_user_token` WHERE ( token = '2015e368d4534caa4cc6fefce23a081b' ) LIMIT 1   [ RunTime:1,461,582,517.499625s ]SELECT * FROM `33hao_mb_user_token` WHERE ( token = '2015e368d4534caa4cc6fefce23a081b' ) LIMIT 1  
+[2016-04-25 19:08:37] /33hao/mobile/index.php?act=member_order&op=order_list&token=2015e368d4534caa4cc6fefce23a081b&order_state=0&abc=1 ( act=member_order&op=order_list ) 
+ERR: SELECT * FROM `33hao_member` WHERE ( member_id = '16' ) LIMIT 1   [ RunTime:1,461,582,517.499625s ]SELECT * FROM `33hao_member` WHERE ( member_id = '16' ) LIMIT 1  
+[2016-04-25 19:08:37] /33hao/mobile/index.php?act=member_order&op=order_list&token=2015e368d4534caa4cc6fefce23a081b&order_state=0&abc=1 ( act=member_order&op=order_list ) 
+ERR: SELECT * FROM `33hao_seller` WHERE ( member_id = '16' ) LIMIT 1   [ RunTime:1,461,582,517.499625s ]SELECT * FROM `33hao_seller` WHERE ( member_id = '16' ) LIMIT 1  
+[2016-04-25 19:08:52] /33hao/mobile/index.php?act=member_order&op=order_list&token=2015e368d4534caa4cc6fefce23a081b&order_state=0&abc=1 ( act=member_order&op=order_list ) 
+ERR: SELECT * FROM `33hao_mb_user_token` WHERE ( token = '2015e368d4534caa4cc6fefce23a081b' ) LIMIT 1   [ RunTime:1,461,582,532.802275s ]SELECT * FROM `33hao_mb_user_token` WHERE ( token = '2015e368d4534caa4cc6fefce23a081b' ) LIMIT 1  
+[2016-04-25 19:08:52] /33hao/mobile/index.php?act=member_order&op=order_list&token=2015e368d4534caa4cc6fefce23a081b&order_state=0&abc=1 ( act=member_order&op=order_list ) 
+ERR: SELECT * FROM `33hao_member` WHERE ( member_id = '16' ) LIMIT 1   [ RunTime:1,461,582,532.802275s ]SELECT * FROM `33hao_member` WHERE ( member_id = '16' ) LIMIT 1  
+[2016-04-25 19:08:52] /33hao/mobile/index.php?act=member_order&op=order_list&token=2015e368d4534caa4cc6fefce23a081b&order_state=0&abc=1 ( act=member_order&op=order_list ) 
+ERR: SELECT * FROM `33hao_seller` WHERE ( member_id = '16' ) LIMIT 1   [ RunTime:1,461,582,532.802275s ]SELECT * FROM `33hao_seller` WHERE ( member_id = '16' ) LIMIT 1  
+[2016-04-25 19:09:16] /33hao/mobile/index.php?act=member_order&op=order_list&token=2015e368d4534caa4cc6fefce23a081b&order_state=0&abc=1 ( act=member_order&op=order_list ) 
+ERR: SELECT * FROM `33hao_mb_user_token` WHERE ( token = '2015e368d4534caa4cc6fefce23a081b' ) LIMIT 1   [ RunTime:1,461,582,556.703440s ]SELECT * FROM `33hao_mb_user_token` WHERE ( token = '2015e368d4534caa4cc6fefce23a081b' ) LIMIT 1  
+[2016-04-25 19:09:16] /33hao/mobile/index.php?act=member_order&op=order_list&token=2015e368d4534caa4cc6fefce23a081b&order_state=0&abc=1 ( act=member_order&op=order_list ) 
+ERR: SELECT * FROM `33hao_member` WHERE ( member_id = '16' ) LIMIT 1   [ RunTime:1,461,582,556.703440s ]SELECT * FROM `33hao_member` WHERE ( member_id = '16' ) LIMIT 1  
+[2016-04-25 19:09:16] /33hao/mobile/index.php?act=member_order&op=order_list&token=2015e368d4534caa4cc6fefce23a081b&order_state=0&abc=1 ( act=member_order&op=order_list ) 
+ERR: SELECT * FROM `33hao_seller` WHERE ( member_id = '16' ) LIMIT 1   [ RunTime:1,461,582,556.703440s ]SELECT * FROM `33hao_seller` WHERE ( member_id = '16' ) LIMIT 1  
+[2016-04-25 19:09:24] /33hao/mobile/index.php?act=member_order&op=order_list&token=2015e368d4534caa4cc6fefce23a081b&order_state=0&abc=1 ( act=member_order&op=order_list ) 
+ERR: SELECT * FROM `33hao_mb_user_token` WHERE ( token = '2015e368d4534caa4cc6fefce23a081b' ) LIMIT 1   [ RunTime:1,461,582,564.913943s ]SELECT * FROM `33hao_mb_user_token` WHERE ( token = '2015e368d4534caa4cc6fefce23a081b' ) LIMIT 1  
+[2016-04-25 19:09:25] /33hao/mobile/index.php?act=member_order&op=order_list&token=2015e368d4534caa4cc6fefce23a081b&order_state=0&abc=1 ( act=member_order&op=order_list ) 
+ERR: SELECT * FROM `33hao_member` WHERE ( member_id = '16' ) LIMIT 1   [ RunTime:1,461,582,564.913943s ]SELECT * FROM `33hao_member` WHERE ( member_id = '16' ) LIMIT 1  
+[2016-04-25 19:09:25] /33hao/mobile/index.php?act=member_order&op=order_list&token=2015e368d4534caa4cc6fefce23a081b&order_state=0&abc=1 ( act=member_order&op=order_list ) 
+ERR: SELECT * FROM `33hao_seller` WHERE ( member_id = '16' ) LIMIT 1   [ RunTime:1,461,582,564.913943s ]SELECT * FROM `33hao_seller` WHERE ( member_id = '16' ) LIMIT 1  
+[2016-04-25 19:09:40] /33hao/mobile/index.php?act=member_order&op=order_list&token=2015e368d4534caa4cc6fefce23a081b&order_state=0&abc=1 ( act=member_order&op=order_list ) 
+ERR: SELECT * FROM `33hao_mb_user_token` WHERE ( token = '2015e368d4534caa4cc6fefce23a081b' ) LIMIT 1   [ RunTime:1,461,582,580.753438s ]SELECT * FROM `33hao_mb_user_token` WHERE ( token = '2015e368d4534caa4cc6fefce23a081b' ) LIMIT 1  
+[2016-04-25 19:09:40] /33hao/mobile/index.php?act=member_order&op=order_list&token=2015e368d4534caa4cc6fefce23a081b&order_state=0&abc=1 ( act=member_order&op=order_list ) 
+ERR: SELECT * FROM `33hao_member` WHERE ( member_id = '16' ) LIMIT 1   [ RunTime:1,461,582,580.753438s ]SELECT * FROM `33hao_member` WHERE ( member_id = '16' ) LIMIT 1  
+[2016-04-25 19:09:40] /33hao/mobile/index.php?act=member_order&op=order_list&token=2015e368d4534caa4cc6fefce23a081b&order_state=0&abc=1 ( act=member_order&op=order_list ) 
+ERR: SELECT * FROM `33hao_seller` WHERE ( member_id = '16' ) LIMIT 1   [ RunTime:1,461,582,580.753438s ]SELECT * FROM `33hao_seller` WHERE ( member_id = '16' ) LIMIT 1  
+[2016-04-25 19:09:48] /33hao/mobile/index.php?act=member_order&op=order_list&token=2015e368d4534caa4cc6fefce23a081b&order_state=0&abc=1 ( act=member_order&op=order_list ) 
+ERR: SELECT * FROM `33hao_mb_user_token` WHERE ( token = '2015e368d4534caa4cc6fefce23a081b' ) LIMIT 1   [ RunTime:1,461,582,588.160014s ]SELECT * FROM `33hao_mb_user_token` WHERE ( token = '2015e368d4534caa4cc6fefce23a081b' ) LIMIT 1  
+[2016-04-25 19:09:48] /33hao/mobile/index.php?act=member_order&op=order_list&token=2015e368d4534caa4cc6fefce23a081b&order_state=0&abc=1 ( act=member_order&op=order_list ) 
+ERR: SELECT * FROM `33hao_member` WHERE ( member_id = '16' ) LIMIT 1   [ RunTime:1,461,582,588.160014s ]SELECT * FROM `33hao_member` WHERE ( member_id = '16' ) LIMIT 1  
+[2016-04-25 19:09:48] /33hao/mobile/index.php?act=member_order&op=order_list&token=2015e368d4534caa4cc6fefce23a081b&order_state=0&abc=1 ( act=member_order&op=order_list ) 
+ERR: SELECT * FROM `33hao_seller` WHERE ( member_id = '16' ) LIMIT 1   [ RunTime:1,461,582,588.160014s ]SELECT * FROM `33hao_seller` WHERE ( member_id = '16' ) LIMIT 1  
+[2016-04-25 19:09:48] /33hao/mobile/index.php?act=member_order&op=order_list&token=2015e368d4534caa4cc6fefce23a081b&order_state=0&abc=1 ( act=member_order&op=order_list ) 
+ERR: SELECT COUNT(*) AS nc_count FROM `33hao_order` WHERE ( buyer_id = '16' ) AND ( order_state = '0' ) AND ( delete_state = '0' ) LIMIT 1   [ RunTime:1,461,582,588.160014s ]SELECT COUNT(*) AS nc_count FROM `33hao_order` WHERE ( buyer_id = '16' ) AND ( order_state = '0' ) AND ( delete_state = '0' ) LIMIT 1  
+[2016-04-25 19:09:48] /33hao/mobile/index.php?act=member_order&op=order_list&token=2015e368d4534caa4cc6fefce23a081b&order_state=0&abc=1 ( act=member_order&op=order_list ) 
+ERR: SELECT * FROM `33hao_order` WHERE ( buyer_id = '16' ) AND ( order_state = '0' ) AND ( delete_state = '0' ) ORDER BY order_id desc LIMIT 0,5   [ RunTime:1,461,582,588.160014s ]SELECT * FROM `33hao_order` WHERE ( buyer_id = '16' ) AND ( order_state = '0' ) AND ( delete_state = '0' ) ORDER BY order_id desc LIMIT 0,5  
+[2016-04-25 19:09:48] /33hao/mobile/index.php?act=member_order&op=order_list&token=2015e368d4534caa4cc6fefce23a081b&order_state=0&abc=1 ( act=member_order&op=order_list ) 
+ERR: SELECT * FROM `33hao_order_goods` WHERE ( order_id IN ('314','305','303','300','221') ) ORDER BY rec_id desc LIMIT 1000   [ RunTime:1,461,582,588.160014s ]SELECT * FROM `33hao_order_goods` WHERE ( order_id IN ('314','305','303','300','221') ) ORDER BY rec_id desc LIMIT 1000  
