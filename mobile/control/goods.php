@@ -146,10 +146,10 @@ class goodsControl extends mobileHomeControl{
         
      //   var_dump('1');
         
-       $post=$this->read_json();  
-        $arr=OTA($post);
-        $_REQUEST=array_merge($_REQUEST,$arr);
-        
+//       $post=$this->read_json();  
+//        $arr=OTA($post);
+//        $_REQUEST=array_merge($_REQUEST,$arr);
+//        
         $condition=$this->_dealCondition($_REQUEST['conditions']);
         
         
@@ -168,8 +168,8 @@ class goodsControl extends mobileHomeControl{
         
        
         $goods_list = $model_goods->getGoodsOnlineList($condition, $fieldstr,0);
-
-        $data=array();
+        
+     
         foreach ($goods_list as $goods) {
             $data['classes'][]=$this->_get_class_list($goods['gc_id_1']);
         }
@@ -198,12 +198,42 @@ class goodsControl extends mobileHomeControl{
     
      public function classs_filterOp() {
          
-         $gc=$this->_get_class_list($_REQUEST['gc_id']);
-         
-         $data['classes']=$gc['subClass'];
-         $ids=$gc['child'].','.$_REQUEST['gc_id'];
-         $data['brand_list'] = Model('brand')->field('brand_id,brand_name')->where(array('class_id'=>array('in',$ids)))->order('brand_sort asc')->select();
+        $model_goods = Model('goods');
+ 
         
+         if(!empty($_REQUEST['keyword'])){
+               $fieldstr3 = "DISTINCT(gc_id_2) as gc_id_2";
+               $condition1['goods_name|goods_jingle'] = array('like', '%' . $_REQUEST['keyword'] . '%');
+               $goods_list2 = $model_goods->getGoodsOnlineList($condition1, $fieldstr3,0);
+               
+               $fieldstr4 = "DISTINCT(brand_id) as brand_id";
+               $goods_list3 = $model_goods->getGoodsOnlineList($condition1, $fieldstr4,0);
+              
+               
+               $marray=array();
+               foreach ($goods_list2 as $value) {
+                   $gc=$this->_get_class_list($value['gc_id_2']);
+                   $marray=array_merge($marray,$gc['subClass']);
+                   //$data['classes'] += $gc['subClass'];
+               }
+               $data['classes']=$marray;
+               $brandIds=array();
+               foreach ($goods_list3 as $goods) {
+                   $brandIds[]=$goods['brand_id'];
+               }
+               $ids=  implode(",", $brandIds);
+               $data['brand_list'] = Model('brand')->field('brand_id,brand_name')->where(array('brand_id'=>array('in',$ids)))->order('brand_sort asc')->select();                
+         }else{
+             
+           $gc=$this->_get_class_list($_REQUEST['gc_id']);
+            $data['classes']=$gc['subClass'];
+            $ids=$gc['child'].','.$_REQUEST['gc_id'];
+            $data['brand_list'] = Model('brand')->field('brand_id,brand_name')->where(array('class_id'=>array('in',$ids)))->order('brand_sort asc')->select();
+         
+            
+         }
+         
+         
          output_data($data);
          //var_dump($data);
          
@@ -216,7 +246,6 @@ class goodsControl extends mobileHomeControl{
         $goods_class_array = Model('goods_class')->getGoodsClassForCacheModel();
 
         $goods_class = $goods_class_array[$gc_id];
-        
        // $data=$goods_class['']
         if(empty($goods_class['child'])) {
             //无下级分类返回0
@@ -239,6 +268,8 @@ class goodsControl extends mobileHomeControl{
             return $goods_class;
            // output_data(array('class_list' => $class_list));
         }
+        
+        
     }
     
     

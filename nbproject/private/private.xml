@@ -12,11 +12,20 @@
     </editor-bookmarks>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/Applications/MAMP/htdocs/33hao/mobile/control/member_cart.php</file>
+            <file>file:/Applications/MAMP/htdocs/33hao/shop/control/control.php</file>
+            <file>file:/Applications/MAMP/htdocs/33hao/mobile/control/member_index.php</file>
             <file>file:/Applications/MAMP/htdocs/33hao/mobile/framework/function/function.php</file>
-            <file>file:/Applications/MAMP/htdocs/33hao/mobile/control/member_payment.php</file>
             <file>file:/Applications/MAMP/htdocs/33hao/data/model/order.model.php</file>
+            <file>file:/Applications/MAMP/htdocs/33hao/core/framework/libraries/page.php</file>
             <file>file:/Applications/MAMP/htdocs/33hao/mobile/control/member_buy.php</file>
+            <file>file:/Applications/MAMP/htdocs/33hao/mobile/control/index.php</file>
+            <file>file:/Applications/MAMP/htdocs/33hao/mobile/control/login.php</file>
+            <file>file:/Applications/MAMP/htdocs/33hao/core/framework/libraries/model.php</file>
+            <file>file:/Applications/MAMP/htdocs/33hao/mobile/control/control.php</file>
+            <file>file:/Applications/MAMP/htdocs/33hao/mobile/control/member_cart.php</file>
+            <file>file:/Applications/MAMP/htdocs/33hao/mobile/control/goods.php</file>
+            <file>file:/Applications/MAMP/htdocs/33hao/mobile/control/member_payment.php</file>
+            <file>file:/Applications/MAMP/htdocs/33hao/mobile/control/member_invoice.php</file>
             <file>file:/Applications/MAMP/htdocs/33hao/mobile/control/member_order.php</file>
         </group>
     </open-files>

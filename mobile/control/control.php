@@ -71,6 +71,9 @@ class mobileControl{
                 }elseif ($value['matchType']==10) {
                    $type =  'in';
                   $val=explode(',',$value['matchValue']);
+                }elseif ($value['matchType']==1) {
+                   $type =  'eq';
+                  $val=$value['matchValue'];
                 }
                 $kv[]=$type;
                 $kv[]=$val;
