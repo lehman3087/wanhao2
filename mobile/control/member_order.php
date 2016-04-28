@@ -31,9 +31,9 @@ class member_orderControl extends mobileMemberControl {
         if($_REQUEST['order_state']!=''){
              $condition['order_state']=$_REQUEST['order_state'];
         }
-        
 
         $order_list_array = $model_order->getNormalOrderList($condition, $this->page, '*', 'order_id desc','', array('order_goods'));
+        
         
         $order_group_list = array();
         $order_pay_sn_array = array();

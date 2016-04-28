@@ -244,7 +244,7 @@ class Page{
 			$tmp = 0;
 		}else {
             $this->setTotalPage();
-            $this->now_page = $this->now_page > $this->total_page ? $this->total_page : $this->now_page;
+            $this->now_page = $this->now_page > $this->total_page+1 ? $this->total_page+1 : $this->now_page;
 			$tmp = ($this->getNowPage()-1)*$this->getEachNum();
 		}
 		return $tmp;
