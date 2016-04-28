@@ -221,4 +221,16 @@ class member_indexControl extends mobileMemberControl {
              }
         }
         
+        public function upSexOp() {
+            $model_member	=       Model('member');
+            $member_array['member_sex']	=   $_REQUEST['member_sex'];
+            $update = $model_member->editMember(array('member_id'=>$this->member_info['member_id']),$member_array);
+            if($update){
+                            output_suc($_REQUEST['member_avatar']);
+                        }else{
+                            output_special_code('10500');
+             }
+        }
+        
+        
 }   

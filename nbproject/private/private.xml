@@ -12,54 +12,12 @@
     </editor-bookmarks>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/Applications/MAMP/htdocs/33hao/shop/control/search.php</file>
-            <file>file:/Applications/MAMP/htdocs/33hao/data/model/evaluate_goods.model.php</file>
-            <file>file:/Applications/MAMP/htdocs/33hao/data/model/p_bundling.model.php</file>
-            <file>file:/Applications/MAMP/htdocs/33hao/mobile/control/member_address.php</file>
-            <file>file:/Applications/MAMP/htdocs/33hao/shop/control/member_address.php</file>
-            <file>file:/Applications/MAMP/htdocs/33hao/shop/templates/default/seller/index.php</file>
-            <file>file:/Applications/MAMP/htdocs/33hao/shop/templates/default/buy/buy_address.php</file>
-            <file>file:/Applications/MAMP/htdocs/33hao/wap/js/rg.js</file>
-            <file>file:/Applications/MAMP/htdocs/33hao/shop/language/zh_cn/store_goods_index.php</file>
-            <file>file:/Applications/MAMP/htdocs/33hao/data/logic/buy_1.logic.php</file>
-            <file>file:/Applications/MAMP/htdocs/33hao/shop/templates/default/store/index.php</file>
-            <file>file:/Applications/MAMP/htdocs/33hao/shop/control/store_info.php</file>
+            <file>file:/Applications/MAMP/htdocs/33hao/mobile/control/member_cart.php</file>
+            <file>file:/Applications/MAMP/htdocs/33hao/mobile/framework/function/function.php</file>
+            <file>file:/Applications/MAMP/htdocs/33hao/mobile/control/member_payment.php</file>
+            <file>file:/Applications/MAMP/htdocs/33hao/data/model/order.model.php</file>
             <file>file:/Applications/MAMP/htdocs/33hao/mobile/control/member_buy.php</file>
-            <file>file:/Applications/MAMP/htdocs/33hao/data/model/store.model.php</file>
-            <file>file:/Applications/MAMP/htdocs/33hao/install/include/function.php</file>
-            <file>file:/Applications/MAMP/htdocs/33hao/mobile/control/member_goods.php</file>
-            <file>file:/Applications/MAMP/htdocs/33hao/admin/include/menu.php</file>
-            <file>file:/Applications/MAMP/htdocs/33hao/admin/control/predeposit.php</file>
-            <file>file:/Applications/MAMP/htdocs/33hao/shop/control/show_store.php</file>
-            <file>file:/Applications/MAMP/htdocs/33hao/mobile/control/control.php</file>
-            <file>file:/Applications/MAMP/htdocs/33hao/mobile/control/tool.php</file>
-            <file>file:/Applications/MAMP/htdocs/33hao/shop/templates/default/store/goods.php</file>
-            <file>file:/Applications/MAMP/htdocs/33hao/mobile/control/goods.php</file>
-            <file>file:/Applications/MAMP/htdocs/33hao/shop/control/index.php</file>
-            <file>file:/Applications/MAMP/htdocs/33hao/mobile/control/voucher.php</file>
-            <file>file:/Applications/MAMP/htdocs/33hao/shop/control/member_storesns.php</file>
             <file>file:/Applications/MAMP/htdocs/33hao/mobile/control/member_order.php</file>
-            <file>file:/Applications/MAMP/htdocs/33hao/wap/requireGuide.html</file>
-            <file>file:/Applications/MAMP/htdocs/33hao/shop/templates/default/buy/buy_step1.php</file>
-            <file>file:/Applications/MAMP/htdocs/33hao/shop/control/control.php</file>
-            <file>file:/Applications/MAMP/htdocs/33hao/weimobile/control/member_buy.php</file>
-            <file>file:/Applications/MAMP/htdocs/33hao/data/config/config.ini.php</file>
-            <file>file:/Applications/MAMP/htdocs/33hao/wap/js/config.js</file>
-            <file>file:/Applications/MAMP/htdocs/33hao/data/model/cart.model.php</file>
-            <file>file:/Applications/MAMP/htdocs/33hao/shop/control/goods.php</file>
-            <file>file:/Applications/MAMP/htdocs/33hao/admin/control/mb_special.php</file>
-            <file>file:/Applications/MAMP/htdocs/33hao/mobile/control/member_evaluate.php</file>
-            <file>file:/Applications/MAMP/htdocs/33hao/data/model/goods.model.php</file>
-            <file>file:/Applications/MAMP/htdocs/33hao/mobile/control/shop.php</file>
-            <file>file:/Applications/MAMP/htdocs/33hao/core/framework/libraries/model.php</file>
-            <file>file:/Applications/MAMP/htdocs/33hao/core/framework/libraries/uploadfile.php</file>
-            <file>file:/Applications/MAMP/htdocs/33hao/mobile/control/store.php</file>
-            <file>file:/Applications/MAMP/htdocs/33hao/mobile/control/goods_class.php</file>
-            <file>file:/Applications/MAMP/htdocs/33hao/mobile/control/member_favorites.php</file>
-            <file>file:/Applications/MAMP/htdocs/33hao/mobile/control/member_invoice.php</file>
-            <file>file:/Applications/MAMP/htdocs/33hao/shop/control/member_favorites.php</file>
-            <file>file:/Applications/MAMP/htdocs/33hao/data/model/groupbuy.model.php</file>
-            <file>file:/Applications/MAMP/htdocs/33hao/shop/templates/default/store/info.php</file>
         </group>
     </open-files>
 </project-private>
