@@ -221,6 +221,7 @@ class goodsControl extends mobileHomeControl{
                foreach ($goods_list3 as $goods) {
                    $brandIds[]=$goods['brand_id'];
                }
+               $data['request']=$_REQUEST;
                $ids=  implode(",", $brandIds);
                $data['brand_list'] = Model('brand')->field('brand_id,brand_name')->where(array('brand_id'=>array('in',$ids)))->order('brand_sort asc')->select();                
          }else{
