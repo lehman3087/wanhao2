@@ -375,18 +375,16 @@ class storeControl extends mobileHomeControl{
                 
 		$model_stracelog = Model('store_sns_tracelog');
 		$strace_array = $model_stracelog->getStoreSnsTracelogList($where, '*', 'strace_id desc', 0,$this->page);
-               
 		// 整理
-
                 $count=$model_stracelog->getStoreSnsTracelogCount($where);
               
-                if(!empty($strace_array)){
-                   output_data(array('strace_array' => $strace_array,'total'=>$count));
+                //if(!empty($strace_array)){
+                   output_data(array('strace_array' => $strace_array),mobile_page($count));
                  //   output_data(array('strace_array' => $strace_array,'total'=>$count,'max_recordnum'=>20,'nchash'=>substr(md5('whshop'.$_REQUEST['act'].$_REQUEST['op']),0,8)));
                    //output_data($storeList,array('statuCode'=>array('10200'),'total'=>$count));
-                }else{
-                   output_error('10404');
-                }
+               // }else{
+                //   output_error('10404');
+               // }
             
 //		Tpl::output('show_page',$model_stracelog->showpage(2));
 		// 最多收藏的会员
