@@ -47,7 +47,7 @@ class member_favoritesControl extends mobileMemberControl {
      * 添加收藏
      */
     public function favoritesgoodsOp() {
-		$goods_id = intval($_POST['goods_id']);
+		$goods_id = intval($_REQUEST['goods_id']);
 		if ($goods_id <= 0){
                     output_error('参数错误');
 		}
