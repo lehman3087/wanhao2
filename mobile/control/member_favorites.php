@@ -168,7 +168,7 @@ class member_favoritesControl extends mobileMemberControl {
 			//增加收藏数量
 			$store_model = Model('store');
                         $store_model->editStore(array('store_collect'=>array('exp', 'store_collect+1')), array('store_id' => $fav_id));
-			output_suc('1');
+			output_data('1');
 		}else{
                     output_error('收藏失败');
 		}
