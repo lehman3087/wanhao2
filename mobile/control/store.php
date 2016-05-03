@@ -136,10 +136,18 @@ class storeControl extends mobileHomeControl{
         }
         
         
-       $store_detail['store_banner'] = getStoreLogo($store_detail['store_banner'],'store_logo');
-                
+      
+        
+
         $store_detail['store_pf'] = $store_info['store_credit'];
         $store_detail['store_info'] = $store_info;
+      //  $store_detail['store_banner'] = getStoreLogo($store_info['store_banner'],'store_banner');
+        
+        
+//        var_dump($store_detail);
+//        exit();
+        
+         
         // //店铺导航
          $model_store_navigation = Model('store_navigation');
          $store_navigation_list = $model_store_navigation->getStoreNavigationList(array('sn_store_id' => $store_id));
@@ -192,8 +200,7 @@ class storeControl extends mobileHomeControl{
         }
         
         	
-                
-        
+        $store_detail['store_banner'] = getStoreLogo($store_info['store_banner'],'store_banner');
          output_data($store_detail);
          
     }
