@@ -107,7 +107,7 @@ class storeModel extends Model {
 	 * @param string $field 字段
      * @return array
 	 */
-    public function getStoreOnlineIdArray($condition, $page = null, $order = '', $field = 'store_id,store_name') {
+    public function getStoreOnlineIdArray($condition, $page = null, $order = '', $field = 'store_id,store_name,store_avatar') {
          $condition=$this->_dealCondition($condition);
          $order=$this->_dealOrder($order);
         $condition['store_state'] = 1;
@@ -462,6 +462,7 @@ class storeModel extends Model {
     	if (!empty($list) && is_array($list)){
     		foreach ($list as $key=>$value) {
     			if(!empty($value)) {
+                                
     				$value['store_logo'] = getStoreLogo($value['store_avatar']);
     				//店铺评价
     				$model_evaluate_store = Model('evaluate_store');

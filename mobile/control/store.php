@@ -243,7 +243,8 @@ class storeControl extends mobileHomeControl{
           //  exit('123');
             $storeList=$model_store->getStoreOnlineIdArray($post->conditions,$post->pageCount,$post->sortType);
             
-            
+//            var_dump($storeList);
+//            exit();
             $storeListBasic = $model_store-> getStoreInfoBasic($storeList);
             
             $count=$model_store->getStoreCount2($post->conditions);
