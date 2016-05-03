@@ -129,10 +129,15 @@ class storeControl extends mobileHomeControl{
         
         $store_info = $model_store->getStoreOnlineInfoByID($store_id);
         
+       
+        
         if (empty($store_info)) {
             output_error('404');
         }
         
+        
+       $store_detail['store_banner'] = getStoreLogo($store_detail['store_banner'],'store_logo');
+                
         $store_detail['store_pf'] = $store_info['store_credit'];
         $store_detail['store_info'] = $store_info;
         // //店铺导航
@@ -191,13 +196,6 @@ class storeControl extends mobileHomeControl{
         
          output_data($store_detail);
          
-//         if(!empty($this->member_info['member_id'])){
-//          Model('goods_browse')->addViewedGoods($goods_id,$this->member_info['member_id'],$goods_detail['goods_info']['store_id']);
-//        }
-        
-
-        
-        
     }
 
     /**
