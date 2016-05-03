@@ -45,6 +45,19 @@
             </span></td>
           <td class="vatop tips">100px * 100px</td>
         </tr>
+        
+        <tr>
+          <td colspan="2" class="required"><label for="default_store_banner">默认店铺条幅:</label></td>
+        </tr>
+        <tr class="noborder">
+          <td class="vatop rowform"><span class="type-file-show"><img class="show_image" src="<?php echo ADMIN_TEMPLATES_URL;?>/images/preview.png">
+            <div class="type-file-preview"><img src="<?php echo UPLOAD_SITE_URL.'/'.(ATTACH_COMMON.'/'.$output['list_setting']['default_store_banner']);?>"></div>
+            </span><span class="type-file-box">
+            <input class="type-file-file" id="default_store_banner" name="default_store_banner" type="file" size="30" hidefocus="true" nc_type="change_default_store_banner" title="<?php echo $lang['default_store_banner'];?>">
+            </span></td>
+          <td class="vatop tips">1000px * 250px</td>
+        </tr>
+        
         <tr>
           <td colspan="2" class="required"><label for="default_user_portrait"><?php echo $lang['default_user_pic'];?>:</label></td>
         </tr>
@@ -86,6 +99,12 @@ $(function(){
     $(textButton).insertBefore("#default_store_avatar");
     $("#default_store_avatar").change(function(){
 	$("#textfield3").val($("#default_store_avatar").val());
+    });
+    // 模拟默认店铺图片上传input type='file'样式
+    	var textButton="<input type='text' name='textfield' id='textfield10' class='type-file-text' /><input type='button' name='button' id='button3' value='' class='type-file-button' />"
+    $(textButton).insertBefore("#default_store_banner");
+    $("#default_store_banner").change(function(){
+	$("#textfield10").val($("#default_store_banner").val());
     });
 // 模拟默认用户图片上传input type='file'样式
 	var textButton="<input type='text' name='textfield' id='textfield4' class='type-file-text' /><input type='button' name='button' id='button4' value='' class='type-file-button' />"

@@ -43,6 +43,7 @@
   'decoration_style' => 'a:14:{i:0;s:8:"566A57qm";i:1;s:8:"546w5Luj";i:2;s:8:"5Lit5byP";i:3;s:8:"5qyn5byP";i:4;s:8:"576O5byP";i:5;s:8:"55Sw5Zut";i:6;s:12:"5paw5Y+k5YW4";i:7;s:8:"5re35pCt";i:8;s:12:"5Zyw5Lit5rW3";i:9;s:12:"5Lic5Y2X5Lqa";i:10;s:8:"5pel5byP";i:11;s:8:"5a6c5a62";i:12;s:8:"5YyX5qyn";i:13;s:8:"566A5qyn";}',
   'default_goods_image' => 'default_goods_image.gif',
   'default_store_avatar' => 'default_store_avatar.gif',
+  'default_store_banner' => '05156013860842597.jpg',
   'default_store_logo' => 'default_store_logo.gif',
   'default_user_portrait' => 'default_user_portrait.gif',
   'delivery_isuse' => '1',

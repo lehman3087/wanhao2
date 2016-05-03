@@ -973,8 +973,12 @@ function getStoreLogo($img, $type = 'store_avatar'){
         } else {
             return UPLOAD_SITE_URL.DS.ATTACH_STORE.DS.$img;
         }
-    }else{
-        return UPLOAD_SITE_URL.DS.ATTACH_COMMON.DS.C('default_store_banner');
+    }else if ($type == 'store_banner'){
+        if (empty($img)) {
+            return UPLOAD_SITE_URL.DS.ATTACH_COMMON.DS.C('default_store_banner');
+        } else {
+            return UPLOAD_SITE_URL.DS.ATTACH_STORE.DS.$img;
+        }
     }
 }
 

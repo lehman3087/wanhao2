@@ -180,6 +180,21 @@ class uploadControl extends SystemControl{
 			        showMessage($upload->error,'','','error');
 			    }
 			}
+                        
+                        //默认店铺banner
+			if (!empty($_FILES['default_store_banner']['tmp_name'])){
+			    $upload->set('file_name', '');
+			    $upload->set('thumb_width',	0);
+			    $upload->set('thumb_height',0);
+			    $upload->set('thumb_ext',	false);
+			    $result = $upload->upfile('default_store_banner');
+			    if ($result){
+			        $_POST['default_store_banner'] = $upload->file_name;
+			    }else {
+			        showMessage($upload->error,'','','error');
+			    }
+			}
+                        
 			//默认会员头像
 			if (!empty($_FILES['default_user_portrait']['tmp_name'])){
 				$thumb_width	= '32';
@@ -207,6 +222,9 @@ class uploadControl extends SystemControl{
 			if (!empty($_POST['default_store_avatar'])){
 			    $update_array['default_store_avatar'] = $_POST['default_store_avatar'];
 			}
+                        if (!empty($_POST['default_store_banner'])){
+			    $update_array['default_store_banner'] = $_POST['default_store_banner'];
+			}
 			if (!empty($_POST['default_user_portrait'])){
 				$update_array['default_user_portrait'] = $_POST['default_user_portrait'];
 			}
@@ -226,6 +244,9 @@ class uploadControl extends SystemControl{
 				}
 				if (!empty($list_setting['default_store_logo']) && !empty($_POST['default_store_logo'])){
 					@unlink(BASE_UPLOAD_PATH.DS.ATTACH_COMMON.DS.$list_setting['default_store_logo']);
+				}
+                                if (!empty($list_setting['default_store_banner']) && !empty($_POST['default_store_banner'])){
+					@unlink(BASE_UPLOAD_PATH.DS.ATTACH_COMMON.DS.$list_setting['default_store_banner']);
 				}
 				if (!empty($list_setting['default_user_portrait']) && !empty($_POST['default_user_portrait'])){
 					@unlink(BASE_UPLOAD_PATH.DS.ATTACH_COMMON.DS.$list_setting['default_user_portrait']);

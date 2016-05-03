@@ -1310,3 +1310,71 @@ ERR: Db Error: You have an error in your SQL syntax; check the manual that corre
 SELECT COUNT(*) as `count` FROM `33hao_activity` as `activity`  WHERE 
 [2016-05-03 14:19:35] /33hao/mobile/index.php?act=store&op=store_detail&store_id=17 ( act=store&op=store_detail ) 
 ERR: SELECT COUNT(*) AS nc_count FROM `33hao_store_sns_tracelog` WHERE ( strace_state = '1' ) AND ( strace_type = '2' ) AND ( strace_storeid = '17' ) LIMIT 1   [ RunTime:1,462,256,374.442874s ]SELECT COUNT(*) AS nc_count FROM `33hao_store_sns_tracelog` WHERE ( strace_state = '1' ) AND ( strace_type = '2' ) AND ( strace_storeid = '17' ) LIMIT 1  
+[2016-05-03 14:24:18] /33hao/admin/index.php?act=setting&op=base ( act=setting&op=base ) 
+ERR: SELECT * FROM `33hao_setting` as `setting`   [ RunTime:1,462,256,658.744777s ]SELECT * FROM `33hao_setting` as `setting`  
+[2016-05-03 14:24:59] /33hao/admin/index.php?act=account&op=qq ( act=account&op=qq ) 
+ERR: SELECT * FROM `33hao_setting` as `setting`   [ RunTime:1,462,256,699.473944s ]SELECT * FROM `33hao_setting` as `setting`  
+[2016-05-03 14:25:00] /33hao/admin/index.php?act=upload&op=param ( act=upload&op=param ) 
+ERR: SELECT * FROM `33hao_setting` as `setting`   [ RunTime:1,462,256,700.231905s ]SELECT * FROM `33hao_setting` as `setting`  
+[2016-05-03 14:25:02] /33hao/admin/index.php?act=upload&op=default_thumb ( act=upload&op=default_thumb ) 
+ERR: SELECT * FROM `33hao_setting` as `setting`   [ RunTime:1,462,256,702.657389s ]SELECT * FROM `33hao_setting` as `setting`  
+[2016-05-03 14:25:42] /33hao/admin/index.php?act=upload&op=login ( act=upload&op=login ) 
+ERR: SELECT * FROM `33hao_setting` as `setting`   [ RunTime:1,462,256,742.773847s ]SELECT * FROM `33hao_setting` as `setting`  
+[2016-05-03 14:25:49] /33hao/admin/index.php?act=upload&op=default_thumb ( act=upload&op=default_thumb ) 
+ERR: SELECT * FROM `33hao_setting` as `setting`   [ RunTime:1,462,256,749.688104s ]SELECT * FROM `33hao_setting` as `setting`  
+[2016-05-03 14:26:06] /33hao/admin/index.php?act=upload&op=login ( act=upload&op=login ) 
+ERR: SELECT * FROM `33hao_setting` as `setting`   [ RunTime:1,462,256,766.473605s ]SELECT * FROM `33hao_setting` as `setting`  
+[2016-05-03 14:26:08] /33hao/admin/index.php?act=upload&op=default_thumb ( act=upload&op=default_thumb ) 
+ERR: SELECT * FROM `33hao_setting` as `setting`   [ RunTime:1,462,256,768.450395s ]SELECT * FROM `33hao_setting` as `setting`  
+[2016-05-03 14:26:16] /33hao/admin/index.php?act=upload&op=login ( act=upload&op=login ) 
+ERR: SELECT * FROM `33hao_setting` as `setting`   [ RunTime:1,462,256,776.390337s ]SELECT * FROM `33hao_setting` as `setting`  
+[2016-05-03 14:26:18] /33hao/admin/index.php?act=upload&op=default_thumb ( act=upload&op=default_thumb ) 
+ERR: SELECT * FROM `33hao_setting` as `setting`   [ RunTime:1,462,256,778.220484s ]SELECT * FROM `33hao_setting` as `setting`  
+[2016-05-03 14:29:38] /33hao/admin/index.php?act=upload&op=param ( act=upload&op=param ) 
+ERR: SELECT * FROM `33hao_setting` as `setting`   [ RunTime:1,462,256,978.187487s ]SELECT * FROM `33hao_setting` as `setting`  
+[2016-05-03 14:29:40] /33hao/admin/index.php?act=upload&op=default_thumb ( act=upload&op=default_thumb ) 
+ERR: SELECT * FROM `33hao_setting` as `setting`   [ RunTime:1,462,256,980.651493s ]SELECT * FROM `33hao_setting` as `setting`  
+[2016-05-03 14:30:29] /33hao/shop/index.php?act=cart&op=ajax_load&callback=jQuery18203998186259996146_1462254128314&_=1462257029365 ( act=cart&op=ajax_load ) 
+ERR: SELECT * FROM `33hao_member` WHERE ( member_id = '43' ) LIMIT 1   [ RunTime:1,462,257,029.941847s ]SELECT * FROM `33hao_member` WHERE ( member_id = '43' ) LIMIT 1  
+[2016-05-03 14:30:30] /33hao/shop/index.php?act=cart&op=ajax_load&callback=jQuery18203998186259996146_1462254128314&_=1462257029365 ( act=cart&op=ajax_load ) 
+ERR: SELECT * FROM `33hao_cart` WHERE ( buyer_id = '43' ) LIMIT 1000   [ RunTime:1,462,257,029.941847s ]SELECT * FROM `33hao_cart` WHERE ( buyer_id = '43' ) LIMIT 1000  
+[2016-05-03 14:30:35] /33hao/shop/index.php?act=store_setting&op=store_setting ( act=store_setting&op=store_setting ) 
+ERR: SELECT * FROM `33hao_member` WHERE ( member_id = '43' ) LIMIT 1   [ RunTime:1,462,257,035.735748s ]SELECT * FROM `33hao_member` WHERE ( member_id = '43' ) LIMIT 1  
+[2016-05-03 14:30:35] /33hao/shop/index.php?act=store_setting&op=store_setting ( act=store_setting&op=store_setting ) 
+ERR: SELECT * FROM `33hao_store` WHERE ( store_id = '17' ) LIMIT 1   [ RunTime:1,462,257,035.735748s ]SELECT * FROM `33hao_store` WHERE ( store_id = '17' ) LIMIT 1  
+[2016-05-03 14:30:35] /33hao/shop/index.php?act=store_setting&op=store_setting ( act=store_setting&op=store_setting ) 
+ERR: SELECT COUNT(*) AS nc_count FROM `33hao_goods_common` WHERE ( store_id = '17' ) AND ( goods_state = '1' ) AND ( goods_verify = '1' ) LIMIT 1   [ RunTime:1,462,257,035.735748s ]SELECT COUNT(*) AS nc_count FROM `33hao_goods_common` WHERE ( store_id = '17' ) AND ( goods_state = '1' ) AND ( goods_verify = '1' ) LIMIT 1  
+[2016-05-03 14:30:35] /33hao/shop/index.php?act=store_setting&op=store_setting ( act=store_setting&op=store_setting ) 
+ERR: SELECT AVG(seval_desccredit) as store_desccredit,AVG(seval_servicecredit) as store_servicecredit,AVG(seval_deliverycredit) as store_deliverycredit,COUNT(seval_id) as count FROM `33hao_evaluate_store` WHERE ( seval_storeid = '17' ) LIMIT 1   [ RunTime:1,462,257,035.735748s ]SELECT AVG(seval_desccredit) as store_desccredit,AVG(seval_servicecredit) as store_servicecredit,AVG(seval_deliverycredit) as store_deliverycredit,COUNT(seval_id) as count FROM `33hao_evaluate_store` WHERE ( seval_storeid = '17' ) LIMIT 1  
+[2016-05-03 14:30:36] /33hao/shop/index.php?act=store_setting&op=store_setting ( act=store_setting&op=store_setting ) 
+ERR: SELECT * FROM `33hao_store` WHERE ( sc_id = '11' ) AND ( store_state = '1' ) LIMIT 1000   [ RunTime:1,462,257,035.735748s ]SELECT * FROM `33hao_store` WHERE ( sc_id = '11' ) AND ( store_state = '1' ) LIMIT 1000  
+[2016-05-03 14:30:36] /33hao/shop/index.php?act=store_setting&op=store_setting ( act=store_setting&op=store_setting ) 
+ERR: SELECT AVG(seval_desccredit) as store_desccredit,AVG(seval_servicecredit) as store_servicecredit,AVG(seval_deliverycredit) as store_deliverycredit,COUNT(seval_id) as count FROM `33hao_evaluate_store` WHERE ( seval_storeid IN ('16','17','18','19','20','21','22','24','25','26','27','28','29','32','33','34','35','36','37','39','41','43','') ) LIMIT 1   [ RunTime:1,462,257,035.735748s ]SELECT AVG(seval_desccredit) as store_desccredit,AVG(seval_servicecredit) as store_servicecredit,AVG(seval_deliverycredit) as store_deliverycredit,COUNT(seval_id) as count FROM `33hao_evaluate_store` WHERE ( seval_storeid IN ('16','17','18','19','20','21','22','24','25','26','27','28','29','32','33','34','35','36','37','39','41','43','') ) LIMIT 1  
+[2016-05-03 14:30:36] /33hao/shop/index.php?act=store_setting&op=store_setting ( act=store_setting&op=store_setting ) 
+ERR: SELECT * FROM `33hao_store` WHERE ( store_id = '17' ) LIMIT 1   [ RunTime:1,462,257,035.735748s ]SELECT * FROM `33hao_store` WHERE ( store_id = '17' ) LIMIT 1  
+[2016-05-03 14:30:36] /33hao/shop/index.php?act=store_setting&op=store_setting ( act=store_setting&op=store_setting ) 
+ERR: SELECT COUNT(*) AS nc_count FROM `33hao_goods_common` WHERE ( store_id = '17' ) AND ( goods_state = '1' ) AND ( goods_verify = '1' ) LIMIT 1   [ RunTime:1,462,257,035.735748s ]SELECT COUNT(*) AS nc_count FROM `33hao_goods_common` WHERE ( store_id = '17' ) AND ( goods_state = '1' ) AND ( goods_verify = '1' ) LIMIT 1  
+[2016-05-03 14:30:36] /33hao/shop/index.php?act=store_setting&op=store_setting ( act=store_setting&op=store_setting ) 
+ERR: SELECT AVG(seval_desccredit) as store_desccredit,AVG(seval_servicecredit) as store_servicecredit,AVG(seval_deliverycredit) as store_deliverycredit,COUNT(seval_id) as count FROM `33hao_evaluate_store` WHERE ( seval_storeid = '17' ) LIMIT 1   [ RunTime:1,462,257,035.735748s ]SELECT AVG(seval_desccredit) as store_desccredit,AVG(seval_servicecredit) as store_servicecredit,AVG(seval_deliverycredit) as store_deliverycredit,COUNT(seval_id) as count FROM `33hao_evaluate_store` WHERE ( seval_storeid = '17' ) LIMIT 1  
+[2016-05-03 14:30:36] /33hao/shop/index.php?act=store_setting&op=store_setting ( act=store_setting&op=store_setting ) 
+ERR: SELECT * FROM `33hao_store` WHERE ( sc_id = '11' ) AND ( store_state = '1' ) LIMIT 1000   [ RunTime:1,462,257,035.735748s ]SELECT * FROM `33hao_store` WHERE ( sc_id = '11' ) AND ( store_state = '1' ) LIMIT 1000  
+[2016-05-03 14:30:36] /33hao/shop/index.php?act=store_setting&op=store_setting ( act=store_setting&op=store_setting ) 
+ERR: SELECT AVG(seval_desccredit) as store_desccredit,AVG(seval_servicecredit) as store_servicecredit,AVG(seval_deliverycredit) as store_deliverycredit,COUNT(seval_id) as count FROM `33hao_evaluate_store` WHERE ( seval_storeid IN ('16','17','18','19','20','21','22','24','25','26','27','28','29','32','33','34','35','36','37','39','41','43','') ) LIMIT 1   [ RunTime:1,462,257,035.735748s ]SELECT AVG(seval_desccredit) as store_desccredit,AVG(seval_servicecredit) as store_servicecredit,AVG(seval_deliverycredit) as store_deliverycredit,COUNT(seval_id) as count FROM `33hao_evaluate_store` WHERE ( seval_storeid IN ('16','17','18','19','20','21','22','24','25','26','27','28','29','32','33','34','35','36','37','39','41','43','') ) LIMIT 1  
+[2016-05-03 14:33:08] /33hao/admin/index.php?act=upload&op=param ( act=upload&op=param ) 
+ERR: SELECT * FROM `33hao_setting` as `setting`   [ RunTime:1,462,257,188.015708s ]SELECT * FROM `33hao_setting` as `setting`  
+[2016-05-03 14:33:10] /33hao/admin/index.php?act=upload&op=default_thumb ( act=upload&op=default_thumb ) 
+ERR: SELECT * FROM `33hao_setting` as `setting`   [ RunTime:1,462,257,190.058226s ]SELECT * FROM `33hao_setting` as `setting`  
+[2016-05-03 14:35:53] /33hao/admin/index.php?act=upload&op=param ( act=upload&op=param ) 
+ERR: SELECT * FROM `33hao_setting` as `setting`   [ RunTime:1,462,257,353.832671s ]SELECT * FROM `33hao_setting` as `setting`  
+[2016-05-03 14:35:56] /33hao/admin/index.php?act=upload&op=default_thumb ( act=upload&op=default_thumb ) 
+ERR: SELECT * FROM `33hao_setting` as `setting`   [ RunTime:1,462,257,356.022606s ]SELECT * FROM `33hao_setting` as `setting`  
+[2016-05-03 14:36:26] /33hao/admin/index.php?act=upload&op=default_thumb ( act=upload&op=default_thumb ) 
+ERR: SELECT * FROM `33hao_setting` as `setting`   [ RunTime:1,462,257,386.635644s ]SELECT * FROM `33hao_setting` as `setting`  
+[2016-05-03 14:36:27] /33hao/admin/index.php?act=upload&op=default_thumb ( act=upload&op=default_thumb ) 
+ERR: UPDATE `33hao_setting` AS `setting` SET value = '05156013860842597.jpg'  WHERE  name = 'default_store_banner' [ RunTime:1,462,257,386.635644s ]UPDATE `33hao_setting` AS `setting` SET value = '05156013860842597.jpg'  WHERE  name = 'default_store_banner'
+[2016-05-03 14:36:27] /33hao/admin/index.php?act=upload&op=default_thumb ( act=upload&op=default_thumb ) 
+ERR: INSERT  INTO `33hao_admin_log` (content,admin_name,createtime,admin_id,ip,url) VALUES ('编辑默认图片','admin','1462257386','1','','upload&default_thumb') [ RunTime:1,462,257,386.635644s ]INSERT  INTO `33hao_admin_log` (content,admin_name,createtime,admin_id,ip,url) VALUES ('编辑默认图片','admin','1462257386','1','','upload&default_thumb')
+[2016-05-03 14:36:29] /33hao/admin/index.php?act=upload&op=default_thumb ( act=upload&op=default_thumb ) 
+ERR: SELECT * FROM `33hao_setting`  [ RunTime:1,462,257,389.897026s ]SELECT * FROM `33hao_setting` 
+[2016-05-03 14:36:29] /33hao/admin/index.php?act=upload&op=default_thumb ( act=upload&op=default_thumb ) 
+ERR: SELECT * FROM `33hao_setting` as `setting`   [ RunTime:1,462,257,389.897026s ]SELECT * FROM `33hao_setting` as `setting`  
