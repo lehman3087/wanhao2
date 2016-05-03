@@ -462,7 +462,7 @@ class storeModel extends Model {
     	if (!empty($list) && is_array($list)){
     		foreach ($list as $key=>$value) {
     			if(!empty($value)) {
-    				$value['store_logo'] = getStoreLogo($value['store_logo']);
+    				$value['store_logo'] = getStoreLogo($value['store_avatar']);
     				//店铺评价
     				$model_evaluate_store = Model('evaluate_store');
     				$store_evaluate_info = $model_evaluate_store->getEvaluateStoreInfoByStoreID($value['store_id'], $value['sc_id']);
