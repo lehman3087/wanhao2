@@ -120,7 +120,8 @@ class indexControl extends mobileHomeControl{
                 'groupbuy_path'=>'/data/upload/shop/groupbuy/',//抢购活动海报路径 例：/data/upload/shop/groupbuy/12/12_05043585915065515_mid.jpg
                 'store_banner'=>'/data/upload/shop/store/',//店铺条幅基础地址
                 'store_avatar'=>'/data/upload/shop/store/',//店铺装修公司avator
-                'hot_search'=>$hot_search
+                'hot_search'=>$hot_search,
+                 'store_strace_comment_list'=>'/shop/index.php?act=store_snshome&op=tracelist&id='
                 );  
              output_data($global);        
         }

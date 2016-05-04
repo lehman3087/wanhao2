@@ -426,7 +426,7 @@ class storeControl extends mobileHomeControl{
 	}
         
         /**
-	 * 某会员的SNS动态列表
+	 * SNS动态评论列表
 	 */
 	public function tracelistOp(){
 		$tracelog_model = Model('store_sns_comment');
@@ -465,8 +465,8 @@ class storeControl extends mobileHomeControl{
 		//$condition['limit'] = $lazy_arr['limitstart'].",".$lazy_arr['delay_eachnum'];
                 $tracelist = $tracelog_model->getStoreSnsCommentList($condition, '*', 'scomm_id desc', $lazy_arr['limitstart'],$lazy_arr['delay_eachnum']);
 		//$tracelist = $tracelog_model->getStoreSnsCommentList($condition);
-                var_dump($tracelist);
-                exit();
+//                var_dump($tracelist);
+//                exit();
 //		if (!empty($tracelist)){
 //			foreach ($tracelist as $k=>$v){
 //				if ($v['trace_title']){
