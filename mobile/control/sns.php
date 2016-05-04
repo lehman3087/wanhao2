@@ -184,4 +184,73 @@ class snsControl extends mobileMemberControl {
                 output_data('strace_info', $strace_info);
 	}
         
+        public function traceOp(){
+		$this->get_visitor();	// 获取访客
+		$this->sns_messageboard();	// 留言版
+		$is_owner = false;//是否为主人自己
+		if ($_SESSION['member_id'] == intval($_GET['mid'])){
+		    $is_owner = true;
+		}
+		Tpl::output('is_owner',$is_owner);
+		Tpl::output('menu_sign','snstrace');
+		Tpl::showpage('sns_hometrace');
+	}
+	/**
+	 * 某会员的SNS动态列表
+	 */
+	public function tracelistOp(){
+		$tracelog_model = Model('sns_tracelog');
+		$condition = array();
+		$condition['trace_memberid'] = $this->master_id;
+		switch ($this->relation){
+			case 3:
+				$condition['trace_privacyin'] = "";
+				break;
+			case 2:
+				$condition['trace_privacyin'] = "0','1";
+				break;
+			case 1:
+				$condition['trace_privacyin'] = "0";
+				break;
+			default:
+				$condition['trace_privacyin'] = "0";
+				break;
+		}
+		$condition['trace_state'] = "0";
+                
+                
+		$count = $tracelog_model->countTrace($condition);
+		//分页
+		$page	= new Page();
+		$page->setEachNum(30);
+		$page->setStyle('admin');
+		$page->setTotalNum($count);
+		$delaypage = intval($_GET['delaypage'])>0?intval($_GET['delaypage']):1;//本页延时加载的当前页数
+		$lazy_arr = lazypage(10,$delaypage,$count,true,$page->getNowPage(),$page->getEachNum(),$page->getLimitStart());
+		//动态列表
+		$condition['limit'] = $lazy_arr['limitstart'].",".$lazy_arr['delay_eachnum'];
+		$tracelist = $tracelog_model->getTracelogList($condition);
+		if (!empty($tracelist)){
+			foreach ($tracelist as $k=>$v){
+				if ($v['trace_title']){
+					$v['trace_title'] = str_replace("%siteurl%", SHOP_SITE_URL.DS, $v['trace_title']);
+					$v['trace_title_forward'] = '|| @'.$v['trace_membername'].Language::get('nc_colon').preg_replace("/<a(.*?)href=\"(.*?)\"(.*?)>@(.*?)<\/a>([\s|:|：]|$)/is",'@${4}${5}',$v['trace_title']);
+				}
+				if(!empty($v['trace_content'])){
+					//替换内容中的siteurl
+					$v['trace_content'] = str_replace("%siteurl%", SHOP_SITE_URL.DS, $v['trace_content']);
+				}
+				$tracelist[$k] = $v;
+			}
+		}
+		Tpl::output('hasmore',$lazy_arr['hasmore']);
+		Tpl::output('tracelist',$tracelist);
+		Tpl::output('show_page',$page->show());
+		Tpl::output('type','home');
+		//验证码
+		Tpl::output('nchash',substr(md5(SHOP_SITE_URL.$_GET['act'].$_GET['op']),0,8));
+		Tpl::output('menu_sign', 'snstrace');
+		Tpl::showpage('sns_tracelist','null_layout');
+	}
+        
 }

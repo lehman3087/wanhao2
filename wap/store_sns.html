@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title></title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no">
+<link rel="stylesheet" type="text/css" href="css/reset.css">
+<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="css/main.css">
+<link rel="stylesheet" type="text/css" href="css/child.css">
+<link rel="stylesheet" type="text/css" href="css/index.css">
+<link rel="stylesheet" type="text/css" href="css/store_sns.css">
+</head>
+<body>
+
+<div class="main" id="main-container">
+<style>
+<!--
+.release-tab { clear:both;}
+.release-tab li { display:inline-block; *display:inline;}
+.release-tab li em { /* background:url(../images/member/ncus_public.png) no-repeat scroll; */ _background-image: url(../images/ie6/ncus_public.gif)/*IE6*/; float:left; height: 26px; width: 26px;}
+.release-tab li.sharemood em { background-position: 0 -400px;}
+.release-tab li.sharegoods em { background-position: -60px -400px;}
+.release-tab li.sharestore em { background-position: -30px -400px;}
+.release-tab li a { font-family:"Microsoft yahei"; font-size:1.2em; font-weight:700; text-decoration: none; line-height:20px; color:#7FB8D2; float:left; height:20px; margin: 3px 18px 3px 6px;}
+.release-tab li i { line-height: 12px; border-right:dashed 1px #80B8D2; width: 1px; height: 12px; float: left; margin: 10px 20px 4px 0;}
+
+.release-content { clear:both; position:relative; z-index:9;}
+.release-content .arrow { /* background: url(../images/member/ncus_public.png) scroll no-repeat -90px -400px; */ _background-image: url(../images/ie6/ncus_public.gif)/*IE6*/; width: 18px; height: 10px; position: absolute; z-index: 1; top: 6px; left: 48px;}
+.release-content textarea { width: 560px; height: 48px; float: left; border-radius: 5px; position: absolute; top: 14px; left: 0px; border: solid 1px #CCE2E8; background-color: #FFF; box-shadow: none;}
+.release-content textarea:focus { background-color:#FFF; border-color: #CCC; box-shadow: 1px 1px 1px 0 #E7E7E7; -moz-box-shadow: 1px 1px 1px 0 #E7E7E7/* if FF*/; -webkit--box-shadow: 1px 1px 1px 0 #E7E7E7/* if Webkie*/;}
+.release-content .smile { display: block; clear: both; position: absolute; z-index:9; top: 84px; left: 0px;}
+.release-content .smile em { /* background: url(../images/member/ncus_public.png) no-repeat scroll -182px -380px; */ _background-image: url(../images/ie6/ncus_public.gif)/*IE6*/; width: 20px; height: 20px; float: left;}
+.release-content .smile a { line-height:20px; font-weight:700; color:#7FB8D2; float: left;}
+.release-content .smile i {}
+.release-content span.error label { color:#FFC !important; font-weight:600; background-color: rgba(255,102,0,0.95); line-height:20px; text-align:center; border-radius:4px; position: absolute; z-index: 999; top:25px; left:200px; padding:4px 30px; box-shadow: 2px 2px 0 rgba(0,0,0,0.1); margin:0;}
+.release-content .weibocharcount { position: absolute; z-index: 1; top:84px; left: 70px;}
+.release-content .weiboseccode { background-color:#FFF; position: absolute; z-index: 1; top:84px; right: 90px; display: none; z-index:999;}
+.release-content .handle { position: absolute; z-index: 9; top:82px; right:230px;}
+.release-content .button { font-size:1.4em; line-height: 32px; font-weight:700; color:#FFF; background-color:#80B8D2; width:60px; height:32px; border:none; position: absolute; top: 80px; left: 500px; cursor:pointer;}
+.release-content input[type="button"]{ border-radius: 4px;}
+-->
+</style>
+
+<div class="left-content">
+<?php if ($output['is_owner']){ ?>
+    <ul class="release-tab">
+      <li class="sharemood"><em></em><a href="javascript:void(0)" style="cursor: default;"></a></li>
+    </ul>
+    <div class="release-content"><span class="arrow"></span>
+      <form id="weiboform" method="post" action="index.php?act=member_snsindex&op=addtrace">
+          <div class="content"></div>
+       
+        
+      </form>
+      <!-- 表情弹出层 -->
+      <div id="smilies_div" class="smilies-module"></div>
+    </div>
+<?php } ?>    
+  <div class="tabmenu">
+    <ul class="tab">
+      <li class="active"><a href="javascript:void(0)">评论区</a></li>
+    </ul>
+  </div>
+  <!-- 动态列表 -->
+  <div id="friendtrace"></div>
+</div>
+<div class="clear"></div>
+<script type="text/javascript" src="js/config.js"></script>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/template.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript" src="js/store_sns.js"></script>
+<script type="text/javascript" src="js/jquery.ajaxdatalazy.js" charset="utf-8"></script> 
+<script type="text/javascript">
+//var max_recordnum = '<?php echo $output['max_recordnum'];?>';
+document.onclick = function(){ $("#smilies_div").html(''); $("#smilies_div").hide();};
+$(function(){
+     var straceId = GetQueryString("strace_id");
+	//加载好友动态分页
+	$('#friendtrace').lazyinit();
+	$('#friendtrace').lazyshow({url:StoreApiUrl+"/index.php?act=store_snshome&op=tracelist&id="+straceId+"&page=1",'iIntervalId':true});
+});
+</script>
+</div>
+</body>
+</html>

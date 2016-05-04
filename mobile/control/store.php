@@ -359,6 +359,138 @@ class storeControl extends mobileHomeControl{
                 
 	}
         
+        
+        /**
+	 * 一条SNS动态及其评论
+	 */
+	public function straceinfoOp(){
+		$stid = intval($_REQUEST['strace_id']);
+		if($stid <= 0){
+                    output_error('error');
+			//showMessage(Language::get('para_error'),'','','error');
+		}
+		$model_stracelog = Model('store_sns_tracelog');
+		$strace_info = $model_stracelog->getStoreSnsTracelogInfo(array('strace_id' => $stid));
+		if(!empty($strace_info)){
+			if($strace_info['strace_content'] == ''){
+				$content = $model_stracelog->spellingStyle($strace_info['strace_type'], json_decode($strace_info['strace_goodsdata'],true));
+				$strace_info['strace_content'] = str_replace("%siteurl%", SHOP_SITE_URL.DS, $content);
+			}
+		}
+                output_data(array('strace_info'=>$strace_info));
+	}
+        
+        
+        /**
+	 * 评论前10条记录
+	*/
+	public function commenttopOp(){
+		$stid = intval($_REQUEST['id']);
+		if($stid > 0){
+			$model_storesnscomment = Model('store_sns_comment');
+			//查询评论总数
+
+			$where = array(
+						'strace_id'=>$stid,
+						'scomm_state'=>1
+					);
+			$countnum = $model_storesnscomment->getStoreSnsCommentCount($where);
+                        var_dump($countnum);
+                        exit();
+			//动态列表
+			$commentlist = $model_storesnscomment->getStoreSnsCommentList($where, '*', 'scomm_id desc', 10);
+
+			// 更新评论数量
+			Model('store_sns_tracelog')->editStoreSnsTracelog(array('strace_comment'=>$countnum), array('strace_id'=>$stid));
+		}
+		$showmore = '0';//是否展示更多的连接
+		if ($countnum > count($commentlist)){
+			$showmore = '1';
+		}
+                
+                
+                
+		Tpl::output('countnum',$countnum);
+		Tpl::output('showmore',$showmore);
+		Tpl::output('showtype',1);//页面展示类型 0表示分页 1表示显示前几条
+		Tpl::output('stid',$stid);
+
+		//验证码
+		Tpl::output('nchash',substr(md5(SHOP_SITE_URL.$_GET['act'].$_GET['op']),0,8));
+
+		//允许插入新记录的最大条数
+		Tpl::output('max_recordnum',self::MAX_RECORDNUM);
+
+		Tpl::output('commentlist',$commentlist);
+		Tpl::showpage('store_snscommentlist','null_layout');
+	}
+        
+        /**
+	 * 某会员的SNS动态列表
+	 */
+	public function tracelistOp(){
+		$tracelog_model = Model('store_sns_comment');
+		$condition = array();
+                $stid = intval($_REQUEST['id']);
+		$condition['strace_id'] = $stid;
+                $condition['scomm_state']=1;
+//		switch ($this->relation){
+//			case 3:
+//				$condition['trace_privacyin'] = "";
+//				break;
+//			case 2:
+//				$condition['trace_privacyin'] = "0','1";
+//				break;
+//			case 1:
+//				$condition['trace_privacyin'] = "0";
+//				break;
+//			default:
+//				$condition['trace_privacyin'] = "0";
+//				break;
+//		}
+//		$condition['trace_state'] = "0";
+                
+                
+		$count = $tracelog_model->getStoreSnsCommentCount($condition);
+//                var_dump($count);
+//                exit();
+		//分页
+		$page	= new Page();
+		$page->setEachNum(30);
+		$page->setStyle('admin');
+		$page->setTotalNum($count);
+		$delaypage = intval($_REQUEST['delaypage'])>0?intval($_REQUEST['delaypage']):1;//本页延时加载的当前页数
+		$lazy_arr = lazypage(10,$delaypage,$count,true,$page->getNowPage(),$page->getEachNum(),$page->getLimitStart());
+		//动态列表
+		//$condition['limit'] = $lazy_arr['limitstart'].",".$lazy_arr['delay_eachnum'];
+                $tracelist = $tracelog_model->getStoreSnsCommentList($condition, '*', 'scomm_id desc', $lazy_arr['limitstart'],$lazy_arr['delay_eachnum']);
+		//$tracelist = $tracelog_model->getStoreSnsCommentList($condition);
+                var_dump($tracelist);
+                exit();
+//		if (!empty($tracelist)){
+//			foreach ($tracelist as $k=>$v){
+//				if ($v['trace_title']){
+//					$v['trace_title'] = str_replace("%siteurl%", SHOP_SITE_URL.DS, $v['trace_title']);
+//					$v['trace_title_forward'] = '|| @'.$v['trace_membername'].Language::get('nc_colon').preg_replace("/<a(.*?)href=\"(.*?)\"(.*?)>@(.*?)<\/a>([\s|:|：]|$)/is",'@${4}${5}',$v['trace_title']);
+//				}
+//				if(!empty($v['trace_content'])){
+//					//替换内容中的siteurl
+//					$v['trace_content'] = str_replace("%siteurl%", SHOP_SITE_URL.DS, $v['trace_content']);
+//				}
+//				$tracelist[$k] = $v;
+//			}
+//		}
+		Tpl::output('hasmore',$lazy_arr['hasmore']);
+		Tpl::output('tracelist',$tracelist);
+		Tpl::output('show_page',$page->show());
+		Tpl::output('type','home');
+		//验证码
+		Tpl::output('nchash',substr(md5(SHOP_SITE_URL.$_GET['act'].$_GET['op']),0,8));
+		Tpl::output('menu_sign', 'snstrace');
+		Tpl::showpage('sns_tracelist','null_layout');
+	}
+        
+        
     
     
     	public function snsOp(){
