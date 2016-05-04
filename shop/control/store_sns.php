@@ -430,7 +430,6 @@ class store_snsControl extends BaseSellerControl{
 									<div class="thumb-image"><a href="javascript:void(0);" nc_type="thumb-image"><img src="'.$sns_image.'" /><i></i></a></div>
 									<div class="origin-image"><a href="javascript:void(0);" nc_type="origin-image"></a></div>
 								</div>';
-                                
 				break;
 			case '9':
 				$data = $this->getGoodsByUrl(html_entity_decode($_POST['goods_url']));
@@ -496,10 +495,11 @@ class store_snsControl extends BaseSellerControl{
 		$stracelog_array['strace_title']	= $_POST['title'];
 		$stracelog_array['strace_content']	= $content;
                 $stracelog_array['strace_mb_image']	= $sns_image;
-                $stracelog_array['strace_mb_content']= $_POST["content"];
+                $stracelog_array['strace_mb_content']= $_POST["g_body"];
 		$stracelog_array['strace_time']		= time();
 		$stracelog_array['strace_type']		= $_POST['type'];
                 $stracelog_array['strace_mb_body']		= $_POST['m_body'];
+              //  $stracelog_array['strace_mb_body']		= $_POST['m_body'];
 		if(isset($goodsdata) && is_array($goodsdata)){
 			$stracelog	= array();
 			foreach($goodsdata as $val){
