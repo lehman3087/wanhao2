@@ -121,7 +121,7 @@ class indexControl extends mobileHomeControl{
                 'store_banner'=>'/data/upload/shop/store/',//店铺条幅基础地址
                 'store_avatar'=>'/data/upload/shop/store/',//店铺装修公司avator
                 'hot_search'=>$hot_search,
-                 'store_strace_comment_list'=>'/shop/index.php?act=store_snshome&op=tracelist&id='
+                 'store_strace_comment_list'=>'/wap/store_sns.html?strace_id='
                 );  
              output_data($global);        
         }

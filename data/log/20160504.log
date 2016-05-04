@@ -2041,3 +2041,19 @@ ERR: SELECT * FROM `33hao_sns_setting` WHERE ( member_id = '43' ) LIMIT 1   [ Ru
 ERR: SELECT COUNT(*) as `count` FROM `33hao_sns_tracelog` as `sns_tracelog`  WHERE sns_tracelog.trace_memberid = '43'  and sns_tracelog.trace_state = '0' [ RunTime:1,462,349,501.416515s ]SELECT COUNT(*) as `count` FROM `33hao_sns_tracelog` as `sns_tracelog`  WHERE sns_tracelog.trace_memberid = '43'  and sns_tracelog.trace_state = '0'
 [2016-05-04 16:11:42] /33hao/shop/index.php?act=member_snshome&op=tracelist&mid=43&page=1&delaypage=1 ( act=member_snshome&op=tracelist ) 
 ERR: SELECT * FROM `33hao_sns_tracelog` as `sns_tracelog`  WHERE  sns_tracelog.trace_memberid = '43'  and sns_tracelog.trace_state = '0' order by sns_tracelog.trace_id desc limit 0,10 [ RunTime:1,462,349,501.416515s ]SELECT * FROM `33hao_sns_tracelog` as `sns_tracelog`  WHERE  sns_tracelog.trace_memberid = '43'  and sns_tracelog.trace_state = '0' order by sns_tracelog.trace_id desc limit 0,10
+[2016-05-04 16:18:05] /33hao/shop/index.php?act=store_snshome&op=tracelist&id=25&page=1&delaypage=1\ ( act=store_snshome&op=tracelist ) 
+ERR: SELECT * FROM `33hao_store_navigation` WHERE ( sn_store_id = NULL ) LIMIT 1000   [ RunTime:1,462,349,885.996665s ]SELECT * FROM `33hao_store_navigation` WHERE ( sn_store_id = NULL ) LIMIT 1000  
+[2016-05-04 16:18:06] /33hao/shop/index.php?act=store_snshome&op=tracelist&id=25&page=1&delaypage=1\ ( act=store_snshome&op=tracelist ) 
+ERR: SELECT * FROM `33hao_member` WHERE ( member_id = '43' ) LIMIT 1   [ RunTime:1,462,349,885.996665s ]SELECT * FROM `33hao_member` WHERE ( member_id = '43' ) LIMIT 1  
+[2016-05-04 16:18:06] /33hao/shop/index.php?act=store_snshome&op=tracelist&id=25&page=1&delaypage=1\ ( act=store_snshome&op=tracelist ) 
+ERR: SELECT COUNT(*) AS nc_count FROM `33hao_store_sns_comment` WHERE ( strace_id = '25' ) AND ( scomm_state = '1' ) LIMIT 1   [ RunTime:1,462,349,885.996665s ]SELECT COUNT(*) AS nc_count FROM `33hao_store_sns_comment` WHERE ( strace_id = '25' ) AND ( scomm_state = '1' ) LIMIT 1  
+[2016-05-04 16:18:06] /33hao/shop/index.php?act=store_snshome&op=tracelist&id=25&page=1&delaypage=1\ ( act=store_snshome&op=tracelist ) 
+ERR: SELECT COUNT(*) AS nc_count FROM `33hao_store_sns_comment` WHERE ( strace_id = '25' ) AND ( scomm_state = '1' ) ORDER BY scomm_id desc LIMIT 1   [ RunTime:1,462,349,885.996665s ]SELECT COUNT(*) AS nc_count FROM `33hao_store_sns_comment` WHERE ( strace_id = '25' ) AND ( scomm_state = '1' ) ORDER BY scomm_id desc LIMIT 1  
+[2016-05-04 16:18:06] /33hao/shop/index.php?act=store_snshome&op=tracelist&id=25&page=1&delaypage=1\ ( act=store_snshome&op=tracelist ) 
+ERR: SELECT * FROM `33hao_store_sns_comment` WHERE ( strace_id = '25' ) AND ( scomm_state = '1' ) ORDER BY scomm_id desc LIMIT 0,10   [ RunTime:1,462,349,885.996665s ]SELECT * FROM `33hao_store_sns_comment` WHERE ( strace_id = '25' ) AND ( scomm_state = '1' ) ORDER BY scomm_id desc LIMIT 0,10  
+[2016-05-04 16:18:08] /33hao/mobile/index.php?act=store&op=commenttop&id=25&page=1&delaypage=1 ( act=store&op=commenttop ) 
+ERR: SELECT * FROM `33hao_member` WHERE ( member_id = NULL ) LIMIT 1   [ RunTime:1,462,349,888.175921s ]SELECT * FROM `33hao_member` WHERE ( member_id = NULL ) LIMIT 1  
+[2016-05-04 16:18:08] /33hao/mobile/index.php?act=store&op=commenttop&id=25&page=1&delaypage=1 ( act=store&op=commenttop ) 
+ERR: SELECT * FROM `33hao_seller` WHERE ( member_id = NULL ) LIMIT 1   [ RunTime:1,462,349,888.175921s ]SELECT * FROM `33hao_seller` WHERE ( member_id = NULL ) LIMIT 1  
+[2016-05-04 16:18:08] /33hao/mobile/index.php?act=store&op=commenttop&id=25&page=1&delaypage=1 ( act=store&op=commenttop ) 
+ERR: SELECT COUNT(*) AS nc_count FROM `33hao_store_sns_comment` WHERE ( strace_id = '25' ) AND ( scomm_state = '1' ) LIMIT 1   [ RunTime:1,462,349,888.175921s ]SELECT COUNT(*) AS nc_count FROM `33hao_store_sns_comment` WHERE ( strace_id = '25' ) AND ( scomm_state = '1' ) LIMIT 1  
