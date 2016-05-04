@@ -11,6 +11,7 @@ $(function() {
             
             for(var i in data)
             $('.content').html(data.strace_info.strace_mb_content);
+            $('.store_name').html(data.strace_info.strace_title);
 //            $.each(data, function(k, v) {
 //                
 //                
