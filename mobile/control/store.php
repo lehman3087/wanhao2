@@ -375,8 +375,25 @@ class storeControl extends mobileHomeControl{
 			if($strace_info['strace_content'] == ''){
 				$content = $model_stracelog->spellingStyle($strace_info['strace_type'], json_decode($strace_info['strace_goodsdata'],true));
 				$strace_info['strace_content'] = str_replace("%siteurl%", SHOP_SITE_URL.DS, $content);
-			}
+                                $strace_info['strace_mb_content'] = str_replace("<img", "<img style='width:100%'", $strace_info['strace_mb_content']);
+                                
+                        }
 		}
+                
+                //		if (!empty($tracelist)){
+//			foreach ($tracelist as $k=>$v){
+//				if ($v['trace_title']){
+//					$v['trace_title'] = str_replace("%siteurl%", SHOP_SITE_URL.DS, $v['trace_title']);
+//					$v['trace_title_forward'] = '|| @'.$v['trace_membername'].Language::get('nc_colon').preg_replace("/<a(.*?)href=\"(.*?)\"(.*?)>@(.*?)<\/a>([\s|:|：]|$)/is",'@${4}${5}',$v['trace_title']);
+//				}
+//				if(!empty($v['trace_content'])){
+//					//替换内容中的siteurl
+//					$v['trace_content'] = str_replace("%siteurl%", SHOP_SITE_URL.DS, $v['trace_content']);
+//				}
+//				$tracelist[$k] = $v;
+//			}
+//		}
+                
                 output_data(array('strace_info'=>$strace_info));
 	}
         
